@@ -500,20 +500,20 @@ summary:hover {
 	transition: all .6s ease-in-out;
 }
 
-/*@-webkit-keyframes alert {
+@-webkit-keyframes alert {
 	from {filter: drop-shadow(2px 2px 4px green);}
-	25% {filter: drop-shadow(3px 3px 5px white);}
+	25% {filter: drop-shadow(3px 4px 6px green);}
 	45% {filter: drop-shadow(3px 4px 6px white);}
-	65% {filter: drop-shadow(3px 4px 6px green);}
-	85% {filter: drop-shadow(3px 3px 5px green);}
+	65% {filter: drop-shadow(3px 4px 6px white);}
+	85% {filter: drop-shadow(3px 4px 6px green);}
 	to {filter: drop-shadow(2px 2px 4px green);}
 }
-*/
+
 @keyframes alert {
-	from {filter: drop-shadow(2px 2px 4px white);}
-	25% {filter: drop-shadow(3px 4px 6px white);}
+	from {filter: drop-shadow(2px 2px 4px green);}
+	25% {filter: drop-shadow(3px 4px 6px green);}
 	45% {filter: drop-shadow(3px 4px 6px white);}
-	65% {filter: drop-shadow(3px 4px 6px green);}
+	65% {filter: drop-shadow(3px 4px 6px white);}
 	85% {filter: drop-shadow(3px 4px 6px green);}
 	to {filter: drop-shadow(2px 2px 4px green);}
 }
