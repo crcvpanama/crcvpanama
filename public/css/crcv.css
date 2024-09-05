@@ -434,7 +434,7 @@ summary:hover {
 	cursor: pointer;
 	z-index: 3000;
 	transition: all .4s ease-in;
-	animation: alert 6.5s linear 100ms infinite;
+	animation: alert 6.5s linear 40ms infinite;
 	opacity: .8;
 }
 
@@ -500,22 +500,22 @@ summary:hover {
 	transition: all .6s ease-in-out;
 }
 
-@-webkit-keyframes alert {
-	from {filter: drop-shadow(2px 2px 4px green);}
+/*@-webkit-keyframes alert {
+	from {filter: drop-shadow(2px 2px 4px white);}
 	25% {filter: drop-shadow(3px 4px 6px green);}
 	45% {filter: drop-shadow(3px 4px 6px white);}
 	65% {filter: drop-shadow(3px 4px 6px white);}
 	85% {filter: drop-shadow(3px 4px 6px green);}
-	to {filter: drop-shadow(2px 2px 4px green);}
+	to {filter: drop-shadow(2px 2px 4px white);}
 }
-
+*/
 @keyframes alert {
-	from {filter: drop-shadow(2px 2px 4px green);}
+	from {filter: drop-shadow(2px 2px 4px white);}
 	25% {filter: drop-shadow(3px 4px 6px green);}
 	45% {filter: drop-shadow(3px 4px 6px white);}
 	65% {filter: drop-shadow(3px 4px 6px white);}
 	85% {filter: drop-shadow(3px 4px 6px green);}
-	to {filter: drop-shadow(2px 2px 4px green);}
+	to {filter: drop-shadow(2px 2px 4px white);}
 }
 
 .diagnostic-a {
