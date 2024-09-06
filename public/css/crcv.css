@@ -1551,8 +1551,10 @@ summary:hover {
 
 	.cont--A,
 	.cont--B,
-	#santiago {
-		flex-direction: column;
+	#revers {
+
+		display:block;
+/*		flex-direction: column;*/
 	}
 
 	.collapse-hide {
@@ -1791,11 +1793,12 @@ summary:hover {
 	}
 
 	.local-in {
-		display: flex;
+		display: block;
 		position: relative;
-		flex-wrap: wrap;
+		margin-bottom: .5em;
+		/*flex-wrap: wrap;
 		flex-direction: row;
-		justify-content: space-between;
+		justify-content: space-between;*/
 		/* width: 40%; */
 	}
 
