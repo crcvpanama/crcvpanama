@@ -796,7 +796,7 @@ summary:hover {
 	align-content: center;
 }
 
-.main {
+.mB {
 	display: none;
 	position: relative;
 	margin: 0 auto;
@@ -1143,7 +1143,7 @@ summary:hover {
 	gap: .8em;
 }
 
-#santiago {
+#revers {
 	display: flex;
 	flex-direction: row-reverse;
 }

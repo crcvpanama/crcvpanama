@@ -87,7 +87,7 @@ setInterval(slide, 4000);
 
 const navLinks = document.querySelectorAll('.nav-link');
 const pages = document.getElementsByClassName('page');
-console.log(navLinks);
+// console.log(navLinks);
 
 function nav(a) {
     for(let i=0;i<navLinks.length;i++){
@@ -100,37 +100,37 @@ function nav(a) {
                     pages[index].style.display = 'none';
                     navLinks[index].style.background = 'none';
                     navLinks[0].style.background = '#0052D468';
-                    pages[5].style.display = 'block';
+                    pages[0].style.display = 'block';
                   break;
                 case navLinks[1]:
                     pages[index].style.display = 'none';
                     navLinks[index].style.background = 'none';
                     navLinks[1].style.background = '#0052D468';
-                    pages[0].style.display = 'block';
+                    pages[1].style.display = 'block';
                   break;
                 case navLinks[2]:
                     pages[index].style.display = 'none';
                     navLinks[index].style.background = 'none';
                     navLinks[2].style.background = '#0052D468';
-                    pages[1].style.display = 'block';
+                    pages[2].style.display = 'block';
                   break;
                 case navLinks[3]:
                     pages[index].style.display = 'none';
                     navLinks[index].style.background = 'none';
                     navLinks[3].style.background = '#0052D468';
-                    pages[2].style.display = 'block';
+                    pages[3].style.display = 'block';
                   break;
                 case navLinks[4]:
                     pages[index].style.display = 'none';
                     navLinks[index].style.background = 'none';
                     navLinks[4].style.background = '#0052D468';
-                    pages[3].style.display = 'block';
+                    pages[4].style.display = 'block';
                   break;
                 case navLinks[5]:
                     pages[index].style.display = 'none';
                     navLinks[index].style.background = 'none';
                     navLinks[5].style.background = '#0052D468';
-                    pages[4].style.display = 'block';
+                    pages[5].style.display = 'block';
                   break;
                 default:
                     navLinks[0];
