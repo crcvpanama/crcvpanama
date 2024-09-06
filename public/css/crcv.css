@@ -1062,12 +1062,18 @@ summary:hover {
 .content--videos span {
 	display: flex;
 	position: relative;
+	flex-wrap: nowrap;
 	flex-direction: row;
-	flex-wrap: wrap;
+/*	flex-wrap: wrap;*/
 	justify-content: space-evenly;
 	margin: auto;
 	gap: 2em;
 	margin: 40px 0;
+}
+
+.content--videos span article {
+	width: 560px;
+	height: auto;
 }
 
 .contacto {
@@ -1145,7 +1151,8 @@ summary:hover {
 .map h5 {
 	font-size: 18px;
 	text-align: left;
-	margin: .6em;
+	margin-top:0;
+/*	margin: .6em;*/
 }
 
 .contact--iframe {
@@ -1280,6 +1287,7 @@ summary:hover {
 	min-width: 150px;
 	max-width: 300px;
 	height: auto;
+	gap: 1em;
 }
 
 .local-in h2{
@@ -1815,6 +1823,10 @@ summary:hover {
 
 	.whatsapp--numbers h4 {
 		margin: .2em 0;
+	}
+
+	.content--videos span {
+		flex-wrap: wrap;
 	}
 
 }
