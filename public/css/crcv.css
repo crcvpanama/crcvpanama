@@ -643,7 +643,7 @@ summary:hover {
 	max-width: 400px;
 	height: auto;
 	text-align: justify;
-	padding: .5em;
+/*	padding: .5em;*/
 }
 
 .img--caption h3 {
@@ -822,6 +822,10 @@ summary:hover {
 	background: #36D1DC;
 	background: linear-gradient(to right, #36D1DC50 0%, #36D1DC8c 100%);
 	background: -webkit-linear-gradient(to right, #36D1DC50 0%, #36D1DC8c 100%);
+}
+
+.list-diagnostic h4 {
+	color: #2b2b2b;
 }
 
 .diag ul li {
