@@ -1045,7 +1045,7 @@ details {
 	height: auto;
 }
 
-.content--videos span {
+.content--videos div {
 	display: flex;
 	position: relative;
 	flex-wrap: nowrap;
@@ -1057,7 +1057,7 @@ details {
 	margin: 40px 0;
 }
 
-.content--videos span article {
+.content--videos div div {
 	width: 560px;
 	height: auto;
 }
@@ -1815,8 +1815,16 @@ details {
 		margin: .2em 0;
 	}
 
-	.content--videos span {
-		flex-wrap: wrap;
+	.content--videos div {
+		display: block;
+/*		flex-wrap: wrap;*/
+	}
+
+		.content--videos div div {
+/*		display: block;*/
+		width:100%;
+
+/*		flex-wrap: wrap;*/
 	}
 
 }
