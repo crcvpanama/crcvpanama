@@ -137,23 +137,23 @@ a {
 	gap: .8em;
 }
 
-.social--line > article i {
+.social--line > div i {
 	font-size: 16px;
 }
 
-.social--line article .facebook i {
+.social--line div .facebook i {
 	color: #3b5998;
 }
 
-.social--line article .whatsapp i {
+.social--line div .whatsapp i {
 	color: #25D366;
 }
 
-.social--line article .youtube i {
+.social--line div .youtube i {
 	color: #c4302b;
 }
 
-.social--line article .instagram i {
+.social--line div .instagram i {
 	background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
     -webkit-background-clip: text;
 	background-clip: text;
@@ -763,37 +763,6 @@ summary:hover {
 	z-index: 3000;
 }
 
-/*.arrows, 
-.arrows-home {
-	display: flex;
-	flex-direction: row;
-	position: absolute;
-	width: 100%;
-	top: 50%;
-	height: auto;
-	justify-content: space-between;
-	z-index: 4000;
-}
-
-.prev,
-.next {
-	position: relative;
-	background-color: rgba(30, 30, 30, 0.2);
-	z-index: 4000;
-	margin-right: 10px;
-	padding: 15px 5px;
-	cursor: pointer;
-}
-
-.prev-home,
-.next-home {
-	position: relative;
-	background-color: rgba(200, 200, 200, 0.8);
-	z-index: 4000;
-	padding: 15px 5px;
-	cursor: pointer;
-}*/
-
 .pages {
 	position: relative;
 	justify-content: center;
@@ -939,7 +908,7 @@ summary:hover {
 	color: #fafafa;
 }
 
-.in-img p {
+.in-img .hh {
 	color: #fafafa;
 	display: flex;
 	position: relative;
@@ -1236,7 +1205,7 @@ summary:hover {
 	margin: 0 auto;
 }
 
-.social article {
+.social div {
 	margin: 10px;
 	
 }
