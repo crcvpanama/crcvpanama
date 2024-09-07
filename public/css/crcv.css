@@ -642,7 +642,8 @@ summary:hover {
 	object-position: center;
 	min-width: 500px;
 	height: 350px;
-	margin-top: 5em;
+	margin: 4.5em auto auto auto;
+
 }
 
 .img--caption {
@@ -1734,11 +1735,6 @@ details {
 		margin: 40px 0;
 		width: 100%;
 		height: auto;
-	}
-
-	details {
-		max-width:55%;
-		z-index: 2;
 	}
 
 	.slide-img-a img {
