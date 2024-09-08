@@ -1666,7 +1666,7 @@ details {
 	.img-container img{
 		margin-top: .7em;
 		min-width: 300px;
-/*		width: 100%;*/
+		width: 100%;
 		height: 350px;
 	}
 
