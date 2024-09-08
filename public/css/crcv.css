@@ -625,6 +625,7 @@ summary:hover {
 
 .img--container {
 	display: flex;
+	position: relative;
 	 flex-direction: row; 
 	 flex-wrap: nowrap; 
 	/* grid-template-columns: repeat(auto-fill, minmax(300px, fill)); */
@@ -652,7 +653,7 @@ summary:hover {
 	min-width: 300px;
 	height: auto;
 	text-align: justify;
-	padding: .5em;
+	padding: 4em;
 }
 
 details {
@@ -661,7 +662,11 @@ details {
 	padding: .4em 1em;
 }
 
-.img--caption h3 {
+.img--container h3 {
+	display: flex;
+	position: absolute;
+	top: 0;
+	left: 18%;
 	font-weight: 900;
 	text-align: center;
 	margin-bottom: 20px;
@@ -672,6 +677,10 @@ details {
 	color: #1b2b1b;
 	margin: .5em;
 }
+
+/*.img--caption p {
+	margin-top: 4.5em;
+}*/
 
 .img--caption p, details p {
 	display: flex;
@@ -1660,6 +1669,10 @@ details {
 		height: auto;
 	}
 
+	.img--container h3{
+		color: white;
+	}
+
 	.img-container-a {
 /*		max-width: 0;*/
 		width: 100%;	
@@ -1773,6 +1786,7 @@ details {
 		max-width: none;
 		width: 100%;
 		height: auto;
+		padding: 0;
 	}
 
 	.santiago {
@@ -1860,7 +1874,7 @@ details {
 		max-width: 900px;
 		height: auto;
 		text-align: justify;
-		padding: .5em;
+		padding: 4em;
 	}
 }
 
