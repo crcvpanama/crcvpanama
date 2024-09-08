@@ -1440,6 +1440,10 @@ details {
 
 @media (width <= 800px) {
 
+	.privacidad  iframe{
+		width: 100%;
+	}
+
 	.whatsapp--numbers {
 		left: 20%;
 		height: auto;
