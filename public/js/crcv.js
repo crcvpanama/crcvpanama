@@ -85,11 +85,21 @@ function slide() {
 
 setInterval(slide, 4000);
 
+// let pages = ['a','b','c','d','e','f'];
+
+// console.log(pages[0]);
 const navLinks = document.querySelectorAll('.nav-link');
-const pages = document.getElementsByClassName('page');
+// const main = document.querySelector('main');
+// console.log(main);
+
+// const newPage = main.querySelector('.item:nth-child(2)');
+
+const pages = document.querySelectorAll('.page');
 // console.log(navLinks);
 
-function nav(a) {
+function nav() {
+
+    let newDiv = document.createElement('div');
     for(let i=0;i<navLinks.length;i++){
         navLinks[i].addEventListener('click', () => {
             for(let index in pages) {
@@ -107,7 +117,8 @@ function nav(a) {
                     navLinks[index].style.background = 'none';
                     navLinks[1].style.background = '#0052D468';
                     pages[1].style.display = 'block';
-                  break;
+
+                    break;
                 case navLinks[2]:
                     pages[index].style.display = 'none';
                     navLinks[index].style.background = 'none';
@@ -201,3 +212,18 @@ for(let i=0;i<summary.length;i++) {
 let date = document.querySelector('.date');
 
 date.append(new Date ().getFullYear ());
+
+
+
+
+// <div class="pages">
+           
+
+            
+
+            
+
+            
+
+            
+//         </div>
