@@ -1132,6 +1132,7 @@ details {
 .cont--A,
 .cont--B {
 	display: flex;
+	position: relative;
 	justify-content: space-evenly;
 	align-items: center;
 	width: 100%;
@@ -1833,7 +1834,7 @@ details {
 	}
 
 	.contact--iframe {
-		min-width: 350px;
+		min-width: 330px;
 	}
 
 	.whatsapp--numbers div{
