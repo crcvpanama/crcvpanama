@@ -1644,6 +1644,7 @@ details {
 		object-position: top;
 		object-fit: fill;
 		background-position: right;
+		padding: 0;
 		z-index: -1;
 	}
 
