@@ -43,9 +43,9 @@ function detectCookie(cname) {
     return false;
 };
 
-$(document).ready(function() {
+// $(document).ready(function() {
     init();
-});
+// });
 
 function init(){
     bloqueRGPD = document.querySelector('.cookieBox');

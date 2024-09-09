@@ -654,7 +654,7 @@ summary:hover {
 	min-width: 300px;
 	height: auto;
 	text-align: justify;
-	padding: 4em;
+	padding: 4em .5em;
 }
 
 details {
@@ -667,7 +667,7 @@ details {
 	display: flex;
 	position: absolute;
 	top: 0;
-	left: 18%;
+	left: 14%;
 	font-weight: 900;
 	text-align: center;
 	margin-bottom: 20px;
@@ -1154,7 +1154,7 @@ details {
 	font-size: 18px;
 	text-align: left;
 	margin-top:0;
-/*	margin: .6em;*/
+/*	margin: .3em;*/
 }
 
 .contact--iframe {
@@ -1184,8 +1184,8 @@ details {
 	text-align: justify;
 }
 
-.geo a h4{
-	margin-bottom: 5px;
+.geo a h5{
+	margin-bottom: .4em;
 }
 
 .geo a:hover {
@@ -1672,7 +1672,9 @@ details {
 	}
 
 	.img--container h3{
-		color: white;
+		position: relative;
+		left: 0;
+		color: #303030;
 	}
 
 	.img-container-a {
@@ -1807,7 +1809,7 @@ details {
 	}
 
 	.local-in {
-		display: block;
+/*		display: block;*/
 		position: relative;
 		margin-bottom: .5em;
 		/*flex-wrap: wrap;
@@ -1866,8 +1868,8 @@ details {
 
 @media (width >= 1428px) {
 	.img--container img {
-		min-width: 700px;
-		height: 500px;
+		min-width: 600px;
+		height: 400px;
 	}
 
 	.img--caption {
@@ -1876,7 +1878,7 @@ details {
 		max-width: 900px;
 		height: auto;
 		text-align: justify;
-		padding: 4em;
+		padding: 4em .5em;
 	}
 }
 
