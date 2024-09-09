@@ -17,11 +17,11 @@ body {
 /*	min-height: 100dvh;*/
 	font-family: "Roboto", system-ui;
 	font-optical-sizing: auto;
-	/* font-family: "Arial", sans-serif;
-	font-family: "Open Sans", sans-serif;
-	font-family: "Helvetica", sans-serif;
-	font-family: "Monospace", sans-serif; */
-	/* font-family: "Poppins", system-ui; */
+/*	 font-family: "Arial", sans-serif;*/
+/*	font-family: "Open Sans", sans-serif;*/
+/*	font-family: "Helvetica", sans-serif;*/
+/*	font-family: "Monospace", sans-serif; */
+/*	 font-family: "Poppins", system-ui; */
 /*	background-color: #36D1DC;*/
 	background: #36D1DC;
 	background: -webkit-linear-gradient(to right, #36D1DC, #36D1DC);
@@ -819,12 +819,17 @@ details {
 	background: -webkit-linear-gradient(to right, #36D1DC50 0%, #36D1DC8c 100%);
 }
 
-.list-diagnostic h4 {
-	color: #2b2b2b;
+.list--diagnostic h4 {
+	color: #101010;
+	margin-bottom: .5em;
 }
 
 .diag ul li {
 	margin-bottom: 1em;
+}
+
+.list--diagnostic ul li strong {
+	color: #101010;
 }
 
 .home-start {
@@ -866,7 +871,7 @@ details {
 	display: block;
 	position: relative;
 	width: 100%;
-	min-height: 600px;
+	min-height: 500px;
 	margin: 0 auto;
 	background-position: center;
 	background-repeat: no-repeat;
@@ -886,7 +891,8 @@ details {
 	align-self: center;
 	justify-content: center;
 	font-weight: 400;
-	font-size: 1rem;
+	font-size: 2rem;
+	letter-spacing: .03em;
 	color: white;
 	text-align: justify;
 	background-size: cover;
@@ -902,11 +908,11 @@ details {
 
 .home-slider img {
 	position: absolute;
-	width: 90%;
+	width: 100%;
 	height: 100%;
 	object-fit: fill;
-	padding: 0 2em;
-	margin: 2em;
+	padding: 0 .5em;
+	margin: .2em;
 	justify-self: center;
 	align-self: center;
 	z-index: -1;
