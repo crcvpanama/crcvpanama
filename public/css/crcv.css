@@ -7,14 +7,14 @@
 	box-sizing: border-box;
 }
 
- /*html {
+html {
 	width: auto;
 	min-height: 100lvh;
-} */
+} 
 
 body {
 	width: auto;
-/*	min-height: 100dvh;*/
+	min-height: 100lvh;
 	font-family: "Roboto", system-ui;
 	font-optical-sizing: auto;
 /*	 font-family: "Arial", sans-serif;*/
