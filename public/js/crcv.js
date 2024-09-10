@@ -153,8 +153,8 @@ function nav() {
 
 nav();
 
-let buttonParr = document.querySelectorAll(".button__parr");
-let parr = document.querySelectorAll(".diag__parr");
+const buttonParr = document.querySelectorAll(".button__parr");
+const parr = document.querySelectorAll(".diag__parr");
 
 let whatsAppWiget = document.querySelector(".whatsapp--wiget");
 let whatsAppNumbers = document.querySelector(".whatsapp--numbers");
@@ -164,6 +164,7 @@ function nums(a,b) {
     
         a[i].addEventListener('click', () => {
             b[i].classList.toggle('hide__parr');
+            parr.style.fontSize = "16px";
 
         });
     }
