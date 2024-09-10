@@ -16,7 +16,7 @@ body {
 	width: auto;
 	min-height: 100lvh;
 	font-family: "Roboto", sans-serif;
-/*	font-optical-sizing: auto;*/
+	font-optical-sizing: auto;
 /*	 font-family: "Arial", sans-serif;*/
 /*	font-family: "Open Sans", sans-serif;*/
 /*	font-family: "Helvetica", sans-serif;*/
@@ -666,6 +666,10 @@ details {
 	width: 100%;
 	padding: .4em 1em;
 /*	font-size: 16px;*/
+}
+
+details[open] {
+	font-size: 16px;
 }
 
 .img--container h3 {
