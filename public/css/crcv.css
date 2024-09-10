@@ -15,8 +15,8 @@ html {
 body {
 	width: auto;
 	min-height: 100lvh;
-	font-family: "Roboto", system-ui;
-/*	font-optical-sizing: auto;*/
+	font-family: "Roboto", sans-serif;
+	font-optical-sizing: auto;
 /*	 font-family: "Arial", sans-serif;*/
 /*	font-family: "Open Sans", sans-serif;*/
 /*	font-family: "Helvetica", sans-serif;*/
@@ -1216,7 +1216,6 @@ details {
 	margin-bottom: 5px;
 }
 
-
 /*FOOTER*/
 .foot {
 	background-color: #303030;
@@ -1364,8 +1363,6 @@ details {
 .nav-button {
 	display: none;
 }
-
-
 /*CONTACT PAGE*/
 
 .card-header {
@@ -1497,7 +1494,6 @@ details {
 	  overflow-y: hidden;
 	}
 			
-
 	.header {
 		display: block;
 		align-items: center;
@@ -1505,7 +1501,6 @@ details {
 		background: #36D1DC;
 		background: -webkit-linear-gradient(to right, #36D1DC, #36D1DC);
 		background: linear-gradient(to right, #36D1DC, #36D1DC);
-	
 	}
 
 	.header-title {
@@ -1572,7 +1567,6 @@ details {
 	.cont--A,
 	.cont--B,
 	#revers {
-
 		display:block;
 /*		flex-direction: column;*/
 	}
@@ -1729,7 +1723,6 @@ details {
 		justify-content: center;
 	}
 
-
 	.diag-img {
 		width: 250px;
 		height: 350px;
@@ -1823,10 +1816,6 @@ details {
 /*		display: block;*/
 		position: relative;
 		margin-bottom: .5em;
-		/*flex-wrap: wrap;
-		flex-direction: row;
-		justify-content: space-between;*/
-		/* width: 40%; */
 	}
 
 	.aside-social-web {
@@ -1871,8 +1860,6 @@ details {
 		.content--videos div div {
 /*		display: block;*/
 		max-width:100%;
-
-/*		flex-wrap: wrap;*/
 	}
 
 }
