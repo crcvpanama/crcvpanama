@@ -646,10 +646,9 @@ summary:hover {
 .img--container img {
 	object-fit: fill;
 	object-position: center;
-	min-width: 500px;
+	min-width: 400px;
 	height: 350px;
-	margin: 4.5em auto auto auto;
-
+	margin: 5em auto auto auto;
 }
 
 .img--caption {
@@ -658,7 +657,8 @@ summary:hover {
 	min-width: 300px;
 	height: auto;
 	text-align: justify;
-	padding: 4em .5em;
+	padding: 4em .5em 0 .5em;
+	overflow: hidden;
 }
 
 details {
@@ -937,7 +937,7 @@ details {
 }
 
 .in-img span {
-	font-size: clamp(20px, 3vw, 22px);
+	font-size: clamp(20px, 3vw, 29px);
 	color: #fafafa;
 }
 
