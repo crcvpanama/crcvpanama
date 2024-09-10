@@ -669,7 +669,7 @@ details {
 }
 
 details[open] p, details[open] ul {
-	font-size: 16px;
+	font-size: 14px;
 }
 
 .img--container h3 {
