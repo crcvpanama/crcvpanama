@@ -668,7 +668,7 @@ details {
 /*	font-size: 16px;*/
 }
 
-details[open] {
+details[open] p, details[open] ul {
 	font-size: 16px;
 }
 
