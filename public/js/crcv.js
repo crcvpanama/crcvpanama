@@ -164,7 +164,7 @@ function nums(a,b) {
     
         a[i].addEventListener('click', () => {
             b[i].classList.toggle('hide__parr');
-            parr.style.fontSize = "16px";
+            // parr.style.fontSize = "16px";
 
         });
     }
