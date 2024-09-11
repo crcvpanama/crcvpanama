@@ -668,7 +668,7 @@ details {
 	font-size: 14px;
 }
 
-details[open] p, details[open] ul {
+details[open] p, details[open] ul li {
 	font-size: 14px;
 }
 
