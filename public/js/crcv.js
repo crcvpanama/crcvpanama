@@ -163,7 +163,7 @@ function nums(a,b) {
     for(let i= 0;i<buttonParr.length;i++){
     
         a[i].addEventListener('click', () => {
-            b[i].classList.toggle('hide__parr');
+            b[i].classList.toggle('diag__parrB');
             // parr.style.fontSize = "16px";
 
         });
