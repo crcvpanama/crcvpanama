@@ -182,6 +182,7 @@ function hideSummary(a) {
     for(let i=0;i<summary.length;i++){
         summary[a].addEventListener('click', () => {
             summary[a].style.display = 'none';
+            summary.style.fontSize = ".8rem";
         });
     }
 };
