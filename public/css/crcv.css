@@ -668,7 +668,9 @@ details {
 	font-size: 14px;
 }
 
-details[open] p, details[open] ul > li {
+details[open] p, 
+details[open] ul, 
+details[open] ul li {
 	font-size: 14px;
 	scale: 1;
 }
@@ -890,7 +892,6 @@ details[open] p, details[open] ul > li {
 	background: linear-gradient( to top, rgba(0, 0, 0, 0.6) 0%, rgba(0, 0, 0, 0.1) 100% );
 }
 
-
 .home-slider {
 	display: none; 
 	position: absolute;
@@ -1069,7 +1070,6 @@ details[open] p, details[open] ul > li {
 	background: linear-gradient(to right, #36D1DC50 0%, #36D1DC8c 100%);
 	background: -webkit-linear-gradient(to right, #36D1DC50 0%, #36D1DC8c 100%);
 }
-
 
 .content--videos {
 	width: auto;
