@@ -663,7 +663,7 @@ summary:hover {
 
 details,
 details ul, 
-.slide-img details li {
+.slide-img details ul li {
 /*	grid-area: 2 / 1 / 3 / 3;*/
 	width: 100%;
 	padding: .4em .1em;
@@ -672,7 +672,7 @@ details ul,
 
 details[open] p, 
 details[open] ul, 
-.slide-img details[open] li {
+.slide-img details[open] ul li {
 	font-size: .8rem;
 /*	scale: 1;*/
 }
