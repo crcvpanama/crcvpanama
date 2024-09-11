@@ -668,8 +668,9 @@ details {
 	font-size: 14px;
 }
 
-details[open] p, details[open] ul li {
+details[open] p, details[open] ul > li {
 	font-size: 14px;
+	scale: 1;
 }
 
 .img--container h3 {
