@@ -661,18 +661,20 @@ summary:hover {
 	overflow: hidden;
 }
 
-details {
+details,
+details ul, 
+details ul li {
 /*	grid-area: 2 / 1 / 3 / 3;*/
 	width: 100%;
-	padding: .4em 1em;
-	font-size: 14px;
+	padding: .4em .1em;
+	font-size: .7rem;
 }
 
 details[open] p, 
 details[open] ul, 
 details[open] ul li {
-	font-size: 14px;
-	scale: 1;
+	font-size: .7rem;
+/*	scale: 1;*/
 }
 
 .img--container h3 {
@@ -700,7 +702,7 @@ details[open] ul li {
 	min-width: 300px;
 	text-align: justify;
 	margin: 10px auto;
-	font-size: 16px;
+/*	font-size: 16px;*/
 	color: #1b2b1b;
 	align-items: start;
 } 
@@ -709,7 +711,7 @@ details[open] ul li {
 	text-align: justify;
 	padding-left: 30px;
 	color: #1b2b1b;
-	font-size: 16px;
+/*	font-size: 16px;*/
 
 }
 .cont-aside {
