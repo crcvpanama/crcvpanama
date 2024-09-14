@@ -24,11 +24,11 @@ body {
 /*	 font-family: "Poppins", system-ui; */
 /*	background-color: #36D1DC;*/
 /*	background-image: ;*/
-	background: #36D1DC;
-	background: -webkit-linear-gradient(to right, #36D1DC, #36D1DC);
-	background: linear-gradient(to right, #36D1DC, #36D1DC40);
-	background-attachment: fixed;
-	background-repeat: no-repeat;
+/*	background: #36D1DC;*/
+/*	background: -webkit-linear-gradient(to right, #36D1DC, #36D1DC);*/
+/*	background: linear-gradient(to right, #36D1DC, #36D1DC40);*/
+/*	background-attachment: fixed;*/
+/*	background-repeat: no-repeat;*/
 /*	clip-path: polygon(39% 1%, 54% 1%, 55% 98%, 55% 98%);*/
 }
 
@@ -186,18 +186,20 @@ a {
 
 .social--line .whatsapp i:hover {
 /*	content: "WhatsApp";*/
-	filter: drop-shadow(0 -6mm 4px green);
+	filter: drop-shadow(0 -6mm 4px #008000);
 	transition: all .5s ease-in-out;
 }
 
 main {
 	position: relative;
-/*  	padding-bottom: 100px;*/
+	background: linear-gradient(to right, #36D1DC, #36D1DC40);
+  padding-bottom: 50px;
+  z-index: -1;
 }
 
-footer {
+/*footer {
 	margin-top: 100px;
-}
+}*/
 
 .header {
 	display: flex;
@@ -221,7 +223,7 @@ footer {
 	object-position: center;
 	object-fit: fill;
 	max-width: 600px;
-	height: 400px;
+	height: 350px;
 	border-radius: 30%;
 }
 
@@ -262,7 +264,7 @@ footer {
 	position: relative;
 	flex-direction: row-reverse;
 /*	background: #36D1DC;*/
-/*	background: linear-gradient(to right, #36D1DC, #36D1DC80);*/
+	background: linear-gradient(to right, #36D1DC, #36D1DC40);
 /*	background: -webkit-linear-gradient(to right, #36D1DC, #36D1DC80);*/
 	height: 50px;
 	border-bottom: 4px solid #a1a1a1c8;
