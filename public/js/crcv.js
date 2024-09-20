@@ -84,67 +84,63 @@ function slide() {
 };
 
 setInterval(slide, 4000);
-
-// let pages = ['a','b','c','d','e','f'];
-
-// console.log(pages[0]);
 const navLinks = document.querySelectorAll('.nav-link');
 // const main = document.querySelector('main');
-// console.log(main);
 
 // const newPage = main.querySelector('.item:nth-child(2)');
 
 const pages = document.querySelectorAll('.page');
-// console.log(navLinks);
 
 function nav() {
 
-    let newDiv = document.createElement('div');
+    // let newDiv = document.createElement('div');
     for(let i=0;i<navLinks.length;i++){
         navLinks[i].addEventListener('click', () => {
-            for(let index in pages) {
+            for(let j=0;j<pages.length;j++) {
 
             switch (navLinks[i]) {
 
                 case navLinks[0]:
-                    pages[index].style.display = 'none';
-                    navLinks[index].style.background = 'none';
+                    pages[j].style.display = 'none';
+                    navLinks[j].style.background = 'none';
                     navLinks[0].style.background = '#0052D468';
                     pages[0].style.display = 'block';
                   break;
                 case navLinks[1]:
-                    pages[index].style.display = 'none';
-                    navLinks[index].style.background = 'none';
+                    console.log(pages[j]);
+                    pages[j].style.display = 'none';
+                    navLinks[j].style.background = 'none';
                     navLinks[1].style.background = '#0052D468';
                     pages[1].style.display = 'block';
-
                     break;
                 case navLinks[2]:
-                    pages[index].style.display = 'none';
-                    navLinks[index].style.background = 'none';
+                    pages[j].style.display = 'none';
+                    navLinks[j].style.background = 'none';
                     navLinks[2].style.background = '#0052D468';
                     pages[2].style.display = 'block';
                   break;
                 case navLinks[3]:
-                    pages[index].style.display = 'none';
-                    navLinks[index].style.background = 'none';
+                    pages[j].style.display = 'none';
+                    navLinks[j].style.background = 'none';
                     navLinks[3].style.background = '#0052D468';
                     pages[3].style.display = 'block';
                   break;
                 case navLinks[4]:
-                    pages[index].style.display = 'none';
-                    navLinks[index].style.background = 'none';
+                    pages[j].style.display = 'none';
+                    navLinks[j].style.background = 'none';
                     navLinks[4].style.background = '#0052D468';
                     pages[4].style.display = 'block';
                   break;
                 case navLinks[5]:
-                    pages[index].style.display = 'none';
-                    navLinks[index].style.background = 'none';
+                    pages[j].style.display = 'none';
+                    navLinks[j].style.background = 'none';
                     navLinks[5].style.background = '#0052D468';
                     pages[5].style.display = 'block';
                   break;
                 default:
-                    navLinks[0];
+                    // navLinks[0];
+                    pages[j].style.display = 'none';
+                    navLinks[j].style.background = 'none';
                 }
             }
         })
@@ -182,7 +178,7 @@ function hideSummary(a) {
     for(let i=0;i<summary.length;i++){
         summary[a].addEventListener('click', () => {
             summary[a].style.display = 'none';
-            summary.style.fontSize = ".8rem";
+            // summary.style.fontSize = ".8rem";
         });
     }
 };
