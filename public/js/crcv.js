@@ -107,7 +107,6 @@ function nav() {
                     pages[0].style.display = 'block';
                   break;
                 case navLinks[1]:
-                    console.log(pages[j]);
                     pages[j].style.display = 'none';
                     navLinks[j].style.background = 'none';
                     navLinks[1].style.background = '#0052D468';
@@ -210,18 +209,3 @@ for(let i=0;i<summary.length;i++) {
 let date = document.querySelector('.date');
 
 date.append(new Date ().getFullYear ());
-
-
-
-
-// <div class="pages">
-           
-
-            
-
-            
-
-            
-
-            
-//         </div>
