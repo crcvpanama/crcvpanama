@@ -32,14 +32,12 @@ body {
 /*	clip-path: polygon(39% 1%, 54% 1%, 55% 98%, 55% 98%);*/
 }
 
-/*main {
-	background-image: url('../img/logo.png');
-	background-repeat: no-repeat;
-	background-position: center;
-	background-size: contain;
-		background-clip: polygon(52% 13%, 41% 39%, 60% 100%, 45% 81%, 31% 46%, 50% 0);
+main {
+/*	position: relative;*/
+	background: linear-gradient(to right, #36D1DC, #36D1DC40);
+  padding-bottom: 50px;
 }
-*/
+
 h1,h2,h3 {
 	margin-bottom: 40px;
 	padding: 10px;
@@ -188,13 +186,6 @@ a {
 /*	content: "WhatsApp";*/
 	filter: drop-shadow(0 -6mm 4px #008000);
 	transition: all .5s ease-in-out;
-}
-
-main {
-	position: relative;
-	background: linear-gradient(to right, #36D1DC, #36D1DC40);
-  padding-bottom: 50px;
-/*  z-index: -1;*/
 }
 
 /*footer {
@@ -415,7 +406,7 @@ summary {
 	display: block;
 	width: 120px;
 	position: relative;
-	background-color: #0052D430;
+	background-color: #0052D410;
 	color: #0052D4;
 	text-align: center;
 	transition: .4s ease-in;
@@ -445,6 +436,7 @@ summary:hover {
 }
 
 .whatsapp--wiget {
+/*	float: right;*/
 	position: fixed;
 	background-image: url('../img/svg/WhatsApp.svg');
 	width: 70px;
@@ -456,6 +448,9 @@ summary:hover {
 	transition: all .4s ease-in;
 	animation: alert 6.5s linear 40ms infinite;
 	opacity: .8;
+/*	justify-self: right;*/
+/*	border: 1px solid black;*/
+/*	margin: 0 0 0 auto;*/
 }
 
 .whatsapp--wiget:hover {
@@ -554,6 +549,7 @@ summary:hover {
 	justify-content: space-around;
 	width: 100%;
 	height: auto;
+	margin: 0 auto 20px auto;
 }
 
 .diag-art {
@@ -1087,7 +1083,7 @@ details[open] ul,
 
 .FQs details > p {
 	background: #eeeeeec8;
-	max-width: 350px;
+	max-width: 250px;
 	padding: .7em;
 	border-radius: 10px;
 	margin: .3em 0;
