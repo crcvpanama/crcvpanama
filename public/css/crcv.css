@@ -406,7 +406,7 @@ summary {
 	display: block;
 	width: 120px;
 	position: relative;
-	background-color: #0052D410;
+	background-color: #0052D409;
 	color: #0052D4;
 	text-align: center;
 	transition: .4s ease-in;
@@ -421,7 +421,7 @@ summary:hover {
 	padding: .2em;
 	z-index: 1;
 	transition: all 0.3s ease-in-out;
-	border-radius: 4%;
+	border-radius: 10px;
 }
 
 .summary::before,
@@ -1083,7 +1083,7 @@ details[open] ul,
 
 .FQs details > p {
 	background: #eeeeeec8;
-	max-width: 250px;
+	min-width: 250px;
 	padding: .7em;
 	border-radius: 10px;
 	margin: .3em 0;
