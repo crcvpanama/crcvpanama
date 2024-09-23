@@ -577,8 +577,9 @@ summary:hover {
 }
 
 #img--ozono {
-	object-fit: fill;
-	background: #1695d9c8;
+	object-fit: contain;
+	aspect-ratio: 1 / 1;
+	background: #1695d949;
 }
 
 .diag-li {
@@ -826,7 +827,7 @@ details[open] ul,
 }
 
 .mB {
-	display: none;
+/*	display: none;*/
 	position: relative;
 	margin: 0 auto;
 }
@@ -840,7 +841,7 @@ details[open] ul,
 }
 
 .diag {
-	display: none;
+/*	display: none;*/
 	position: relative;
 	width: 100%;
 	height: fit-content;
@@ -1024,7 +1025,7 @@ details[open] ul,
 }
 
 .somos {
-	display: none;
+/*	display: none;*/
 	position: relative;
 	width: 100%;
 	padding: 20%;
@@ -1038,7 +1039,7 @@ details[open] ul,
 }
 
 .FQs {
-	display: none;
+/*	display: none;*/
 	position: relative;
 	width: 100%;
 	height: fit-content;
@@ -1097,7 +1098,7 @@ details[open] ul,
 }
 
 .service {
-	display: none;
+/*	display: none;*/
 	position: relative;
 	scale: 1;
 	width: 100%;
@@ -1116,7 +1117,7 @@ details[open] ul,
 }
 
 .test {
-	display: none;
+/*	display: none;*/
 	min-height: 80dvh;
 	padding: 20px 4%;
 	background: #36D1DC;
@@ -1147,7 +1148,7 @@ details[open] ul,
 }
 
 .contacto {
-	display: none;
+/*	display: none;*/
 	position: relative;
 	width: 100%;
 	height: auto;
