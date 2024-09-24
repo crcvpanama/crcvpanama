@@ -43,9 +43,9 @@ function detectCookie(cname) {
     return false;
 };
 
-$(document).ready(function() {
+// $(document).ready(function() {
     init();
-});
+// });
 
 function init(){
     bloqueRGPD = document.querySelector('.cookieBox');
@@ -508,23 +508,21 @@ const listPages = [`
         ];
 
 function nDIv(a,b) {
-    if(a===undefined) {
-        home.style.display = 'block';
-        newDiv.innerHTML= "";
-        for(let j=0;j<navLinks.length;j++) {
-            navLinks[j].style.background = 'none';
-            navLinks[b].style.background = '#0052D468';
-        }
-    } else {
-        newDiv.innerHTML = listPages[a];
-        pages.insertBefore(newDiv, pagesChild);
-        home.style.display = 'none';
-        for(let j=0;j<navLinks.length;j++) {
-            navLinks[j].style.background = 'none';
-            navLinks[b].style.background = '#0052D468';
+    for(let j=0;j<navLinks.length;j++) {
+        if(a===undefined) {
+            home.style.display = 'block';
+            newDiv.innerHTML= "";
+                navLinks[j].style.background = 'none';
+                navLinks[b].style.background = '#0052D468';
+         } else {
+            newDiv.innerHTML = listPages[a];
+            pages.insertBefore(newDiv, pagesChild);
+            home.style.display = 'none';
+                navLinks[j].style.background = 'none';
+                navLinks[b].style.background = '#0052D468';
         }
     }
-}
+};
 
 function nav() {
     for(let i=0;i<navLinks.length;i++){
