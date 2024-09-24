@@ -563,11 +563,8 @@ let whatsAppNumbers = document.querySelector(".whatsapp--numbers");
 
 function nums(a,b) {
     for(let i= 0;i<buttonParr.length;i++){
-    
         a[i].addEventListener('click', () => {
             b[i].classList.toggle('diag__parrB');
-            // parr.style.fontSize = "16px";
-
         });
     }
 };
@@ -584,7 +581,6 @@ function hideSummary(a) {
     for(let i=0;i<summary.length;i++){
         summary[a].addEventListener('click', () => {
             summary[a].style.display = 'none';
-            // summary.style.fontSize = ".8rem";
         });
     }
 };
