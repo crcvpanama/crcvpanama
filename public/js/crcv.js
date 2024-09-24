@@ -87,7 +87,7 @@ setInterval(slide, 4000);
 const navLinks = document.querySelectorAll('.nav-link');
 const home = document.querySelector('.home-start');
 const pages = document.querySelector('.page');
-const oo = pages.querySelector('.item:nth-child(2)');
+const pagesChild = pages.querySelector('.item:nth-child(2)');
 const newDiv = document.createElement('div');
 
 
@@ -507,77 +507,49 @@ const listPages = [`
             </section>`
         ];
 
+function nDIv(a,b) {
+    if(a===undefined) {
+        home.style.display = 'block';
+        newDiv.innerHTML= "";
+        for(let j=0;j<navLinks.length;j++) {
+            navLinks[j].style.background = 'none';
+            navLinks[b].style.background = '#0052D468';
+        }
+    } else {
+        newDiv.innerHTML = listPages[a];
+        pages.insertBefore(newDiv, pagesChild);
+        home.style.display = 'none';
+        for(let j=0;j<navLinks.length;j++) {
+            navLinks[j].style.background = 'none';
+            navLinks[b].style.background = '#0052D468';
+        }
+    }
+}
+
 function nav() {
     for(let i=0;i<navLinks.length;i++){
-        navLinks[i].addEventListener('click', () => {   
-            for(let j=0;j<navLinks.length;j++) {
-            switch (navLinks[i]) {
-                case navLinks[0]:
-                    // listPages[0].style.display = 'none';
-                    navLinks[j].style.background = 'none';
-                    navLinks[0].style.background = '#0052D468';
-                    home.style.display = 'block';
-                    newDiv.innerHTML= "";
-                    pages.insertBefore(newDiv,oo);
+        navLinks[i].addEventListener('click', () => {
+            switch (i) {
+                case 0:
+                    nDIv(undefined,0);
                 break;
-                case navLinks[1]:
-                    home.style.display = 'none';
-                    navLinks[j].style.background = 'none';
-                    navLinks[1].style.background = '#0052D468';
-
-                    newDiv.innerHTML= listPages[0];
-                    
-                    pages.insertBefore(newDiv, oo);
+                case 1:
+                    nDIv(0,1);
                 break;
-                case navLinks[2]:
-                    // pages[i].style.display = 'none';
-                    home.style.display = 'none';
-                    navLinks[j].style.background = 'none';
-                    navLinks[2].style.background = '#0052D468';
-                    // pages[2].style.display = 'block';
-                    newDiv.innerHTML= listPages[1];
-                    // console.log(newDiv);
-                    
-                    pages.insertBefore(newDiv, oo);
+                case 2:
+                    nDIv(1,2);
                   break;
-                case navLinks[3]:
-                    // pages[i].style.display = 'none';
-                    home.style.display = 'none';
-                    navLinks[j].style.background = 'none';
-                    navLinks[3].style.background = '#0052D468';
-                    newDiv.innerHTML= listPages[2];
-                    // console.log(newDiv);
-                    
-                    pages.insertBefore(newDiv, oo);
-                    // pages[3].style.display = 'block';
+                case 3:
+                    nDIv(2,3);
                   break;
-                case navLinks[4]:
-                    // pages[i].style.display = 'none';
-                    home.style.display = 'none';
-                    navLinks[j].style.background = 'none';
-                    navLinks[4].style.background = '#0052D468';
-                    newDiv.innerHTML= listPages[3];
-                    // console.log(newDiv);
-                    
-                    pages.insertBefore(newDiv, oo);
-                    // pages[4].style.display = 'block';
+                case 4:
+                    nDIv(3,4);
                   break;
-                case navLinks[5]:
-                    home.style.display = 'none';
-                    // pages[i].style.display = 'none';
-                    navLinks[j].style.background = 'none';
-                    navLinks[5].style.background = '#0052D468';
-                    // pages[5].style.display = 'block';
-                    newDiv.innerHTML= listPages[4];
-                    // console.log(newDiv);
-                    
-                    pages.insertBefore(newDiv, oo);
+                case 5:
+                    nDIv(4,5);
                   break;
                 default:
-                    // navLinks[0];
-                    // pages.style.display = 'none';
-                    navLinks[j].style.background = 'none';
-                }
+                    nDIv(undefined,0);
             }
         })
     }
