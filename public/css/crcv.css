@@ -145,11 +145,11 @@ a {
 /*	grid-template-columns: auto auto auto auto;*/
 	margin: auto 10px;
 	padding: .2em;
-	gap: .8em;
+	gap: 1.5em;
 }
 
 .social--line > div i {
-	font-size: 16px;
+	font-size: 25px;
 }
 
 .social--line div .facebook i {
@@ -173,18 +173,18 @@ a {
 
 .social--line .youtube i:hover,
 .social--line .instagram i:hover {
-	filter: drop-shadow(0 -6mm 4px crimson);
+	filter: drop-shadow(0 -7mm 4px crimson);
 	transition: all .5s ease-in-out;
 }
 
 .social--line .facebook i:hover {
-	filter: drop-shadow(0 -6mm 4px #3b5998);
+	filter: drop-shadow(0 -7mm 4px #3b5998);
 	transition: all .5s ease-in-out;
 }
 
 .social--line .whatsapp i:hover {
 /*	content: "WhatsApp";*/
-	filter: drop-shadow(0 -6mm 4px #008000);
+	filter: drop-shadow(0 -7mm 4px #008000);
 	transition: all .5s ease-in-out;
 }
 
@@ -602,13 +602,13 @@ summary:hover {
 	scale: 1.1;
 	bottom: 0;
 	z-index: 3000;
-	padding: .4em;
+	padding: 1.5em .4em;
 /*	line-clamp: 4;*/
 }
 
 .diag__parr {	
 /*	display: contents;*/
-	display: block;
+	display: flex;
 	position: relative;
 	font-weight: 400;
 	background-color: #ffffff;
@@ -617,7 +617,10 @@ summary:hover {
 	letter-spacing: .1ch;
 	padding: .1em .3em;
 	width: 100%;
-	height: auto;
+	height: 340px;
+	align-items: center;
+	transition: all .3s ease-in;
+	overflow: hidden;
 }
 
 .diag__parrB {
@@ -625,6 +628,8 @@ summary:hover {
   -webkit-line-clamp: 3;
   -webkit-box-orient: vertical;  
   overflow: hidden;
+  height: 60px;
+/*  interpolate-size: allow-keywords;*/
 }
 
 
@@ -1611,17 +1616,19 @@ details[open] ul,
 	}
 
 	.collapse {
-		display: none;
+		display: block;
 		flex-direction: column;
 		position: relative;		
-		border-style: 2%;
+/*		border-style: 2%;*/
 		margin: 0;
 		padding: 0;		
-		opacity: .9;
+/*		opacity: .9;*/
 		top: 100%;
 		width: 100%;
-		height: auto;
+		height: 305px;
 		z-index: 3000;
+		overflow: hidden;
+		transition: all .7s ease-in;	
 	}
 
 	.cont--A,
@@ -1632,7 +1639,11 @@ details[open] ul,
 	}
 
 	.collapse-hide {
-		display: block;	
+/*		display: none;*/
+			height:0.01px;
+/*		height: none;*/
+		overflow: hidden;
+/*		transition: all 3s ease-in;	*/
 	}
 
 	.nav-bar {
