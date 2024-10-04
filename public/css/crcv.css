@@ -23,7 +23,6 @@ body {
 /*	font-family: "Monospace", sans-serif; */
 /*	 font-family: "Poppins", system-ui; */
 /*	background-color: #36D1DC;*/
-/*	background-image: ;*/
 /*	background: #36D1DC;*/
 /*	background: -webkit-linear-gradient(to right, #36D1DC, #36D1DC);*/
 /*	background: linear-gradient(to right, #36D1DC, #36D1DC40);*/
@@ -34,7 +33,10 @@ body {
 
 main {
 /*	position: relative;*/
-	background: linear-gradient(to right, #36D1DC, #36D1DC40);
+	background: #36D1DC;
+	background: -webkit-linear-gradient(to right, #36D1DC90, #F4F1EC);
+	background: linear-gradient(to right, #36D1DC90 0%, #36D1DC10 100%);
+/*	background: linear-gradient(to right, #36D1DC, #36D1DC40);*/
   padding-bottom: 50px;
 }
 
