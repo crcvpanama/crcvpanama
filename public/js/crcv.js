@@ -504,6 +504,7 @@ const listPages = [`
                     </li>
                 </ul>
             </div>
+
             </section>`
         ];
 
