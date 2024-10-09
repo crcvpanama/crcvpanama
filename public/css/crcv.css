@@ -1137,6 +1137,7 @@ details[open] ul,
 	gap: .5em;
 	margin: 0 auto;
 	justify-content: space-evenly;
+	overflow: hidden;
 }
 
 .content--videos div {
