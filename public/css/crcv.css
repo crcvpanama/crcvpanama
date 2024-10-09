@@ -1129,8 +1129,14 @@ details[open] ul,
 }
 
 .content--videos {
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: row;
 	width: auto;
 	height: auto;
+	gap: .5em;
+	margin: 0 auto;
+	justify-content: space-evenly;
 }
 
 .content--videos div {

@@ -365,21 +365,57 @@ const listPages = [`
             `<section class="test test-hidden page">
             <h2> Testimonios </h2>
             <div class="content--videos" id="testimonios">
-
-                <div>
                     <div>
-                        <video controls width="100%" height="315" playsinline oncontextmenu="return false">
+                        <video controls width="560" height="315" playsinline oncontextmenu="return false">
                             <source src="./public/videos/testimonio.mp4" type="video/mp4">
                         </video>
                     </div>
                     <div>
-                        <video controls width="100%" height="315" playsinline oncontextmenu="return false">
+                        <video controls width="560" height="315" playsinline oncontextmenu="return false">
                             <source src="./public/videos/testimoniob.mp4" type="video/mp4">
                         </video>
                     </div>
 
+                    <div>
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/tKOmWImuTZM?si=NNxJmmPOWI5nlo2W" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+                    </div>
+
+                    <div>
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/JJ2HkyXqt18?si=JA3wV68aoyLllVXo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    
+                    </div>
+
+                    <div>
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/gDn9I61-nqo?si=RVMWX8d3zRF5wMBb" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    
+                    </div>
+
+                    <div>
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/buC2wfa_W-c?si=8mp-Y0Fhy2pkWuNI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                        
+                    </div>
+
+                    <div>
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/7tp0ccfv9b8?si=mDb2Si5SFxGb8fts" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                        
+                    </div>
+
+                    <div>
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/6zhDTb__-WI?si=2wLU3CaZBihHtkIM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                        
+                    </div>
+
+                    <div>
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/YVKcvIpvGi8?si=D16cWbXj00z2SAEm" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                        
+                    </div>
+
+                    <div>
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/koNZTNhaz8A?si=ymr494YnDOkj3ytn" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                                
+                    </div>
                 </div>
-            </div>
             </section>`,
             `<section class="FQs fhidden page">
             <h2> Preguntas Frecuentes </h2>
