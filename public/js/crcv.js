@@ -590,9 +590,6 @@ for(let i=0;i<summary.length;i++) {
     hideSummary(i);
 }
 
-
-
-
 // window.onload = function() {
 //     var opar = document.getElementById('paragraph').innerHTML;
 
