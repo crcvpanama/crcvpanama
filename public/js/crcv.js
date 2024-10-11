@@ -87,9 +87,59 @@ setInterval(slide, 4000);
 const navLinks = document.querySelectorAll('.nav-link');
 const home = document.querySelector('.home-start');
 const pages = document.querySelector('.page');
+const pageB = document.querySelector('.pageB');
 const pagesChild = pages.querySelector('.item:nth-child(2)');
+const pagesChildB = pages.querySelector('.item:nth-child(3)');
+const pagesChildC = pages.querySelector('.item:nth-child(4)');
 const newDiv = document.createElement('div');
+const newSection = document.createElement('div');
+const imagesTest = document.getElementsByClassName('.images--test');
 
+let videosIds = [
+    'tKOmWImuTZM?si=NNxJmmPOWI5nlo2W',
+    'JJ2HkyXqt18?si=JA3wV68aoyLllVXo',
+    'gDn9I61-nqo?si=RVMWX8d3zRF5wMBb',
+    'buC2wfa_W-c?si=8mp-Y0Fhy2pkWuNI',
+    '7tp0ccfv9b8?si=mDb2Si5SFxGb8fts',
+    '6zhDTb__-WI?si=2wLU3CaZBihHtkIM',
+    'YVKcvIpvGi8?si=D16cWbXj00z2SAEm',
+    'koNZTNhaz8A?si=ymr494YnDOkj3ytn'
+];
+
+let imgTest = [
+    'testimonioA.jpg',
+    'testimonioB.jpg',
+    'testimonioC.jpg'
+    ];
+
+const YouTubeIDs = () => {
+    for (let i=0;i<videosIds.length;i++) {
+
+        playVideos = [
+            `<div class="container content--iframe">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/${videosIds[i]}" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>`
+            ];
+        newSection.style.display = 'flex';
+        newSection.style.flexDirection = 'row';
+        newSection.style.flexWrap = 'wrap';
+        newSection.style.justifyContent = 'space-around';
+        newSection.innerHTML += playVideos;
+        pages.insertBefore(newSection, pagesChildB);
+    };
+};
+
+
+const imgesTC = document.querySelector('.imgs--testA');
+
+function showTest() {
+    // imagesTest.style.width = '100%';
+    imagesTest.style.display = 'block';
+}
+
+// imagesTest.addEventListener('click', () => {
+//     imagesTest.classList.toggle('show--test');
+// });
 
 const listPages = [`
             <section class="service servicehidden page">
@@ -363,8 +413,8 @@ const listPages = [`
             </div>
             </section>`,
             `<section class="test test-hidden page">
-            <h2> Testimonios </h2>
-            <div class="content--videos" id="testimonios">
+                <h2> Testimonios </h2>
+                <div class="content--videos" id="testimonios">
                     <div>
                         <video controls width="560" height="315" playsinline oncontextmenu="return false">
                             <source src="./public/videos/testimonio.mp4" type="video/mp4">
@@ -375,45 +425,19 @@ const listPages = [`
                             <source src="./public/videos/testimoniob.mp4" type="video/mp4">
                         </video>
                     </div>
+                </div>
 
-                    <div>
-                        <iframe width="560" height="315" src="https://www.youtube.com/embed/tKOmWImuTZM?si=NNxJmmPOWI5nlo2W" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-
-                    </div>
-
-                    <div>
-                        <iframe width="560" height="315" src="https://www.youtube.com/embed/JJ2HkyXqt18?si=JA3wV68aoyLllVXo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                    
-                    </div>
-
-                    <div>
-                        <iframe width="560" height="315" src="https://www.youtube.com/embed/gDn9I61-nqo?si=RVMWX8d3zRF5wMBb" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                    
-                    </div>
-
-                    <div>
-                        <iframe width="560" height="315" src="https://www.youtube.com/embed/buC2wfa_W-c?si=8mp-Y0Fhy2pkWuNI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                        
-                    </div>
-
-                    <div>
-                        <iframe width="560" height="315" src="https://www.youtube.com/embed/7tp0ccfv9b8?si=mDb2Si5SFxGb8fts" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                        
-                    </div>
-
-                    <div>
-                        <iframe width="560" height="315" src="https://www.youtube.com/embed/6zhDTb__-WI?si=2wLU3CaZBihHtkIM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                        
-                    </div>
-
-                    <div>
-                        <iframe width="560" height="315" src="https://www.youtube.com/embed/YVKcvIpvGi8?si=D16cWbXj00z2SAEm" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                        
-                    </div>
-
-                    <div>
-                        <iframe width="560" height="315" src="https://www.youtube.com/embed/koNZTNhaz8A?si=ymr494YnDOkj3ytn" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                                
+                <div class='content--imgtest'>   
+                    <div class="imgs--testA">
+                        <figure class="images--test">
+                            <img src="./public/img/testimonioA.jpg" id="one"><figcaption></figcaption>
+                        </figure>
+                        <figure class="images--test">
+                            <img src="./public/img/testimonioB.jpg" id="two"><figcaption></figcaption>
+                        </figure>
+                        <figure class="images--test">
+                            <img src="./public/img/testimonioC.jpg" id="three"><figcaption></figcaption>
+                        </figure>
                     </div>
                 </div>
             </section>`,
@@ -422,127 +446,194 @@ const listPages = [`
             <div id="frequences">
                 <ul id="paragraph">
                     <li>
-                        <details><summary>¿Qué es el DRX9000?</summary>
-                        <p>Drx9000 es un equipo que realiza descompresión espinal no quirúrgica y está indicado para realizar separación intermitente de las vértebras con lo cual permite rehidratar o retraer el disco consiguiendo así liberar la raíz nerviosa provocante del cuadro doloroso.</p></details>
+                        <details name="faq">
+                        <summary>¿Qué es el DRX9000?</summary>
+                        <p>Drx9000 es un equipo que realiza descompresión espinal no quirúrgica y está indicado para realizar separación intermitente de las vértebras con lo cual permite rehidratar o retraer el disco consiguiendo así liberar la raíz nerviosa provocante del cuadro doloroso.</p>
+                        </details>
                     </li>
 
                     <li>
-                        <details><summary>¿Necesitamos tener diagnóstico para atenderse?</summary>
-                        <p>No es necesario ya que durante la evaluación se le dan una explicación detallada del problema y se culmina con un diagnóstico y el tratamiento recomendado.</p></details>
+                        <details name="faq">
+                        <summary>¿Necesitamos tener diagnóstico para atenderse?</summary>
+                        <p>No es necesario ya que durante la evaluación se le dan una explicación detallada del problema y se culmina con un diagnóstico y el tratamiento recomendado.</p>
+                        </details>
                     </li>
                     
                     <li>
-                        <details><summary>¿Necesito una radiografía o resonancia magnética para atenderme?</summary>
-                        <p>Por lo general no es necesario, pero nos ahorra tiempo. Se le indica al paciente en tal caso de no tener que se le mandara una orden el día de la evaluación. Además, se le indica de tener estudios de imágenes viejas (3-5 años) traerlos ya que sirven de comparativas</p></details>
+                        <details name="faq">
+                        <summary>¿Necesito una radiografía o resonancia magnética para atenderme?</summary>
+                        <p>Por lo general no es necesario, pero nos ahorra tiempo. Se le indica al paciente en tal caso de no tener que se le mandara una orden el día de la evaluación. Además, se le indica de tener estudios de imágenes viejas (3-5 años) traerlos ya que sirven de comparativas</p>
+                        </details>
                     </li>    
 
                     <li>
-                        <details><summary>¿Me puedo hacer terapias directamente si ya tengo diagnostico?</summary>
-                        <p>En el 90% de los casos es necesario realizar una evaluación de cada paciente que entra en un programa de terapias ya que existen diferentes situaciones/factores que pueden cambiar la manera en que se maneja cada paciente.</p></details>
+                        <details name="faq">
+                        <summary>¿Me puedo hacer terapias directamente si ya tengo diagnostico?</summary>
+                        <p>En el 90% de los casos es necesario realizar una evaluación de cada paciente que entra en un programa de terapias ya que existen diferentes situaciones/factores que pueden cambiar la manera en que se maneja cada paciente.</p>
+                        </details>
                     </li>
 
                     <li>
-                        <details><summary>¿Cuántas sesiones necesito?</summary>
-                        <p>Todo depende del diagnóstico que presente la persona luego de tener una evaluación en el centro.</p></details>
+                        <details name="faq">
+                        <summary>¿Cuántas sesiones necesito?</summary>
+                        <p>Todo depende del diagnóstico que presente la persona luego de tener una evaluación en el centro.</p>
+                        </details>
                     </li>
 
                     <li>
-                        <details><summary>¿Cuánto es el costo por sesión?</summary>
-                        <p>No manejamos tratamientos por sesiones. Y no damos costos de tratamientos hasta que el paciente se atienda (primera evaluación).</p></details>
+                        <details name="faq">
+                        <summary>¿Cuánto es el costo por sesión?</summary>
+                        <p>No manejamos tratamientos por sesiones. Y no damos costos de tratamientos hasta que el paciente se atienda (primera evaluación).</p>
+                        </details>
                     </li>
 
                     <li>
-                        <details><summary>¿Que debo esperar después de cada sesión?</summary>
-                        <p>Luego de realizarse descompresión espinal el paciente puede sentir una sensación de ¨espalda flotante¨ al principio y durante el día de las sesiones. Al día siguiente una sensación de haber realizado ejercicio (fatiga muscular leve a moderada).</p></details>
+                        <details name="faq">
+                        <summary>¿Que debo esperar después de cada sesión?</summary>
+                        <p>Luego de realizarse descompresión espinal el paciente puede sentir una sensación de ¨espalda flotante¨ al principio y durante el día de las sesiones. Al día siguiente una sensación de haber realizado ejercicio (fatiga muscular leve a moderada).</p>
+                        </details>
                     </li>
 
                     <li>
-                        <details><summary>¿Necesito algún acompañante durante las terapias?</summary>
-                        <p>No es necesario llevar a un acompañante al menos que el paciente presente dificultades a la marcha como por ejemplo inestabilidad y mareos provocados por lesiones en la columna vertebral (usualmente lesiones cervicales).</p></details>
+                        <details name="faq">
+                        <summary>¿Necesito algún acompañante durante las terapias?</summary>
+                        <p>No es necesario llevar a un acompañante al menos que el paciente presente dificultades a la marcha como por ejemplo inestabilidad y mareos provocados por lesiones en la columna vertebral (usualmente lesiones cervicales).</p>
+                        </details>
                     </li>
 
                     <li>
-                        <details><summary>¿Cuántos años tienen en el mercado?</summary>
-                        <p>Nuestra fecha de apertura fue el 2005 (19 años) de servicio.</p></details>
+                        <details name="faq">
+                        <summary>¿Cuántos años tienen en el mercado?</summary>
+                        <p>Nuestra fecha de apertura fue el 2005 (19 años) de servicio.</p>
+                        </details>
                     </li>
 
                     <li>
-                        <details><summary>¿Quién atiende en el centro?</summary>
-                        <p>Contamos con un equipo de médico, fisioterapia y asistentes para brindarles el mejor servicio.</p></details>
+                        <details name="faq">
+                        <summary>¿Quién atiende en el centro?</summary>
+                        <p>Contamos con un equipo de médico, fisioterapia y asistentes para brindarles el mejor servicio.</p>
+                        </details>
                     </li>
 
                     <li>
-                        <details><summary>¿Trabajamos con seguros?</summary>
-                        <p>No trabajamos con seguros. Solo llenamos las hojas de reclamos una vez el paciente pago su evaluación o tratamiento completo.</p></details>
+                        <details name="faq">
+                        <summary>¿Trabajamos con seguros?</summary>
+                        <p>No trabajamos con seguros. Solo llenamos las hojas de reclamos una vez el paciente pago su evaluación o tratamiento completo.</p>
+                        </details>
                     </li>
 
                     <li>
-                        <details><summary>¿Trabajamos los sábados?</summary>
+                        <details name="faq">
+                        <summary>¿Trabajamos los sábados?</summary>
                         <p>En Panamá, estamos abiertos de 9:00a.m. a 12:00m.d.
-                        En Santiago, de lunes a viernes de 8 am a 5 pm.</p></details>
+                        En Santiago, de lunes a viernes de 8 am a 5 pm.</p>
+                        </details>
                     </li>
 
                     <li>
-                        <details><summary>¿Atienden escoliosis?</summary>
-                        <p>Si atendemos escoliosis, de leve a moderadas ya sea dorsal o lumbar que son las más comunes.</p></details>
+                        <details name="faq">
+                        <summary>¿Atienden escoliosis?</summary>
+                        <p>Si atendemos escoliosis, de leve a moderadas ya sea dorsal o lumbar que son las más comunes.</p>
+                        </details>
                     </li>
 
                     <li>
-                        <details><summary>¿Atienden desgaste de columna?</summary>
-                        <p>Lo que definimos como desgaste de columna es una deshidratación del disco en diferentes áreas de la columna ya sea cervical o lumbar, <strong><u>si lo atendemos.</u></strong></p></details>
+                        <details name="faq" >
+                        <summary>¿Atienden desgaste de columna?</summary>
+                        <p id="details-FQ">Lo que definimos como desgaste de columna es una deshidratación del disco en diferentes áreas de la columna ya sea cervical o lumbar, 
+                            <strong>si lo atendemos.</strong></p>
+                        </details>
                     </li>
 
                     <li>
-                        <details><summary>¿Se puede pagar con tarjetas de crédito o débito?</summary>
-                        <p>Los métodos de pagos son pago en efectivo, transferencias a la cuenta, punto de venta con tarjeta de crédito o débito.</p></details>
+                        <details name="faq">
+                        <summary>¿Se puede pagar con tarjetas de crédito o débito?</summary>
+                        <p>Los métodos de pagos son pago en efectivo, transferencias a la cuenta, punto de venta con tarjeta de crédito o débito.</p>
+                        </details>
                     </li>
 
                     <li>
-                        <details><summary>¿Necesito llevar alguna vestimenta especial para atenderme?</summary>
-                        <p>Se recomienda llevar ropa cómoda con facilidad para acceder a las áreas afectadas a tratar.</p></details>
+                        <details name="faq">
+                        <summary>¿Necesito llevar alguna vestimenta especial para atenderme?</summary>
+                        <p>Se recomienda llevar ropa cómoda con facilidad para acceder a las áreas afectadas a tratar.</p>
+                        </details>
                     </li>
 
                     <li>
-                        <details><summary>¿Puedo seguir trabajando mientras me hago terapias?</summary>
-                        <p>El tratamiento se puede realizar mientras trabaja sin embargo es recomendable disminuir la intensidad de las actividades en forma general en la vida cotidiana con el fin de permitir que el nervio lastimado se puede recuperar poco a poco.</p></details>
+                        <details name="faq">
+                        <summary>¿Puedo seguir trabajando mientras me hago terapias?</summary>
+                        <p>El tratamiento se puede realizar mientras trabaja sin embargo es recomendable disminuir la intensidad de las actividades en forma general en la vida cotidiana con el fin de permitir que el nervio lastimado se puede recuperar poco a poco.</p>
+                        </details>
                     </li>
 
                     <li>
-                        <details><summary>¿Qué es el ozono?</summary>
-                        <p>El ozono es un gas químicamente es oxigeno (O2) elevado a O3.</p></details>
+                        <details name="faq">
+                        <summary>¿Qué es el ozono?</summary>
+                        <p>El ozono es un gas químicamente es oxigeno (O2) elevado a O3.</p>
+                        </details>
                     </li>
 
                     <li>
-                        <details><summary>¿Puedo usar el ozono como método de rehabilitación?</summary>
-                        <p>En nuestro centro el ozono se aplica con la intensión de ser un complemento para desinflamar el área afectada por el disco herniado desgastado, síndrome facetario entre otras patologías que actualmente se están incluyendo en nuestro arsenal de diagnósticos tratados.</p></details>
+                        <details name="faq">
+                        <summary>¿Puedo usar el ozono como método de rehabilitación?</summary>
+                        <p>En nuestro centro el ozono se aplica con la intensión de ser un complemento para desinflamar el área afectada por el disco herniado desgastado, síndrome facetario entre otras patologías que actualmente se están incluyendo en nuestro arsenal de diagnósticos tratados.</p>
+                        </details>
                     </li>
 
                     <li>
-                        <details><summary>¿Dónde están ubicados?</summary>
+                        <details name="faq">
+                        <summary>¿Dónde están ubicados?</summary>
                         <p>Panamá: Betania, Camino real de Betania, edificio paseo real de Betania local #3 piso #1</p>
-                        <p>Veraguas: Santiago, calle 8va plaza Jean Carlos, diagonal al gimnasio de la escuela normal, local #3.</p></details>
+                        <p>Veraguas: Santiago, calle 8va plaza Jean Carlos, diagonal al gimnasio de la escuela normal, local #3.</p>
+                        </details>
                     </li>
 
                     <li>
-                        <details><summary>¿En qué sucursal nos podemos atender?</summary>
-                        <p>Es recomendable atenderse en la sucursal más cercana a su hogar. Por el momento contamos con una sucursal en Betania, Panamá, y Santiago de Veraguas.</p></details>
+                        <details name="faq">
+                        <summary>¿En qué sucursal nos podemos atender?</summary>
+                        <p>Es recomendable atenderse en la sucursal más cercana a su hogar. Por el momento contamos con una sucursal en Betania, Panamá, y Santiago de Veraguas.</p>
+                        </details>
                     </li>
 
                     <li>
-                        <details><summary>¿Que horario tienen?</summary>
+                        <details name="faq">
+                        <summary>¿Que horario tienen?</summary>
                         <p>Nuestros horarios en Panamá son de lunes a viernes de 9:00 hasta 18:00 y sábados 9:00 hasta 12:00.</p>
-                        <p>En Santiago son de lunes a viernes de 8:00 hasta las 17:00; todavía cerrados los sábados.</p></details>
+                        <p>En Santiago son de lunes a viernes de 8:00 hasta las 17:00; todavía cerrados los sábados.</p>
+                        </details>
                     </li>
 
                     <li>
-                        <details><summary>¿Atienden por citas o por orden de llegada?</summary>
-                        <p>Trabajamos por citas programadas ya sea por evaluación o por tratamiento/terapias.</p></details>
+                        <details name="faq">
+                        <summary>¿Atienden por citas o por orden de llegada?</summary>
+                        <p>Trabajamos por citas programadas ya sea por evaluación o por tratamiento/terapias.</p>
+                        </details>
                     </li>
                 </ul>
             </div>
-
             </section>`
         ];
+
+// <button class="btn--testA" onclick="showTest">
+//                         <span>T</span>
+//                         <span>e</span>
+//                         <span>s</span>
+//                         <span>t</span>
+//                         <span>i</span>
+//                         <span>m</span>
+//                         <span>o</span>
+//                         <span>n</span>
+//                         <span>i</span>
+//                         <span>o</span>
+//                         <span>s</span>
+//                     </button>
+// const btnTestA = document.querySelector('.btn--testA');
+
+
+// btnTestA.addEventListener('click', () => {
+//     imagesTest.style.width = '100%';
+// });
+
 
 function nDIv(a,b) {
     for(let j=0;j<navLinks.length;j++) {
@@ -579,6 +670,7 @@ function nav() {
                   break;
                 case 4:
                     nDIv(3,4);
+                    // YouTubeIDs();
                   break;
                 case 5:
                     nDIv(4,5);
@@ -612,19 +704,19 @@ whatsAppWiget.addEventListener('click', () => {
     whatsAppNumbers.classList.toggle('hide__parr');
 });
 
-const summary = document.querySelectorAll('.summary');
+// const summary = document.querySelectorAll('.summary');
 
-function hideSummary(a) {
-    for(let i=0;i<summary.length;i++){
-        summary[a].addEventListener('click', () => {
-            summary[a].style.display = 'none';
-        });
-    }
-};
+// function hideSummary(a) {
+//     for(let i=0;i<summary.length;i++){
+//         summary[a].addEventListener('click', () => {
+//             summary[a].style.display = 'none';
+//         });
+//     }
+// };
 
-for(let i=0;i<summary.length;i++) {
-    hideSummary(i);
-}
+// for(let i=0;i<summary.length;i++) {
+//     hideSummary(i);
+// }
 
 // window.onload = function() {
 //     var opar = document.getElementById('paragraph').innerHTML;
