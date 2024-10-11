@@ -136,7 +136,6 @@ const YouTubeIDs = () => {
 const imgesTC = document.querySelector('.imgs--testA');
 
 function showTest() {
-    // imagesTest.style.width = '100%';
     imagesTest.style.display = 'block';
 }
 
