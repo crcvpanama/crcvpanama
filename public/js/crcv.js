@@ -1,3 +1,6 @@
+const year = new Date().getFullYear();
+const initYear = year - 2005;
+
 function setCookie(cname, cvalue, exdays) {
     let d = new Date();
 
@@ -504,7 +507,7 @@ const listPages = [`
                     <li>
                         <details name="faq">
                         <summary>¿Cuántos años tienen en el mercado?</summary>
-                        <p>Nuestra fecha de apertura fue el 2005 (19 años) de servicio.</p>
+                        <p>Nuestra fecha de apertura fue en 2005 (${initYear} años) a su servicio.</p>
                         </details>
                     </li>
 
@@ -737,4 +740,4 @@ whatsAppWiget.addEventListener('click', () => {
 
 let date = document.querySelector('.date');
 
-date.append(new Date ().getFullYear ());
+date.append(year);
