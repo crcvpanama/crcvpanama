@@ -544,7 +544,7 @@ const listPages = [`
                         <details name="faq" >
                         <summary>¿Atienden desgaste de columna?</summary>
                         <p id="details-FQ">Lo que definimos como desgaste de columna es una deshidratación del disco en diferentes áreas de la columna ya sea cervical o lumbar, 
-                            <strong>si lo atendemos.</strong></p>
+                            <strong><u>si lo atendemos.</u></strong></p>
                         </details>
                     </li>
 
