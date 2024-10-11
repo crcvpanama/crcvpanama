@@ -1114,6 +1114,7 @@ details[open] > summary::marker {
 }
 
 .FQs details > p {
+	display: block;
 	background: #eeeeeec8;
 	min-width: 250px;
 	padding: .7em;
