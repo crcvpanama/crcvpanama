@@ -1691,7 +1691,7 @@ details[open] > summary::after {
 	top: 50%;
 	left: 50%;
 	background-color: #30303088;
-	transform: translate(-50%, -40%);
+	transform: translate(-50%, -10%);
 	z-index: 3000;
 /*	transition: all .6s ease-in-out;*/
 }
