@@ -67,6 +67,10 @@ a {
 	text-decoration: none;
 }
 
+.sobrenosotros h2 {
+	margin-bottom: 0;
+}
+
 .cookieBox {
 	display: none;
 	background-color:#000;
@@ -228,7 +232,7 @@ a {
 	letter-spacing: .1cap;
 }
 
-.header span {
+.header strong {
 	display: flex;
 	flex-direction: row;
 	flex-wrap: wrap;
@@ -1961,16 +1965,16 @@ details[open] > summary::after {
 	}
 
 	.diag-art {
-		max-width: 300px;
+		width: auto;
 		height: auto;
-		margin: 40px 0;
-		padding: 0;
-		justify-content: center;
+		margin: 40px 4ch;
+		padding: 0 1ch;
+/*		justify-content: center;*/
 	}
 
 	.diag-img {
-		width: 250px;
-		height: auto;
+		width: 100%;
+		height: 700px;
 		margin: 0;
 		padding: 0;
 	}
@@ -1980,6 +1984,12 @@ details[open] > summary::after {
 		object-fit: fill;
 		margin: 0;
 		padding: 0;
+		width: 100%;
+		height: 100%;
+	}
+
+	.button__parr {
+		position: absolute;
 	}
 
 	.diag-li {
