@@ -1201,7 +1201,8 @@ details[open] > summary::after {
 
 .container--test {
 	display: grid;
-	grid-template-columns:minmax(500px, 1fr) repeat(1,450px);
+	margin: 0;
+	grid-template-columns:minmax(500px, 1fr) repeat(1,400px);
 	overflow: hidden;
 }
 
@@ -1705,7 +1706,7 @@ details[open] > summary::after {
 	letter-spacing: .3ch;
 	background-color: #0000ff95;
 	color: #fff;
-	padding: 1em 1.5em;
+	padding: 1em 4em;
 	border-radius: 10px;
 }
 
@@ -2156,6 +2157,7 @@ details[open] > summary::after {
 
 	.letter--container {
 		margin: 1%;
+		padding: 1em 1.5em;
 	}
 
 	.container--test {
