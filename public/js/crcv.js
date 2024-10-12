@@ -438,7 +438,7 @@ const listPages = [`
                         <p>Gracias a Dios llegué al Centro de Rehabilitación de la Columna a través de una amiga, me sometí al tratamiento y seguí todas las indicaciones dadas por el Dr. Madrid y las fisioterapistas; hoy puedo decir que me ha funcionado la terapia, el dolor de espalda ha desaparecido al igual que el intenso dolor que iba desde el cuello hasta el brazo; poco a poco ha ido disminuyendo el dolor en la pierna por la inflamación del nervio ciático.</p>
                         <p>Yo se que esto no termina aquí. Estoy decidida a seguir porque este tratamiento me ha ayudado a tener una mejor calidad de vida, después de tantos años de sufrimiento.</p>
                         <p>El haber conocido del Centro de Rehabilitación de la Columna ha sido lo mejor que me ha podido pasar durante estos últimos años es por ello que, recomiendo a todas aquellas personas que sufren de problemas de la columna que tomen las terapias con mucha fe en Dios que todo lo puede ya que los resultados son excelentes.</p>
-                        <span>Atentamente, Diana de t Lijera</span>
+                        <span>Atentamente, Diana L</span>
                         </article>
                     </div>
 
@@ -455,19 +455,19 @@ const listPages = [`
                         <p>Por último y gracias a Dios, me fue recomendada la clínica que en ese entonces se Ilamaba Spinal Decompression of Panamá, Inc., ubicada en la Torre del Global Bank en calle 50, donde me atendió el DR. Ángel Madrid, él que luego de revisar la resonancia y hacerme unas pruebas determino que era acto para recibir el tratamiento DRX 9000, para descomprimir las vértebras.</p>
                         <p>Me realice la terapia de 20 secciones, las que resultaron ser la solución a mis problemas de espalda, a tal punto que desde aquel año hasta la fecha, me mantuve realizando de manera normal mi vida, practicando mi deporte de fútbol, jugando a mi edad de 52 años en toda clase de ligas y canchas, hasta el día de hoy que he tenido una recaída y sin pensarlo dos veces estoy en la disposición de realizarme nuevamente la terapia.</p>
                         <p>Debido a los resultados obtenidos, puedo con toda propiedad dar testimonio de la efectividad del tratamiento DRX 9000 y mi recomendación para todo aquel que padezca de dolores de espalda baja, se realice este tratamiento.</p>
-                        <span>Atentamente, Ricardo Cedeño</span>
+                        <span>Atentamente, Ricardo C</span>
                         </article>
                     </div>
 
-                    <div class="letter--container">
-                        <article class="letter--content">
+                    <div class="letter--container"> 
+                        <article class="letter--content last--letter">
                         <h3>TESTIMONIO</h3>
                         <span>HOLA</span>
-                        <p>MI NOMBRE ES MELANIA AVILA, QUIERO MANIFESTARLES BREVEMENTE LA EXPERIENCIA QUE HE TENIDO CON EL CENTRO DE REHABILITACIÓN DE LA COLUMNA VERTEBRAL (ESPECIALISTAS EN DESCOMPRESION ESPINAL). DESPUÉS DE HABER CONSULTADO UN NEURÓLOGO SU DIAGNÓSTICO FUE QUE TENIA TRES DISCOS HERNIADOS E INFLAMADOS, POR LO TANTO DICHA CONDICIÓN ME REFLEJABA MUCHO DOLOR EN EL AREA LUMBAR Y LA PIERNA IZQUIERDA, LAS RECOMENDACIONES DEL MÉDICO FUERON TRES OPCIONES, TERAPIAS, INFILTRACIÓN PARA EL DOLOR Y LA ÚLTIMA ERA OPERACIÓN, ESTA ÚLTIMA ME REHUSABA A REALIZAR. REALICE LAS DOS ANTERIORES SIN RESULTADO SATISFACTORIO. UN DÍA REVISANDO MIS CORREOS ELECTRÓNICOS RECIBÍ UN ANUNCIO DEL CENTRO DE REHABILITACIÓN DE LA COLUMNA VERTEBRAL, PROSEGUÍ A INVESTIGAR MAS DE LO QUE SE TRATABA, ME INTERESÉ Y COMENCÉ A HACERME DICHAS TERAPIAS QUE CONSISTÍAN EN 20 SESIONES. QUIERO MANIFESTARLES QUE A PARTIR DE LA PRIMERA SEMANA YA ESTABA SINTIENDO MEJORÍA, YA QUE ESTE PROBLEMA DE SALUD NO ME DEJABA CONCILIAR EL SUEÑO POR EL INMENSO DOLOR QUE ME PRODUCÍA.</p>
-                        <p>HOY PUEDO MANIFESTAR QUE AUNQUE SÉ QUE EL PROBLEMA PERSISTE, LOS DOLORES QUE NO ME DEJABAN DORMIR HAN SIDO ALIVIADOS.</p>
-                        <p>QUIERO POR ESTE MEDIO AGRADECERLES AL CENTRO DE REHABILITACION DE LA COLUMNA VERTEBRAL, Y A TODO SU PERSONAL EL TRATO CORDIAL QUE TUVIERON CON MI PERSONA.</p>
-                        <p>MIL GRACIAS.</p>
-                        <span>MELANIA AVILA DE MUÑOZ</span>
+                        <p>Mi nombre es melania avila, quiero manifestarles brevemente la experiencia que he tenido con el centro de rehabilitación de la columna vertebral (especialistas en descompresion espinal). Después de haber consultado un neurólogo su diagnóstico fue que tenia tres discos herniados e inflamados, por lo tanto dicha condición me reflejaba mucho dolor en el area lumbar y la pierna izquierda, las recomendaciones del médico fueron tres opciones, terapias, infiltración para el dolor y la última era operación, esta última me rehusaba a realizar. Realice las dos anteriores sin resultado satisfactorio. Un día revisando mis correos electrónicos recibí un anuncio del centro de rehabilitación de la columna vertebral, proseguí a investigar mas de lo que se trataba, me interesé y comencé a hacerme dichas terapias que consistían en 20 sesiones. Quiero manifestarles que a partir de la primera semana ya estaba sintiendo mejoría, ya que este problema de salud no me dejaba conciliar el sueño por el inmenso dolor que me producía.</p>
+                        <p>Hoy puedo manifestar que aunque sé que el problema persiste, los dolores que no me dejaban dormir han sido aliviados.</p>
+                        <p>Quiero por este medio agradecerles al centro de rehabilitacion de la columna vertebral, y a todo su personal el trato cordial que tuvieron con mi persona.</p>
+                        <p>Mil gracias.</p>
+                        <span>MELANIA A DE M</span>
                         <span>COLON, REP DE PANAMÁ</span>
                         </article>
                     </div>

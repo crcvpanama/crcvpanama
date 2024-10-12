@@ -1714,6 +1714,11 @@ details[open] > summary::after {
 	line-height: 1.5em;
 }
 
+	.last--letter p {
+		text-transform: capitalize;
+		user-select: text;
+	}
+
 @media (width <= 800px) {
 
 	.privacidad  iframe{
