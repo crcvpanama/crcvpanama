@@ -416,19 +416,7 @@ const listPages = [`
             </section>`,
             `<section class="test test-hidden page">
                 <h2> Testimonios </h2>
-                <div class="content--videos" id="testimonios">
-                    <div>
-                        <video controls width="560" height="315" playsinline oncontextmenu="return false">
-                            <source src="./public/videos/testimonio.mp4" type="video/mp4">
-                        </video>
-                    </div>
-                    <div>
-                        <video controls width="560" height="315" playsinline oncontextmenu="return false">
-                            <source src="./public/videos/testimoniob.mp4" type="video/mp4">
-                        </video>
-                    </div>
-                </div>
-
+                <div class="container--test">
                 <div>
                     <div class="letter--container">
                         <article class="letter--content">
@@ -471,6 +459,20 @@ const listPages = [`
                         <span>COLON, REP DE PANAMÁ</span>
                         </article>
                     </div>
+                </div>
+
+                <div class="content--videos" id="testimonios">
+                    <div>
+                        <video controls playsinline oncontextmenu="return false">
+                            <source src="./public/videos/testimonio.mp4" type="video/mp4">
+                        </video>
+                    </div>
+                    <div>
+                        <video controls playsinline oncontextmenu="return false">
+                            <source src="./public/videos/testimoniob.mp4" type="video/mp4">
+                        </video>
+                    </div>
+                </div>
                 </div>
             </section>`,
             `<section class="FQs fhidden page">
