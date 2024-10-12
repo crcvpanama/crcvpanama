@@ -1967,14 +1967,14 @@ details[open] > summary::after {
 	.diag-art {
 		width: auto;
 		height: auto;
-		margin: 40px 4ch;
+		margin: 40px 2ch;
 		padding: 0 1ch;
 /*		justify-content: center;*/
 	}
 
 	.diag-img {
 		width: 100%;
-		height: 700px;
+		height: auto;
 		margin: 0;
 		padding: 0;
 	}
@@ -1985,11 +1985,11 @@ details[open] > summary::after {
 		margin: 0;
 		padding: 0;
 		width: 100%;
-		height: 100%;
+		height: 400px;
 	}
 
 	.button__parr {
-		position: absolute;
+		position: relative;
 	}
 
 	.diag-li {
