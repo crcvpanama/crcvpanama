@@ -429,17 +429,47 @@ const listPages = [`
                     </div>
                 </div>
 
-                <div class='content--imgtest'>   
-                    <div class="imgs--testA">
-                        <figure class="images--test">
-                            <img src="./public/img/testimonioA.jpg" id="one"><figcaption></figcaption>
-                        </figure>
-                        <figure class="images--test">
-                            <img src="./public/img/testimonioB.jpg" id="two"><figcaption></figcaption>
-                        </figure>
-                        <figure class="images--test">
-                            <img src="./public/img/testimonioC.jpg" id="three"><figcaption></figcaption>
-                        </figure>
+                <div>
+                    <div class="letter--container">
+                        <article class="letter--content">
+                        <h3>TESTIMONIO</h3>
+                        <span>Lunes 31 de Agosto de 2015</span>
+                        <p>Yo Diana de Tejera doy testimonio de los efectos positivos de la terapia con el equipo DRX 9000 ya que después de haber pasado por muchos exámenes y tratamientos para mi problema de la columna y el nervio ciático casi por cuatro años, nada me había funcionado. Los dolores cada día eran más intensos, en la parte baja de la espalda irradiándose hacia toda el área derecha, desde el cuello hasta la planta del pie, agudizándose en la noche impidiéndome dormir. Pensé que ya no había nada que mejorara mi salud.</p>
+                        <p>Gracias a Dios llegué al Centro de Rehabilitación de la Columna a través de una amiga, me sometí al tratamiento y seguí todas las indicaciones dadas por el Dr. Madrid y las fisioterapistas; hoy puedo decir que me ha funcionado la terapia, el dolor de espalda ha desaparecido al igual que el intenso dolor que iba desde el cuello hasta el brazo; poco a poco ha ido disminuyendo el dolor en la pierna por la inflamación del nervio ciático.</p>
+                        <p>Yo se que esto no termina aquí. Estoy decidida a seguir porque este tratamiento me ha ayudado a tener una mejor calidad de vida, después de tantos años de sufrimiento.</p>
+                        <p>El haber conocido del Centro de Rehabilitación de la Columna ha sido lo mejor que me ha podido pasar durante estos últimos años es por ello que, recomiendo a todas aquellas personas que sufren de problemas de la columna que tomen las terapias con mucha fe en Dios que todo lo puede ya que los resultados son excelentes.</p>
+                        <span>Atentamente, Diana de t Lijera</span>
+                        </article>
+                    </div>
+
+
+                    <div class="letter--container">
+                        <article class="letter--content">
+                        <h3>TESTIMONIO</h3>
+                        <span>Panamá, 9 de noviembre de 2015.</span>
+                        <p>En el año 2008 debido a que levante en peso a mi hijo de 8 años hacia la parte superior de un camarote, sufri sin darme cuenta una lesión en la espalda que se fue agravando debido a mi afición por el fútbol. En un principio sentía un ardor en las piernas, pero por mi desconocimiento del problema percibía que al calentar antes de jugar este desaparecía e insistí en jugar hasta que un día no pude mas.</p>
+                        <p>Para ese entonces la lesión se había agravado, tenía fuertes dolores de espalda, caminaba encorcovado y sentía ardor en la pantorrilla de la pierna izquierda.</p>
+                        <p>Buscando ayuda visite a un quinesiólogo y acudí a la clínica del dolor, sin lograr una mejoría.</p>
+                        <p>Después fui donde un neurocirujano el cual me prescribió una resonancia magnética, donde se determino que tenía varios discos abombados, seguidamente me aplico una ozonoterapia (inyección de ozono) y receto toda clase de medicamentos para atenuar el dolor (Arcoxia, lirica y saldear), durante este tratamiento sufrí una recaída mayor, hasta el punto que gateaba en vez de caminar. Obviamente no continúe con este tratamiento.</p>
+                        <p>Por recomendaciones, visite un medico chino que me realizo una terapia para la parte ósea y acupuntura, lo que en alguna medida mejoro mi condición fisica mas los dolores persistian.</p>
+                        <p>Por último y gracias a Dios, me fue recomendada la clínica que en ese entonces se Ilamaba Spinal Decompression of Panamá, Inc., ubicada en la Torre del Global Bank en calle 50, donde me atendió el DR. Ángel Madrid, él que luego de revisar la resonancia y hacerme unas pruebas determino que era acto para recibir el tratamiento DRX 9000, para descomprimir las vértebras.</p>
+                        <p>Me realice la terapia de 20 secciones, las que resultaron ser la solución a mis problemas de espalda, a tal punto que desde aquel año hasta la fecha, me mantuve realizando de manera normal mi vida, practicando mi deporte de fútbol, jugando a mi edad de 52 años en toda clase de ligas y canchas, hasta el día de hoy que he tenido una recaída y sin pensarlo dos veces estoy en la disposición de realizarme nuevamente la terapia.</p>
+                        <p>Debido a los resultados obtenidos, puedo con toda propiedad dar testimonio de la efectividad del tratamiento DRX 9000 y mi recomendación para todo aquel que padezca de dolores de espalda baja, se realice este tratamiento.</p>
+                        <span>Atentamente, Ricardo Cedeño</span>
+                        </article>
+                    </div>
+
+                    <div class="letter--container">
+                        <article class="letter--content">
+                        <h3>TESTIMONIO</h3>
+                        <span>HOLA</span>
+                        <p>MI NOMBRE ES MELANIA AVILA, QUIERO MANIFESTARLES BREVEMENTE LA EXPERIENCIA QUE HE TENIDO CON EL CENTRO DE REHABILITACIÓN DE LA COLUMNA VERTEBRAL (ESPECIALISTAS EN DESCOMPRESION ESPINAL). DESPUÉS DE HABER CONSULTADO UN NEURÓLOGO SU DIAGNÓSTICO FUE QUE TENIA TRES DISCOS HERNIADOS E INFLAMADOS, POR LO TANTO DICHA CONDICIÓN ME REFLEJABA MUCHO DOLOR EN EL AREA LUMBAR Y LA PIERNA IZQUIERDA, LAS RECOMENDACIONES DEL MÉDICO FUERON TRES OPCIONES, TERAPIAS, INFILTRACIÓN PARA EL DOLOR Y LA ÚLTIMA ERA OPERACIÓN, ESTA ÚLTIMA ME REHUSABA A REALIZAR. REALICE LAS DOS ANTERIORES SIN RESULTADO SATISFACTORIO. UN DÍA REVISANDO MIS CORREOS ELECTRÓNICOS RECIBÍ UN ANUNCIO DEL CENTRO DE REHABILITACIÓN DE LA COLUMNA VERTEBRAL, PROSEGUÍ A INVESTIGAR MAS DE LO QUE SE TRATABA, ME INTERESÉ Y COMENCÉ A HACERME DICHAS TERAPIAS QUE CONSISTÍAN EN 20 SESIONES. QUIERO MANIFESTARLES QUE A PARTIR DE LA PRIMERA SEMANA YA ESTABA SINTIENDO MEJORÍA, YA QUE ESTE PROBLEMA DE SALUD NO ME DEJABA CONCILIAR EL SUEÑO POR EL INMENSO DOLOR QUE ME PRODUCÍA.</p>
+                        <p>HOY PUEDO MANIFESTAR QUE AUNQUE SÉ QUE EL PROBLEMA PERSISTE, LOS DOLORES QUE NO ME DEJABAN DORMIR HAN SIDO ALIVIADOS.</p>
+                        <p>QUIERO POR ESTE MEDIO AGRADECERLES AL CENTRO DE REHABILITACION DE LA COLUMNA VERTEBRAL, Y A TODO SU PERSONAL EL TRATO CORDIAL QUE TUVIERON CON MI PERSONA.</p>
+                        <p>MIL GRACIAS.</p>
+                        <span>MELANIA AVILA DE MUÑOZ</span>
+                        <span>COLON, REP DE PANAMÁ</span>
+                        </article>
                     </div>
                 </div>
             </section>`,
@@ -615,7 +645,19 @@ const listPages = [`
             </div>
             </section>`
         ];
-
+// <div class='content--imgtest'>   
+//                     <div class="imgs--testA">
+//                         <figure class="images--test">
+//                             <img src="./public/img/testimonioA.jpg" id="one"><figcaption></figcaption>
+//                         </figure>
+//                         <figure class="images--test">
+//                             <img src="./public/img/testimonioB.jpg" id="two"><figcaption></figcaption>
+//                         </figure>
+//                         <figure class="images--test">
+//                             <img src="./public/img/testimonioC.jpg" id="three"><figcaption></figcaption>
+//                         </figure>
+//                     </div>
+//                 </div>
 // <button class="btn--testA" onclick="showTest">
 //                         <span>T</span>
 //                         <span>e</span>
