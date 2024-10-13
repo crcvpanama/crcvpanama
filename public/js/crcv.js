@@ -328,7 +328,7 @@ const listPages = [`
                             </div>
                         </div>
                         <div class="contact--iframe">
-                            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d1970.2885790146047!2d-79.525056!3d9.010998!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8faca84e4601bff1%3A0x6e2fdce720e71653!2sCentro%20de%20Rehabilitaci%C3%B3n%20de%20la%20Columna%20Vertebral%20Panama!5e0!3m2!1ses!2sus!4v1685159067677!5m2!1ses!2sus" width="100%" height="290" style="border: 0;" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d1970.2885790146047!2d-79.525056!3d9.010998!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8faca84e4601bff1%3A0x6e2fdce720e71653!2sCentro%20de%20Rehabilitaci%C3%B3n%20de%20la%20Columna%20Vertebral%20Panama!5e0!3m2!1ses!2sus!4v1685159067677!5m2!1ses!2sus" style="border: 0;" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                         </div>
                     </div>
                 </div>
@@ -354,7 +354,7 @@ const listPages = [`
                             </div>
                         </article>
                         <div class="contact--iframe">
-                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3949.983433628046!2d-80.9775389!3d8.1031684!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8fae739d24655ff5%3A0x275105f287d1df14!2sCentro%20de%20Rehabilitacion%20de%20la%20Columna%20Vertebral%20Veraguas!5e0!3m2!1ses-419!2spa!4v1685312976765!5m2!1ses-419!2spa" width="100%" height="290" style="border: 0;" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3949.983433628046!2d-80.9775389!3d8.1031684!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8fae739d24655ff5%3A0x275105f287d1df14!2sCentro%20de%20Rehabilitacion%20de%20la%20Columna%20Vertebral%20Veraguas!5e0!3m2!1ses-419!2spa!4v1685312976765!5m2!1ses-419!2spa" style="border: 0;" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                         </div>
                     </div>
                 </div>

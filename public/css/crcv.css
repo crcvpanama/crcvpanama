@@ -1326,6 +1326,11 @@ details[open] > summary::after {
 	height: auto;
 }
 
+.contact--iframe iframe{
+	width: 100%;
+	height: 290px;
+}
+
 .geo {
 	display: flex;
 	flex-direction: column;
@@ -1607,11 +1612,6 @@ details[open] > summary::after {
 	place-content: center;
 	margin: 0 auto;
 	scrollbar-width: thin;
-}
-
-.contact--iframe iframe{
- 	width:100%; 
- 	height:230px; 
 }
 
 .pageB {
