@@ -98,46 +98,45 @@ const newDiv = document.createElement('div');
 const newSection = document.createElement('div');
 const imagesTest = document.getElementsByClassName('.images--test');
 
-let videosIds = [
-    'tKOmWImuTZM?si=NNxJmmPOWI5nlo2W',
-    'JJ2HkyXqt18?si=JA3wV68aoyLllVXo',
-    'gDn9I61-nqo?si=RVMWX8d3zRF5wMBb',
-    'buC2wfa_W-c?si=8mp-Y0Fhy2pkWuNI',
-    '7tp0ccfv9b8?si=mDb2Si5SFxGb8fts',
-    '6zhDTb__-WI?si=2wLU3CaZBihHtkIM',
-    'YVKcvIpvGi8?si=D16cWbXj00z2SAEm',
-    'koNZTNhaz8A?si=ymr494YnDOkj3ytn'
-];
+// let videosIds = [
+//     'tKOmWImuTZM?si=NNxJmmPOWI5nlo2W',
+//     'JJ2HkyXqt18?si=JA3wV68aoyLllVXo',
+//     'gDn9I61-nqo?si=RVMWX8d3zRF5wMBb',
+//     'buC2wfa_W-c?si=8mp-Y0Fhy2pkWuNI',
+//     '7tp0ccfv9b8?si=mDb2Si5SFxGb8fts',
+//     '6zhDTb__-WI?si=2wLU3CaZBihHtkIM',
+//     'YVKcvIpvGi8?si=D16cWbXj00z2SAEm',
+//     'koNZTNhaz8A?si=ymr494YnDOkj3ytn'
+// ];
 
-let imgTest = [
-    'testimonioA.jpg',
-    'testimonioB.jpg',
-    'testimonioC.jpg'
-    ];
+// let imgTest = [
+//     'testimonioA.jpg',
+//     'testimonioB.jpg',
+//     'testimonioC.jpg'
+//     ];
 
-const YouTubeIDs = () => {
-    for (let i=0;i<videosIds.length;i++) {
+// const YouTubeIDs = () => {
+//     for (let i=0;i<videosIds.length;i++) {
 
-        playVideos = [
-            `<div class="container content--iframe">
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/${videosIds[i]}" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-            </div>`
-            ];
-        newSection.style.display = 'flex';
-        newSection.style.flexDirection = 'row';
-        newSection.style.flexWrap = 'wrap';
-        newSection.style.justifyContent = 'space-around';
-        newSection.innerHTML += playVideos;
-        pages.insertBefore(newSection, pagesChildB);
-    };
+//         playVideos = [
+//             `<div class="container content--iframe">
+//                 <iframe width="560" height="315" src="https://www.youtube.com/embed/${videosIds[i]}" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+//             </div>`
+//             ];
+//         newSection.style.display = 'flex';
+//         newSection.style.flexDirection = 'row';
+//         newSection.style.flexWrap = 'wrap';
+//         newSection.style.justifyContent = 'space-around';
+//         newSection.innerHTML += playVideos;
+//         pages.insertBefore(newSection, pagesChildB);
+//     };
+// };
+
+// const imgesTC = document.querySelector('.imgs--testA');
+
+function showTest(a) {
+    a.style.display = 'block';
 };
-
-
-const imgesTC = document.querySelector('.imgs--testA');
-
-function showTest() {
-    imagesTest.style.display = 'block';
-}
 
 // imagesTest.addEventListener('click', () => {
 //     imagesTest.classList.toggle('show--test');
@@ -152,7 +151,7 @@ const listPages = [`
                         <div class="slide-img">
                             <figure class="img--container">
                                 <h3>Descompresión espinal</h3>
-                                <img src="./public/img/drx9000.jpg" alt="drx9000">
+                                <img src="./public/img/drx9000N.png" alt="drx9000">
                                 <figcaption class="img--caption">
                                 
                                     <p>Esta metodología se basa en la separación de las vértebras de forma dinámica y escalonada para permitir la rehidratación de la estructura discal afectada, ya sea si está deshidratada (desgaste de disco) o deformada (hernias de disco-abombamiento, protrusión, extrusión).</p>
@@ -229,7 +228,7 @@ const listPages = [`
                         <div class="slide-img">
                             <figure class="img--container">
                                 <h3>Terapias físicas</h3>
-                                <img src="./public/img/tf.jpg" alt="Terapias">
+                                <img src="./public/img/tfN.png" alt="Terapias">
                                 <figcaption class="img--caption">
                                     
                                 
@@ -749,6 +748,12 @@ nums(buttonParr,parr);
 whatsAppWiget.addEventListener('click', () => {
     whatsAppNumbers.classList.toggle('hide__parr');
 });
+
+
+// showTest(imagesTest);
+setTimeout(() => {
+    showTest(whatsAppWiget);
+}, 12000);
 
 // const summary = document.querySelectorAll('.summary');
 

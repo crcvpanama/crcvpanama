@@ -442,6 +442,7 @@ summary:hover {
 }
 
 .whatsapp--wiget {
+	display:none;
 /*	float: right;*/
 	position: fixed;
 	background-image: url('../img/svg/WhatsApp.svg');
@@ -451,9 +452,9 @@ summary:hover {
 	right: 2%;
 	cursor: pointer;
 	z-index: 3000;
-	transition: all .4s ease-in;
 	animation: alert 6.5s linear 40ms infinite;
 	opacity: .8;
+	transition: all .4s ease-in;
 /*	justify-self: right;*/
 /*	border: 1px solid black;*/
 /*	margin: 0 0 0 auto;*/
@@ -981,13 +982,13 @@ details[open] > summary::marker {
 	position: absolute;
 	width: 100%;
 	height: 100%;
-	object-fit: expand;
-	padding: 0 .5em;
+	object-fit: fill;
+	padding: 0 10%;
 	margin: .2em;
-	justify-self: center;
+/*	justify-self: center;*/
 	align-self: center;
 	z-index: -1;
-	aspect-ratio: 2871/2972;
+/*	aspect-ratio: 2871/2972;*/
 }
 
 .in-img {
