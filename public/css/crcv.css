@@ -16,7 +16,7 @@ body {
 	width: auto;
 	min-height: 100lvh;
 	font-family: "Roboto", sans-serif;
-	font-optical-sizing: auto;
+/*	font-optical-sizing: auto;*/
 }
 
 main {
@@ -25,7 +25,7 @@ main {
 	background: -webkit-linear-gradient(to right, #36D1DC90, #F4F1EC);
 	background: linear-gradient(to right, #36D1DC90 0%, #36D1DC10 100%);
 /*	background: linear-gradient(to right, #36D1DC, #36D1DC40);*/
-  padding-bottom: 50px;
+  	padding-bottom: 50px;
 }
 
 h1,h2,h3 {
@@ -970,8 +970,6 @@ details[open] > summary::marker {
 	object-fit: fill;
 	padding: 0 10%;
 	margin: .2em;
-	background-attachment:fixed;
-/*	justify-self: center;*/
 	align-self: center;
 	z-index: -1;
 /*	aspect-ratio: 2871/2972;*/
@@ -1870,7 +1868,7 @@ details[open] > summary::after {
 		flex-wrap: wrap;
 		/* padding: 5px; */
 		border-right: none;
-		padding-left: auto;
+		padding-left: 0;
 		/* border-bottom: 2px solid lightslategray; */
 		/* border: 1px solid green; */
 		width: 120px;
