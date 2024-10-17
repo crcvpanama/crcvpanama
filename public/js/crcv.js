@@ -90,13 +90,13 @@ setInterval(slide, 4000);
 const navLinks = document.querySelectorAll('.nav-link');
 const home = document.querySelector('.home-start');
 const pages = document.querySelector('.page');
-const pageB = document.querySelector('.pageB');
+// const pageB = document.querySelector('.pageB');
 const pagesChild = pages.querySelector('.item:nth-child(2)');
-const pagesChildB = pages.querySelector('.item:nth-child(3)');
-const pagesChildC = pages.querySelector('.item:nth-child(4)');
+// const pagesChildB = pages.querySelector('.item:nth-child(3)');
+// const pagesChildC = pages.querySelector('.item:nth-child(4)');
 const newDiv = document.createElement('div');
-const newSection = document.createElement('div');
-const imagesTest = document.getElementsByClassName('.images--test');
+// const newSection = document.createElement('div');
+// const imagesTest = document.getElementsByClassName('.images--test');
 
 // let videosIds = [
 //     'tKOmWImuTZM?si=NNxJmmPOWI5nlo2W',
@@ -673,12 +673,13 @@ const listPages = [`
 //                         <span>s</span>
 //                     </button>
 // const btnTestA = document.querySelector('.btn--testA');
-
-
+// const listPages = document.querySelectorAll('.page');
+// console.log(listPages);
 // btnTestA.addEventListener('click', () => {
 //     imagesTest.style.width = '100%';
 // });
-
+// const listPages [
+//     ]
 
 function nDIv(a,b) {
     for(let j=0;j<navLinks.length;j++) {
@@ -755,8 +756,8 @@ setTimeout(() => {
     showTest(whatsAppWiget);
 }, 12000);
 
-// const summary = document.querySelectorAll('.summary');
-
+// const summary = document.getElementsByClassName('summary');
+// console.log(summary);
 // function hideSummary(a) {
 //     for(let i=0;i<summary.length;i++){
 //         summary[a].addEventListener('click', () => {
@@ -767,7 +768,7 @@ setTimeout(() => {
 
 // for(let i=0;i<summary.length;i++) {
 //     hideSummary(i);
-// }
+// };
 
 // window.onload = function() {
 //     var opar = document.getElementById('paragraph').innerHTML;
