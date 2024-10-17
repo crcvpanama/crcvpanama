@@ -6,67 +6,69 @@ const initYear = year - 2005;
 
 
 
-// function setCookie(cname, cvalue, exdays) {
-//     let d = new Date();
+function setCookie(cname, cvalue, exdays) {
+    let d = new Date();
 
-//     d.setTime(d.getTime() + (exdays*24*60*60*1000));
-//     let expires = "expires="+ d.toUTCString();
+    d.setTime(d.getTime() + (exdays*24*60*60*1000));
+    let expires = "expires="+ d.toUTCString();
 
-//     document.cookie = cname + "=" + cvalue + ";" + expires + ";path=/";
-// };
+    document.cookie = cname + "=" + cvalue + ";" + expires + ";path=/";
+};
 
-// function getCookie(cname) {
-//     let name = cname + "=";
-//     let decodedCookie = decodeURIComponent(document.cookie);
-//     let ca = decodedCookie.split(';');
-//     for(let i = 0; i <ca.length; i++) {
-//         let c = ca[i];
-//         while (c.charAt(0) == ' ') {
-//             c = c.substring(1);
-//         }
-//         if (c.indexOf(name) == 0) {
-//             return c.substring(name.length, c.length);
-//         }
-//     }
-//     return "";
-// };
+function getCookie(cname) {
+    let name = cname + "=";
+    let decodedCookie = decodeURIComponent(document.cookie);
+    let ca = decodedCookie.split(';');
+    for(let i = 0; i <ca.length; i++) {
+        let c = ca[i];
+        while (c.charAt(0) == ' ') {
+            c = c.substring(1);
+        }
+        if (c.indexOf(name) == 0) {
+            return c.substring(name.length, c.length);
+        }
+    }
+    return "";
+};
 
-// function removeCookie(cname){
-//     setCookie(cname,"",-1);
-// };
+function removeCookie(cname){
+    setCookie(cname,"",-1);
+};
 
-// function detectCookie(cname) {
-//     let name = cname + "=";
-//     let decodedCookie = decodeURIComponent(document.cookie);
-//     let ca = decodedCookie.split(';');
-//     for(let i = 0; i < ca.length; i++) {
-//         let c = ca[i];
-//         while (c.charAt(0) == ' ') {
-//             c = c.substring(1);
-//         }
-//         if (c.indexOf(name) == 0 && (name.length != c.length))  {
-//             return true;
-//         }
-//     }
-//     return false;
-// };
+function detectCookie(cname) {
+    let name = cname + "=";
+    let decodedCookie = decodeURIComponent(document.cookie);
+    let ca = decodedCookie.split(';');
+    for(let i = 0; i < ca.length; i++) {
+        let c = ca[i];
+        while (c.charAt(0) == ' ') {
+            c = c.substring(1);
+        }
+        if (c.indexOf(name) == 0 && (name.length != c.length))  {
+            return true;
+        }
+    }
+    return false;
+};
+document.addEventListener('DOMContentLoaded', function() {
+    init();
+});
 
-//     init();
-// function init(){
-//     bloqueRGPD = document.querySelector('.cookieBox');
-//     if (localStorage.acceptedCookies != 'true') {
-//     bloqueRGPD.style.display = 'inline-block';    
-//     }
+function init(){
+    bloqueRGPD = document.querySelector('.cookieBox');
+    if (localStorage.acceptedCookies != 'true') {
+    bloqueRGPD.style.display = 'inline-block';    
+    }
 
-//     if(detectCookie("rgpdOK")){
-//         if (getCookie("rgpdOK")==1){eliminarBloqueRGPD();}
-//     }else{
-//         document.querySelector(".botonRGPD").addEventListener("click", () => {
-//             eliminarBloqueRGPD();
-//             setCookie("rgpdOK",1,365);
-//         });
-//     }
-// };
+    if(detectCookie("rgpdOK")){
+        if (getCookie("rgpdOK")==1){eliminarBloqueRGPD();}
+    }else{
+        document.querySelector(".botonRGPD").addEventListener("click", () => {
+            eliminarBloqueRGPD();
+            setCookie("rgpdOK",1,365);
+        });
+    }
+};
 
 
 
