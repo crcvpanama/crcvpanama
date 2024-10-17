@@ -470,13 +470,14 @@ summary:hover {
 	bottom: 0;
 	right: 10%;
 	width: 60%;
-	height: 200px;
+	height: auto;
 	z-index: 4000;
 	align-content: center;
 	text-align: center;
-	gap: 1em;
+/*	gap: 1em;*/
 	opacity: 0;
 	border-radius: 20px;
+	padding: 1ch;
 	border: 5px solid white;
 	background: #36D1DC;
 	background: -webkit-linear-gradient(to right, #36D1DC, #36D1DC);
