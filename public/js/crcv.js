@@ -70,10 +70,6 @@ function init(){
     }
 };
 
-
-
-
-
 function eliminarBloqueRGPD(){
     bloqueRGPD.parentNode.removeChild(bloqueRGPD);
     localStorage.acceptedCookies = 'true';
@@ -417,7 +413,7 @@ const listPages = [`
                     title="Política de privacidad"
                     width="350"
                     height="150"
-                    src="https://www.crcvpanama.org/politicadeprivacidad.html" style="border: 1px solid white; scrollbar-width: thin;">  
+                    src="https://www.crcvpanama.org/politicadeprivacidad.html" style="border: 1px solid #ffffff; scrollbar-width: thin;">  
                 </iframe>    
             </div>
             </section>`,
