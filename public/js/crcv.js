@@ -1,11 +1,6 @@
 const year = new Date().getFullYear();
 const initYear = year - 2005;
 
-
-
-
-
-
 function setCookie(cname, cvalue, exdays) {
     let d = new Date();
 
@@ -790,6 +785,34 @@ setTimeout(() => {
 //    }
 //    highlight()
 // }
+const newIMG = [
+    './public/img/1x1/Maquina1N.png',
+    './public/img/1x1/maN.png',
+    './public/img/1x1/bannerf.png',
+    './public/img/1x1/inyec.png',
+    './public/img/1x1/tfN.png',
+    './public/img/1x1/discosherniadosN.png',
+    './public/img/1x1/enfermedaddegenerativa.png',
+    './public/img/1x1/ciatica.png',
+    './public/img/1x1/cervicalgia.png',
+    './public/img/1x1/c3N.png',
+    './public/img/1x1/radi.png'
+];
+
+const images = document.querySelectorAll('figure');
+
+const desktopMediaQuery = window.matchMedia('(width <= 800px)');
+
+function defineWidthIMG(a) {
+// desktopMediaQuery.addEventListener('load', (event) => {
+    if(desktopMediaQuery.matches) {
+        for(let i=0;i<a.length;i++) {
+            const imgCount = images[i].firstElementChild;
+            imgCount.src = newIMG[i];
+        } 
+    }
+};
+defineWidthIMG(images);
 
 let date = document.querySelector('.date');
 
