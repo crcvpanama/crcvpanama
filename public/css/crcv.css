@@ -496,15 +496,6 @@ a {
 	color: var(--white);
 }
 
-.show {
-	display: var(--show);
-}
-
-.hidden {
-/*	display: var(--hidden);*/
-	display: none;
-}
-
 .img-container {
 	text-align: center;
 	width: auto;
@@ -614,7 +605,7 @@ a {
 	filter: drop-shadow(2px 2px 4px yellow);
 }*/
 
-.whatsapp--wiget {
+.whatsapp--widget {
 	display:none;
 /*	float: right;*/
 	position: fixed;
@@ -631,6 +622,16 @@ a {
 /*	justify-self: right;*/
 /*	border: 1px solid black;*/
 /*	margin: 0 0 0 auto;*/
+}
+
+
+.show {
+	display: var(--show);
+}
+
+.hidden {
+/*	display: var(--hidden);*/
+	display: none;
 }
 
 .whatsapp--wiget:hover {

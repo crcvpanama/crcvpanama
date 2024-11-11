@@ -134,7 +134,8 @@ const newDiv = document.createElement('div');
 // const imgesTC = document.querySelector('.imgs--testA');
 
 function showTest(a) {
-    a.style.display = 'block';
+    // a.style.display = 'block';
+    a.classList.add('show');
 };
 
 // imagesTest.addEventListener('click', () => {
@@ -744,7 +745,7 @@ nav();
 const buttonParr = document.querySelectorAll(".button__parr");
 const parr = document.querySelectorAll(".diag__parr");
 
-let whatsAppWiget = document.querySelector(".whatsapp--wiget");
+let whatsAppWidget = document.querySelector(".whatsapp--widget");
 let whatsAppNumbers = document.querySelector(".whatsapp--numbers");
 
 function nums(a,b) {
@@ -757,15 +758,15 @@ function nums(a,b) {
 
 nums(buttonParr,parr);
 
-whatsAppWiget.addEventListener('click', () => {
+whatsAppWidget.addEventListener('click', () => {
     whatsAppNumbers.classList.toggle('hide__parr');
 });
 
 
 // showTest(imagesTest);
 setTimeout(() => {
-    showTest(whatsAppWiget);
-}, 12000);
+    showTest(whatsAppWidget);
+}, 10000);
 
 // const summary = document.getElementsByClassName('summary');
 // console.log(summary);
