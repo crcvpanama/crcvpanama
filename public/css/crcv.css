@@ -34,6 +34,7 @@
 	--color-title: #001A49;
 	--show: block;
 	--hidden: none;
+	--backgroundtransparent: #0052D468;
 	--background: linear-gradient(to right, #36D1DCc9, #36D1DC10);
 }
 
@@ -624,14 +625,17 @@ a {
 /*	margin: 0 0 0 auto;*/
 }
 
-
 .show {
 	display: var(--show);
 }
 
 .hidden {
-/*	display: var(--hidden);*/
-	display: none;
+	display: var(--hidden);
+/*	display: none;*/
+}
+
+.backgtrans {
+	background: var(--backgroundtransparent);
 }
 
 .whatsapp--wiget:hover {

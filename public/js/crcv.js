@@ -688,10 +688,10 @@ function nDIv(a,b) {
             // home.classList.add('show');
             home.classList.add('home-start');
             newDiv.innerHTML= "";
-                navLinks[j].style.background = 'none';
-                navLinks[b].style.background = '#0052D468';
-                navLinks[j].classList.remove('active');
-                navLinks[b].classList.add('active');
+                // navLinks[j].style.background = 'none';
+                // navLinks[b].style.background = '#0052D468';
+                navLinks[j].classList.remove('active', 'backgtrans');
+                navLinks[b].classList.add('active', 'backgtrans');
                 // navLinks[b].style.color = '#fff';
                 // navLinks[j].style.color = '#303030';
          } else {
@@ -700,12 +700,12 @@ function nDIv(a,b) {
             home.classList.remove('home-start');
             // home.style.display = 'none';
             // home.classList.add('hidden');
-                navLinks[j].style.background = 'none';
+                // navLinks[j].style.background = 'none';
                 // navLinks[j].style.color = '#303030';
-                navLinks[b].style.background = '#0052D468';
+                // navLinks[b].style.background = '#0052D468';
                 // navLinks[b].style.color = '#fff';
-                navLinks[j].classList.remove('active');
-                navLinks[b].classList.add('active');
+                navLinks[j].classList.remove('active','backgtrans');
+                navLinks[b].classList.add('active','backgtrans');
         }
     }
 };
