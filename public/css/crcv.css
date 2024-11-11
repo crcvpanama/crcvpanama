@@ -39,6 +39,7 @@
 *,
 *::before,
 *::after {
+/*	content:"";*/
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
@@ -92,7 +93,7 @@ textarea {
   line-height: inherit;
 }
 
-/*
+
 button,
 [type="button"],
 [type="reset"],
@@ -111,9 +112,9 @@ button::-moz-focus-inner,
 [type="button"]::-moz-focus-inner,
 [type="reset"]::-moz-focus-inner,
 [type="submit"]::-moz-focus-inner {
-/*  padding: 0;*/
-/*  border-style: none;*/
-/*}*/
+  padding: 0;
+  border-style: none;
+}
 
 main {
 /*	position: relative;*/
@@ -277,14 +278,18 @@ a {
 
 .social--line div .facebook i {
 	color: #3b5998;
+	transition: all .5s ease-in-out;
 }
 
 .social--line div .whatsapp i {
 	color: #25D366;
+	transition: all .5s ease-in-out;
+
 }
 
 .social--line div .youtube i {
 	color: #c4302b;
+	transition: all .5s ease-in-out;
 }
 
 .social--line div .instagram i {
@@ -292,23 +297,43 @@ a {
     -webkit-background-clip: text;
 	background-clip: text;
     -webkit-text-fill-color: transparent;
+    transition: all .5s ease-in-out;
 }
+
+/*.social--line .youtube i::after,
+.social--line .instagram i::after{
+	 content: "YoutTube";
+            position: absolute;
+            left: 0;
+            top: 0;
+            white-space: nowrap;
+            background-color: #33300000;
+            color: #fff;
+            padding: 5px;
+            border-radius: 3px;
+            opacity: 0;
+            transition: opacity 0.3s;
+            pointer-events: none;
+}*/
 
 .social--line .youtube i:hover,
 .social--line .instagram i:hover {
+/*	content: "YoutTube";*/
 	filter: drop-shadow(0 -7mm 4px crimson);
-	transition: all .5s ease-in-out;
+/*	opacity: 1;*/
+/*	transition: all .5s ease-in-out;*/
+	
 }
 
 .social--line .facebook i:hover {
 	filter: drop-shadow(0 -7mm 4px #3b5998);
-	transition: all .5s ease-in-out;
+/*	transition: all .5s ease-in-out;*/
 }
 
 .social--line .whatsapp i:hover {
 /*	content: "WhatsApp";*/
 	filter: drop-shadow(0 -7mm 4px #008000);
-	transition: all .5s ease-in-out;
+/*	transition: all .5s ease-in-out;*/
 }
 
 /*footer {
