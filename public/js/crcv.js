@@ -70,8 +70,8 @@ function eliminarBloqueRGPD(){
     localStorage.acceptedCookies = 'true';
 };
 
-const zero = document.querySelector('.home-slider');
-const one = document.querySelector('.home-slider-conten');
+// const zero = document.querySelector('.home-slider');
+// const one = document.querySelector('.home-slider-conten');
 const button = document.querySelector('.nav-button');
 const menu = document.querySelector('.collapse');
 
@@ -79,13 +79,13 @@ button.addEventListener('click', () => {
     menu.classList.toggle('collapse-hide');
 });
 
-function slide() {
-    zero.style.display = "flex";
-    one.style.backgroundPosition = "right top";
-    one.style.transition = 'all .4s ease-in-out';
-};
+// function slide() {
+//     zero.style.display = "flex";
+//     one.style.backgroundPosition = "right top";
+//     one.style.transition = 'all .4s ease-in-out';
+// };
 
-setInterval(slide, 4000);
+// setInterval(slide, 4000);
 const navLinks = document.querySelectorAll('.nav-link');
 const home = document.querySelector('.home-start');
 const pages = document.querySelector('.page');
@@ -683,16 +683,28 @@ const listPages = [`
 function nDIv(a,b) {
     for(let j=0;j<navLinks.length;j++) {
         if(a===undefined) {
-            home.style.display = 'block';
+            // home.style.display = 'block';
+            // home.classList.add('show');
+            home.classList.add('home-start');
             newDiv.innerHTML= "";
                 navLinks[j].style.background = 'none';
                 navLinks[b].style.background = '#0052D468';
+                navLinks[j].classList.remove('active');
+                navLinks[b].classList.add('active');
+                // navLinks[b].style.color = '#fff';
+                // navLinks[j].style.color = '#303030';
          } else {
             newDiv.innerHTML = listPages[a];
             pages.insertBefore(newDiv, pagesChild);
-            home.style.display = 'none';
+            home.classList.remove('home-start');
+            // home.style.display = 'none';
+            // home.classList.add('hidden');
                 navLinks[j].style.background = 'none';
+                // navLinks[j].style.color = '#303030';
                 navLinks[b].style.background = '#0052D468';
+                // navLinks[b].style.color = '#fff';
+                navLinks[j].classList.remove('active');
+                navLinks[b].classList.add('active');
         }
     }
 };
