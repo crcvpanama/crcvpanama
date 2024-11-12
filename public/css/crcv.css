@@ -125,9 +125,9 @@ main {
 /*	background: -webkit-linear-gradient(to right, #36D1DC90, #F4F1EC);*/
 /*	background: linear-gradient(to right, #36D1DC90 0%, #36D1DC10 100%);*/
 /*	background: linear-gradient(to right, #36D1DC, #36D1DC40);*/
-  	padding-bottom: 50px;
-  	width: auto;
-  	min-height: 100lvh;
+  	padding-bottom: 30px;
+/*  	width: auto;*/
+/*  	min-height: 100lvh;*/
 }
 
 h1,h2,h3 {
@@ -196,12 +196,12 @@ a {
 		height: auto;*/
 /*		border: 1px solid black;*/
 /*	}*/
-.pageA div iframe {
+/*.pageA div iframe {
 		position: relative;
 		width: 100%;
 		height: 100vw;
-/*		border: 1px solid black;*/
-}
+*//*		border: 1px solid black;*/
+/*}*/
 
 /*.pageA div > iframe{
 	position: relative;
@@ -2501,7 +2501,7 @@ details[open] > summary::after {
 }
 
 @media (width >= 2428px) {
-	main {
+	html {
 		position: relative;
 		margin: 0 25%;
 	}
