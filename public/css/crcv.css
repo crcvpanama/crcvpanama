@@ -1347,7 +1347,7 @@ details > summary {
   margin-left: 1ch;
   display: inline-block;
   
-  font-size: 1.5em;
+/*  font-size: 1.5em;*/
   font-weight: bold;
   margin: auto 10px;
   padding: 0;
