@@ -2199,7 +2199,8 @@ details[open] > summary::after {
 
 	.img-container-a {
 /*		max-width: 0;*/
-		width: 100%;	
+		width: 100%;
+		padding: 0;
 	}
 
 	.img-container img{
@@ -2233,8 +2234,8 @@ details[open] > summary::after {
 	.diag-art {
 		width: auto;
 		height: auto;
-		margin: 40px 2ch;
-		padding: 0 1ch;
+		margin: 40px 0;
+		padding: 0 0;
 /*		justify-content: center;*/
 	}
 
@@ -2256,6 +2257,7 @@ details[open] > summary::after {
 
 	.button__parr {
 		position: relative;
+		scale: 1;
 	}
 
 	.diag-li {
