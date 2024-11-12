@@ -2464,11 +2464,6 @@ details[open] > summary::after {
 /*		grid-template-columns: 1fr auto;*/
 	}
 
-	.pageA div iframe{
-		width: 100vw;
-		height: 500vw;
-	}
-
 	/*.images--test #one:hover,
 	.images--test #two:hover,
 	.images--test #three:hover {
