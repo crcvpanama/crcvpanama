@@ -1,5 +1,8 @@
 const year = new Date().getFullYear();
 const initYear = year - 2005;
+const yyyy = document.querySelector('.yyyy');
+
+yyyy.append(initYear); 
 
 function setCookie(cname, cvalue, exdays) {
     let d = new Date();

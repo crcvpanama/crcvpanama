@@ -2007,8 +2007,8 @@ details[open] > summary::after {
 		display: block;
 		align-items: center;
 		overflow-x: hidden;		
-		background: #36D1DC;
-		background: -webkit-linear-gradient(to right, #36D1DC, #36D1DC);
+/*		background: #36D1DC;*/
+/*		background: -webkit-linear-gradient(to right, #36D1DC, #36D1DC);*/
 		background: linear-gradient(to right, #36D1DC, #36D1DC);
 	}
 
@@ -2156,7 +2156,7 @@ details[open] > summary::after {
 		margin: 1em;
 		object-position: top;
 		object-fit: fill;
-		background-position: right;
+		background-position: center;
 		padding: 0;
 		z-index: -1;
 	}
