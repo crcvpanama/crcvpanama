@@ -461,7 +461,7 @@ const listPages = [`
                 </ul>
             </div>
             </section>`
-        ];
+];
  // style="width:100%; height: 100lvh; scrollbar-width: none;"
  // style="width:100%; height: 100lvh; scrollbar-width: none;"
  // style="width:100%; height: 100lvh; scrollbar-width: none;"
