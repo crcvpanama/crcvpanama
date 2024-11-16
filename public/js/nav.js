@@ -13,6 +13,177 @@ const pagesChild = pages.querySelector('.item:nth-child(0)');
 //     `<iframe src='./fqs.html' frameborder="0"></iframe>`
 // ];
 
+const lists = [
+    {
+        listA: `Estimulación eléctrica (corriente eléctrica que hace que ciertos músculos se contraigan).`,
+        listB: `Ultrasonido (el uso de ondas de sonido para generar calor y promover la curación).`,
+        listC: `Terapia de calor o frío.`
+    },
+    {
+        listA: `Alivia muchos problemas de espalda. Dolor de espalda, dolor de cuello, discos herniados, enfermedades degenerativa de disco, síndrome facetario, ciática, entre otros. También ayuda a promover el movimiento de agua, oxígeno y líquidos ricos en nutrientes entre los discos que ayudan a iniciar el proceso de curación.`,
+        listB: `Tratamiento no invasivo. Proporciona alivio sin necesidad de tratamientos con medicamentos ni cirugías invasivas. Los analgésicos, indicados para tratar este tipo de lesiones, sólo enmascaran el dolor, mientras que la descompresión espinal no quirúrgica se ocupa de la causa, raíz del dolor.`,
+        listC: `Procedimiento rápido y cómodo. Tratamiento indoloro que se realiza en poco tiempo. La sesión tiene una duración de entre 30 minutos a una hora.`
+    },
+    {
+        listA: `Osteoporosis`,
+        listB: `Cirugía de espalda previa`,
+        listC: `Si tiene varillas o piezas metálicas en la columna vertebral o cuello`,
+        listD: `Embarazo`,
+        listE: `Fusión espinal`,
+        listF: `Disco artificial o implantes`,
+        listG: `Osteoporosis`,
+        listH: `Cirugía de espalda previa`,
+        listI: `Si tiene varillas o piezas metálicas en la columna vertebral o cuello`,
+        listJ: `Vértebras rotas`,
+        listK: `Estenosis espinal`,
+        listL: `Infección de la columna vertebral`,
+        listM: `Tumor de la columna vertebral`,
+        listN: `Tomando anticoagulantes`,
+        listO: `Espondilitis anquilosante.`
+    },
+
+    {
+        listA: `Potente germicida (combates parásitos, hongos, bacterias, virus)`,
+        listB: `Analgésico`,
+        listC: `Antiinflamatorio`,
+        listD: `Mejora la circulación sanguínea`,
+        listE: `Mejora la oxigenación de los tejidos`,
+        listF: `Estimula el sistema inmunológico (promueve la capacidad del cuerpo de enfrentar y vencer enfermedades).`,
+
+    },
+];
+
+const listB = [
+    {
+        a: `<p><strong>Discos herniados: </strong> 
+                    lesión localizada en medio de las vértebras que consta de una deformidad del disco, provocada por debilidad de los anillos que mantienen la integridad del disco en su interior (núcleo pulposo). Los discos herniados se pueden encontrar en todas las regiones móviles de la columna ejemplo: cervical (C1 hasta C7) más comunes, dorsal (T1 hasta T12) menos comunes y lumbar (L1 hasta L5/S1) más comunes.</p>`,
+        b: `<p><strong>Enfermedad degenerativa de disco: </strong>
+                    (desgaste/deshidratación de disco) lesión que se caracteriza a través del tiempo por incapacidad del disco de amortiguar correctamente las vértebras observado a nivel de radiografías como acercamiento de las vértebras y a nivel de la resonancia magnética con un aumento en la tonalidad del disco (más oscuro).</p>`,
+        c: `<p><strong>Síndromes de ciática: </strong>
+                    descripción de una serie de síntomas principalmente asociados a una irritación/dolor de las raíces nerviosas provenientes de la columna lumbar y parte del sacro en un 90 a 95% de los casos. Existe un porcentaje residual asociado a síndrome piriforme que causa el mismo cuadro.</p>`,
+        d: `<p><strong>Cervicalgia: </strong> 
+                    dolor principalmente en el cuello y hacia hombros y brazos. Tiene como origen lesiones a nivel cervical asociado a discos herniados, desgastados, síndromes facetarios, síndromes miofasciales, y hasta escoliosis.</p>`,
+        e: `<p><strong>Escoliosis leve a moderadas: </strong> 
+                    son desviaciones congénitas (desde que nacemos) de la columna que dependiendo del grado de desviación, ubicación y características de la misma pueden provocar dolor similar a una lesión asociada con el disco en general. En términos generales es una lesión que le crea una desventaja al paciente con respecto a los demás por el hecho del balance de las cargas corporales del tronco.</p>`, 
+        f: `<p><strong>Radiculopatías de miembros superiores e inferiores: </strong>
+                    (adormecimiento/hormigueos de brazos y piernas)- descritas de esta manera son manifestaciones del nervio irritado usualmente desde su origen que se describen como: adormecimiento, hormigueos, quemazón, frio, calambres, perdida de la fuerza, y dolor. En muchas ocasiones son provocadas por lesiones a nivel del disco/columna.</p>`,
+    },
+    {
+        a: `<p><strong>Artritis: </strong>Es la hinchazón y la sensibilidad de una o más de las articulaciones. Los principales síntomas de la artritis son dolor y rigidez de las articulaciones, que suelen empeorar con la edad. Los tipos más frecuentes de artritis son la artrosis y la artritis reumatoide.</p>`,
+        b: `<p><strong>Artrosis: </strong>Es la causa más común de dolor de rodilla en personas mayores.</p>`,
+        c: `<p><strong>La artritis reumatoide: </strong>es una enfermedad en la cual el sistema inmunitario ataca las articulaciones, comenzando con el revestimiento de estas.</p>`,
+        d: `<p><strong>Lesiones deportivas: </strong>Los deportistas son propensos a sufrir lesiones de rodilla y hombros que pueden causar dolor e inflamación.</p>`,
+        e: `<p><strong>Tendinitis: </strong>es una inflamación de los tejidos conectivos fibrosos gruesos que unen los músculos a los huesos, esta inflamación de los tendones en articulaciones puede generar dolor.</p>`
+    }
+];
+
+const listFQs = [
+{
+    a: `<details name="faq">
+                        <summary>¿Qué es el DRX9000?</summary>
+                        <p>Drx9000 es un equipo que realiza descompresión espinal no quirúrgica y está indicado para realizar separación intermitente de las vértebras con lo cual permite rehidratar o retraer el disco consiguiendo así liberar la raíz nerviosa provocante del cuadro doloroso.</p>
+                        </details>`,
+    b: `<details name="faq">
+                        <summary>¿Necesitamos tener diagnóstico para atenderse?</summary>
+                        <p>No es necesario ya que durante la evaluación se le dan una explicación detallada del problema y se culmina con un diagnóstico y el tratamiento recomendado.</p>
+                        </details>`,
+    c: `<details name="faq">
+                        <summary>¿Necesito una radiografía o resonancia magnética para atenderme?</summary>
+                        <p>Por lo general no es necesario, pero nos ahorra tiempo. Se le indica al paciente en tal caso de no tener que se le mandara una orden el día de la evaluación. Además, se le indica de tener estudios de imágenes viejas (3-5 años) traerlos ya que sirven de comparativas</p>
+                        </details>`,
+    d: `<details name="faq">
+                        <summary>¿Me puedo hacer terapias directamente si ya tengo diagnostico?</summary>
+                        <p>En el 90% de los casos es necesario realizar una evaluación de cada paciente que entra en un programa de terapias ya que existen diferentes situaciones/factores que pueden cambiar la manera en que se maneja cada paciente.</p>
+                        </details>`,
+    e: `<details name="faq">
+                        <summary>¿Cuántas sesiones necesito?</summary>
+                        <p>Todo depende del diagnóstico que presente la persona luego de tener una evaluación en el centro.</p>
+                        </details>`,
+    f: `<details name="faq">
+                        <summary>¿Cuánto es el costo por sesión?</summary>
+                        <p>No manejamos tratamientos por sesiones. Y no damos costos de tratamientos hasta que el paciente se atienda (primera evaluación).</p>
+                        </details>`,
+    g: `<details name="faq">
+                        <summary>¿Que debo esperar después de cada sesión?</summary>
+                        <p>Luego de realizarse descompresión espinal el paciente puede sentir una sensación de ¨espalda flotante¨ al principio y durante el día de las sesiones. Al día siguiente una sensación de haber realizado ejercicio (fatiga muscular leve a moderada).</p>
+                        </details>`,
+    h: `<details name="faq">
+                        <summary>¿Necesito algún acompañante durante las terapias?</summary>
+                        <p>No es necesario llevar a un acompañante al menos que el paciente presente dificultades a la marcha como por ejemplo inestabilidad y mareos provocados por lesiones en la columna vertebral (usualmente lesiones cervicales).</p>
+                        </details>`,
+    i: `<details name="faq">
+                        <summary>¿Cuántos años tienen en el mercado?</summary>
+                        <p>Nuestra fecha de apertura fue en 2005 (${initYear} años) a su servicio.</p>
+                        </details>`,
+    j: `<details name="faq">
+                        <summary>¿Quién atiende en el centro?</summary>
+                        <p>Contamos con un equipo de médico, fisioterapia y asistentes para brindarles el mejor servicio.</p>
+                        </details>`,
+    k: `<details name="faq">
+                        <summary>¿Trabajamos con seguros?</summary>
+                        <p>No trabajamos con seguros. Solo llenamos las hojas de reclamos una vez el paciente pago su evaluación o tratamiento completo.</p>
+                        </details>`,
+    l: `<details name="faq">
+                        <summary>¿Trabajamos los sábados?</summary>
+                        <p>En Panamá, estamos abiertos de 9:00a.m. a 12:00m.d.
+                        En Santiago, de lunes a viernes de 8 am a 5 pm.</p>
+                        </details>`,
+    m: `<details name="faq">
+                        <summary>¿Atienden escoliosis?</summary>
+                        <p>Si atendemos escoliosis, de leve a moderadas ya sea dorsal o lumbar que son las más comunes.</p>
+                        </details>`,
+    n: `<details name="faq" >
+                        <summary>¿Atienden desgaste de columna?</summary>
+                        <p id="details-FQ">Lo que definimos como desgaste de columna es una deshidratación del disco en diferentes áreas de la columna ya sea cervical o lumbar, 
+                            <strong><u>si lo atendemos.</u></strong></p>
+                        </details>`,
+    o: `<details name="faq">
+                        <summary>¿Se puede pagar con tarjetas de crédito o débito?</summary>
+                        <p>Los métodos de pagos son pago en efectivo, transferencias a la cuenta, punto de venta con tarjeta de crédito o débito.</p>
+                        </details>`,
+    p: `<details name="faq">
+                        <summary>¿Necesito llevar alguna vestimenta especial para atenderme?</summary>
+                        <p>Se recomienda llevar ropa cómoda con facilidad para acceder a las áreas afectadas a tratar.</p>
+                        </details>`,
+    q: `<details name="faq">
+                        <summary>¿Puedo seguir trabajando mientras me hago terapias?</summary>
+                        <p>El tratamiento se puede realizar mientras trabaja sin embargo es recomendable disminuir la intensidad de las actividades en forma general en la vida cotidiana con el fin de permitir que el nervio lastimado se puede recuperar poco a poco.</p>
+                        </details>`,
+    r: `<details name="faq">
+                        <summary>¿Qué es el ozono?</summary>
+                        <p>El ozono es un gas químicamente es oxigeno (O2) elevado a O3.</p>
+                        </details>`,
+    s: `<details name="faq">
+                        <summary>¿Puedo usar el ozono como método de rehabilitación?</summary>
+                        <p>En nuestro centro el ozono se aplica con la intensión de ser un complemento para desinflamar el área afectada por el disco herniado desgastado, síndrome facetario entre otras patologías que actualmente se están incluyendo en nuestro arsenal de diagnósticos tratados.</p>
+                        </details>`,
+    t: `<details name="faq">
+                        <summary>¿Dónde están ubicados?</summary>
+                        <p>Panamá: Betania, Camino real de Betania, edificio paseo real de Betania local #3 piso #1</p>
+                        <p>Veraguas: Santiago, calle 8va plaza Jean Carlos, diagonal al gimnasio de la escuela normal, local #3.</p>
+                        </details>`,
+    w: `<details name="faq">
+                        <summary>¿En qué sucursal nos podemos atender?</summary>
+                        <p>Es recomendable atenderse en la sucursal más cercana a su hogar. Por el momento contamos con una sucursal en Betania, Panamá, y Santiago de Veraguas.</p>
+                        </details>`,
+    x: `<details name="faq">
+                        <summary>¿Que horario tienen?</summary>
+                        <p>Nuestros horarios en Panamá son de lunes a viernes de 9:00 hasta 18:00 y sábados 9:00 hasta 12:00.</p>
+                        <p>En Santiago son de lunes a viernes de 8:00 hasta las 17:00; todavía cerrados los sábados.</p>
+                        </details>`,
+    y: `<details name="faq">
+                        <summary>¿Atienden por citas o por orden de llegada?</summary>
+                        <p>Trabajamos por citas programadas ya sea por evaluación o por tratamiento/terapias.</p>
+                        </details>`,
+    }
+];
+// console.log(Object.values(lists[0]));
+
+function innerLists(a) {
+    let ll = Object.values(a);
+    return ll.map(li => `<li>${li}</li>`).join(" ");
+};
+
 const listPages = [`
             <section class="service servicehidden page">
             <h2>Servicios</h2>
@@ -34,35 +205,15 @@ const listPages = [`
                             <details>                           
                                 <summary class="summary"> Leer más... </summary>
                                 <p>El tratamiento va acompañado de terapias físicas (antes o después de la descompresión). Éstas terapias incluyen:</p>
-                                
-                                <ul>
-                                    <li>Estimulación eléctrica (corriente eléctrica que hace que ciertos músculos se contraigan).</li>
-                                    <li>Ultrasonido (el uso de ondas de sonido para generar calor y promover la curación).</li>
-                                    <li>Terapia de calor o frío.</li>
-                                </ul>
+                                <ul>${innerLists(lists[0])}</ul>
                                 
                                 <h3>Beneficios de la descompresión espinal:</h3>
-                                <ul>
-                                    <li>Alivia muchos problemas de espalda. Dolor de espalda, dolor de cuello, discos herniados, enfermedades degenerativa de disco, síndrome facetario, ciática, entre otros. También ayuda a promover el movimiento de agua, oxígeno y líquidos ricos en nutrientes entre los discos que ayudan a iniciar el proceso de curación.</li>
-                                    <li>Tratamiento no invasivo. Proporciona alivio sin necesidad de tratamientos con medicamentos ni cirugías invasivas. Los analgésicos, indicados para tratar este tipo de lesiones, sólo enmascaran el dolor, mientras que la descompresión espinal no quirúrgica se ocupa de la causa, raíz del dolor.</li>
-                                    <li>Procedimiento rápido y cómodo. Tratamiento indoloro que se realiza en poco tiempo. La sesión tiene una duración de entre 30 minutos a una hora.</li>
-                                </ul>
+                                
+                                <ul>${innerLists(lists[1])}</ul>
                                 <p>Algunas contraindicaciones a saber:
                                     Si sufre de alguna de estas enfermedades, lesiones o condiciones listadas abajo, es posible que no sea elegible o tendrá que ser evaluado en mayor profundidad para asegurarse de si puede proceder o no:</p>
-                                <ul>
-                                    <li>Osteoporosis</li>
-                                    <li>Cirugía de espalda previa</li>
-                                    <li>Si tiene varillas o piezas metálicas en la columna vertebral o cuello</li>
-                                    <li>Embarazo</li>
-                                    <li>Fusión espinal</li>
-                                    <li>Disco artificial o implantes</li>
-                                    <li>Vértebras rotas</li>
-                                    <li>Estenosis espinal</li>
-                                    <li>Infección de la columna vertebral</li>
-                                    <li>Tumor de la columna vertebral</li>
-                                    <li>Tomando anticoagulantes</li>
-                                    <li>Espondilitis anquilosante.</li>
-                                </ul>
+
+                                <ul>${innerLists(lists[2])}</ul>
                             </details>
                         </div>
 
@@ -85,14 +236,7 @@ const listPages = [`
                                 <p>En algunos casos se aplica como terapia única, mientras que en otros actúa como apoyo a otro tratamiento.</p>
                                 <br>
                                 <p><strong>Propiedades del Ozono</strong></p>
-                                <ul>
-                                    <li>Potente germicida (combates parásitos, hongos, bacterias, virus)</li>
-                                    <li>Antiinflamatorio</li>
-                                    <li>Analgésico</li>
-                                    <li>Mejora la circulación sanguínea</li>
-                                    <li>Mejora la oxigenación de los tejidos</li>
-                                    <li>Estimula el sistema inmunológico (promueve la capacidad del cuerpo de enfrentar y vencer enfermedades).</li>
-                                </ul>
+                                <ul>${innerLists(lists[3])}</ul>
                             </details>   
                         </div>
 
@@ -123,51 +267,15 @@ const listPages = [`
             <article class="list--diagnostic" id="diagnostic">
                 <h4>Con descompresión espinal</h4>
                 
-                <ul>
-                    <li><p><strong>Discos herniados: </strong> 
-                    lesión localizada en medio de las vértebras que consta de una deformidad del disco, provocada por debilidad de los anillos que mantienen la integridad del disco en su interior (núcleo pulposo). Los discos herniados se pueden encontrar en todas las regiones móviles de la columna ejemplo: cervical (C1 hasta C7) más comunes, dorsal (T1 hasta T12) menos comunes y lumbar (L1 hasta L5/S1) más comunes.</p>
-                    </li>
-
-                    <li><p><strong>Enfermedad degenerativa de disco: </strong>
-                    (desgaste/deshidratación de disco) lesión que se caracteriza a través del tiempo por incapacidad del disco de amortiguar correctamente las vértebras observado a nivel de radiografías como acercamiento de las vértebras y a nivel de la resonancia magnética con un aumento en la tonalidad del disco (más oscuro).</p>
-                    </li>
-
-                    <li><p><strong>Síndromes de ciática: </strong>
-                    descripción de una serie de síntomas principalmente asociados a una irritación/dolor de las raíces nerviosas provenientes de la columna lumbar y parte del sacro en un 90 a 95% de los casos. Existe un porcentaje residual asociado a síndrome piriforme que causa el mismo cuadro.</p>
-                    </li>
-
-                    <li><p><strong>Cervicalgia: </strong> 
-                    dolor principalmente en el cuello y hacia hombros y brazos. Tiene como origen lesiones a nivel cervical asociado a discos herniados, desgastados, síndromes facetarios, síndromes miofasciales, y hasta escoliosis.</p>
-                    </li>
-
-                    <li><p><strong>Escoliosis leve a moderadas: </strong> 
-                    son desviaciones congénitas (desde que nacemos) de la columna que dependiendo del grado de desviación, ubicación y características de la misma pueden provocar dolor similar a una lesión asociada con el disco en general. En términos generales es una lesión que le crea una desventaja al paciente con respecto a los demás por el hecho del balance de las cargas corporales del tronco.</p>
-                    </li>
-
-                    <li><p><strong>Radiculopatías de miembros superiores e inferiores: </strong>
-                    (adormecimiento/hormigueos de brazos y piernas)- descritas de esta manera son manifestaciones del nervio irritado usualmente desde su origen que se describen como: adormecimiento, hormigueos, quemazón, frio, calambres, perdida de la fuerza, y dolor. En muchas ocasiones son provocadas por lesiones a nivel del disco/columna.</p>
-                    </li>
-                </ul>
+                
+                <ul>${innerLists(listB[0])}</ul>
+                
             </article>
             <article class="list--diagnostic">
                 <h4>Con ozonoterapia</h4>
-                <ul>
-                    <li>
-                        <p><strong>Artritis: </strong>Es la hinchazón y la sensibilidad de una o más de las articulaciones. Los principales síntomas de la artritis son dolor y rigidez de las articulaciones, que suelen empeorar con la edad. Los tipos más frecuentes de artritis son la artrosis y la artritis reumatoide.</p>
-                    </li>
-                    <li>
-                        <p><strong>Artrosis: </strong>Es la causa más común de dolor de rodilla en personas mayores.</p>
-                    </li>
-                    <li>
-                        <p><strong>La artritis reumatoide: </strong>es una enfermedad en la cual el sistema inmunitario ataca las articulaciones, comenzando con el revestimiento de estas.</p>
-                    </li>
-                    <li>
-                        <p><strong>Lesiones deportivas: </strong>Los deportistas son propensos a sufrir lesiones de rodilla y hombros que pueden causar dolor e inflamación.</p>
-                    </li>
-                    <li>
-                        <p><strong>Tendinitis: </strong>es una inflamación de los tejidos conectivos fibrosos gruesos que unen los músculos a los huesos, esta inflamación de los tendones en articulaciones puede generar dolor.</p>
-                    </li>
-                </ul>
+
+                <ul>${innerLists(listB[1])}</ul>
+
             </article>
             </section>`,
             `<section class="contacto chidden page">
@@ -349,170 +457,7 @@ const listPages = [`
             <h2> Preguntas Frecuentes </h2>
             <div id="frequences">
                 <ul id="paragraph">
-                    <li>
-                        <details name="faq">
-                        <summary>¿Qué es el DRX9000?</summary>
-                        <p>Drx9000 es un equipo que realiza descompresión espinal no quirúrgica y está indicado para realizar separación intermitente de las vértebras con lo cual permite rehidratar o retraer el disco consiguiendo así liberar la raíz nerviosa provocante del cuadro doloroso.</p>
-                        </details>
-                    </li>
-
-                    <li>
-                        <details name="faq">
-                        <summary>¿Necesitamos tener diagnóstico para atenderse?</summary>
-                        <p>No es necesario ya que durante la evaluación se le dan una explicación detallada del problema y se culmina con un diagnóstico y el tratamiento recomendado.</p>
-                        </details>
-                    </li>
-                    
-                    <li>
-                        <details name="faq">
-                        <summary>¿Necesito una radiografía o resonancia magnética para atenderme?</summary>
-                        <p>Por lo general no es necesario, pero nos ahorra tiempo. Se le indica al paciente en tal caso de no tener que se le mandara una orden el día de la evaluación. Además, se le indica de tener estudios de imágenes viejas (3-5 años) traerlos ya que sirven de comparativas</p>
-                        </details>
-                    </li>    
-
-                    <li>
-                        <details name="faq">
-                        <summary>¿Me puedo hacer terapias directamente si ya tengo diagnostico?</summary>
-                        <p>En el 90% de los casos es necesario realizar una evaluación de cada paciente que entra en un programa de terapias ya que existen diferentes situaciones/factores que pueden cambiar la manera en que se maneja cada paciente.</p>
-                        </details>
-                    </li>
-
-                    <li>
-                        <details name="faq">
-                        <summary>¿Cuántas sesiones necesito?</summary>
-                        <p>Todo depende del diagnóstico que presente la persona luego de tener una evaluación en el centro.</p>
-                        </details>
-                    </li>
-
-                    <li>
-                        <details name="faq">
-                        <summary>¿Cuánto es el costo por sesión?</summary>
-                        <p>No manejamos tratamientos por sesiones. Y no damos costos de tratamientos hasta que el paciente se atienda (primera evaluación).</p>
-                        </details>
-                    </li>
-
-                    <li>
-                        <details name="faq">
-                        <summary>¿Que debo esperar después de cada sesión?</summary>
-                        <p>Luego de realizarse descompresión espinal el paciente puede sentir una sensación de ¨espalda flotante¨ al principio y durante el día de las sesiones. Al día siguiente una sensación de haber realizado ejercicio (fatiga muscular leve a moderada).</p>
-                        </details>
-                    </li>
-
-                    <li>
-                        <details name="faq">
-                        <summary>¿Necesito algún acompañante durante las terapias?</summary>
-                        <p>No es necesario llevar a un acompañante al menos que el paciente presente dificultades a la marcha como por ejemplo inestabilidad y mareos provocados por lesiones en la columna vertebral (usualmente lesiones cervicales).</p>
-                        </details>
-                    </li>
-
-                    <li>
-                        <details name="faq">
-                        <summary>¿Cuántos años tienen en el mercado?</summary>
-                        <p>Nuestra fecha de apertura fue en 2005 (${initYear} años) a su servicio.</p>
-                        </details>
-                    </li>
-
-                    <li>
-                        <details name="faq">
-                        <summary>¿Quién atiende en el centro?</summary>
-                        <p>Contamos con un equipo de médico, fisioterapia y asistentes para brindarles el mejor servicio.</p>
-                        </details>
-                    </li>
-
-                    <li>
-                        <details name="faq">
-                        <summary>¿Trabajamos con seguros?</summary>
-                        <p>No trabajamos con seguros. Solo llenamos las hojas de reclamos una vez el paciente pago su evaluación o tratamiento completo.</p>
-                        </details>
-                    </li>
-
-                    <li>
-                        <details name="faq">
-                        <summary>¿Trabajamos los sábados?</summary>
-                        <p>En Panamá, estamos abiertos de 9:00a.m. a 12:00m.d.
-                        En Santiago, de lunes a viernes de 8 am a 5 pm.</p>
-                        </details>
-                    </li>
-
-                    <li>
-                        <details name="faq">
-                        <summary>¿Atienden escoliosis?</summary>
-                        <p>Si atendemos escoliosis, de leve a moderadas ya sea dorsal o lumbar que son las más comunes.</p>
-                        </details>
-                    </li>
-
-                    <li>
-                        <details name="faq" >
-                        <summary>¿Atienden desgaste de columna?</summary>
-                        <p id="details-FQ">Lo que definimos como desgaste de columna es una deshidratación del disco en diferentes áreas de la columna ya sea cervical o lumbar, 
-                            <strong><u>si lo atendemos.</u></strong></p>
-                        </details>
-                    </li>
-
-                    <li>
-                        <details name="faq">
-                        <summary>¿Se puede pagar con tarjetas de crédito o débito?</summary>
-                        <p>Los métodos de pagos son pago en efectivo, transferencias a la cuenta, punto de venta con tarjeta de crédito o débito.</p>
-                        </details>
-                    </li>
-
-                    <li>
-                        <details name="faq">
-                        <summary>¿Necesito llevar alguna vestimenta especial para atenderme?</summary>
-                        <p>Se recomienda llevar ropa cómoda con facilidad para acceder a las áreas afectadas a tratar.</p>
-                        </details>
-                    </li>
-
-                    <li>
-                        <details name="faq">
-                        <summary>¿Puedo seguir trabajando mientras me hago terapias?</summary>
-                        <p>El tratamiento se puede realizar mientras trabaja sin embargo es recomendable disminuir la intensidad de las actividades en forma general en la vida cotidiana con el fin de permitir que el nervio lastimado se puede recuperar poco a poco.</p>
-                        </details>
-                    </li>
-
-                    <li>
-                        <details name="faq">
-                        <summary>¿Qué es el ozono?</summary>
-                        <p>El ozono es un gas químicamente es oxigeno (O2) elevado a O3.</p>
-                        </details>
-                    </li>
-
-                    <li>
-                        <details name="faq">
-                        <summary>¿Puedo usar el ozono como método de rehabilitación?</summary>
-                        <p>En nuestro centro el ozono se aplica con la intensión de ser un complemento para desinflamar el área afectada por el disco herniado desgastado, síndrome facetario entre otras patologías que actualmente se están incluyendo en nuestro arsenal de diagnósticos tratados.</p>
-                        </details>
-                    </li>
-
-                    <li>
-                        <details name="faq">
-                        <summary>¿Dónde están ubicados?</summary>
-                        <p>Panamá: Betania, Camino real de Betania, edificio paseo real de Betania local #3 piso #1</p>
-                        <p>Veraguas: Santiago, calle 8va plaza Jean Carlos, diagonal al gimnasio de la escuela normal, local #3.</p>
-                        </details>
-                    </li>
-
-                    <li>
-                        <details name="faq">
-                        <summary>¿En qué sucursal nos podemos atender?</summary>
-                        <p>Es recomendable atenderse en la sucursal más cercana a su hogar. Por el momento contamos con una sucursal en Betania, Panamá, y Santiago de Veraguas.</p>
-                        </details>
-                    </li>
-
-                    <li>
-                        <details name="faq">
-                        <summary>¿Que horario tienen?</summary>
-                        <p>Nuestros horarios en Panamá son de lunes a viernes de 9:00 hasta 18:00 y sábados 9:00 hasta 12:00.</p>
-                        <p>En Santiago son de lunes a viernes de 8:00 hasta las 17:00; todavía cerrados los sábados.</p>
-                        </details>
-                    </li>
-
-                    <li>
-                        <details name="faq">
-                        <summary>¿Atienden por citas o por orden de llegada?</summary>
-                        <p>Trabajamos por citas programadas ya sea por evaluación o por tratamiento/terapias.</p>
-                        </details>
-                    </li>
+                    ${innerLists(listFQs[0])}
                 </ul>
             </div>
             </section>`
