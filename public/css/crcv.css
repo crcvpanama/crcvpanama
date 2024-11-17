@@ -793,7 +793,7 @@ display: var(--hidden);
 	height: 300px;
 	border-radius: 10px;
 	z-index: -1;
-	aspect-ratio: 4/3;
+	aspect-ratio: 5/6;
 	object-fit: fill;
 }
 
@@ -1205,6 +1205,7 @@ details ul {
 	padding: 0 10%;
 	margin: .2em;
 	align-self: center;
+	aspect-ratio: 5 / 6;
 	background-size: cover;
 	background-position: center;
 	z-index: -1;
@@ -2221,7 +2222,6 @@ details[open] > summary::after {
 		object-position: top;
 		object-fit: fill;
 		background-position: center;
-		aspect-ratio: 206 / 225;
 		padding: 0;
 		z-index: -1;
 	}
