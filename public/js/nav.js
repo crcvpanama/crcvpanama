@@ -516,38 +516,9 @@ function nav(a) {
     }
 };
 
-nav(navLinks);
 
-nav(navLinksFooter);
-
-
-const socialNav = document.querySelector('.social--line');
-
-const socialFooter = document.querySelector('.social');
-
-const social = [ 
-    `<div>
-        <span class="facebook"><a href="https://www.facebook.com/crcvpanama" target="_blank" aria-label="FACEBOOK"><i class="bi bi-facebook"></i></a></span>
-    </div>`,
-    `<div>
-        <span class="whatsapp"><a target="_blank" href="https://wa.me/50765991052?text=Hola%20estoy%20interesado%20y%20deseo%20más%20información."><i class="bi bi-whatsapp"></i></a></span>
-    </div>`,
-    `<div>
-        <span class="youtube"><a target="_blank" href="https://www.youtube.com/channel/UCjhJ2PgAVZLeuqYWTsE5-Qg"><i class="bi bi-youtube"></i></a></span>
-    </div>`,
-    `<div>
-        <span class="instagram"><a target="_blank" href="https://www.instagram.com/crcvpanama/?r=nametag"><i class="bi bi-instagram"></i></a></span>
-    </div>`
-];
-
-function socialWeb(a) {
-    social.map((elemment) => {
-    // let elemment; 
-        a.innerHTML += elemment;
-    });
-};
 
 setTimeout(function() {
-    socialWeb(socialNav);
-    socialWeb(socialFooter);
+    nav(navLinks);
+    nav(navLinksFooter);
 }, 5000);
