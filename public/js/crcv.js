@@ -794,8 +794,8 @@ setTimeout(() => {
 // }
 
 
-// const newIMG = [
-//     './public/img/1x1/Maquina1N.png',
+const newIMG = [
+    './public/img/webp/Maquina1N.webp',
 //     './public/img/1x1/maN.png',
 //     './public/img/1x1/bannerf.png',
 //     './public/img/1x1/inyec.png',
@@ -806,21 +806,21 @@ setTimeout(() => {
 //     './public/img/1x1/cervicalgia.png',
 //     './public/img/1x1/c3N.png',
 //     './public/img/1x1/radi.png'
-// ];
+];
 
-// const images = document.querySelectorAll('figure');
+const images = document.querySelectorAll('figure');
 
-// const desktopMediaQuery = window.matchMedia('(width <= 800px)');
+const desktopMediaQuery = window.matchMedia('(width >= 800px)');
 
-// function defineWidthIMG(a) {
-//     if(desktopMediaQuery.matches) {
-//         for(let i=0;i<a.length;i++) {
-//             const imgCount = images[i].firstElementChild;
-//             imgCount.src = newIMG[i];
-//         } 
-//     }
-// };
-// defineWidthIMG(images);
+function defineWidthIMG(a) {
+    if(desktopMediaQuery.matches) {
+        for(let i=0;i<a.length;i++) {
+            const imgCount = images[0].firstElementChild;
+            imgCount.src = newIMG[0];
+        } 
+    }
+};
+defineWidthIMG(images);
 
 let date = document.querySelector('.date');
 

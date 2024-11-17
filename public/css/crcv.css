@@ -2207,6 +2207,7 @@ details[open] > summary::after {
 		object-position: top;
 		object-fit: fill;
 		background-position: center;
+		aspect-ratio: 206 / 225;
 		padding: 0;
 		z-index: -1;
 	}
