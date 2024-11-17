@@ -784,8 +784,6 @@ function socialWeb(a) {
     });
 };
 
-
-
 // showTest(imagesTest);
 setTimeout(() => {
     showTest(whatsAppWidget);
