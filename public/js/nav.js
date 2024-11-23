@@ -193,7 +193,7 @@ const listPages = [`
                         <div class="slide-img">
                             <figure class="img--container">
                                 <h3>Descompresión espinal</h3>
-                                <img src="./public/img/drx9000N.png" loading="lazy" alt="drx9000">
+                                <img src="./public/img/webp/drx9000N.webp" loading="lazy" alt="drx9000">
                                 <figcaption class="img--caption">
                                 
                                     <p>Esta metodología se basa en la separación de las vértebras de forma dinámica y escalonada para permitir la rehidratación de la estructura discal afectada, ya sea si está deshidratada (desgaste de disco) o deformada (hernias de disco-abombamiento, protrusión, extrusión).</p>
@@ -220,7 +220,7 @@ const listPages = [`
                         <div class="slide-img">
                             <figure class="img--container">
                                 <h3>Ozonoterapia</h3>
-                                <img src="./public/img/Ozonoterapia1x1.jpg" loading="lazy" id="img--ozono" alt="Ozonoterapia">
+                                <img src="./public/img/webp/Ozonoterapia1x1.webp" loading="lazy" id="img--ozono" alt="Ozonoterapia">
                                 <figcaption class="img--caption">
                                     
                                 
@@ -243,7 +243,7 @@ const listPages = [`
                         <div class="slide-img">
                             <figure class="img--container">
                                 <h3>Terapias físicas</h3>
-                                <img src="./public/img/tfN.png" loading="lazy" alt="Terapias">
+                                <img src="./public/img/webp/tfN.webp" loading="lazy" alt="Terapias">
                                 <figcaption class="img--caption">
                                     
                                 

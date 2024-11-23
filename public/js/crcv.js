@@ -789,7 +789,7 @@ setTimeout(() => {
     showTest(whatsAppWidget);
     socialWeb(socialFooter);
     socialWeb(socialNav);
-}, 5000);
+}, 7000);
 
 // const summary = document.getElementsByClassName('summary');
 // console.log(summary);
