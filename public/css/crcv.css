@@ -1148,7 +1148,7 @@ details ul {
 	gap: 0.3em;
 	display: grid;
 	position: relative;
-	grid-template-columns: 1fr auto;
+	grid-template-columns: 1fr 400px;
 	z-index: 2000;
 }
 
@@ -1161,7 +1161,7 @@ details ul {
 	overflow: hidden;
 }
 
-.aside-social-web-b {
+/*.aside-social-web-b {
 	display: var(--hidden);
 }
 
@@ -1170,6 +1170,16 @@ details ul {
 	flex-direction: column;
 	justify-content: center;
 	height: 450px;
+}*/
+
+.aside-social-web figure {
+	max-width: 400px;
+	height: var(--all-width);
+}
+
+.aside-social-web figure img {
+	width: var(--all-width);
+	height: var(--all-width);
 }
 
 .home-slider-conten {
@@ -1196,11 +1206,12 @@ details ul {
 	justify-content: center;
 	font-weight: 400;
 	font-size: 2rem;
-	letter-spacing: .03em;
+	letter-spacing: .06em;
 	color: var(--white);
 	text-align: justify;
 	margin-bottom: 5px;
 	background: linear-gradient(to top, #0000008c 0%, #00000020 100%);
+	overflow: hidden;
 }
 
 /*#home2 img {
@@ -1212,12 +1223,12 @@ details ul {
 	display: var(--show);
 	position: absolute;
 	width: var(--all-width);
-	height: var(--all-width);
-	object-fit: fill;
-	padding: 0 10%;
+/*	height: var(--all-width);*/
+/*	object-fit: fill;*/
+/*	padding: 0 10%;*/
 	margin: .2em;
 	align-self: center;
-	aspect-ratio: 5 / 6;
+/*	aspect-ratio: 5 / 6;*/
 	background-size: cover;
 	background-position: center;
 	z-index: -1;
@@ -1286,6 +1297,7 @@ details ul {
 	width: 300px;
 	height: var(--all-width);
 	margin: auto;
+	align-items: flex-end;
 }
 
 .img__quienes img{
@@ -2023,7 +2035,7 @@ details[open] > summary::after {
 
 .footer--nav a{
 /*	color: var(--gray);*/
-/*	border: var(--hidden);*/
+	border: var(--hidden);
 	color: var(--light-grey);
 	border-radius: 10px;
 }
@@ -2074,6 +2086,20 @@ details[open] > summary::after {
 	.inicio__quienes article figure img {
 		display: var(--show);		
 		margin: 0 auto;
+	}
+
+	.img__quienes figure{
+		display: flex;
+		justify-content: center;
+		width: 300px;
+		height: 450px;
+		margin: auto;
+	}
+
+	.img__quienes img{
+		width: var(--all-width);
+		height: var(--all-width);
+		object-fit: contain;
 	}
 
 	.wrapper {
