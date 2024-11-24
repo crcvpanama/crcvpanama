@@ -2022,8 +2022,9 @@ details[open] > summary::after {
 }
 
 .footer--nav a{
-	color: var(--gray);
-	border: var(--hidden);
+/*	color: var(--gray);*/
+/*	border: var(--hidden);*/
+	color: var(--light-grey);
 	border-radius: 10px;
 }
 
