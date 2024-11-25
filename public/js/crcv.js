@@ -79,7 +79,7 @@ const button = document.querySelector('.nav-button');
 const menu = document.querySelector('.collapse');
 
 button.addEventListener('click', () => {
-    menu.classList.toggle('collapse-hide');
+    menu.classList.toggle('navbar-collapse');
 });
 
 // function slide() {
