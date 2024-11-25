@@ -536,7 +536,7 @@ a {
 	display: var(--show);
 	position: relative;
 	width: var(--all-width);
-	height: 450px;
+	height: auto;
 	margin: 0 auto;
 	background-position: center;
 	background-repeat: no-repeat;
@@ -549,7 +549,7 @@ a {
 	display: flex; 
 	position: relative;	
 	width: var(--all-width);
-	height: var(--all-width);
+	height: 450px;
 	box-shadow: 1px 1px 5px dimgray;
 	justify-content: center;
 	font-weight: 400;
@@ -2239,12 +2239,22 @@ details[open] > summary::after {
 		margin: 0;
 	}
 
+	.home-slider {
+		height: 400px;
+	}
+
+/*	.sobrenosotros {
+		height: 500px;
+		overflow: hidden;
+	}*/
+
 	.home-slider img {
 		width: var(--all-width);
-		height: var(--all-width);
-		margin: 1em;
+		height: var(--all-width);		
+/*		margin: 1em;*/
 		object-position: top;
-		object-fit: fill;
+		object-fit: cover;
+		aspect-ratio: 9 / 10;
 		background-position: center;
 		padding: 0;
 		z-index: -1;
