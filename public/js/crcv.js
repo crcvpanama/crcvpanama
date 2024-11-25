@@ -756,8 +756,6 @@ whatsAppWidget.addEventListener('click', () => {
     whatsAppNumbers.classList.toggle('hide__parr');
 });
 
-
-
 const socialNav = document.querySelectorAll('.social--line');
 
 const socialFooter = document.querySelector('.social');

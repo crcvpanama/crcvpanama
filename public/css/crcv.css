@@ -2520,7 +2520,13 @@ details[open] > summary::after {
 
 }
 
-@media (width >= 1428px) {
+@media (width >= 1828px) {
+	
+	html {
+		position: relative;
+		margin: 0 25%;
+	}
+
 	.img--container img {
 		min-width: 600px;
 		height: 400px;
@@ -2538,12 +2544,4 @@ details[open] > summary::after {
 		text-align: justify;
 		padding: 4em .5em;
 	}
-}
-
-@media (width >= 2428px) {
-	html {
-		position: relative;
-		margin: 0 25%;
-	}
-
 }
