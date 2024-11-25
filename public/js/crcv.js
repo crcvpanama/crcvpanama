@@ -758,27 +758,42 @@ whatsAppWidget.addEventListener('click', () => {
 
 
 
-const socialNav = document.querySelector('.social--line');
+const socialNav = document.querySelectorAll('.social--line');
 
 const socialFooter = document.querySelector('.social');
 
-const social = [ 
+// const social = [ 
+//     `<div>
+//         <span class="facebook"><a href="https://www.facebook.com/crcvpanama" target="_blank" aria-label="FACEBOOK"><i class="bi bi-facebook"></i></a></span>
+//     </div>`,
+//     `<div>
+//         <span class="whatsapp"><a target="_blank" href="https://wa.me/50765991052?text=Hola%20estoy%20interesado%20y%20deseo%20más%20información."><i class="bi bi-whatsapp"></i></a></span>
+//     </div>`,
+//     `<div>
+//         <span class="youtube"><a target="_blank" href="https://www.youtube.com/channel/UCjhJ2PgAVZLeuqYWTsE5-Qg"><i class="bi bi-youtube"></i></a></span>
+//     </div>`,
+//     `<div>
+//         <span class="instagram"><a target="_blank" href="https://www.instagram.com/crcvpanama/?r=nametag"><i class="bi bi-instagram"></i></a></span>
+//     </div>`
+// ];
+
+const socialSVG = [ 
     `<div>
-        <span class="facebook"><a href="https://www.facebook.com/crcvpanama" target="_blank" aria-label="FACEBOOK"><i class="bi bi-facebook"></i></a></span>
+        <figure class="facebook"><a href="https://www.facebook.com/crcvpanama" target="_blank" aria-label="FACEBOOK"><img src="./public/img/svg/facebook.svg" ></a></figure>
     </div>`,
     `<div>
-        <span class="whatsapp"><a target="_blank" href="https://wa.me/50765991052?text=Hola%20estoy%20interesado%20y%20deseo%20más%20información."><i class="bi bi-whatsapp"></i></a></span>
+        <figure class="whatsapp"><a target="_blank" href="https://wa.me/50765991052?text=Hola%20estoy%20interesado%20y%20deseo%20más%20información."><img src="./public/img/svg/WhatsApp.svg"></a></figure>
     </div>`,
     `<div>
-        <span class="youtube"><a target="_blank" href="https://www.youtube.com/channel/UCjhJ2PgAVZLeuqYWTsE5-Qg"><i class="bi bi-youtube"></i></a></span>
+        <figure class="youtube"><a target="_blank" href="https://www.youtube.com/channel/UCjhJ2PgAVZLeuqYWTsE5-Qg"><img src="./public/img/svg/youtube.svg"></a></figure>
     </div>`,
     `<div>
-        <span class="instagram"><a target="_blank" href="https://www.instagram.com/crcvpanama/?r=nametag"><i class="bi bi-instagram"></i></a></span>
+        <figure class="instagram"><a target="_blank" href="https://www.instagram.com/crcvpanama/?r=nametag"><img src="./public/img/svg/instagram.svg"></a></figure>
     </div>`
 ];
 
 function socialWeb(a) {
-    social.map((elemment) => {
+    socialSVG.map((elemment) => {
     // let elemment; 
         a.innerHTML += elemment;
     });
@@ -787,8 +802,9 @@ function socialWeb(a) {
 // showTest(imagesTest);
 setTimeout(() => {
     showTest(whatsAppWidget);
-    socialWeb(socialFooter);
-    socialWeb(socialNav);
+    // socialWeb(socialFooter);
+    socialWeb(socialNav[0]);
+    socialWeb(socialNav[1]);
 }, 7000);
 
 // const summary = document.getElementsByClassName('summary');

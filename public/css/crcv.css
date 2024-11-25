@@ -325,27 +325,29 @@ display: var(--hidden);
 	gap: 1.5em;
 }
 
-.social--line > div i {
+.social--line figure img {
 	font-size: 25px;
+	width: 25px;
+	height: 25px;
 }
 
-.social--line div .facebook i {
+.social--line div .facebook img {
 	color: #3b5998;
 	transition: all .5s ease-in-out;
 }
 
-.social--line div .whatsapp i {
+.social--line div .whatsapp img {
 	color: #25D366;
 	transition: all .5s ease-in-out;
 
 }
 
-.social--line div .youtube i {
+.social--line div .youtube img {
 	color: #c4302b;
 	transition: all .5s ease-in-out;
 }
 
-.social--line div .instagram i {
+.social--line div .instagram img {
 	background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
     -webkit-background-clip: text;
 	background-clip: text;
@@ -369,8 +371,8 @@ display: var(--hidden);
             pointer-events: none;
 }*/
 
-.social--line .youtube i:hover,
-.social--line .instagram i:hover {
+.social--line .youtube img:hover,
+.social--line .instagram img:hover {
 /*	content: "YoutTube";*/
 	filter: drop-shadow(0 -7mm 4px crimson);
 /*	opacity: 1;*/
@@ -378,12 +380,12 @@ display: var(--hidden);
 	
 }
 
-.social--line .facebook i:hover {
+.social--line .facebook img:hover {
 	filter: drop-shadow(0 -7mm 4px #3b5998);
 /*	transition: all .5s ease-in-out;*/
 }
 
-.social--line .whatsapp i:hover {
+.social--line .whatsapp img:hover {
 /*	content: "WhatsApp";*/
 	filter: drop-shadow(0 -7mm 4px #008000);
 /*	transition: all .5s ease-in-out;*/
@@ -1680,9 +1682,14 @@ details[open] > summary::after {
 	margin: 5px auto;
 	width: var(--all-width);
 	height: auto;
+	justify-content: center;
 }
 
-.social {
+.foot-social img{
+	color: var(--light);
+}
+
+/*.social {
 	display: flex;
 	position: relative;
 	flex-direction: row;
@@ -1701,7 +1708,7 @@ details[open] > summary::after {
 
 .social i:hover {
 	color: #ffff;
-}
+}*/
 
 /*.foot-social-santiago {
 	display: block;
