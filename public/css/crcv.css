@@ -644,7 +644,7 @@ a {
 
 .sobrenosotros h3 {
 	font-size: 1.4rem;
-	font-weight: 400;
+/*	font-weight: 400;*/
 	text-align: left;
 	margin-bottom: 1em;
 }
@@ -1295,7 +1295,7 @@ details ul {
 }
 
 .FQs ul li {
-	margin: 20px;
+	margin: 10px;
 	font-size: 16px;
 	list-style: var(--hidden);
 }
@@ -1355,17 +1355,12 @@ details[open] > summary::marker {
 
 details > summary {
 	display: var(--show);
-	width: auto;
+	width: 100%;
 	position: relative;
 	background-color: #0052D409;
-/*	color: #0052D4;*/
 	color: var(--blue);
 	transition: .4s ease-in;
 	opacity: 1;
-/*	content: '+';*/
-
-
-
 
 	justify-content: space-between;
 	background-color: #0052D409;
@@ -1373,21 +1368,15 @@ details > summary {
 	text-align: left;
 	transition: .4s ease-in;
 	opacity: 1;
-	align-items: center;
-/*	content: "+";*/
-  margin-left: 1ch;
+	align-items: center;  
+	margin-left: 1ch;
   display: inline-block;
-  
-/*  font-size: 1.5em;*/
   font-weight: bold;
   margin: auto 10px;
-  padding: 0;
-/*  text-align: center;*/
-  transition: 0.4s;
+  padding: 0;  transition: 0.4s;
   border-radius: 5px;
 }
 
-/*details > summary::before,*/
 details > summary::after {
 	position: absolute;
 	content: "+";
@@ -1406,13 +1395,6 @@ details > summary:hover {
 	border-radius: 10px;
 }
 
-/*details > summary::before,
-details > summary::after {
-	position: absolute;
-	content: "";
-	z-index: -1;
-}*/
-
 details[open] > summary::after {
 	display: inline-block;
   	content: '-';
@@ -1420,13 +1402,10 @@ details[open] > summary::after {
   	font-size: 1.5em;
 	font-weight: bold;
   	transition: 0.6s;
-/*  	text-align: center;*/
-/*  	margin: -5px 10px 0 0;*/
-}
+  }
 
 
 .service {
-/*	display: none;*/
 	position: relative;
 	scale: 1;
 	width: var(--all-width);
@@ -2242,7 +2221,7 @@ details[open] > summary::after {
 
 	.whatsapp--numbers {
 		left: 20%;
-		height: auto;
+/*		height: auto;*/
 	}
 
 	.whatsapp--links {
@@ -2250,75 +2229,96 @@ details[open] > summary::after {
 		flex-direction: column;
 	}
 
-	
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-	/*.inicio__quienes article figure img {
-		display: var(--show);		
-		margin: 0 auto;
-	}*/
-
-	
-
-	.wrapper {
-	  height: auto;
-	  overflow-y: hidden;
+	.whatsapp--numbers div{
+		flex-direction: column;
 	}
 
+	.whatsapp--numbers h5 {
+		margin: .5em;
+	}
+
+	/*.whatsapp--numbers h6 {
+		margin: .2em 0;
+	}*/
+
+	.facebook {
+		display: grid;
+		position: relative;		
+		justify-content: center;		
+		width: var(--all-width);		
+		margin: 0 auto;
+	}
+
+/*CONTACT*/
 	.cont--A,
 	.cont--B,
 	#revers {
 		display:var(--show);
 	}
 
+	.local-in {		
+		position: relative;
+		margin-bottom: .5em;
+	}
+
+	.foot-journal {
+		display: flex;
+		position: relative;
+		flex-direction: row;
+		justify-content: flex-end;
+		align-content: flex-end;
+		width: fit-content;
+		object-position: right;
+	}
+
+	.contact--iframe {
+		min-width: 330px;
+	}
+
+	.privacidad iframe {
+		width: var(--all-width);
+	}
+
+
+/*	CONTACT END*/
+
+
+
+/*	TESTIMONIO */
 	
+	.container--test {
+		display: flex;
+		flex-direction: column-reverse;	
+	}
 
-	
+	.content--videos div {
+		display: var(--show);	
+	}
+
+	.content--videos video {
+		width: var(--all-width);
+		height: 315px;
+	}
+
+	.letter--content {
+		padding: 1em 2em;
+	}
+
+	.letter--container {
+		margin: 1%;
+		padding: 1em 1.5em;
+	}
+
+/*	TESTIMONIO END */
 
 
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+	.wrapper {
+	  height: auto;
+	  overflow-y: hidden;
+	}
 
 	.images {
 		display: flex;
@@ -2326,12 +2326,6 @@ details[open] > summary::after {
 		margin: 0 auto;
 		justify-content: center;
 	}
-
-
-
-	
-
-	
 
 	.aside-social-web {
 		display: var(--show);		
@@ -2348,15 +2342,9 @@ details[open] > summary::after {
 		height: 400px;
 	}
 
-/*	.sobrenosotros {
-		height: 500px;
-		overflow: hidden;
-	}*/
-
 	.home-slider img {
 		width: var(--all-width);
 		height: var(--all-width);		
-/*		margin: 1em;*/
 		object-position: top;
 		object-fit: cover;
 		aspect-ratio: 9 / 10;
@@ -2368,15 +2356,6 @@ details[open] > summary::after {
 	.in-img {
 		width: var(--all-width);
 	}
-
-	.facebook {
-		display: grid;
-		position: relative;		
-		justify-content: center;		
-		width: var(--all-width);		
-		margin: 0 auto;
-	}
-
 	.fb-p {
 		display: flex;
 		position: relative;
@@ -2388,8 +2367,7 @@ details[open] > summary::after {
 	}
 
 	.img--container {
-		display: block;
-/*		flex-wrap: wrap;*/
+		display: block;		
 		margin: 0;		
 		width: var(--all-width);
 		height: auto;
@@ -2401,28 +2379,12 @@ details[open] > summary::after {
 		color: #303030;
 	}
 
-	
-
 	.img-container img{
 		margin-top: .7em;
 		min-width: 300px;
 		width: var(--all-width);
 		height: 350px;
 	}
-
-
-	/*.diagnostic-a {
-		padding: 0;
-		width: var(--all-width);
-	}*/
-
-	
-
-	
-
-	
-
-	
 
 	.slide-img-a {
 		display: flex;
@@ -2457,23 +2419,6 @@ details[open] > summary::after {
 		display: var(--show);
 	}
 
-	.foot-journal {
-		display: flex;
-		position: relative;
-		flex-direction: row;
-		justify-content: flex-end;
-		align-content: flex-end;
-		width: fit-content;
-		object-position: right;
-/*		object-position: right;*/
-	}
-
-	.local-in {
-/*		display: block;*/
-		position: relative;
-		margin-bottom: .5em;
-	}
-
 	.aside-social-web {
 		display: var(--hidden);
 	}
@@ -2486,81 +2431,10 @@ details[open] > summary::after {
 		margin: 80px auto 0 auto;
 	}
 
-	.service {
-/*		display: block;*/
+	.service {		
 		position: relative;
 		flex-direction: column;
 	}
-
-	.contact--iframe {
-		min-width: 330px;
-	}
-
-	.whatsapp--numbers div{
-		flex-direction: column;
-	}
-
-	.whatsapp--numbers h5 {
-		margin: .5em;
-	}
-
-	.whatsapp--numbers h6 {
-		margin: .2em 0;
-	}
-
-	.content--videos div {
-		display: var(--show);
-/*		flex-wrap: wrap;*/
-	}
-
-	/*.content--videos div div {
-		max-width:100%;
-	}*/
-
-	.content--videos video {
-		width: var(--all-width);
-		height: 315px;
-	}
-
-	.letter--content {
-		padding: 1em 2em;
-	}
-
-	.letter--container {
-		margin: 1%;
-		padding: 1em 1.5em;
-	}
-
-	.container--test {
-		display: flex;
-		flex-direction: column-reverse;
-/*		grid-template-columns: 1fr auto;*/
-	}
-
-	.privacidad iframe {
-		width: var(--all-width);
-	}
-
-	/*.hide {
-		display: var(--hidden);
-	}*/
-	/*.loading {
-		display: flex;
-		background: url('../img/svg/loading.svg');
-		width: 30px;
-		height: 30px;
-		margin: 0 auto;
-		border: none;
-	}*/
-
-	/*.images--test #one:hover,
-	.images--test #two:hover,
-	.images--test #three:hover {
-		width: 90%;
-		padding: 5%;
-		height: 500px;
-		transform: translate(-50%, 0);
-	}*/
 
 }
 
