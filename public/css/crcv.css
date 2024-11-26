@@ -565,7 +565,7 @@ a {
 	height: var(--all-width);
 	margin: .2em;
 	align-self: center;	
-	background-size: cover;
+	background-size: contain;
 	background-position: center;
 	z-index: -1;
 }
@@ -2345,9 +2345,9 @@ details[open] > summary::after {
 	.home-slider img {
 		width: var(--all-width);
 		height: var(--all-width);		
-		object-position: top;
-		object-fit: cover;
-		aspect-ratio: 9 / 10;
+		object-position: center;
+		object-fit: fill;
+/*		aspect-ratio: 9 / 10;*/
 		background-position: center;
 		padding: 0;
 		z-index: -1;
