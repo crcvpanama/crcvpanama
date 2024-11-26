@@ -2162,9 +2162,13 @@ details[open] > summary::after {
 		margin: 0.5em;
 	}
 
-	.inicio__quienes article figure img {
+	/*.inicio__quienes article figure img {
 		display: var(--show);		
 		margin: 0 auto;
+	}*/
+
+	.img__quienes {
+		display: var(--hidden);
 	}
 
 	.img__quienes figure{
@@ -2181,7 +2185,7 @@ details[open] > summary::after {
 		object-fit: contain;
 	}
 
-	.wrapper {
+	/*.wrapper {
 	  height: auto;
 	  overflow-y: hidden;
 	}
@@ -2190,9 +2194,8 @@ details[open] > summary::after {
 	.cont--B,
 	#revers {
 		display:var(--show);
-/*		flex-direction: column;*/
 	}
-
+*/
 
 	.images, .images-a {
 		display: flex;
@@ -2495,6 +2498,10 @@ details[open] > summary::after {
 
 	.privacidad iframe {
 		width: var(--all-width);
+	}
+
+	.hide {
+		display: var(--hidden);
 	}
 
 	/*.images--test #one:hover,

@@ -522,3 +522,4 @@ setTimeout(function() {
     nav(navLinks);
     nav(navLinksFooter);
 }, 8000);
+
