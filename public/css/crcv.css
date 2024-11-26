@@ -558,14 +558,15 @@ a {
 	color: var(--white);
 	text-align: justify;
 	margin-bottom: 5px;
-	background: linear-gradient(to top, #0000008c 0%, #00000020 100%);
+	background: linear-gradient(to top, #0000008c 0%, #00000070 100%);
 	overflow: hidden;
 }
 
 .home-slider img {
 	display: var(--show);
 	position: absolute;
-	width: var(--all-width);
+	width: auto;
+	height: var(--all-width);
 	margin: .2em;
 	align-self: center;	
 	background-size: cover;
@@ -2500,9 +2501,9 @@ details[open] > summary::after {
 		width: var(--all-width);
 	}
 
-	.hide {
+	/*.hide {
 		display: var(--hidden);
-	}
+	}*/
 	.loading {
 		display: flex;
 		background: url('../img/svg/loading.svg');

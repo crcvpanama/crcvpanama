@@ -516,20 +516,20 @@ function nav(a) {
     }
 };
 
-const bbb = document.querySelector('.img-container-a');
-const ccc = document.querySelector('.diagnostic-a');
-const loading = document.querySelector('.loading');
+// const bbb = document.querySelector('.img-container-a');
+// const ccc = document.querySelector('.diagnostic-a');
+// const loading = document.querySelector('.loading');
 
 
-function showScroll() {
-    bbb.removeAttribute('class');
-    ccc.removeAttribute('class');
-    loading.style.display = 'none';
-};
+// function showScroll() {
+//     bbb.removeAttribute('class');
+//     ccc.removeAttribute('class');
+    // loading.style.display = 'none';
+// };
 
 setTimeout(function() {
     nav(navLinks);
     nav(navLinksFooter);
-    showScroll();
+    // showScroll();
 }, 7000);
 
