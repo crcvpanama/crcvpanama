@@ -217,18 +217,6 @@ setTimeout(() => {
 // };
 // defineWidthIMG(images);
 // const show = document.querySelector('body');
-const bb = document.querySelector('.img-container-a');
-const cc = document.querySelector('.diagnostic-a');
-
-
-function showScroll() {
-    document.addEventListener('DOMContentLoaded', () => {
-        bb.removeAttribute('class');
-        cc.removeAttribute('class');
-    })
-};
-
-showScroll();
 
 let date = document.querySelector('.date');
 
