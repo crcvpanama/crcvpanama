@@ -2503,7 +2503,6 @@ details[open] > summary::after {
 	.hide {
 		display: var(--hidden);
 	}
-
 	.loading {
 		display: flex;
 		background: url('../img/svg/loading.svg');
