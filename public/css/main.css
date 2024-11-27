@@ -153,37 +153,40 @@
 	z-index: 2000;
 }
 
-.home-slider-conten {
+.home-slider-content {
 	display: var(--show);
 	position: relative;
 	width: var(--all-width);
-	height: auto;
+	height: 450px;
 	margin: 0 auto;
-	background-position: center;
-	background-repeat: no-repeat;
+	/*background-position: center;
+	background-repeat: no-repeat;*/
 	object-fit: cover;
 	align-items: center;
-	background: linear-gradient( to top, rgba(0, 0, 0, 0.6) 0%, rgba(0, 0, 0, 0.1) 100% );
+	background: url('../img/webp/machinedrx.webp') center no-repeat;
+	background-position: center;
+	background-repeat: no-repeat;
 }
 
-.home-slider {
-	display: flex; 
+.home-slider-content h1 {
+	display: flex;
+	flex-direction: column; 
 	position: relative;	
 	width: var(--all-width);
-	height: 450px;
+	height: var(--all-width);
 	box-shadow: 1px 1px 5px dimgray;
 	justify-content: center;
-	font-weight: 400;
+	font-weight: 900;
 	font-size: 2rem;
-	letter-spacing: .06em;
+	letter-spacing: .09em;
 	color: var(--white);
-	text-align: justify;
+	text-align: center;
 	margin-bottom: 5px;
-	background: linear-gradient(to top, #0000008c 0%, #00000070 100%);
+	background: linear-gradient(to top, #0000008c 0%, #00000099 100%);
 	overflow: hidden;
 }
 
-.home-slider img {
+/*.home-slider img {
 	display: var(--show);
 	position: absolute;
 	width: auto;
@@ -194,7 +197,7 @@
 	background-position: center;
 	z-index: -1;
 }
-
+*/
 .in-img {
 	display: flex;
 	flex-direction: column;
@@ -236,15 +239,15 @@
 
 	.header {
 		display: var(--show);
-		align-items: center;
-		overflow-x: hidden;		
+/*		align-items: center;*/
+/*		overflow-x: hidden;		*/
 /*		background: #36D1DC;*/
 /*		background: -webkit-linear-gradient(to right, #36D1DC, #36D1DC);*/
-		background: linear-gradient(to right, #36D1DC, #36D1DC);
+/*		background: linear-gradient(to right, #36D1DC, #36D1DC);*/
 	}
 
 	.header figure {
-    width: 100%;
+    	width: 100%;
 /*    height: 250px;*/
 /*    padding: 0 30px; */
 /*    mix-blend-mode: darken;*/

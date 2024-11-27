@@ -1,3 +1,10 @@
+const year = new Date().getFullYear();
+const initYear = year - 2005;
+const yyyy = document.querySelector('.yyyy');
+
+yyyy.append(initYear); 
+
+
 const navLinks = document.querySelectorAll('.nav-link');
 const navLinksFooter = document.querySelectorAll('.nav-link--footer');
 const home = document.querySelector('.home-start');
@@ -533,3 +540,7 @@ setTimeout(function() {
     // showScroll();
 }, 7000);
 
+
+let date = document.querySelector('.date');
+
+date.append(year);

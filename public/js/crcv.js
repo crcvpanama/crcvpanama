@@ -1,9 +1,3 @@
-const year = new Date().getFullYear();
-const initYear = year - 2005;
-const yyyy = document.querySelector('.yyyy');
-
-yyyy.append(initYear); 
-
 function setCookie(cname, cvalue, exdays) {
     let d = new Date();
 
@@ -217,7 +211,3 @@ setTimeout(() => {
 // };
 // defineWidthIMG(images);
 // const show = document.querySelector('body');
-
-let date = document.querySelector('.date');
-
-date.append(year);
