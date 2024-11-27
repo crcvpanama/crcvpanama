@@ -256,6 +256,11 @@ body {
 	overflow: hidden;
 }
 
+.home-slider-content .hh {
+	font-weight: 600;
+	font-size: 1.5rem;
+}
+
 /*.home-slider img {
 	display: var(--show);
 	position: absolute;
