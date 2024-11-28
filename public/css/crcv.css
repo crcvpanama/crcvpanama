@@ -353,6 +353,11 @@ a {
 	padding: 0 5%;
 }
 
+.sobrenosotros h2{
+/*	width: 90%;*/
+	padding: 0;
+}
+
 .sobrenosotros h3 {
 	font-size: 1.4rem;
 /*	font-weight: 400;*/
@@ -1707,7 +1712,11 @@ details[open] > summary::after {
 
 @media (width <= 800px) {
 
-	
+	.sobrenosotros h2{
+		display: inline;
+		width: 90%;
+		padding: 0;
+	}
 
 	.aside-social-web {
 		display: var(--hidden);
