@@ -42,6 +42,7 @@ function detectCookie(cname) {
     }
     return false;
 };
+
 document.addEventListener('DOMContentLoaded', function() {
     init();
 });
@@ -53,7 +54,7 @@ function init(){
     }
 
     if(detectCookie("rgpdOK")){
-        if (getCookie("rgpdOK")==1){eliminarBloqueRGPD();}
+        if (getCookie("rgpdOK")==1){eliminarBloqueRGPD()};
     }else{
         document.querySelector(".botonRGPD").addEventListener("click", () => {
             eliminarBloqueRGPD();
