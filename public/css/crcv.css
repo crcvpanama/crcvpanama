@@ -29,22 +29,20 @@ button {
 
 button:focus {
   outline: 1px solid var(--gray);
-/*  outline: .01em auto -webkit-focus-ring-color;*/
 }
 
-input,
+/*input,
 button,
 select,
 optgroup,
 textarea {
-/*  margin: 0;*/
   font-family: inherit;
   font-size: inherit;
   line-height: inherit;
 }
+*/
 
-
-button,
+/*button,
 [type="button"],
 [type="reset"],
 [type="submit"] {
@@ -64,7 +62,7 @@ button::-moz-focus-inner,
 [type="submit"]::-moz-focus-inner {
   padding: 0;
   border-style: none;
-}
+}*/
 
 main {
 /*	position: relative;*/
