@@ -2029,6 +2029,12 @@ details[open] > summary::after {
 
 }
 
+
+.show {
+	display: var(--show);
+}
+
+
 @media (width >= 1828px) {
 	
 	html {
