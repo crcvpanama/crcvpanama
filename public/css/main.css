@@ -1,3 +1,19 @@
+@font-face {
+	font-family: "Roboto";
+	src: url('../fonts/Roboto/Roboto-Regular.woff');	
+	font-weight: 400;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: "Roboto";
+	src: url('../fonts/Roboto/Roboto-Black.woff');	
+	font-weight: 700;
+	font-style: bold;
+	font-display: swap;
+}
+
 :root {
 /*	--blue: #0052D4;*/
 	  /*--indigo: #C45F90;
@@ -231,7 +247,7 @@ main {
 /*	display: var(--show);*/
 	position: relative;
 	width: var(--all-width);
-	height: 450px;
+	height: 500px;
 /*	margin: 0 auto;*/
 	/*background-position: center;
 	background-repeat: no-repeat;*/
@@ -449,10 +465,10 @@ main {
 		width: var(--all-width);
 	}
 
-	.home-slider-content {
-		height: 300px;
+/*	.home-slider-content {*/
+/*		height: 300px;*/
 /*		aspect-ratio: 1 / 1;*/
-	}
+/*	}*/
 
 	/*.home-somos {
 		margin: 0 auto;
