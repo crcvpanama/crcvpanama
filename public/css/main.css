@@ -96,19 +96,22 @@ main {
 /*	background: linear-gradient(to left, #36D1DC, #36D1DC64, #36D1DC20);*/
 }
 
-.header figure {
+.header .logo {
 	width: 600px;
 	height: 250px;
 	padding: 0 30px;
+	background: url('../img/svg/crcvlogo.svg') center no-repeat;
+	background-size: contain;
+	margin:1%;
 /*	mix-blend-mode: darken;*/
 }
 
-.header figure img {
+/*.header figure img {
 	display: var(--show);
 	width: var(--all-width);
 	height: var(--all-width);
 	object-fit: contain;
-}
+}*/
 
 .header-title {
 	display: grid;
@@ -253,9 +256,9 @@ main {
 	background-repeat: no-repeat;*/
 /*	object-fit: cover;*/
 /*	align-items: center;*/
-	background:linear-gradient(to bottom, #000000a1 0%, #000000c8 50%, #000 100%), url('../img/webp/machinedrx.webp') center no-repeat;
+	background:linear-gradient(to bottom, #000000a1 0%, #000000c8 50%, #000 100%), url('../img/webp/machi.avif') center no-repeat;
 /*	aspect-ratio: 1/;*/
-/*	background-size: ;*/
+	background-size: contain;
 /*	background-position: center;*/
 /*	background-repeat: no-repeat;*/
 /*	background: linear-gradient(to top, #000000c8 0%, #00000099 100%);*/
@@ -349,8 +352,10 @@ main {
 /*		background: linear-gradient(to right, #36D1DC, #36D1DC);*/
 	}
 
-	.header figure {
-    	width: 100%;
+	.header .logo {
+		display: var(--show);
+    	width: 90%;
+/*    	padding: 0 2%;*/
 /*    height: 250px;*/
 /*    padding: 0 30px; */
 /*    mix-blend-mode: darken;*/
@@ -360,7 +365,7 @@ main {
 		display: var(--show);
 /*		text-align: left;*/
 /*		right: 0;*/
-/*		margin: 0;*/
+/*		padding: 0 2%;*/
 	}
 
 	.navbar {
