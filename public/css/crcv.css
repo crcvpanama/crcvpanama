@@ -476,12 +476,12 @@ a {
 	text-align: left;
 	background-color: var(--white);
 	width: var(--all-width);
-	height: auto;
+	min-height: 200px;
 	scale: 1.1;
 	bottom: 0;
 	z-index: 3000;
 	padding: 1.5em .4em;
-	justify-content:center;
+	justify-content:space-evenly;
 /*	line-clamp: 4;*/
 }
 
