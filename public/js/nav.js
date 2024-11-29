@@ -227,7 +227,7 @@ const listPages = [`
                         <div class="slide-img">
                             <figure class="img--container">
                                 <h3>Ozonoterapia</h3>
-                                <img src="./public/img/webp/Ozonoterapia1x1.webp" id="img--ozono" alt="Ozonoterapia">
+                                <img src="./public/img/webp/Ozonoterapia1x1.avif" id="img--ozono" alt="Ozonoterapia">
                                 <figcaption class="img--caption">
                                     
                                 

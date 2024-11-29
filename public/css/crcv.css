@@ -732,7 +732,7 @@ a {
 	display: flex;
 	position: relative;
 	 flex-direction: row; 
-	 flex-wrap: nowrap; 
+/*	 flex-wrap: nowrap; */
 	/* grid-template-columns: repeat(auto-fill, minmax(300px, fill)); */
 /*	grid-template-columns: 1fr auto;*/
 /*	grid-template-rows: auto auto;*/
@@ -2050,8 +2050,8 @@ details[open] > summary::after {
 	}
 
 	.img--container img {
-		min-width: 600px;
-		height: 400px;
+		min-width: 400px;
+		height: 300px;
 	}
 
 	.letter--content {
@@ -2059,11 +2059,12 @@ details[open] > summary::after {
 	}
 
 	.img--caption {
-		color: #1b2b1b;
+		/*color: #1b2b1b;
 		min-width: 400px;
 		max-width: 900px;
 		height: auto;
 		text-align: justify;
-		padding: 4em .5em;
+		padding: 4em .5em;*/
+		margin: 0 auto;
 	}
 }
