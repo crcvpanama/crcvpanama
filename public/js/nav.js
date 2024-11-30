@@ -198,8 +198,9 @@ const listPages = [`
                 <div class="img-container">
                     <div class="images">
                         <div class="slide-img">
+                        <h3>Descompresión espinal</h3>
                             <figure class="img--container">
-                                <h3>Descompresión espinal</h3>
+                                
                                 <img src="./public/img/webp/drx9000N.webp" alt="drx9000">
                                 <figcaption class="img--caption">
                                 
@@ -214,7 +215,7 @@ const listPages = [`
                                 <p>El tratamiento va acompañado de terapias físicas (antes o después de la descompresión). Éstas terapias incluyen:</p>
                                 <ul>${innerLists(lists[0])}</ul>
                                 
-                                <h3>Beneficios de la descompresión espinal:</h3>
+                                <h4>Beneficios de la descompresión espinal:</h4>
                                 
                                 <ul>${innerLists(lists[1])}</ul>
                                 <p>Algunas contraindicaciones a saber:
@@ -225,8 +226,9 @@ const listPages = [`
                         </div>
 
                         <div class="slide-img">
+                            <h3>Ozonoterapia</h3>
                             <figure class="img--container">
-                                <h3>Ozonoterapia</h3>
+                                
                                 <img src="./public/img/webp/Ozonoterapia1x1.avif" id="img--ozono" alt="Ozonoterapia">
                                 <figcaption class="img--caption">
                                     
@@ -248,8 +250,9 @@ const listPages = [`
                         </div>
 
                         <div class="slide-img">
+                            <h3>Terapias físicas</h3>
                             <figure class="img--container">
-                                <h3>Terapias físicas</h3>
+                                
                                 <img src="./public/img/webp/tfN.webp" alt="Terapias">
                                 <figcaption class="img--caption">
                                     
@@ -516,8 +519,6 @@ function nav(a) {
                 case 5:
                     nDIv(4,5);
                   break;
-                default:
-                    nDIv(undefined,0);
             }
         })
     }

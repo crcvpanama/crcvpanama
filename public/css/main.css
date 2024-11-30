@@ -250,7 +250,7 @@ main {
 /*	display: var(--show);*/
 	position: relative;
 	width: var(--all-width);
-	height: 500px;
+	height: 400px;
 /*	margin: 0 auto;*/
 	/*background-position: center;
 	background-repeat: no-repeat;*/
