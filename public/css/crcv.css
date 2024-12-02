@@ -561,6 +561,7 @@ a {
 	border-bottom: 2px solid #36c0dc;
 	padding: .1em 0;
 	margin-bottom: .1em;
+	justify-content: center;
 }
 
 .social--line {
@@ -2170,6 +2171,10 @@ details[open] > summary::after {
 	.home-start-side {
 		display: var(--show);
 		width: var(--all-width);
+	}
+
+	.lineB {
+		justify-content: left;
 	}
 
 /*	.home-slider-content {*/

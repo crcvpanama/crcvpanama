@@ -755,7 +755,7 @@ setTimeout(function() {
     nav(navLinks);
     nav(navLinksFooter);
     // showScroll();
-}, 5000);
+}, 4000);
 
 
 let date = document.querySelector('.date');
