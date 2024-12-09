@@ -610,7 +610,8 @@ const listPages = [`
                 <iframe
                     id="frameP"
                     title="Política de privacidad"
-                    src="./politicadeprivacidad.html">  
+                    src="./politicadeprivacidad.html"
+                    loading="lazy">  
                 </iframe>    
             </div>
             </section>`,
@@ -663,12 +664,12 @@ const listPages = [`
 
                 <div class="content--videos" id="testimonios">
                     <div>
-                        <video controls playsinline oncontextmenu="return false">
+                        <video controls playsinline oncontextmenu="return false" preload="none" poster="./public/img/svg/crcvlogo.svg">
                             <source src="./public/videos/testimonio.mp4" type="video/mp4">
                         </video>
                     </div>
                     <div>
-                        <video controls playsinline oncontextmenu="return false">
+                        <video controls playsinline oncontextmenu="return false" preload="none" poster="./public/img/svg/crcvlogo.svg">
                             <source src="./public/videos/testimoniob.mp4" type="video/mp4">
                         </video>
                     </div>
