@@ -43,9 +43,9 @@ function detectCookie(cname) {
     return false;
 };
 
-// document.addEventListener('DOMContentLoaded', function() {
+document.addEventListener('DOMContentLoaded', function() {
     init();
-// });
+});
 
 function init(){
     bloqueRGPD = document.querySelector('.cookieBox');
@@ -153,7 +153,7 @@ setTimeout(() => {
 }, 7000);
 
 
-setCookie('social',socialSVG,365);
+setCookie('social',socialSVG[0],365);
 // const summary = document.getElementsByClassName('summary');
 // console.log(summary);
 // function hideSummary(a) {
