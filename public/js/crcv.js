@@ -43,9 +43,9 @@ function detectCookie(cname) {
     return false;
 };
 
-document.addEventListener('DOMContentLoaded', function() {
+// document.addEventListener('DOMContentLoaded', function() {
     init();
-});
+// });
 
 function init(){
     bloqueRGPD = document.querySelector('.cookieBox');
@@ -152,6 +152,8 @@ setTimeout(() => {
     socialWeb(socialNav[1]);
 }, 7000);
 
+
+setCookie('social',socialSVG,365);
 // const summary = document.getElementsByClassName('summary');
 // console.log(summary);
 // function hideSummary(a) {
@@ -464,15 +466,11 @@ const listPages = [`
                                 <ul>${innerLists(lists[3])}</ul>
                             </details>   
                         </div>
-
                         <div class="slide-img">
                             <h3>Terapias físicas</h3>
-                            <figure class="img--container">
-                                
+                            <figure class="img--container">            
                                 <img src="./public/img/webp/tfN.webp" alt="Terapias">
                                 <figcaption class="img--caption">
-                                    
-                                
                                     <p>TENS, US, láser, frío/calor-. Estas técnicas tienen la capacidad en conjunto con la descompresión espinal no quirúrgica de disminuir/distraer las estructuras irritadas que usualmente involucran el nervio, el músculo y la articulación (disco/faceta).</p>
                                     <p>TENS, siglas en inglés de la técnica de estimulación eléctrica transcutánea. Su aplicación puede proporcionar una rápida mejoría especialmente para todas las afecciones de dolor relacionadas con la tensión, favorece la circulación sanguínea y, por tanto, el suministro de oxígeno y nutrientes a la zona de tratamiento. De este modo, puede producirse una rápida reducción del dolor.</p>
                                     <p>En caso de dolor, los impulsos electrónicos de un dispositivo TENS bloquean la transmisión de los estímulos dolorosos al cerebro a través de los nervios. Al bloquear la transmisión del estímulo doloroso, el alivio del dolor suele ser rápido.</p>
@@ -532,7 +530,7 @@ const listPages = [`
                             </div>
                         </div>
                         <div class="contact--iframe">
-                            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d1970.2885790146047!2d-79.525056!3d9.010998!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8faca84e4601bff1%3A0x6e2fdce720e71653!2sCentro%20de%20Rehabilitaci%C3%B3n%20de%20la%20Columna%20Vertebral%20Panama!5e0!3m2!1ses!2sus!4v1685159067677!5m2!1ses!2sus" style="border: 0;" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d1970.2885790146047!2d-79.525056!3d9.010998!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8faca84e4601bff1%3A0x6e2fdce720e71653!2sCentro%20de%20Rehabilitaci%C3%B3n%20de%20la%20Columna%20Vertebral%20Panama!5e0!3m2!1ses!2sus!4v1685159067677!5m2!1ses!2sus" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Dirección de Betania"></iframe>
                         </div>
                     </div>
                 </div>
@@ -558,7 +556,7 @@ const listPages = [`
                             </div>
                         </article>
                         <div class="contact--iframe">
-                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3949.983433628046!2d-80.9775389!3d8.1031684!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8fae739d24655ff5%3A0x275105f287d1df14!2sCentro%20de%20Rehabilitacion%20de%20la%20Columna%20Vertebral%20Veraguas!5e0!3m2!1ses-419!2spa!4v1685312976765!5m2!1ses-419!2spa" style="border: 0;" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3949.983433628046!2d-80.9775389!3d8.1031684!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8fae739d24655ff5%3A0x275105f287d1df14!2sCentro%20de%20Rehabilitacion%20de%20la%20Columna%20Vertebral%20Veraguas!5e0!3m2!1ses-419!2spa!4v1685312976765!5m2!1ses-419!2spa" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Dirección de Santiago"></iframe>
                         </div>
                     </div>
                 </div>
@@ -566,10 +564,10 @@ const listPages = [`
             <div class="container">
                 <div class="bann ms-auto">
                     <div class="p5">        
-                        <div  class="col-md-4 offset-md-4">
+                        <div>
                             <div class="card">
                                 <div class="card-header bg-dark text-white text-center">
-                                    <figure><img src="./public/img/logo.png" width="30" height="30" alt="logo"></figure>
+                                    <figure><img src="./public/img/logo.png" alt="logo"></figure>
                                     <h3>Contáctenos</h3>
                                 </div>
                                 <div class="card-body" id="formulario">
@@ -581,12 +579,12 @@ const listPages = [`
 
                                         <div class="form-group">
                                             <label for="mail">Email</label>
-                                            <input required class="form-control" type="email" name="email"  placeholder="Email" autocomplete="on" id="mail">
+                                            <input required class="form-control" type="email" name="email" placeholder="Email" autocomplete="on" id="mail">
                                         </div>
 
                                         <div class="form-group">
                                             <label for="phone">Teléfono</label>
-                                            <input class="form-control" type="tel" name="phone"  placeholder="Numero" autocomplete="on" id="phone">
+                                            <input class="form-control" type="tel" name="phone" placeholder="Numero" autocomplete="on" id="phone">
                                         </div>
                                         
                                         <div class="form-group">
@@ -599,7 +597,7 @@ const listPages = [`
                                                 Enviar
                                             </button>
                                         </div>
-                                        <input type="hidden" name="_next" value="https://www.crcvpanama.org/index.html">
+                                        <input type="hidden" name="_next" value="https://crcvpanama.org/index.html">
                                         <input type="hidden" name="_captcha" value="false">
                                     </form>
                                 </div>
@@ -612,9 +610,7 @@ const listPages = [`
                 <iframe
                     id="frameP"
                     title="Política de privacidad"
-                    width="350"
-                    height="150"
-                    src="https://www.crcvpanama.org/politicadeprivacidad.html" style="border: 1px solid #fff; scrollbar-width: thin;">  
+                    src="./politicadeprivacidad.html">  
                 </iframe>    
             </div>
             </section>`,
@@ -692,10 +688,11 @@ const listPages = [`
  // style="width:100%; height: 100lvh; scrollbar-width: none;"
  // style="width:100%; height: 100lvh; scrollbar-width: none;"
 // console.log(frames);
+
 const newDiv = document.createElement('div');
 function nDIv(a,b) {
     for(let j=0;j<navLinks.length;j++) {
-        if(a===undefined) {
+        if(a===home) {
 
             home.classList.add('home-start');
             newDiv.innerHTML= "";
@@ -718,7 +715,7 @@ function nav(a) {
         a[i].addEventListener('click', () => {
             switch (i) {
                 case 0:
-                    nDIv(undefined,0);
+                    nDIv(home,0);
                 break;
                 case 1:
                     nDIv(0,1);
@@ -755,7 +752,7 @@ setTimeout(function() {
     nav(navLinks);
     nav(navLinksFooter);
     // showScroll();
-}, 4000);
+}, 2000);
 
 
 let date = document.querySelector('.date');

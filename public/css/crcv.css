@@ -575,9 +575,9 @@ a {
 }
 
 .social--line figure img {
-	font-size: 25px;
-	width: 25px;
-	height: 25px;
+/*	font-size: 25px;*/
+	width: 35px;
+	height: 35px;
 }
 
 .social--line div .facebook img {
@@ -1608,6 +1608,7 @@ details[open] > summary::after {
 .contact--iframe iframe{
 	width: var(--all-width);
 	height: 290px;
+	border: 0;
 }
 
 .geo {
@@ -1815,6 +1816,11 @@ details[open] > summary::after {
 	gap: 1em;
 }
 
+.card-header figure img {
+	width: 30px;
+	height: 30px;
+}
+
 #contact {
 	margin: 0 auto;
 }
@@ -1893,9 +1899,13 @@ details[open] > summary::after {
 
 .privacidad iframe{
 	display: block;
-	place-content: center;
-	margin: 0 auto;
-	scrollbar-width: thin;
+/*	place-content: center;*/
+	margin: 0 0 0 auto;
+	width: 350px;
+  height: 150px;
+/*	scrollbar-width: thin;*/
+	 border: 1px solid #fff; 
+	 scrollbar-width: thin;
 }
 
 /*.pageB {
@@ -2123,7 +2133,7 @@ details[open] > summary::after {
 		width: var(--all-width);
 		z-index: 3000;
 /*		overflow: hidden;*/
-		background: #fafafac8;
+/*		background: #fafafac8;*/
 		transition: all .7s ease-in;
 	}
 
@@ -2173,9 +2183,9 @@ details[open] > summary::after {
 		width: var(--all-width);
 	}
 
-	.lineB {
+	/*.lineB {
 		justify-content: left;
-	}
+	}*/
 
 /*	.home-slider-content {*/
 /*		height: 300px;*/
