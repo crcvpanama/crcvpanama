@@ -153,7 +153,6 @@ setTimeout(() => {
 }, 7000);
 
 
-setCookie('social',socialSVG[0],365);
 // const summary = document.getElementsByClassName('summary');
 // console.log(summary);
 // function hideSummary(a) {
