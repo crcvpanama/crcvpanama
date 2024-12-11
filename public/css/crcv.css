@@ -657,6 +657,7 @@ a {
 .aside-social-web figure img {
 	width: var(--all-width);
 	height: var(--all-width);
+	object-fit: contain;
 }
 
 .home-somos {
@@ -796,7 +797,7 @@ a {
 	height: 300px;
 	border-radius: 10px;
 	z-index: -1;
-	aspect-ratio: 5/6;
+/*	aspect-ratio: 5/6;*/
 	object-fit: fill;
 }
 
@@ -1238,10 +1239,10 @@ details ul {
 	column-gap: 30px;
 }*/
 
-#ciatica {
+/*#ciatica {
 	object-fit: cover;
 	object-position: center;
-}
+}*/
 
 /*.content-one li,
 .content-two li,
@@ -2267,12 +2268,13 @@ details[open] > summary::after {
 
 	.diag-img img {
 		display: var(--show);
-		object-fit: fill;
+		object-fit: contain;
 		margin: 0;
 		padding: 0 .4em;
 		width: var(--all-width);
-		height: 500px;
+		height: auto;
 		border-radius: 0;
+		object-position: bottom;
 
 /*		position: absolute;*/
 /*		height: 100%;*/
