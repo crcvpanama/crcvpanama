@@ -39,7 +39,7 @@
 }
 
 * {
-	content:""7
+	content:"";
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
@@ -2161,6 +2161,12 @@ details[open] > summary::after {
 		display: var(--show);
 		width: var(--all-width);
 	}
+
+	/*.social--line {
+		margin: 0 auto;
+		gap: .6em;
+	}*/
+
 
 	/*.lineB {
 		justify-content: left;
