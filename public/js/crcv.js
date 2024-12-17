@@ -1,82 +1,3 @@
-function setCookie(cname, cvalue, exdays) {
-    let d = new Date();
-
-    d.setTime(d.getTime() + (exdays*24*60*60*1000));
-    let expires = "expires="+ d.toUTCString();
-
-    document.cookie = cname + "=" + cvalue + ";" + expires + ";path=/";
-};
-
-function getCookie(cname) {
-    let name = cname + "=";
-    let decodedCookie = decodeURIComponent(document.cookie);
-    let ca = decodedCookie.split(';');
-    for(let i = 0; i <ca.length; i++) {
-        let c = ca[i];
-        while (c.charAt(0) == ' ') {
-            c = c.substring(1);
-        }
-        if (c.indexOf(name) == 0) {
-            return c.substring(name.length, c.length);
-        }
-    }
-    return "";
-};
-
-function removeCookie(cname){
-    setCookie(cname,"",-1);
-};
-
-function detectCookie(cname) {
-    let name = cname + "=";
-    let decodedCookie = decodeURIComponent(document.cookie);
-    let ca = decodedCookie.split(';');
-    for(let i = 0; i < ca.length; i++) {
-        let c = ca[i];
-        while (c.charAt(0) == ' ') {
-            c = c.substring(1);
-        }
-        if (c.indexOf(name) == 0 && (name.length != c.length))  {
-            return true;
-        }
-    }
-    return false;
-};
-
-document.addEventListener('DOMContentLoaded', function() {
-    init();
-});
-
-function init(){
-    bloqueRGPD = document.querySelector('.cookieBox');
-    if (localStorage.acceptedCookies != 'true') {
-    bloqueRGPD.style.display = 'inline-block';    
-    }
-
-    if(detectCookie("rgpdOK")){
-        if (getCookie("rgpdOK")==1){eliminarBloqueRGPD()};
-    }else{
-        document.querySelector(".botonRGPD").addEventListener("click", () => {
-            eliminarBloqueRGPD();
-            setCookie("rgpdOK",1,365);
-        });
-    }
-};
-
-function eliminarBloqueRGPD(){
-    bloqueRGPD.parentNode.removeChild(bloqueRGPD);
-    localStorage.acceptedCookies = 'true';
-};
-
-// const zero = document.querySelector('.home-slider');
-// const one = document.querySelector('.home-slider-conten');
-const button = document.querySelector('.nav-button');
-const menu = document.querySelector('.collapse');
-
-button.addEventListener('click', () => {
-    menu.classList.toggle('navbar-collapse');
-});
-
 function showTest(a) {
     // a.style.display = 'block';
     a.classList.add('show');
@@ -124,16 +45,16 @@ const socialNav = document.querySelectorAll('.social--line');
 
 const socialSVG = [ 
     `<div>
-        <figure class="facebook"><a href="https://www.facebook.com/crcvpanama" target="_blank" aria-label="FACEBOOK"><img src="./public/img/svg/facebook.svg" ></a></figure>
+        <figure class="facebook"><a href="https://www.facebook.com/crcvpanama" target="_blank" aria-label="FACEBOOK"><img src="./public/img/svg/facebook.svg" alt="facebook-icon"></a></figure>
     </div>`,
     `<div>
-        <figure class="whatsapp"><a target="_blank" href="https://wa.me/50765991052?text=Hola%20estoy%20interesado%20y%20deseo%20más%20información."><img src="./public/img/svg/WhatsApp.svg"></a></figure>
+        <figure class="whatsapp"><a target="_blank" href="https://wa.me/50765991052?text=Hola%20estoy%20interesado%20y%20deseo%20más%20información."><img src="./public/img/svg/WhatsApp.svg" alt="whatsapp-icon"></a></figure>
     </div>`,
     `<div>
-        <figure class="youtube"><a target="_blank" href="https://www.youtube.com/channel/UCjhJ2PgAVZLeuqYWTsE5-Qg"><img src="./public/img/svg/youtube.svg"></a></figure>
+        <figure class="youtube"><a target="_blank" href="https://www.youtube.com/channel/UCjhJ2PgAVZLeuqYWTsE5-Qg"><img src="./public/img/svg/youtube.svg" alt="youtube-icon"></a></figure>
     </div>`,
     `<div>
-        <figure class="instagram"><a target="_blank" href="https://www.instagram.com/crcvpanama/?r=nametag"><img src="./public/img/svg/instagram.svg"></a></figure>
+        <figure class="instagram"><a target="_blank" href="https://www.instagram.com/crcvpanama/?r=nametag"><img src="./public/img/svg/instagram.svg" alt="instagram-icon"></a></figure>
     </div>`
 ];
 
