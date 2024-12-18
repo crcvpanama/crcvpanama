@@ -169,10 +169,8 @@ header {
 	opacity: 1;
 	text-decoration: var(--hidden);
 	color: var(--dark);
-/*	box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3);*/
 	transition: .4s ease-in;
 	z-index: 1;
-/*	background-color: #00011202;*/
 }
 
 .nav-link:hover {
@@ -188,8 +186,15 @@ header {
 	position: absolute;
 	content: "";
 	z-index: -1;
-	color: var(--white);
 }
+
+.nav-bar li:has(.active) {
+	background: var(--backgroundtransparent);
+}
+
+/*.backgtrans {
+	background: var(--backgroundtransparent);
+}*/
 
 /*.container-fluid {
 	display: flex;
@@ -934,9 +939,9 @@ a {
 /*	margin: 0 0 0 auto;*/
 }
 
-.backgtrans {
+/*.backgtrans {
 	background: var(--backgroundtransparent);
-}
+}*/
 
 .whatsapp--widget:hover {
 	opacity: 1;
@@ -2041,7 +2046,13 @@ details[open] > summary::after {
 /*}*/
 
 @media (width <= 800px) {
-
+	.nav-link:hover {
+/*		z-index: 1;*/
+/*		color: var(--white);*/
+/*		opacity: 0.8;*/
+		box-shadow: none;
+		border-bottom: none;
+	}
 
 	.header {
 		display: var(--show);

@@ -611,22 +611,23 @@ const listPages = [`
 // console.log(frames);
 
 const newDiv = document.createElement('div');
+
 function nDIv(a,b) {
     for(let j=0;j<navLinks.length;j++) {
         if(a===home) {
 
             home.classList.add('home-start');
-            newDiv.innerHTML= "";
-            navLinks[j].classList.remove('active', 'backgtrans');
-            navLinks[b].classList.add('active', 'backgtrans');
+            newDiv.innerHTML = "";
+            navLinks[j].classList.remove('active');
+            navLinks[b].classList.add('active');
          } else {
             newDiv.innerHTML = listPages[a];
             // newDiv.innerHTML = frames[a];
 
             pages.insertBefore(newDiv, pagesChild);
             home.classList.remove('home-start');
-            navLinks[j].classList.remove('active','backgtrans');
-            navLinks[b].classList.add('active','backgtrans');
+            navLinks[j].classList.remove('active');
+            navLinks[b].classList.add('active');
         }
     }
 };
