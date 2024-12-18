@@ -227,7 +227,7 @@ header {
 .home-slider-content {
 /*	display: var(--show);*/
 	position: relative;
-	width: var(--all-width);
+/*	width: var(--all-width);*/
 	height: 400px;
 /*	margin: 0 auto;*/
 	/*background-position: center;
@@ -635,7 +635,7 @@ a {
 .aside-social-web figure img {
 	width: var(--all-width);
 	height: var(--all-width);
-	object-fit: contain;
+	object-fit: fill;
 }
 
 .home-somos {
@@ -762,21 +762,29 @@ a {
 }
 
 .diag-img {
+/*	display: flex;*/
+/*	justify-content: center;*/
 	position: relative;
 	width: 250px;
 	height: auto;
-	filter: drop-shadow(2px 4px 6px #111);
+	filter: drop-shadow(2px 4px 6px var(--dark));
+	object-position: center;
+/*	overflow: hidden;*/
 }
 
 .diag-img img {
 	display: block;
 	position: relative;
+	align-self:center;
 	width: var(--all-width);
 	height: 300px;
 	border-radius: 10px;
 	z-index: -1;
-/*	aspect-ratio: 5/6;*/
-	object-fit: fill;
+	aspect-ratio: 5/6;
+/*	align-items:center;*/
+/*	margin: auto;*/
+/*	object-fit: contain;*/
+/*	object-position: center;*/
 }
 
 .button__parr {
@@ -2251,18 +2259,16 @@ details[open] > summary::after {
 	}
 
 	.diag-img img {
-		display: var(--show);
-		object-fit: contain;
-		margin: 0;
-		padding: 0 .4em;
-		width: var(--all-width);
-		height: auto;
-		border-radius: 0;
-		object-position: bottom;
-
-/*		position: absolute;*/
-/*		height: 100%;*/
-	}
+    display: var(--show);
+    object-fit: fill;
+    margin: 0;
+    padding: 0 .4em;
+    width: var(--all-width);
+    height: 250px;
+    border-radius: 0;
+/*    object-position: bottom;*/
+    /* position: absolute; */	
+  }
 
 	.button__parr {
 		position: relative;
