@@ -39,7 +39,6 @@
 }
 
 * {
-	content:"";
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
@@ -47,17 +46,12 @@
 
 html,body {
 	-webkit-text-size-adjust: var(--all-width);
-    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
-	width: auto;
-/*	min-height: 100lvh;*/
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+	width: auto;	
+	color:var(--dark);
+	font-family: 'Roboto', sans-serif;
 	font-weight: 400;
 	font-size: 1rem;
-/*  line-height: 1.5;*/
-	color:var(--dark);
-	font-family: Roboto, sans-serif;
-/*	font-family: var(--font-family-sans-serif);*/
-/*	font-family: 'Poppins';*/
-/*	font-family:'Open Sans';*/
 	font-optical-sizing: auto;
 }
 
@@ -147,6 +141,7 @@ header {
 }
 
 .nav-item {
+	display: inline-block;
 	justify-content: stretch;
 	align-items: stretch;
 	width: 109px;
