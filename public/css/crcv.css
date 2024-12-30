@@ -1868,7 +1868,7 @@ details[open] > summary::after {
 	cursor: pointer;
 } 
 
-.facebook i:hover {
+/*.facebook i:hover {
 	color: #3b5998;
 }
 
@@ -1885,7 +1885,7 @@ details[open] > summary::after {
     -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent;
-}
+}*/
 
  #map, 
  #map2 {
