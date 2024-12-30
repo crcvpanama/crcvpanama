@@ -221,6 +221,7 @@ header {
 	display: grid;
 	position: relative;
 	grid-template-columns: 1fr 350px;
+	background-color: #fff;
 /*	z-index: 2000;*/
 }
 
@@ -625,9 +626,19 @@ a {
 	height: auto;
 	justify-content: flex-end;
 	overflow: hidden;
+	/*	background-repeat: no-repeat;*/
 }
 
-.aside-social-web figure {
+.social__img {
+	background:url('../img/webp/crcv.avif') center no-repeat;
+	background-size: contain;
+	width: 100%;
+	height: 100%;
+	/*background-position: center;
+	object-fit:fill;*/
+}
+
+/*.aside-social-web figure {
 	max-width: 400px;
 	height: var(--all-width);
 }
@@ -636,7 +647,7 @@ a {
 	width: var(--all-width);
 	height: var(--all-width);
 	object-fit: fill;
-}
+}*/
 
 .home-somos {
 	display: flex;
