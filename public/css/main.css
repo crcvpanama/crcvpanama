@@ -1143,7 +1143,7 @@ details[open] > summary::after {
         padding: 5px; 
         border-right: var(--hidden);
         justify-content:left;
-        border-bottom: 2px solid #778899c8;        
+        border-bottom: 2px solid #77889922;        
         width: 200px;
     }
 
@@ -1317,7 +1317,7 @@ details[open] > summary::after {
 /*	SERVICIOS*/
 
 	.img--container {
-		display: block;		
+		display: var(--show);		
 		margin: 0;		
 		width: var(--all-width);
 		height: auto;
@@ -1337,7 +1337,7 @@ details[open] > summary::after {
 	}
 
 	.images {
-		display: flex;
+		display: var(--show);
 		position: relative;
 		margin: 0 auto;
 		justify-content: center;
