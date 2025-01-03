@@ -251,16 +251,34 @@ main {
     display: grid;
     position: relative;
     grid-template-columns: 1fr 300px;
+    overflow:hidden;
     background-color: var(--white);
     /* z-index: 2000; */
+
 }
 
 .home-slider-content {
     position: relative;
     height: 400px;
+    background: linear-gradient(to bottom, #aaaaaa11 0%, #aaaaaa22 50%, #00000048 100%), url('../img/webp/2025.webp') center no-repeat;
+    background-size: contain;
+    transition: all 3s ease-in-out;
+/*    object-fit: fill;*/
+/*    animation: ss 3.5s linear forwards;*/
+}
+
+/*@keyframes ss {
+    from {transform: translateX(0 -1500px);}
+    to {transform:translateX(1500px 0);}
+}*/
+
+/*.home-slider-contentA {
+    position: relative;
+    height: 400px;
     background: linear-gradient(to bottom, #000000a1 0%, #000000c8 50%, #000 100%), url('../img/webp/machi.avif') center no-repeat;
     background-size: contain;
-}
+    animation: showW 3.1s reverse forwards;
+}*/
 
 .home-slider-content h1 {
     display: grid;
@@ -268,10 +286,12 @@ main {
     font-size: 2rem;
     margin:0;
     height: 100%;
-    place-content: center;
+    place-content: bottom;
     letter-spacing: .09em;
-    color: var(--white);
+/*    color: var(--white);*/
+    color: var(--dark);
     text-align:center;
+    transition: all 3s ease-in-out;
 }
 
 .home-slider-content .hh {
@@ -323,15 +343,21 @@ main {
      margin-bottom: 1em; 
 }
 
+.img__quienes {
+    width: auto;
+    height: 100%;
+}
+
 .img__quienes figure {
-	width: auto;
-	height: auto;
+	width: 300px;
+	height: 100%;
 }
 
 .img__quienes img {
+    display: block;
     width: var(--all-width); 
     height: var(--all-width); 
-    object-fit: contain;
+    object-fit: fill;
 }
 
 .img-container-a {
@@ -433,7 +459,7 @@ main {
     right: 2%;
     cursor: pointer;
     z-index: 3000;
-    animation: alert 6.5s linear 40ms infinite;
+    animation: alert 6.5s linear infinite;
     opacity: .8;
     transition: all .4s ease-in;
 }
@@ -441,9 +467,9 @@ main {
 @keyframes alert {
 	from {filter: drop-shadow(2px 2px 4px white);}
 	25% {filter: drop-shadow(3px 4px 6px green);}
-	45% {filter: drop-shadow(3px 4px 6px white);}
-	65% {filter: drop-shadow(3px 4px 6px white);}
-	85% {filter: drop-shadow(3px 4px 6px green);}
+	45% {filter: drop-shadow(3px 4px 6px green);}
+	65% {filter: drop-shadow(3px 4px 6px green);}
+	85% {filter: drop-shadow(3px 4px 6px white);}
 	to {filter: drop-shadow(2px 2px 4px white);}
 }
 
@@ -466,7 +492,7 @@ main {
     border: 5px solid white;
     background: #36D1DC;
     background: linear-gradient(to right, #277b82 0%, #36D1DC 100%);
-    animation: showW 2.4s linear 100ms forwards;
+    animation: showW 2.4s linear forwards;
 }
 
 .hide__parr {
@@ -474,9 +500,9 @@ main {
 }
 
 @keyframes showW {
-	from {opacity: 0;}
-	25% {opacity: 4.1;}
-	75% {opacity: 8.1;}
+	from {opacity: .1;}
+	/*45% {opacity: .6;}
+	85% {opacity: .8;}*/
 	to {opacity: 1;}
 }
 
@@ -1209,11 +1235,11 @@ details[open] > summary::after {
 	}
 
 	.diag-img img {
-    padding: 0 .4em;
-    width: var(--all-width);
-    height: 300px;
-    border-radius: 0;  
-}
+        padding: 0 .4em;
+        width: var(--all-width);
+        height: 300px;
+        border-radius: 0;  
+    }
 
 	.button__parr {		
         scale: 1;
