@@ -286,11 +286,11 @@ main {
     font-size: 2rem;
     margin:0;
     height: 100%;
-    place-content: bottom;
+    place-content: end;
     letter-spacing: .09em;
 /*    color: var(--white);*/
-    color: #4b4b4b;
-    filter: drop-shadow(1px 1px #aaa);
+    color: #fafafa;
+    filter: drop-shadow(1px 2px #2b2b2b);
     text-align:center;
     transition: all 3s ease-in-out;
 }
