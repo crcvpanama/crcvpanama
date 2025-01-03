@@ -195,44 +195,60 @@ a {
     gap: 1.5em;
 }
 
-.social--line figure img {
+.social--line div{
     width: 45px;
     height: 35px;
 }
 
-.social--line div .facebook img {
+.social--line div .facebook {
+    display: block;
+    background: url('../img/svg/facebook.svg') center no-repeat;
+    width: 100%;
+    height: 100%;
     color: #3b5998;
     transition: all .5s ease-in-out;
 }
 
-.social--line div .whatsapp img {
+.social--line div .whatsapp {
+    display: block;
+    background: url('../img/svg/WhatsApp.svg') center no-repeat;
+    width: 100%;
+    height: 100%;
     color: #25D366;
     transition: all .5s ease-in-out;
 }
 
-.social--line div .youtube img {
+.social--line div .youtube {
+    display: block;
+    background: url('../img/svg/youtube.svg') center no-repeat;
+    width: 100%;
+    height: 100%;
     color: #c4302b;
     transition: all .5s ease-in-out;
 }
 
-.social--line div .instagram img {
-    background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
-    -webkit-background-clip: text;
-    background-clip: text;
-    -webkit-text-fill-color: transparent;
+.social--line div .instagram {
+    display: block;
+    background: url('../img/svg/instagram.svg') center no-repeat;
+    width: 100%;
+    height: 100%;
+/*    background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);*/
+/*    -webkit-background-clip: text;*/
+/*    background-clip: text;*/
+/*    -webkit-text-fill-color: transparent;*/
     transition: all .5s ease-in-out;
 }
 
-.social--line .youtube img:hover,
-.social--line .instagram img:hover {
+.social--line .youtube:hover,
+.social--line .instagram:hover {
 	filter: drop-shadow(0 -7mm 4px #dc143c);
 }
 
-.social--line .facebook img:hover {
+.social--line .facebook:hover {
 	filter: drop-shadow(0 -7mm 4px #3b5998);
 }
 
-.social--line .whatsapp img:hover {
+.social--line .whatsapp:hover {
 	filter: drop-shadow(0 -7mm 4px #008000);
 }
 

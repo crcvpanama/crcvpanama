@@ -87,16 +87,16 @@ let timeA = setTimeout(notice, 7990);
 
 const socialSVG = [ 
     `<div>
-        <figure class="facebook"><a href="https://www.facebook.com/crcvpanama" target="_blank" aria-label="FACEBOOK"><img src="./public/img/svg/facebook.svg" alt="facebook-icon"></a></figure>
+        <a href="https://www.facebook.com/crcvpanama" target="_blank" aria-label="FACEBOOK"><span class="facebook"></span></a>
     </div>`,
     `<div>
-        <figure class="whatsapp"><a target="_blank" href="https://wa.me/50765991052?text=Hola%20estoy%20interesado%20y%20deseo%20más%20información."><img src="./public/img/svg/WhatsApp.svg" alt="whatsapp-icon"></a></figure>
+        <a target="_blank" href="https://wa.me/50765991052?text=Hola%20estoy%20interesado%20y%20deseo%20más%20información."><span class="whatsapp"></span></a>
     </div>`,
     `<div>
-        <figure class="youtube"><a target="_blank" href="https://www.youtube.com/channel/UCjhJ2PgAVZLeuqYWTsE5-Qg"><img src="./public/img/svg/youtube.svg" alt="youtube-icon"></a></figure>
+        <a target="_blank" href="https://www.youtube.com/channel/UCjhJ2PgAVZLeuqYWTsE5-Qg"><span class="youtube"></span></a>
     </div>`,
     `<div>
-        <figure class="instagram"><a target="_blank" href="https://www.instagram.com/crcvpanama/?r=nametag"><img src="./public/img/svg/instagram.svg" alt="instagram-icon"></a></figure>
+        <a target="_blank" href="https://www.instagram.com/crcvpanama/?r=nametag"><span class="instagram"></span></a>
     </div>`
 ];
 
@@ -113,7 +113,7 @@ setTimeout(() => {
     // socialWeb(socialFooter);
     socialWeb(socialNav[0]);
     socialWeb(socialNav[1]);
-}, 13000);
+}, 4000);
 
 
 // const summary = document.getElementsByClassName('summary');
