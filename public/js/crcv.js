@@ -53,15 +53,15 @@ function notice(a) {
     h[0].innerHTML = `                              
                 <span>DRX9000</span>
                 <span class="hh">Descompresión espinal no quirúrgica</span>`;
-    i[4].style.animation = 'showW 3.1s linear forwards';
+    i[0].style.animation = 'showW 5.1s linear forwards';
     h[0].style.placeContent = 'center';
 //     h[0].style.color = '#fafafa';
-    i[4].removeAttribute('src');
+    i[0].removeAttribute('src');
     backG = 'public/img/webp/machi.avif';
-    i[4].setAttribute('src', backG);
+    i[0].setAttribute('src', backG);
 };
 
-let timeA = setTimeout(notice, 7800);
+let timeA = setTimeout(notice, 7990);
 
 
 
@@ -113,7 +113,7 @@ setTimeout(() => {
     // socialWeb(socialFooter);
     socialWeb(socialNav[0]);
     socialWeb(socialNav[1]);
-}, 7000);
+}, 13000);
 
 
 // const summary = document.getElementsByClassName('summary');
