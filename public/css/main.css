@@ -289,7 +289,8 @@ main {
     place-content: bottom;
     letter-spacing: .09em;
 /*    color: var(--white);*/
-    color: var(--dark);
+    color: #4b4b4b;
+    filter: drop-shadow(1px 1px #aaa);
     text-align:center;
     transition: all 3s ease-in-out;
 }
