@@ -26,45 +26,48 @@ whatsAppWidget.addEventListener('click', () => {
 
 const socialNav = document.querySelectorAll('.social--line');
 
-const h = document.getElementsByTagName('h1');
-const b = document.querySelector('.home-slider-content');
 
-h[0].style.placeContent = 'end';
-// b.style.background = `linear-gradient(to bottom, #aaaaaa11 0%, #aaaaaa22 50%, #000 100%), url('public/img/webp/2025.webp') center no-repeat`;
+
+
+
+
+const h = document.getElementsByTagName('h1');
+const i = document.getElementsByTagName('img');
+// const b = document.querySelector('.home-slider-content');
+
+// h[0].style.placeContent = 'end';
 
 setTimeout(() => {
-    b.style.animation = 'showW 2.1s reverse forwards';
+    i[0].style.animation = 'showW 2.1s reverse forwards';
 },6000);
 
-// setTimeout(() => {
 
-    // b.classList.remove('home-slider-content');    
-    // c.classList.add('home-slider-contentA'); 
-    // b.style.animation = 'showW 3.5s linear forwards';
-// },10000);
-
-const backG= [
-    
-    `linear-gradient(to bottom, #00000091 0%, #000000b8 50%, #000000d5 100%), url('public/img/webp/machi.avif') center no-repeat`
-] 
+let backG= i[0].src;
+    // console.log(i)
+//     `linear-gradient(to bottom, #00000091 0%, #000000b8 50%, #000000d5 100%), url('public/img/webp/machi.avif') center no-repeat`
+// ] 
 
 function notice(a) {
-    // n = 0;
-    // for (i=0;i<a.length;i++) {
-        b.style.background = a;
-    // }
-        h[0].innerHTML = `                              
-                            <span>DRX9000</span>
-                            <span class="hh">Descompresión espinal no quirúrgica</span>`
-    b.style.animation = 'showW 3.1s linear forwards';
-    h[0].style.placeContent = 'center';
-    h[0].style.color = '#fafafa';
-    // o++;
-    // if(o>a.length){o=1};
-    // a[o-1].style.display = "block";
-}
+//         b.style.background = a;
 
-let timeA = setInterval(notice, 7500, backG[0]);
+    h[0].innerHTML = `                              
+                <span>DRX9000</span>
+                <span class="hh">Descompresión espinal no quirúrgica</span>`;
+    i[4].style.animation = 'showW 3.1s linear forwards';
+    h[0].style.placeContent = 'center';
+//     h[0].style.color = '#fafafa';
+    i[4].removeAttribute('src');
+    backG = 'public/img/webp/machi.avif';
+    i[4].setAttribute('src', backG);
+};
+
+let timeA = setTimeout(notice, 7800);
+
+
+
+
+
+
 // const socialFooter = document.querySelector('.social');
 
 // const social = [ 
