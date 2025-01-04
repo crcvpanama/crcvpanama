@@ -25,45 +25,63 @@ whatsAppWidget.addEventListener('click', () => {
 });
 
 const socialNav = document.querySelectorAll('.social--line');
-// const h = document.getElementsByTagName('h1');
+
+
+
+const h = document.getElementsByTagName('h1');
+let header = document.querySelector(".home-slider-content");
+let ff = header.querySelector('.item:first-child');
+let newIMG = document.createElement('img');
 // const i = document.getElementsByTagName('img');
-// let backG= i[0].src;
-
-// function notice() {
-//     h[0].innerHTML = `                              
-//                 <span>DRX9000</span>
-//                 <span class="hh">Descompresión espinal no quirúrgica</span>`;
-//     i[0].style.animation = 'showW 5.1s linear forwards';
-//     h[0].style.placeContent = 'center';
-//     i[0].removeAttribute('src');
-//     backG = 'public/img/webp/machi.avif';
-//     i[0].setAttribute('src', backG);
-// };
+newIMG.src = 'public/img/webp/2025.webp';
 
 
-// let header = document.querySelector("header");
+function notice() {
+    h[0].innerHTML = `                              
+                <span>DRX9000</span>
+                <span class="hh">Descompresión espinal no quirúrgica</span>`;
+    newIMG.style.animation = 'showW 4.1s linear forwards';
+    h[0].style.placeContent = 'center';
+    // i[0].removeAttribute('src');
+    newIMG.src = 'public/img/webp/machi.avif';
+    // i[0].setAttribute('src', backG);
+};
 
-// window.addEventListener('', () => { 
-// (() => {
-//     let anchoV1 = window.innerWidth; 
-//     if(anchoV1 <= 800) {
-//         i[0].removeAttribute('src');
-//         backG = 'public/img/webp/2025.webp';
-//         i[0].setAttribute('src', backG);
 
-//         h[0].innerHTML = `                              
-//                 <span>Feliz nuevo año 2025</span>
-//                 <span class="hh">PANAMÁ</span>`;
+
+
+
+(() => {
+    let anchoV1 = window.innerWidth; 
+    if(anchoV1 <= 800) {
+        newIMG.src = 'public/img/webp/2025.webp';
+        // i[0].removeAttribute('src');
+        // backG.innerText = 'public/img/webp/2025.webp';
+        header.insertBefore(newIMG,ff);
+        // i[0].setAttribute('src', backG);
+
+        h[0].innerHTML = `                              
+                <span>Feliz nuevo año 2025</span>
+                <span class="hh">PANAMÁ</span>`;
         
-//         setTimeout(() => {
-//             i[0].style.animation = 'showW 3.1s reverse forwards';
-//         },6000);
+        setTimeout(() => {
+            newIMG.style.animation = 'showW 2.1s reverse forwards';
+        },6000);
 
         
        
-//         setTimeout(notice, 8490);
-//     } 
-    // else { 
+        setTimeout(notice, 7910);
+    } 
+    else { 
+        newIMG.src = 'public/img/webp/machi.avif';
+        header.insertBefore(newIMG,ff);
+    //     window.addEventListener('resize', () => { 
+    //         if(anchoV1 > 800){
+    //             newIMG.style.display = 'none';
+    //         } else {
+    //             newIMG.style.display = 'grid';
+    //         }
+    //     });
     // Valor cuando el tamaño de pantalla sea mayor } }); 
     // Crear evento por separado para desplazamiento 
         // window.addEventListener("scroll", 
@@ -72,9 +90,9 @@ const socialNav = document.querySelectorAll('.social--line');
 
         // header.style.backgroundSize = 160 - + window.pageYOffset/12+"%";
         // header.style.opacity = 1 - + window.pageYOffset/700 + "";
-    // }
-// });
-// })();
+    }
+
+})();
 
 
 

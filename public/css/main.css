@@ -1244,11 +1244,14 @@ details[open] > summary::after {
 		display: var(--show);
 	}
 
+    #drx {
+        display: none;
+    }
 
-.home-slider-content img{
-    width: 100%;
-    object-fit: fill;
-}
+    .home-slider-content img{
+        width: 100%;
+        object-fit: fill;
+    }
 
 	.aside-social-web {
 		display: var(--hidden);
