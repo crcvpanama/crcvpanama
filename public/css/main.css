@@ -1261,6 +1261,7 @@ details[open] > summary::after {
 
 	.img__quienes figure{
 		height: 450px;
+        margin: 0 auto;
 	}
 	
 	.diagnostic-ab {

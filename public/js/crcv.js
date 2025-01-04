@@ -25,32 +25,67 @@ whatsAppWidget.addEventListener('click', () => {
 });
 
 const socialNav = document.querySelectorAll('.social--line');
+const h = document.getElementsByTagName('h1');
+const i = document.getElementsByTagName('img');
+let backG= i[0].src;
+
+function notice() {
+    h[0].innerHTML = `                              
+                <span>DRX9000</span>
+                <span class="hh">Descompresión espinal no quirúrgica</span>`;
+    i[0].style.animation = 'showW 5.1s linear forwards';
+    h[0].style.placeContent = 'center';
+    i[0].removeAttribute('src');
+    backG = 'public/img/webp/machi.avif';
+    i[0].setAttribute('src', backG);
+};
+
+
+// let header = document.querySelector("header");
+
+// window.addEventListener('', () => { 
+(() => {
+    let anchoV1 = window.innerWidth; 
+    
+    // console.log("width: ", anchoV1, "px"); 
+    if(anchoV1 <= 800) {
+        i[0].removeAttribute('src');
+        backG = 'public/img/webp/2025.webp';
+        i[0].setAttribute('src', backG);
+
+        h[0].innerHTML = `                              
+                <span>Feliz nuevo año 2025</span>
+                <span class="hh">PANAMÁ</span>`;
+        
+        setTimeout(() => {
+            i[0].style.animation = 'showW 3.1s reverse forwards';
+        },6000);
+
+        
+       
+        setTimeout(notice, 8490);
+
+        // header.style.backgroundSize = "cover";
+
+    } 
+    // else { 
+    // Valor cuando el tamaño de pantalla sea mayor } }); 
+    // Crear evento por separado para desplazamiento 
+        // window.addEventListener("scroll", 
+        //     function((window.innerWidth > 900) {
+        // Aplicar solo cuando el ancho de pantalla es mayor
+
+        // header.style.backgroundSize = 160 - + window.pageYOffset/12+"%";
+        // header.style.opacity = 1 - + window.pageYOffset/700 + "";
+    // }
+// });
+})();
 
 
 
 
 
 
-// const h = document.getElementsByTagName('h1');
-// const i = document.getElementsByTagName('img');
-// setTimeout(() => {
-//     i[0].style.animation = 'showW 2.1s reverse forwards';
-// },6000);
-
-
-// let backG= i[0].src;
-// function notice(a) {
-//     h[0].innerHTML = `                              
-//                 <span>DRX9000</span>
-//                 <span class="hh">Descompresión espinal no quirúrgica</span>`;
-//     i[0].style.animation = 'showW 5.1s linear forwards';
-//     h[0].style.placeContent = 'center';
-//     i[0].removeAttribute('src');
-//     backG = 'public/img/webp/machi.avif';
-//     i[0].setAttribute('src', backG);
-// };
-
-// let timeA = setTimeout(notice, 7990);
 
 
 
