@@ -31,37 +31,26 @@ const socialNav = document.querySelectorAll('.social--line');
 
 
 
-const h = document.getElementsByTagName('h1');
-const i = document.getElementsByTagName('img');
-// const b = document.querySelector('.home-slider-content');
-
-// h[0].style.placeContent = 'end';
-
-setTimeout(() => {
-    i[0].style.animation = 'showW 2.1s reverse forwards';
-},6000);
+// const h = document.getElementsByTagName('h1');
+// const i = document.getElementsByTagName('img');
+// setTimeout(() => {
+//     i[0].style.animation = 'showW 2.1s reverse forwards';
+// },6000);
 
 
-let backG= i[0].src;
-    // console.log(i)
-//     `linear-gradient(to bottom, #00000091 0%, #000000b8 50%, #000000d5 100%), url('public/img/webp/machi.avif') center no-repeat`
-// ] 
+// let backG= i[0].src;
+// function notice(a) {
+//     h[0].innerHTML = `                              
+//                 <span>DRX9000</span>
+//                 <span class="hh">Descompresión espinal no quirúrgica</span>`;
+//     i[0].style.animation = 'showW 5.1s linear forwards';
+//     h[0].style.placeContent = 'center';
+//     i[0].removeAttribute('src');
+//     backG = 'public/img/webp/machi.avif';
+//     i[0].setAttribute('src', backG);
+// };
 
-function notice(a) {
-//         b.style.background = a;
-
-    h[0].innerHTML = `                              
-                <span>DRX9000</span>
-                <span class="hh">Descompresión espinal no quirúrgica</span>`;
-    i[0].style.animation = 'showW 5.1s linear forwards';
-    h[0].style.placeContent = 'center';
-//     h[0].style.color = '#fafafa';
-    i[0].removeAttribute('src');
-    backG = 'public/img/webp/machi.avif';
-    i[0].setAttribute('src', backG);
-};
-
-let timeA = setTimeout(notice, 7990);
+// let timeA = setTimeout(notice, 7990);
 
 
 

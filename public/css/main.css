@@ -319,15 +319,15 @@ main {
     font-size: 2rem;
     margin:0;
     height: 100%;
-    place-content: end;
+    place-content: center;
     letter-spacing: .09em;
     color: var(--white);
 /*    color: #fafafa;*/
 /*    color: #000;*/
-    filter: drop-shadow(1px 4px #121212);
+    filter: drop-shadow(1px 1px #121212);
     text-align:center;
     transition: all 3s ease-in-out;
-    z-index: 3000;
+/*    z-index: 3000;*/
 }
 
 .home-slider-content .hh {
