@@ -49,7 +49,14 @@ function notice() {
 
 function nw(a,b) {
     newIMG.style.animation = 'showW 2.1s reverse forwards';
-    setTimeout(() => {newIMG.style.display = a;b.remove()},2000);
+    setTimeout(() => {
+        newIMG.style.display = a;
+        b.remove();
+        h[0].innerHTML = `                              
+                <span>DRX9000</span>
+                <span class="hh">Descompresión espinal no quirúrgica</span>`;
+    },2000);
+
 };
 
 (() => {
