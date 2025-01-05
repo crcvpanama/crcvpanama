@@ -33,7 +33,7 @@ let header = document.querySelector(".home-slider-content");
 let ff = header.querySelector('.item:first-child');
 let newIMG = document.createElement('img');
 // const i = document.getElementsByTagName('img');
-newIMG.src = 'public/img/webp/2025.webp';
+// newIMG.src = 'public/img/webp/2025.webp';
 
 
 function notice() {
@@ -47,9 +47,10 @@ function notice() {
     // i[0].setAttribute('src', backG);
 };
 
-
-
-
+function nw(a,b) {
+    newIMG.style.animation = 'showW 2.1s reverse forwards';
+    setTimeout(() => {newIMG.style.display = a;b.remove()},2000);
+};
 
 (() => {
     let anchoV1 = window.innerWidth; 
@@ -64,17 +65,15 @@ function notice() {
                 <span>Feliz nuevo año 2025</span>
                 <span class="hh">PANAMÁ</span>`;
         
-        setTimeout(() => {
-            newIMG.style.animation = 'showW 2.1s reverse forwards';
-        },6000);
-
+        setTimeout(nw,6000,'none',newIMG);
         
-       
-        setTimeout(notice, 7910);
+        // setTimeout(notice, 7910);
     } 
-    else { 
-        newIMG.src = 'public/img/webp/machi.avif';
-        header.insertBefore(newIMG,ff);
+    // else { 
+        // newIMG.src = 'public/img/webp/machi.avif';
+        // header.insertBefore(newIMG,ff);
+
+
     //     window.addEventListener('resize', () => { 
     //         if(anchoV1 > 800){
     //             newIMG.style.display = 'none';
@@ -90,7 +89,7 @@ function notice() {
 
         // header.style.backgroundSize = 160 - + window.pageYOffset/12+"%";
         // header.style.opacity = 1 - + window.pageYOffset/700 + "";
-    }
+    // }
 
 })();
 
@@ -228,7 +227,7 @@ const home = document.querySelector('.home-start');
 // const listPages = document.getElementsByClassName('page');
 // console.log(listPages);
 const pages = document.querySelector('.pageA');
-const pagesChild = pages.querySelector('.item:nth-child(0)');
+const pagesChild = pages.querySelector('.item:first-child');
 // const frames = [
 //     `<iframe src='./services.html' frameborder="0"></iframe>`,
 //     `<iframe src='./diagnosticos.html' frameborder="0"></iframe>`,
