@@ -36,16 +36,16 @@ let newIMG = document.createElement('img');
 // newIMG.src = 'public/img/webp/2025.webp';
 
 
-function notice() {
-    h[0].innerHTML = `                              
-                <span>DRX9000</span>
-                <span class="hh">Descompresión espinal no quirúrgica</span>`;
-    newIMG.style.animation = 'showW 4.1s linear forwards';
-    h[0].style.placeContent = 'center';
+// function notice() {
+//     h[0].innerHTML = `                              
+//                 <span>DRX9000</span>
+//                 <span class="hh">Descompresión espinal no quirúrgica</span>`;
+//     newIMG.style.animation = 'showW 4.1s linear forwards';
+//     h[0].style.placeContent = 'center';
     // i[0].removeAttribute('src');
-    newIMG.src = 'public/img/webp/machi.avif';
+    // newIMG.src = 'public/img/webp/machi.avif';
     // i[0].setAttribute('src', backG);
-};
+// };
 
 function nw(a,b) {
     newIMG.style.animation = 'showW 2.1s reverse forwards';
@@ -60,8 +60,10 @@ function nw(a,b) {
 };
 
 (() => {
-    let anchoV1 = window.innerWidth; 
+    let anchoV1 = window.innerWidth;
+    
     if(anchoV1 <= 800) {
+        // newIMG.style.animation = 'showW 2.1s linear forwards';
         newIMG.src = 'public/img/webp/2025.webp';
         // i[0].removeAttribute('src');
         // backG.innerText = 'public/img/webp/2025.webp';
@@ -72,7 +74,7 @@ function nw(a,b) {
                 <span>Feliz nuevo año 2025</span>
                 <span class="hh">PANAMÁ</span>`;
         
-        setTimeout(nw,6000,'none',newIMG);
+        setTimeout(nw, 8000, 'none',newIMG);
         
         // setTimeout(notice, 7910);
     } 
