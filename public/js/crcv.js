@@ -47,60 +47,33 @@ let newIMG = document.createElement('img');
     // i[0].setAttribute('src', backG);
 // };
 
-function nw(a,b) {
-    newIMG.style.animation = 'showW 2.1s reverse forwards';
-    setTimeout(() => {
-        newIMG.style.display = a;
-        b.remove();
-        h[0].innerHTML = `                              
-                <span>DRX9000</span>
-                <span class="hh">Descompresión espinal no quirúrgica</span>`;
-    },2000);
+// function nw(a,b) {
+//     newIMG.style.animation = 'showW 2.1s reverse forwards';
+//     setTimeout(() => {
+//         newIMG.style.display = a;
+//         b.remove();
+//         h[0].innerHTML = `                              
+//                 <span>DRX9000</span>
+//                 <span class="hh">Descompresión espinal no quirúrgica</span>`;
+//     },2000);
 
-};
+// };
 
-(() => {
-    let anchoV1 = window.innerWidth;
+// (() => {
+//     let anchoV1 = window.innerWidth;
     
-    if(anchoV1 <= 800) {
-        // newIMG.style.animation = 'showW 2.1s linear forwards';
-        newIMG.src = 'public/img/webp/2025.webp';
-        // i[0].removeAttribute('src');
-        // backG.innerText = 'public/img/webp/2025.webp';
-        header.insertBefore(newIMG,ff);
-        // i[0].setAttribute('src', backG);
+//     if(anchoV1 <= 800) {
+//         newIMG.src = 'public/img/webp/2025.webp';
+//         header.insertBefore(newIMG,ff);
 
-        h[0].innerHTML = `                              
-                <span>Feliz nuevo año 2025</span>
-                <span class="hh">PANAMÁ</span>`;
+//         h[0].innerHTML = `                              
+//                 <span>Feliz nuevo año 2025</span>
+//                 <span class="hh">PANAMÁ</span>`;
         
-        setTimeout(nw, 8000, 'none',newIMG);
-        
-        // setTimeout(notice, 7910);
-    } 
-    // else { 
-        // newIMG.src = 'public/img/webp/machi.avif';
-        // header.insertBefore(newIMG,ff);
+//         setTimeout(nw, 8000, 'none',newIMG);
 
-
-    //     window.addEventListener('resize', () => { 
-    //         if(anchoV1 > 800){
-    //             newIMG.style.display = 'none';
-    //         } else {
-    //             newIMG.style.display = 'grid';
-    //         }
-    //     });
-    // Valor cuando el tamaño de pantalla sea mayor } }); 
-    // Crear evento por separado para desplazamiento 
-        // window.addEventListener("scroll", 
-        //     function((window.innerWidth > 900) {
-        // Aplicar solo cuando el ancho de pantalla es mayor
-
-        // header.style.backgroundSize = 160 - + window.pageYOffset/12+"%";
-        // header.style.opacity = 1 - + window.pageYOffset/700 + "";
-    // }
-
-})();
+//     } 
+// })();
 
 
 
@@ -767,3 +740,14 @@ setTimeout(function() {
 let date = document.querySelector('.date');
 
 date.append(year);
+
+
+
+
+const ii = document.querySelector('.niframe');
+const newD = document.createElement('div');
+
+
+newD.innerHTML = `<iframe class="instagram-media instagram-media-rendered" id="instagram-embed-0" src="https://www.instagram.com/p/DExdhucv7XU/embed/captioned/?cr=1&amp;v=14&amp;wp=256&amp;rp=%2Fcrcv#%7B%22ci%22%3A0%2C%22os%22%3A1279.0999999642372%2C%22ls%22%3A61.19999998807907%2C%22le%22%3A858.2999999523163%7D"frameborder="0" height="359" data-instgrm-payload-id="instagram-media-payload-0" scrolling="auto" style="background: white;max-width: 350px;width: calc(100% - 2px);height: 400px;border-radius: 3px; box-shadow: none; display: block; margin: 0px 0px 12px; min-width: 300px;padding: 0px; scrollbar-width: none;"></iframe>`;
+
+ii.append(newD);
