@@ -530,7 +530,7 @@ main {
     background: var(--solid-bground);
 /*    background: #36D1DC;*/
 /*    background: linear-gradient(to right, #277b82 0%, #36D1DC 100%);*/
-    animation: showW 2.4s linear forwards;
+    animation: showW .6s linear forwards;
 }
 
 .hide__parr {

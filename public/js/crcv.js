@@ -26,8 +26,6 @@ whatsAppWidget.addEventListener('click', () => {
 
 const socialNav = document.querySelectorAll('.social--line');
 
-
-
 const h = document.getElementsByTagName('h1');
 let header = document.querySelector(".home-slider-content");
 let ff = header.querySelector('.item:first-child');
@@ -131,7 +129,7 @@ setTimeout(() => {
     // socialWeb(socialFooter);
     socialWeb(socialNav[0]);
     socialWeb(socialNav[1]);
-}, 4000);
+}, 3000);
 
 
 // const summary = document.getElementsByClassName('summary');
