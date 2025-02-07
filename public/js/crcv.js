@@ -744,8 +744,9 @@ date.append(year);
 
 const ii = document.querySelector('.niframe');
 const newD = document.createElement('div');
+// reel/DFvagQVPNyl
+// p/DExdhucv7XU
+newD.innerHTML = `<iframe class="instagram-media instagram-media-rendered" id="instagram-embed-0" src="https://www.instagram.com/reel/DFvagQVPNyl/embed/captioned/?autoplay=1&cr=1&amp;v=14&amp;wp=256&amp;rp=%2Fcrcv#%7B%22ci%22%3A0%2C%22os%22%3A1279.0999999642372%2C%22ls%22%3A61.19999998807907%2C%22le%22%3A858.2999999523163%7D" autoplay="true" preload  allowtransparency="true" frameborder="0" height="359" data-instgrm-payload-id="instagram-media-payload-0" scrolling="auto" allow="autoplay; encrypted-media" style="background: white;max-width: 350px;width: calc(100% - 2px);height: 400px;border-radius: 3px; box-shadow: none; display: block; margin: 0px 0px 12px; min-width: 300px;padding: 0px; scrollbar-width: none;"></iframe>`;
 
-
-newD.innerHTML = `<iframe class="instagram-media instagram-media-rendered" id="instagram-embed-0" src="https://www.instagram.com/p/DExdhucv7XU/embed/captioned/?cr=1&amp;v=14&amp;wp=256&amp;rp=%2Fcrcv#%7B%22ci%22%3A0%2C%22os%22%3A1279.0999999642372%2C%22ls%22%3A61.19999998807907%2C%22le%22%3A858.2999999523163%7D"frameborder="0" height="359" data-instgrm-payload-id="instagram-media-payload-0" scrolling="auto" style="background: white;max-width: 350px;width: calc(100% - 2px);height: 400px;border-radius: 3px; box-shadow: none; display: block; margin: 0px 0px 12px; min-width: 300px;padding: 0px; scrollbar-width: none;"></iframe>`;
 
 ii.append(newD);
