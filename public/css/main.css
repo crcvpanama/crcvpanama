@@ -37,6 +37,7 @@ body {
 	font-weight: 400;
 	font-size: 1rem;
 	font-optical-sizing: auto;
+    letter-spacing: .1ch;
 }
 
 header {
@@ -48,7 +49,7 @@ h1, h2 {
     padding: 10px;
     font-size: clamp(1.75rem, 2.5vw, 2rem);
     font-weight: 900;
-    letter-spacing: .1ch;
+    letter-spacing: .2ch;
     line-height: 2ch;
     color: var(--dark);
     text-align: center;
@@ -360,7 +361,7 @@ main {
 
 .inicio__quienes {
     display: grid;
-    grid-template-columns: 1fr auto;
+    grid-template-columns: auto 300px;
     gap: 1em;
     align-items: center;
 }
@@ -386,15 +387,22 @@ main {
 }
 
 .img__quienes figure {
+    display: grid;
+    place-items: center;
+    position: relative;
 	width: 300px;
 	height: 100%;
+    overflow: hidden;
 }
 
 .img__quienes img {
     display: block;
+    position: absolute;
     width: var(--all-width); 
-    height: var(--all-width); 
-    object-fit: fill;
+    height: 70%;
+/*    align-self: anchor-center;*/
+    margin:auto;
+/*    object-fit: fill;*/
 }
 
 .img-container-a {
@@ -610,12 +618,15 @@ main {
 .foot-rights {
     text-align: center;
     margin: 20px 0;
-    color: #696969;
+    color: var(--light);
     font-size: 0.7rem;
+    line-height: 1em;
+    letter-spacing: .3ch;
 }
 
 .foot-rights a {
-    color: #696969;
+/*    color: #696969;*/
+    color: var(--light);
 }
 
 .cookieBox {
