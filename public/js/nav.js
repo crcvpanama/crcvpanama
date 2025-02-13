@@ -78,21 +78,20 @@ button.addEventListener('click', () => {
 });
 
 
-const fimg = document.getElementById('drx');
-const fcontimg = document.getElementById('home0');
+const mainIMG = document.getElementById('drx');
+const mainContent = document.getElementById('home0');
 
-let newI = document.createElement('img');
-newI.src = `public/img/svg/circle.svg`;
+let loaderIMG = document.createElement('img');
+loaderIMG.src = `public/img/svg/circle.svg`;
 
-fcontimg.appendChild(newI);
-newI.style.opacity = '1';
+mainContent.appendChild(loaderIMG);
+loaderIMG.style.opacity = '1';
 
 function loadIMG() {
     window.addEventListener('load', () => {
-        newI.remove();
-        fimg.src = `public/img/webp/maquinaDRX9000.webp`;
-        // fcontimg.appendChild(newI);
-        fimg.style.opacity = '1';
+        loaderIMG.remove();
+        mainIMG.src = `public/img/webp/maquinaDRX9000.webp`;
+        mainIMG.style.opacity = '1';
     });
 };
 
