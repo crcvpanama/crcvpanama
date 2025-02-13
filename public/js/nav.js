@@ -43,9 +43,9 @@ function detectCookie(cname) {
     return false;
 };
 
-document.addEventListener('DOMContentLoaded', function() {
+// document.addEventListener('DOMContentLoaded', function() {
     init();
-});
+// });
 
 function init(){
     bloqueRGPD = document.querySelector('.cookieBox');
@@ -76,3 +76,16 @@ const menu = document.querySelector('.collapse');
 button.addEventListener('click', () => {
     menu.classList.toggle('navbar-collapse');
 });
+
+
+const fimg = document.getElementsByTagName('img');
+
+function loadIMG() {
+    fimg[0].src = `public/img/svg/circle.svg`;
+    window.addEventListener('load', () => {
+
+        fimg[0].src = `public/img/webp/maquinaDRX9000.webp`;
+    });
+};
+
+loadIMG();
