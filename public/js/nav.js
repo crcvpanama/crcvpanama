@@ -87,7 +87,7 @@ newI.style.opacity = '1';
 
 function loadIMG() {
     window.addEventListener('load', () => {
-        newI.style.display = 'none';
+        newI.remove();
         fimg[0].src = `public/img/webp/maquinaDRX9000.webp`;
         // fcontimg.appendChild(newI);
         fimg[0].style.opacity = '1';
