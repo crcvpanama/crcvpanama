@@ -79,12 +79,18 @@ button.addEventListener('click', () => {
 
 
 const fimg = document.getElementsByTagName('img');
+const fcontimg = document.getElementById('home0');
+let newI = document.createElement('img');
+newI.src = `public/img/svg/circle.svg`;
+fcontimg.appendChild(newI);
+newI.style.opacity = '1';
 
 function loadIMG() {
-    fimg[0].src = `public/img/svg/circle.svg`;
     window.addEventListener('load', () => {
-
+        newI.style.display = 'none';
         fimg[0].src = `public/img/webp/maquinaDRX9000.webp`;
+        // fcontimg.appendChild(newI);
+        fimg[0].style.opacity = '1';
     });
 };
 
