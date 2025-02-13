@@ -78,19 +78,21 @@ button.addEventListener('click', () => {
 });
 
 
-const fimg = document.getElementsByTagName('img');
+const fimg = document.getElementById('drx');
 const fcontimg = document.getElementById('home0');
+
 let newI = document.createElement('img');
 newI.src = `public/img/svg/circle.svg`;
+
 fcontimg.appendChild(newI);
 newI.style.opacity = '1';
 
 function loadIMG() {
     window.addEventListener('load', () => {
         newI.remove();
-        fimg[0].src = `public/img/webp/maquinaDRX9000.webp`;
+        fimg.src = `public/img/webp/maquinaDRX9000.webp`;
         // fcontimg.appendChild(newI);
-        fimg[0].style.opacity = '1';
+        fimg.style.opacity = '1';
     });
 };
 
