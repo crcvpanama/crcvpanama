@@ -43,9 +43,9 @@ function detectCookie(cname) {
     return false;
 };
 
-// document.addEventListener('DOMContentLoaded', function() {
+document.addEventListener('DOMContentLoaded', function() {
     init();
-// });
+});
 
 function init(){
     bloqueRGPD = document.querySelector('.cookieBox');
@@ -83,23 +83,20 @@ const mainContent = document.getElementById('home0');
 
 let loaderIMG = document.createElement('img');
 loaderIMG.src = `public/img/svg/circle.svg`;
-
+loaderIMG.setAttribute('alt', 'load img');
 mainContent.appendChild(loaderIMG);
 
 
-function loadIMG() {
-    window.addEventListener('load', () => {
-        loaderIMG.style.opacity="0";
-        mainIMG.src = `public/img/webp/maquinaDRX9000.webp`;
-        mainIMG.style.opacity = '1';
-        // loaderIMG.remove();
 
-        
-        setInterval(() => {
-            loaderIMG.remove();
-        },7000);
-    });
-};
+window.addEventListener('load', () => {
+    loaderIMG.style.opacity="0";
+    mainIMG.src = `public/img/webp/maquinaDRX9000.webp`;
 
-loadIMG();
+    mainIMG.style.opacity = '1';
+    // loaderIMG.remove();
 
+
+    setInterval(() => {
+        loaderIMG.remove();
+    },7000);
+});
