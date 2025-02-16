@@ -47,15 +47,17 @@ const mainIMG = document.getElementById('drx');
 const mainContent = document.getElementById('home0');
 
 const loaderIMG = document.createElement('img');
-
-
+loaderIMG.src = `public/img/svg/circle.svg`;
+loaderIMG.setAttribute('alt', 'load img');
+mainContent.appendChild(loaderIMG);
 
 document.addEventListener('DOMContentLoaded', function() {
     init();
 
-    loaderIMG.src = `public/img/svg/circle.svg`;
-    loaderIMG.setAttribute('alt', 'load img');
-    mainContent.appendChild(loaderIMG);
+    loaderIMG.style.opacity="0";
+    mainIMG.src = `public/img/webp/maquinaDRX9000.webp`;
+
+    mainIMG.style.opacity = '1';
 
 });
 
@@ -81,13 +83,13 @@ function eliminarBloqueRGPD(){
 };
 
 
-window.addEventListener('load', () => {
-    loaderIMG.style.opacity="0";
-    mainIMG.src = `public/img/webp/maquinaDRX9000.webp`;
+// window.addEventListener('load', () => {
+//     loaderIMG.style.opacity="0";
+//     mainIMG.src = `public/img/webp/maquinaDRX9000.webp`;
 
-    mainIMG.style.opacity = '1';
+//     mainIMG.style.opacity = '1';
     
-});
+// });
 
 
 setInterval(() => {
