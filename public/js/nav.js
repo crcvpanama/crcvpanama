@@ -57,12 +57,14 @@ document.addEventListener('DOMContentLoaded', function() {
     mainContent.appendChild(loaderIMG);
 
 
-});
+    
+    window.addEventListener('load', () => {
+        loaderIMG.style.opacity="0";
+        mainIMG.src = `public/img/webp/maquinaDRX9000.webp`;
+        mainIMG.style.opacity = '1';
+    });
 
-window.addEventListener('load', () => {
-    loaderIMG.style.opacity="0";
-    mainIMG.src = `public/img/webp/maquinaDRX9000.webp`;
-    mainIMG.style.opacity = '1';
+
 });
 
 function init(){
