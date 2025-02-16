@@ -1225,13 +1225,14 @@ details[open] > summary::after {
     .nav-item {
         display: flex;        
         width: auto;    
+        justify-content: flex-end;
     }
 
     .nav-link {
         display: flex;         
         padding: 5px; 
         border-right: var(--hidden);
-        justify-content:left;
+        justify-content:right;
         border-bottom: 2px solid #77889922;        
         width: 200px;
     }
