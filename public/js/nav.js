@@ -46,7 +46,7 @@ function detectCookie(cname) {
 const mainIMG = document.getElementById('drx');
 const mainContent = document.getElementById('home0');
 
-let loaderIMG = document.createElement('img');
+const loaderIMG = document.createElement('img');
 
 
 
@@ -80,14 +80,6 @@ function eliminarBloqueRGPD(){
     localStorage.acceptedCookies = 'true';
 };
 
-// const zero = document.querySelector('.home-slider');
-// const one = document.querySelector('.home-slider-conten');
-const button = document.querySelector('.nav-button');
-const menu = document.querySelector('.collapse');
-
-button.addEventListener('click', () => {
-    menu.classList.toggle('navbar-collapse');
-});
 
 window.addEventListener('load', () => {
     loaderIMG.style.opacity="0";
@@ -99,5 +91,14 @@ window.addEventListener('load', () => {
 
 
 setInterval(() => {
-        loaderIMG.remove();
-    },7000);
+    loaderIMG.remove();
+},7000);
+
+// const zero = document.querySelector('.home-slider');
+// const one = document.querySelector('.home-slider-conten');
+const button = document.querySelector('.nav-button');
+const menu = document.querySelector('.collapse');
+
+button.addEventListener('click', () => {
+    menu.classList.toggle('navbar-collapse');
+});
