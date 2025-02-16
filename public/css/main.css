@@ -294,7 +294,18 @@ main {
     overflow: hidden;
 }
 
-.home-slider-content img{
+.home-slider-content img {
+    display: block;
+    position: absolute;
+    z-index: -1;
+    width: auto;
+    height: 100%;
+    object-fit: contain;
+    opacity: 1;
+    transition: opacity 2s ease-in-out;
+}
+
+.home-slider-content #drx{
     display: block;
     position: absolute;
     width: auto;
