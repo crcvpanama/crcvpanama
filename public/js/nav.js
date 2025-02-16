@@ -43,8 +43,30 @@ function detectCookie(cname) {
     return false;
 };
 
+const mainIMG = document.getElementById('drx');
+const mainContent = document.getElementById('home0');
+
+let loaderIMG = document.createElement('img');
+
+
 document.addEventListener('DOMContentLoaded', function() {
     init();
+
+
+    loaderIMG.src = `public/img/svg/circle.svg`;
+    loaderIMG.setAttribute('alt', 'load img');
+    mainContent.appendChild(loaderIMG);
+
+
+
+    window.addEventListener('load', () => {
+        loaderIMG.style.opacity="0";
+        mainIMG.src = `public/img/webp/maquinaDRX9000.webp`;
+
+        mainIMG.style.opacity = '1';
+        
+    });
+
 });
 
 function init(){
@@ -78,25 +100,8 @@ button.addEventListener('click', () => {
 });
 
 
-const mainIMG = document.getElementById('drx');
-const mainContent = document.getElementById('home0');
-
-let loaderIMG = document.createElement('img');
-loaderIMG.src = `public/img/svg/circle.svg`;
-loaderIMG.setAttribute('alt', 'load img');
-mainContent.appendChild(loaderIMG);
 
 
-
-window.addEventListener('load', () => {
-    loaderIMG.style.opacity="0";
-    mainIMG.src = `public/img/webp/maquinaDRX9000.webp`;
-
-    mainIMG.style.opacity = '1';
-    // loaderIMG.remove();
-
-
-    setInterval(() => {
+setInterval(() => {
         loaderIMG.remove();
     },7000);
-});
