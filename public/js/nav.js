@@ -47,18 +47,22 @@ const mainIMG = document.getElementById('drx');
 const mainContent = document.getElementById('home0');
 
 const loaderIMG = document.createElement('img');
-loaderIMG.src = `public/img/svg/circle.svg`;
-loaderIMG.setAttribute('alt', 'load img');
-mainContent.appendChild(loaderIMG);
+
 
 document.addEventListener('DOMContentLoaded', function() {
     init();
 
+    loaderIMG.src = `public/img/svg/circle.svg`;
+    loaderIMG.setAttribute('alt', 'load img');
+    mainContent.appendChild(loaderIMG);
+
+
+});
+
+window.addEventListener('load', () => {
     loaderIMG.style.opacity="0";
     mainIMG.src = `public/img/webp/maquinaDRX9000.webp`;
-
     mainIMG.style.opacity = '1';
-
 });
 
 function init(){
@@ -82,25 +86,18 @@ function eliminarBloqueRGPD(){
     localStorage.acceptedCookies = 'true';
 };
 
-
-// window.addEventListener('load', () => {
-//     loaderIMG.style.opacity="0";
-//     mainIMG.src = `public/img/webp/maquinaDRX9000.webp`;
-
-//     mainIMG.style.opacity = '1';
-    
-// });
-
-
-setInterval(() => {
-    loaderIMG.remove();
-},7000);
-
-// const zero = document.querySelector('.home-slider');
-// const one = document.querySelector('.home-slider-conten');
 const button = document.querySelector('.nav-button');
 const menu = document.querySelector('.collapse');
 
 button.addEventListener('click', () => {
     menu.classList.toggle('navbar-collapse');
 });
+
+
+
+
+
+
+setInterval(() => {
+    loaderIMG.remove();
+},7000);
