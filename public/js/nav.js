@@ -82,7 +82,7 @@ const mainIMG = document.getElementById('drx');
 const mainContent = document.getElementById('home0');
 
 let loaderIMG = document.createElement('img');
-loaderIMG.src = `public/img/svg/circle.svg`;
+loaderIMG.src = `./public/img/svg/circle.svg`;
 
 mainContent.appendChild(loaderIMG);
 loaderIMG.style.opacity = '1';
@@ -90,7 +90,7 @@ loaderIMG.style.opacity = '1';
 function loadIMG() {
     window.addEventListener('load', () => {
         loaderIMG.remove();
-        mainIMG.src = `public/img/webp/maquinaDRX9000.webp`;
+        mainIMG.src = `./public/img/webp/maquinaDRX9000.webp`;
         mainIMG.style.opacity = '1';
     });
 };
