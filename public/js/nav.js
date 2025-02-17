@@ -59,14 +59,27 @@ const images = [];
         images[i].src = preload.arguments[i];
     };
 };
+loaderIMG.src = 'public/img/svg/circle.svg';
+loaderIMG.setAttribute('alt', 'load img');
+loaderIMG.style.objectFit = 'contain';
 
 document.addEventListener('DOMContentLoaded', function() {
+
     init();
+    
+    loaderIMG.style.opacity="0";
+    preload(
+        `public/img/webp/maquinaDRX9000.webp`,
+        'public/img/svg/crcvlogo.svg',
+        `public/img/svg/circle.svg`
+    );
+        
+    mainContent.appendChild(loaderIMG);
 
-    loaderIMG.src = 'public/img/svg/circle.svg';
-    loaderIMG.setAttribute('alt', 'load img');
-    loaderIMG.style.objectFit = 'contain';
-
+    logo.style.background = `url(${images[1].src}) center no-repeat`;
+    logo.style.backgroundSize = 'contain';
+    mainIMG.src = images[0].src;
+    mainIMG.style.opacity = '1';
 });
 
 function init(){
@@ -97,33 +110,6 @@ button.addEventListener('click', () => {
     menu.classList.toggle('navbar-collapse');
 });
 
-
-
-window.addEventListener('load', () => {
-   
-    preload(
-        `public/img/webp/maquinaDRX9000.webp`,
-        'public/img/svg/crcvlogo.svg',
-        `public/img/svg/circle.svg`
-    );
-    loaderIMG.style.opacity="0";
-        
-    mainContent.appendChild(loaderIMG);
-
-    // for (n in images) {
-    
-    logo.style.background = `url(${images[1].src}) center no-repeat`;
-    logo.style.backgroundSize = 'contain';
-    mainIMG.src = images[0].src;
-    mainIMG.style.opacity = '1';
-    // };
-
-        // mainIMG.src = preload(`public/img/webp/maquinaDRX9000.webp`);
-    // mainIMG.style.opacity = '1';
-
-    // `public/img/webp/maquinaDRX9000.webp`
-});
-// loaderIMG.style.opacity="0";
 setInterval(() => {
     loaderIMG.remove();
 },7000);
