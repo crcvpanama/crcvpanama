@@ -63,23 +63,24 @@ loaderIMG.src = 'public/img/svg/circle.svg';
 loaderIMG.setAttribute('alt', 'load img');
 loaderIMG.style.objectFit = 'contain';
 
-document.addEventListener('DOMContentLoaded', function() {
+preload(
+    `public/img/webp/maquinaDRX9000.webp`,
+    'public/img/svg/crcvlogo.svg',
+    `public/img/svg/circle.svg`
+);
 
-    init();
-    
-    loaderIMG.style.opacity="0";
-    preload(
-        `public/img/webp/maquinaDRX9000.webp`,
-        'public/img/svg/crcvlogo.svg',
-        `public/img/svg/circle.svg`
-    );
-        
+init();
+
+window.addEventListener('load', function() {
+
     mainContent.appendChild(loaderIMG);
 
     logo.style.background = `url(${images[1].src}) center no-repeat`;
     logo.style.backgroundSize = 'contain';
     mainIMG.src = images[0].src;
     mainIMG.style.opacity = '1';
+    loaderIMG.style.opacity = '0';
+    
 });
 
 function init(){
