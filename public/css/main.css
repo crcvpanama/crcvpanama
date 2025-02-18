@@ -361,6 +361,8 @@ main {
 .aside-social-web {
 /*    background: url('../img/webp/crcv.avif') center no-repeat;*/
     background-size: contain;
+    overflow: scroll;
+    max-height: 400px;
 }
 
 .home-somos {
