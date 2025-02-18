@@ -76,7 +76,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
     init(); 
 
-    
+    loadIMGs();
 });
 
 function loadIMGs() {
@@ -116,9 +116,9 @@ button.addEventListener('click', () => {
     menu.classList.toggle('navbar-collapse');
 });
 
-window.addEventListener('load', function() {
-    loadIMGs();
-});
+// window.addEventListener('load', function() {
+//     loadIMGs();
+// });
 
 setInterval(() => {
     loaderIMG.remove();
