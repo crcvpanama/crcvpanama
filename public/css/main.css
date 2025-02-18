@@ -362,7 +362,13 @@ main {
 /*    background: url('../img/webp/crcv.avif') center no-repeat;*/
     background-size: contain;
     overflow: scroll;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
     max-height: 400px;
+
+    &::-webkit-scrollbar {
+        display: none;
+    }
 }
 
 .home-somos {

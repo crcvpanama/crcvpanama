@@ -67,15 +67,17 @@ loaderIMG.setAttribute('alt', 'load img');
 loaderIMG.style.objectFit = 'contain';
 mainContent.appendChild(loaderIMG);
 
-preload(
-    `public/img/webp/maquinaDRX9000.webp`,
-    'public/img/svg/crcvlogo.svg',
-    `public/img/svg/circle.svg`
-);
+
 
 
 
 document.addEventListener('DOMContentLoaded', function() {
+    
+    preload(
+        `public/img/webp/maquinaDRX9000.webp`,
+        'public/img/svg/crcvlogo.svg',
+        `public/img/svg/circle.svg`
+    );
 
     logo.style.background = `url(${images[1].src}) center no-repeat`;
     logo.style.backgroundSize = 'contain';
