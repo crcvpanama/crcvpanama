@@ -76,10 +76,9 @@ document.addEventListener('DOMContentLoaded', function() {
 
     init(); 
 
-    loadIMGs()
+    
 });
 
-// window.addEventListener('load', function() {
 function loadIMGs() {
     logo.style.background = `url(${images[1].src}) center no-repeat`;
     logo.style.backgroundSize = 'contain';
@@ -87,8 +86,7 @@ function loadIMGs() {
     mainIMG.style.opacity = '1';
     loaderIMG.style.opacity = '0';
 };
-    
-// });
+
 
 function init(){
     bloqueRGPD = document.querySelector('.cookieBox');
@@ -116,6 +114,10 @@ const menu = document.querySelector('.collapse');
 
 button.addEventListener('click', () => {
     menu.classList.toggle('navbar-collapse');
+});
+
+window.addEventListener('load', function() {
+    loadIMGs();
 });
 
 setInterval(() => {
