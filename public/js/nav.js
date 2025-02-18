@@ -60,6 +60,12 @@ const images = [];
     };
 };
 
+preload(
+    `public/img/webp/maquinaDRX9000.webp`,
+    'public/img/svg/crcvlogo.svg',
+    `public/img/svg/circle.svg`
+);
+
 
 document.addEventListener('DOMContentLoaded', function() {
 
@@ -69,12 +75,6 @@ document.addEventListener('DOMContentLoaded', function() {
     loaderIMG.setAttribute('alt', 'load img');
     loaderIMG.style.objectFit = 'contain';
     mainContent.appendChild(loaderIMG);
-
-    preload(
-        `public/img/webp/maquinaDRX9000.webp`,
-        'public/img/svg/crcvlogo.svg',
-        `public/img/svg/circle.svg`
-    );
     
 });
 
@@ -85,9 +85,6 @@ window.addEventListener('load', function() {
     mainIMG.style.opacity = '1';
     loaderIMG.style.opacity = '0';
 });
-    
-    
-
 
 function init(){
     bloqueRGPD = document.querySelector('.cookieBox');
