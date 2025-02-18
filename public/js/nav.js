@@ -60,33 +60,34 @@ const images = [];
     };
 };
 
+init(); 
+
+loaderIMG.src = 'public/img/svg/circle.svg';
+loaderIMG.setAttribute('alt', 'load img');
+loaderIMG.style.objectFit = 'contain';
+mainContent.appendChild(loaderIMG);
+
+preload(
+    `public/img/webp/maquinaDRX9000.webp`,
+    'public/img/svg/crcvlogo.svg',
+    `public/img/svg/circle.svg`
+);
+
 
 
 document.addEventListener('DOMContentLoaded', function() {
 
-    init(); 
-
-    loaderIMG.src = 'public/img/svg/circle.svg';
-    loaderIMG.setAttribute('alt', 'load img');
-    loaderIMG.style.objectFit = 'contain';
-    mainContent.appendChild(loaderIMG);
-
-    preload(
-        `public/img/webp/maquinaDRX9000.webp`,
-        'public/img/svg/crcvlogo.svg',
-        `public/img/svg/circle.svg`
-    );
-
-    
-});
-
-window.addEventListener('load', function() {
     logo.style.background = `url(${images[1].src}) center no-repeat`;
     logo.style.backgroundSize = 'contain';
     mainIMG.src = images[0].src;
     mainIMG.style.opacity = '1';
     loaderIMG.style.opacity = '0';
+
+    
 });
+
+// window.addEventListener('load', function() {
+//     });
 
 function init(){
     bloqueRGPD = document.querySelector('.cookieBox');
