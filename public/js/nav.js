@@ -76,15 +76,20 @@ document.addEventListener('DOMContentLoaded', function() {
 
     init(); 
 
+
     loadIMGs();
 });
 
 function loadIMGs() {
-    logo.style.background = `url(${images[1].src}) center no-repeat`;
-    logo.style.backgroundSize = 'contain';
-    mainIMG.src = images[0].src;
-    mainIMG.style.opacity = '1';
-    loaderIMG.style.opacity = '0';
+
+    window.addEventListener('load', ()=> {
+        logo.style.background = `url(${images[1].src}) center no-repeat`;
+        logo.style.backgroundSize = 'contain';
+        mainIMG.src = images[0].src;
+        mainIMG.style.opacity = '1';
+        loaderIMG.style.opacity = '0';
+    });
+
 };
 
 
