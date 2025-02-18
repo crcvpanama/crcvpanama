@@ -82,13 +82,11 @@ document.addEventListener('DOMContentLoaded', function() {
 
 function loadIMGs() {
 
-    window.addEventListener('load', ()=> {
-        logo.style.background = `url(${images[1].src}) center no-repeat`;
-        logo.style.backgroundSize = 'contain';
-        mainIMG.src = images[0].src;
-        mainIMG.style.opacity = '1';
-        loaderIMG.style.opacity = '0';
-    });
+    logo.style.background = `url(${images[1].src}) center no-repeat`;
+    logo.style.backgroundSize = 'contain';
+    mainIMG.src = images[0].src;
+    mainIMG.style.opacity = '1';
+    loaderIMG.style.opacity = '0';
 
 };
 
