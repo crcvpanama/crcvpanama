@@ -60,24 +60,18 @@ const images = [];
         images[i].src = preload.arguments[i];
     };
 };
-
 loaderIMG.src = 'public/img/svg/circle.svg';
-loaderIMG.setAttribute('alt', 'load img');
-loaderIMG.style.objectFit = 'contain';
-mainContent.appendChild(loaderIMG);
+        loaderIMG.setAttribute('alt', 'load img');
+        loaderIMG.style.objectFit = 'contain';
+        mainContent.appendChild(loaderIMG);
+        preload(
+            `public/img/webp/maquinaDRX9000.webp`,
+            'public/img/svg/crcvlogo.svg',
+            `public/img/svg/circle.svg`
+        );
 
-preload(
-    `public/img/webp/maquinaDRX9000.webp`,
-    'public/img/svg/crcvlogo.svg',
-    `public/img/svg/circle.svg`
-);
-
-document.addEventListener('DOMContentLoaded', function() {
-    
-
-    loadIMGs();
-});
-
+// document.addEventListener('DOMContentLoaded', loadIMGs());
+// console.log(document.readyState);
 function loadIMGs() {
     logo.style.background = `url(${images[1].src}) center no-repeat`;
     logo.style.backgroundSize = 'contain';
@@ -86,6 +80,27 @@ function loadIMGs() {
     loaderIMG.style.opacity = '0';
 };
 
+// document.onreadystatechange = () => {
+document.addEventListener('readystatechange', (event) => {
+
+    if (event.target.readyState === "loading") {
+        console.log(document.readyState);
+      // Loading hasn't finished yet
+        
+        // document.addEventListener("DOMContentLoaded",preload());
+        preload();
+    } else if (event.target.readyState === "complete") {
+        // console.log(document.readyState);
+          // `DOMContentLoaded` has already fired
+          loadIMGs();
+          // document.addEventListener("DOMContentLoaded",loadIMGs);
+          loaderIMG.remove();
+    };
+
+});
+
+
+// console.log(document.readyState);
 function init(){
     bloqueRGPD = document.querySelector('.cookieBox');
     if (localStorage.acceptedCookies != 'true') {
@@ -114,10 +129,7 @@ button.addEventListener('click', () => {
     menu.classList.toggle('navbar-collapse');
 });
 
-// window.addEventListener('load', function() {
-//     loadIMGs();
-// });
-
-setInterval(() => {
-    loaderIMG.remove();
-},7000);
+// setTimeout(() => {
+    
+//     console.log(document.readyState);
+// },7000);
