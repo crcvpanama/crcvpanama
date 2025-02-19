@@ -43,11 +43,12 @@ function detectCookie(cname) {
     return false;
 };
 
+init();
+
 const mainIMG = document.getElementById('drx');
 const mainContent = document.getElementById('home0');
 
 const loaderIMG = document.createElement('img');
-
 
 const logo = document.querySelector('.logo');
 
@@ -59,7 +60,6 @@ const images = [];
         images[i].src = preload.arguments[i];
     };
 };
-
 
 loaderIMG.src = 'public/img/svg/circle.svg';
 loaderIMG.setAttribute('alt', 'load img');
@@ -73,23 +73,18 @@ preload(
 );
 
 document.addEventListener('DOMContentLoaded', function() {
-
-    init(); 
-
+    
 
     loadIMGs();
 });
 
 function loadIMGs() {
-
     logo.style.background = `url(${images[1].src}) center no-repeat`;
     logo.style.backgroundSize = 'contain';
     mainIMG.src = images[0].src;
     mainIMG.style.opacity = '1';
     loaderIMG.style.opacity = '0';
-
 };
-
 
 function init(){
     bloqueRGPD = document.querySelector('.cookieBox');

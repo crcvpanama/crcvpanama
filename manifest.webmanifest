@@ -1,0 +1,6 @@
+{
+	"icons": [
+		{ "src": "/favicons/crcvimg-192.png", "type": "image/png", "sizes": "192x192" },
+		{ "src": "/favicons/crcvimg.png", "type": "image/png", "sizes": "512x512" }
+	]
+}
