@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
   <url>
-    <loc>https://www.crcvpanama.org/</loc>
+    <loc>https://crcvpanama.org/</loc>
     <lastmod>2024-09-06</lastmod>
     <changefreq>yearly</changefreq>
     <priority>1.0</priority>
     <image:image>
-      <image:loc>https://www.crcvpanama.org/public/img/crcvlogo.png</image:loc>
+      <image:loc>https://crcvpanama.org/public/img/crcvlogo.png</image:loc>
       <url>
         <loc>https://www.crcvpanama.org/</loc>
         <lastmod>2024-09-06</lastmod>
@@ -29,17 +29,17 @@
                 <image:image>
                   <image:loc>https://www.crcvpanama.org/public/img/crcvlogo.png</image:loc>
                   <url>
-                    <loc>https://www.crcvpanama.org/</loc>
+                    <loc>https://crcvpanama.org/</loc>
                     <lastmod>2024-09-06</lastmod>
                     <changefreq>yearly</changefreq>
                     <priority>1.0</priority>
                     <image:image>
-                      <image:loc>https://www.crcvpanama.org/favicon.ico</image:loc>
+                      <image:loc>https://crcvpanama.org/favicon.ico</image:loc>
                       <url>
-                        <loc>https://www.crcvpanama.org/index.html</loc>
+                        <loc>https://www.crcvpanama.org/</loc>
                         <lastmod>2024-09-06</lastmod>
                         <changefreq>yearly</changefreq>
-                        <priority>1.0</priority>
+                        <priority>0.70</priority>
                         <image:image>
                           <image:loc>https://www.crcvpanama.org/favicon.ico</image:loc>
                         </image:image>
