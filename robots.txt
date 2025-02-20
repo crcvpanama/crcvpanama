@@ -9,4 +9,4 @@ Disallow: /cgi-bin/
 Disallow: /tmp/
 Disallow: /scripts/
 
-Sitemap: https://www.crcvpanama.org/sitemap.xml
+Sitemap: https://crcvpanama.org/sitemap.xml
