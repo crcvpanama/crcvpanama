@@ -796,6 +796,7 @@ main {
 
 .diag ul li {
     margin-bottom: 1em;
+    list-style: circle;
 }
 
 /*DIAG TRATADOS SECTION*/

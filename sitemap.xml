@@ -8,12 +8,12 @@
     <image:image>
       <image:loc>https://crcvpanama.org/public/img/sucursalpanama.jpg</image:loc>
       <url>
-        <loc>https://www.crcvpanama.org/</loc>
+        <loc>https://crcvpanama.org/</loc>
         <lastmod>2025-02-20</lastmod>
         <changefreq>yearly</changefreq>
         <priority>0.80</priority>
         <image:image>
-          <image:loc>https://www.crcvpanama.org/public/img/banner.jpg</image:loc>
+          <image:loc>https://crcvpanama.org/public/img/banner.jpg</image:loc>
           <url>
             <loc>https://crcvpanama.org/</loc>
             <lastmod>2025-02-20</lastmod>
