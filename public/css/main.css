@@ -77,6 +77,7 @@ h6 {
 }
 p {
     max-width: 75ch;
+    margin: auto;
 }
 button {
     border-radius: 5px;
