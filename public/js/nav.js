@@ -81,16 +81,16 @@ function loadIMGs() {
 };
 
 // document.onreadystatechange = () => {
-document.addEventListener('readystatechange', (event) => {
+document.addEventListener('readystatechange', () => {
 
-    if (event.target.readyState === "loading") {
+    if (document.readyState === "loading") {
         console.log(document.readyState);
       // Loading hasn't finished yet
         
         // document.addEventListener("DOMContentLoaded",preload());
         preload();
-    } else if (event.target.readyState === "complete") {
-        // console.log(document.readyState);
+    } else  if (event.target.readyState === "complete") {
+        console.log(document.readyState);
           // `DOMContentLoaded` has already fired
           loadIMGs();
           // document.addEventListener("DOMContentLoaded",loadIMGs);
