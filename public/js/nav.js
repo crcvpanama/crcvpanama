@@ -54,50 +54,12 @@ const logo = document.querySelector('.logo');
 
 const images = [];
 
- function preload() {
-    for (var i = 0; i < arguments.length; i++) {
-        images[i] = new Image();
-        images[i].src = preload.arguments[i];
-    };
-};
-loaderIMG.src = 'public/img/svg/circle.svg';
-        loaderIMG.setAttribute('alt', 'load img');
-        loaderIMG.style.objectFit = 'contain';
-        mainContent.appendChild(loaderIMG);
-        preload(
-            `public/img/webp/maquinaDRX9000.webp`,
-            'public/img/svg/crcvlogo.svg',
-            `public/img/svg/circle.svg`
-        );
+
 
 // document.addEventListener('DOMContentLoaded', loadIMGs());
 // console.log(document.readyState);
-function loadIMGs() {
-    logo.style.background = `url(${images[1].src}) center no-repeat`;
-    logo.style.backgroundSize = 'contain';
-    mainIMG.src = images[0].src;
-    mainIMG.style.opacity = '1';
-    loaderIMG.style.opacity = '0';
-};
 
-// document.onreadystatechange = () => {
-document.addEventListener('readystatechange', () => {
 
-    if (document.readyState === "loading") {
-        console.log(document.readyState);
-      // Loading hasn't finished yet
-        
-        // document.addEventListener("DOMContentLoaded",preload());
-        preload();
-    } else  if (event.target.readyState === "complete") {
-        console.log(document.readyState);
-          // `DOMContentLoaded` has already fired
-          loadIMGs();
-          // document.addEventListener("DOMContentLoaded",loadIMGs);
-          loaderIMG.remove();
-    };
-
-});
 
 
 // console.log(document.readyState);
@@ -133,3 +95,51 @@ button.addEventListener('click', () => {
     
 //     console.log(document.readyState);
 // },7000);
+
+
+
+document.onreadystatechange = (event) => {
+// document.addEventListener('readystatechange', (event) => {
+    function loadIMGs() {
+        logo.style.background = `url(${images[1].src}) center no-repeat`;
+        logo.style.backgroundSize = 'contain';
+        mainIMG.src = images[0].src;
+        mainIMG.style.opacity = '1';
+        loaderIMG.style.opacity = '0';
+    };
+
+    function preload() {
+        for (var i = 0; i < arguments.length; i++) {
+            images[i] = new Image();
+            images[i].src = preload.arguments[i];
+        };
+    };
+        // console.log(event.target.readyState);
+        loaderIMG.src = 'public/img/svg/circle.svg';
+        loaderIMG.setAttribute('alt', 'load img');
+        loaderIMG.style.objectFit = 'contain';
+        mainContent.appendChild(loaderIMG);
+    if (event.target.readyState == "interactive") {
+         // console.log(event.target.readyState);
+        preload(
+            `public/img/webp/maquinaDRX9000.webp`,
+            'public/img/svg/crcvlogo.svg',
+            `public/img/svg/circle.svg`
+        );
+    };
+    
+    if (event.target.readyState === "complete") {
+        // console.log(event.target.readyState);
+          // `DOMContentLoaded` has already fired
+        loadIMGs();
+          // document.addEventListener("DOMContentLoaded",loadIMGs);
+        loaderIMG.remove();
+        // Loading hasn't finished yet
+    
+        // document.addEventListener("DOMContentLoaded",preload());
+        // preload();
+    }
+};
+
+
+        
