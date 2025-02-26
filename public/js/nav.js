@@ -93,7 +93,6 @@ button.addEventListener('click', () => {
 
 // setTimeout(() => {
     
-//     console.log(document.readyState);
 // },7000);
 
 
@@ -101,7 +100,7 @@ button.addEventListener('click', () => {
 document.onreadystatechange = (event) => {
 // document.addEventListener('readystatechange', (event) => {
     function loadIMGs() {
-        logo.style.background = `url(${images[1].src}) center no-repeat`;
+        logo.style.background = `url('public/img/svg/crcvlogo.svg') center no-repeat`;
         logo.style.backgroundSize = 'contain';
         mainIMG.src = images[0].src;
         mainIMG.style.opacity = '1';
@@ -114,18 +113,28 @@ document.onreadystatechange = (event) => {
             images[i].src = preload.arguments[i];
         };
     };
+
+    loaderIMG.src = 'public/img/svg/circle.svg';
+    loaderIMG.setAttribute('alt', 'load img');
+    loaderIMG.style.objectFit = 'contain';
+    mainContent.appendChild(loaderIMG);
         // console.log(event.target.readyState);
-        loaderIMG.src = 'public/img/svg/circle.svg';
-        loaderIMG.setAttribute('alt', 'load img');
-        loaderIMG.style.objectFit = 'contain';
-        mainContent.appendChild(loaderIMG);
-    if (event.target.readyState == "interactive") {
+       
+
+    if (event.target.readyState === "interactive") {
+        
+
+
+         // console.log(event.target.readyState);
+    // }
+    // if (event.target.readyState === "interactive") {
          // console.log(event.target.readyState);
         preload(
             `public/img/webp/maquinaDRX9000.webp`,
             'public/img/svg/crcvlogo.svg',
             `public/img/svg/circle.svg`
         );
+
     };
     
     if (event.target.readyState === "complete") {
