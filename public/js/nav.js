@@ -45,14 +45,7 @@ function detectCookie(cname) {
 
 init();
 
-const mainIMG = document.getElementById('drx');
-const mainContent = document.getElementById('home0');
 
-const loaderIMG = document.createElement('img');
-
-const logo = document.querySelector('.logo');
-
-const images = [];
 
 
 
@@ -98,51 +91,53 @@ button.addEventListener('click', () => {
     
 // },7000);
 
-function loadIMGs() {
+
+const mainIMG = document.getElementById('drx');
+const mainContent = document.getElementById('home0');
+
+const loaderIMG = document.createElement('img');
+
+const logo = document.querySelector('.logo');
+
+const images = [];
+
+    // if (event.target.readyState === "loading") {
+        function loadIMGs() {
         logo.style.background = `url('public/img/svg/crcvlogo.svg') center no-repeat`;
         logo.style.backgroundSize = 'contain';
         mainIMG.src = images[0].src;
         mainIMG.style.opacity = '1';
         loaderIMG.style.opacity = '0';
-    };
-
-    function preload() {
-        for (var i = 0; i < arguments.length; i++) {
-            images[i] = new Image();
-            images[i].src = preload.arguments[i];
         };
-    };
 
-    loaderIMG.src = 'public/img/svg/circle.svg';
-    loaderIMG.setAttribute('alt', 'load img');
-    loaderIMG.style.objectFit = 'contain';
-    mainContent.appendChild(loaderIMG);
-    console.log(document.readyState);   
+        function preload() {
+            for (var i = 0; i < arguments.length; i++) {
+                images[i] = new Image();
+                images[i].src = preload.arguments[i];
+            };
+        };
 
+        loaderIMG.src = 'public/img/svg/circle.svg';
+        loaderIMG.setAttribute('alt', 'load img');
+        loaderIMG.style.objectFit = 'contain';
+        mainContent.appendChild(loaderIMG);
+        console.log(document.readyState);   
 
-
-document.onreadystatechange = (event) => {
-// document.addEventListener('readystatechange', (event) => {
-
-    
-
-    // if (!event.target.readyState) {
-        
-
-
-         // console.log(event.target.readyState);
-    // }
-    if (event.target.readyState === "interactive") {
-        console.log(event.target.readyState);
         preload(
             `public/img/webp/maquinaDRX9000.webp`,
             'public/img/svg/crcvlogo.svg',
             `public/img/svg/circle.svg`
         );
-    };
-        // console.log(document.readyState);
+
+
+        // console.log(event.target.readyState);
         
-    
+
+    // }
+
+document.onreadystatechange = (event) => {
+
+
     if (event.target.readyState === "complete") {
         
         console.log(event.target.readyState);
@@ -150,9 +145,5 @@ document.onreadystatechange = (event) => {
         loadIMGs();
           // document.addEventListener("DOMContentLoaded",loadIMGs);
         loaderIMG.remove();
-        // Loading hasn't finished yet
-    
-        // document.addEventListener("DOMContentLoaded",preload());
-        // preload();
     }
 };
