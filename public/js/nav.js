@@ -98,14 +98,7 @@ button.addEventListener('click', () => {
     
 // },7000);
 
-
-
-
-
-document.onreadystatechange = (event) => {
-// document.addEventListener('readystatechange', (event) => {
-
-    function loadIMGs() {
+function loadIMGs() {
         logo.style.background = `url('public/img/svg/crcvlogo.svg') center no-repeat`;
         logo.style.backgroundSize = 'contain';
         mainIMG.src = images[0].src;
@@ -124,7 +117,14 @@ document.onreadystatechange = (event) => {
     loaderIMG.setAttribute('alt', 'load img');
     loaderIMG.style.objectFit = 'contain';
     mainContent.appendChild(loaderIMG);
-    // console.log(document.readyState);   
+    console.log(document.readyState);   
+
+
+
+document.onreadystatechange = (event) => {
+// document.addEventListener('readystatechange', (event) => {
+
+    
 
     // if (!event.target.readyState) {
         
@@ -132,19 +132,20 @@ document.onreadystatechange = (event) => {
 
          // console.log(event.target.readyState);
     // }
-    // if (document.readyState === "interactive") {
-        // console.log(document.readyState);
-        
-    
-    if (document.readyState === "complete") {
+    if (event.target.readyState === "interactive") {
+        console.log(event.target.readyState);
         preload(
             `public/img/webp/maquinaDRX9000.webp`,
             'public/img/svg/crcvlogo.svg',
             `public/img/svg/circle.svg`
         );
-
-
+    };
         // console.log(document.readyState);
+        
+    
+    if (event.target.readyState === "complete") {
+        
+        console.log(event.target.readyState);
           // `DOMContentLoaded` has already fired
         loadIMGs();
           // document.addEventListener("DOMContentLoaded",loadIMGs);
