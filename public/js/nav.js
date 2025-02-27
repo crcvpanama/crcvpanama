@@ -91,15 +91,14 @@ button.addEventListener('click', () => {
     menu.classList.toggle('navbar-collapse');
 });
 
+// console.log(document.readyState);
+
+
 // setTimeout(() => {
     
 // },7000);
 
-
-
-document.onreadystatechange = (event) => {
-// document.addEventListener('readystatechange', (event) => {
-    function loadIMGs() {
+function loadIMGs() {
         logo.style.background = `url('public/img/svg/crcvlogo.svg') center no-repeat`;
         logo.style.backgroundSize = 'contain';
         mainIMG.src = images[0].src;
@@ -107,28 +106,32 @@ document.onreadystatechange = (event) => {
         loaderIMG.style.opacity = '0';
     };
 
-    function preload() {
-        for (var i = 0; i < arguments.length; i++) {
-            images[i] = new Image();
-            images[i].src = preload.arguments[i];
-        };
+function preload() {
+    for (var i = 0; i < arguments.length; i++) {
+        images[i] = new Image();
+        images[i].src = preload.arguments[i];
     };
+};
 
-    loaderIMG.src = 'public/img/svg/circle.svg';
-    loaderIMG.setAttribute('alt', 'load img');
-    loaderIMG.style.objectFit = 'contain';
-    mainContent.appendChild(loaderIMG);
-        // console.log(event.target.readyState);
-       
+loaderIMG.src = 'public/img/svg/circle.svg';
+loaderIMG.setAttribute('alt', 'load img');
+loaderIMG.style.objectFit = 'contain';
+mainContent.appendChild(loaderIMG);
+// console.log(document.readyState);
 
-    if (event.target.readyState === "interactive") {
+
+
+document.onreadystatechange = (event) => {
+// document.addEventListener('readystatechange', (event) => {   
+
+    // if (!event.target.readyState) {
         
 
 
          // console.log(event.target.readyState);
     // }
-    // if (event.target.readyState === "interactive") {
-         // console.log(event.target.readyState);
+    if (document.readyState === "interactive") {
+        // console.log(document.readyState);
         preload(
             `public/img/webp/maquinaDRX9000.webp`,
             'public/img/svg/crcvlogo.svg',
@@ -137,8 +140,8 @@ document.onreadystatechange = (event) => {
 
     };
     
-    if (event.target.readyState === "complete") {
-        // console.log(event.target.readyState);
+    if (document.readyState === "complete") {
+        // console.log(document.readyState);
           // `DOMContentLoaded` has already fired
         loadIMGs();
           // document.addEventListener("DOMContentLoaded",loadIMGs);
@@ -149,6 +152,3 @@ document.onreadystatechange = (event) => {
         // preload();
     }
 };
-
-
-        
