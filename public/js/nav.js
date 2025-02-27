@@ -98,7 +98,14 @@ button.addEventListener('click', () => {
     
 // },7000);
 
-function loadIMGs() {
+
+
+
+
+document.onreadystatechange = (event) => {
+// document.addEventListener('readystatechange', (event) => {
+
+    function loadIMGs() {
         logo.style.background = `url('public/img/svg/crcvlogo.svg') center no-repeat`;
         logo.style.backgroundSize = 'contain';
         mainIMG.src = images[0].src;
@@ -106,23 +113,18 @@ function loadIMGs() {
         loaderIMG.style.opacity = '0';
     };
 
-function preload() {
-    for (var i = 0; i < arguments.length; i++) {
-        images[i] = new Image();
-        images[i].src = preload.arguments[i];
+    function preload() {
+        for (var i = 0; i < arguments.length; i++) {
+            images[i] = new Image();
+            images[i].src = preload.arguments[i];
+        };
     };
-};
 
-loaderIMG.src = 'public/img/svg/circle.svg';
-loaderIMG.setAttribute('alt', 'load img');
-loaderIMG.style.objectFit = 'contain';
-mainContent.appendChild(loaderIMG);
-// console.log(document.readyState);
-
-
-
-document.onreadystatechange = (event) => {
-// document.addEventListener('readystatechange', (event) => {   
+    loaderIMG.src = 'public/img/svg/circle.svg';
+    loaderIMG.setAttribute('alt', 'load img');
+    loaderIMG.style.objectFit = 'contain';
+    mainContent.appendChild(loaderIMG);
+    // console.log(document.readyState);   
 
     // if (!event.target.readyState) {
         
@@ -130,17 +132,18 @@ document.onreadystatechange = (event) => {
 
          // console.log(event.target.readyState);
     // }
-    if (document.readyState === "interactive") {
+    // if (document.readyState === "interactive") {
         // console.log(document.readyState);
+        
+    
+    if (document.readyState === "complete") {
         preload(
             `public/img/webp/maquinaDRX9000.webp`,
             'public/img/svg/crcvlogo.svg',
             `public/img/svg/circle.svg`
         );
 
-    };
-    
-    if (document.readyState === "complete") {
+
         // console.log(document.readyState);
           // `DOMContentLoaded` has already fired
         loadIMGs();
