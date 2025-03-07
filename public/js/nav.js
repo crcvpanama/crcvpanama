@@ -103,17 +103,13 @@ loaderIMG.src = 'public/img/svg/circle.svg';
 loaderIMG.setAttribute('alt', 'load img');
 loaderIMG.style.objectFit = 'contain';
 mainContent.appendChild(loaderIMG);
-console.log(document.readyState);   
+// console.log(document.readyState);   
 
 
 // document.onreadystatechange = (event) => {
 
     // if (document.readyState === "interactive") {
-preload(
-    `public/img/webp/maquinaDRX9000.webp`,
-    'public/img/svg/crcvlogo.svg',
-    `public/img/svg/circle.svg`
-);
+
     // };
 
 // };
@@ -125,13 +121,30 @@ preload(
 // setTimeout(() => {
     
 // },7000);
+// document.onreadystatechange = async (event) => {
+    // if (document.readyState === "interactive") {
+
+    preload(
+        `public/img/webp/maquinaDRX9000.webp`,
+        'public/img/svg/crcvlogo.svg',
+        `public/img/svg/circle.svg`
+    );
+    // }
+
+// }
+// console.log(document.readyState);
+
+    // console.log(document.readyState);
 document.onreadystatechange = (event) => {
 
+    // if (document.readyState === "loading") {
+                // };
     if (document.readyState === "complete") {
         
-        console.log(document.readyState);
+        
           // `DOMContentLoaded` has already fired
         loadIMGs();
+        // console.log(document.readyState);
           // document.addEventListener("DOMContentLoaded",loadIMGs);
         loaderIMG.remove();
     }

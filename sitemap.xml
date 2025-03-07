@@ -32,14 +32,14 @@
                     <loc>https://crcvpanama.org/</loc>
                     <lastmod>2025-02-20</lastmod>
                     <changefreq>yearly</changefreq>
-                    <priority>0.90</priority>
+                    <priority>0.40</priority>
                     <image:image>
                       <image:loc>https://crcvpanama.org/favicon.ico</image:loc>
                       <url>
                         <loc>https://crcvpanama.org/</loc>
                         <lastmod>2025-02-20</lastmod>
                         <changefreq>yearly</changefreq>
-                        <priority>0.50</priority>
+                        <priority>0.90</priority>
                         <image:image>
                           <image:loc>https://crcvpanama.org/public/img/drx9000N.png</image:loc>
                         </image:image>
