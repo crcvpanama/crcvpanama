@@ -1234,11 +1234,22 @@ details[open] > summary::after {
 	}
 
     .collapse {        
-        padding: 20px 0;    
+        padding: 20px 0; 
+        position: relative;
+        width: 100%;
+/*        height: 70vw;*/
+/*        transform: translateY(170px);*/
+        background: whitesmoke;
+/*        transform: translateY(0);*/
+        transition: all 1s ease-in;
+        height: 80vw;
+        z-index: 4000;
+        overflow: hidden;
     }
 
     .nav-bar {
         display: var(--show);
+/*        position: absolute;*/
     }
 
     .nav-item {
@@ -1278,8 +1289,11 @@ details[open] > summary::after {
 	}
 
 	.navbar-collapse {
-		display: var(--hidden);
-	}
+/*        position:relative;*/
+/*		display: var(--hidden);*/
+        padding: 0;
+        height: 0;
+    }
 	
 	.home-start {
 		display: var(--show);
