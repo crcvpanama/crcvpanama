@@ -662,6 +662,11 @@ const listPages = [`
                             <source src="./public/videos/testimoniob.mp4" type="video/mp4">
                         </video>
                     </div>
+                    <div>
+                        <video controls playsinline oncontextmenu="return false" preload="none" poster="./public/img/svg/crcvlogo.svg">
+                            <source src="./public/videos/testimonioc.mp4" type="video/mp4">
+                        </video>
+                    </div>
                 </div>
                 </div>
             </section>`,
