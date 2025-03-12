@@ -1071,6 +1071,7 @@ main {
 }
 
 .letter--content p, .letter--content details {
+    display: block;
     font-size: .8rem;
     text-align: start;
     margin-bottom: .9em;
