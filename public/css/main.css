@@ -1032,11 +1032,11 @@ main {
 }
 
 .container--test {
-    display: grid
-;
-    margin: 0 40px;
-    grid-template-columns: minmax(400px, 800px) repeat(1, auto);
+    display: grid;
+    margin: 0 auto;
+    grid-template-columns: minmax(400px, 800px) repeat(1, 500px);
     overflow: hidden;
+    place-content: space-around;
 }
 
 .letter--container {
