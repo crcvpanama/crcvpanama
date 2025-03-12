@@ -1034,8 +1034,8 @@ main {
 .container--test {
     display: grid
 ;
-    margin: 0 1ch;
-    grid-template-columns: minmax(400px, 1fr) repeat(1, 400px);
+    margin: 0 40px;
+    grid-template-columns: minmax(400px, 800px) repeat(1, auto);
     overflow: hidden;
 }
 
@@ -1067,11 +1067,13 @@ main {
     width: var(--all-width);
 }
 
-.letter--content p {
+.letter--content p, .letter--content details {
     font-size: .8rem;
     text-align: start;
     margin-bottom: .9em;
     line-height: 1.8em;
+     color: #fff;
+     max-width: 100%;
 }
 
 .content--videos {
@@ -1083,6 +1085,7 @@ main {
     gap: .5em;
     margin: 0 auto;    
     overflow: hidden;
+    justify-content: space-around;
 }
 
 .content--videos > div {
@@ -1094,12 +1097,12 @@ main {
     margin: auto;
     gap: 2em;
     margin: 40px 0;
-    width: 400px;
+    max-width: 700px;
     height: auto;
 }
 
 .content--videos video {
-    width: var(--all-width);
+    width: 90%;
     height: 315px;
 }
 
