@@ -654,6 +654,11 @@ const listPages = [`
                 <div class="content--videos" id="testimonios">
                     <div>
                         <video controls playsinline oncontextmenu="return false" preload="none" poster="./public/img/svg/crcvlogo.svg">
+                            <source src="./public/videos/testimonioc.mp4" type="video/mp4">
+                        </video>
+                    </div>
+                    <div>
+                        <video controls playsinline oncontextmenu="return false" preload="none" poster="./public/img/svg/crcvlogo.svg">
                             <source src="./public/videos/testimonio.mp4" type="video/mp4">
                         </video>
                     </div>
@@ -662,11 +667,7 @@ const listPages = [`
                             <source src="./public/videos/testimoniob.mp4" type="video/mp4">
                         </video>
                     </div>
-                    <div>
-                        <video controls playsinline oncontextmenu="return false" preload="none" poster="./public/img/svg/crcvlogo.svg">
-                            <source src="./public/videos/testimonioc.mp4" type="video/mp4">
-                        </video>
-                    </div>
+                    
                 </div>
                 </div>
             </section>`,
