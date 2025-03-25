@@ -1,57 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
-  <url>
-    <loc>https://crcvpanama.org/</loc>
-    <lastmod>2025-02-20</lastmod>
-    <changefreq>yearly</changefreq>
-    <priority>1.0</priority>
-    <image:image>
-      <image:loc>https://crcvpanama.org/public/img/sucursalpanama.jpg</image:loc>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns:video="http://www.google.com/schemas/sitemap-video/1.1">
       <url>
         <loc>https://crcvpanama.org/</loc>
-        <lastmod>2025-02-20</lastmod>
-        <changefreq>yearly</changefreq>
-        <priority>0.80</priority>
-        <image:image>
-          <image:loc>https://crcvpanama.org/public/img/banner.jpg</image:loc>
-          <url>
-            <loc>https://crcvpanama.org/</loc>
-            <lastmod>2025-02-20</lastmod>
-            <changefreq>yearly</changefreq>
-            <priority>0.70</priority>
-            <image:image>
-              <image:loc>https://crcvpanama.org/public/img/OzonoterapiaIm1x1.png</image:loc>
-              <url>
-                <loc>https://crcvpanama.org/</loc>
-                <lastmod>2025-02-20</lastmod>
-                <changefreq>yearly</changefreq>
-                <priority>0.60</priority>
-                <image:image>
-                  <image:loc>https://crcvpanama.org/public/img/drx.jpg</image:loc>
-                  <url>
-                    <loc>https://crcvpanama.org/</loc>
-                    <lastmod>2025-02-20</lastmod>
-                    <changefreq>yearly</changefreq>
-                    <priority>0.40</priority>
-                    <image:image>
-                      <image:loc>https://crcvpanama.org/favicon.ico</image:loc>
-                      <url>
-                        <loc>https://crcvpanama.org/</loc>
-                        <lastmod>2025-02-20</lastmod>
-                        <changefreq>yearly</changefreq>
-                        <priority>0.90</priority>
-                        <image:image>
-                          <image:loc>https://crcvpanama.org/public/img/drx9000N.png</image:loc>
-                        </image:image>
-                      </url>
-                    </image:image>
-                  </url>
-                </image:image>
-              </url>
-            </image:image>
-          </url>
-        </image:image>
+        <video:video>
+          <video:thumbnail_loc>https://crcvpanama.org/public/img/webp/drx.webp</video:thumbnail_loc>
+          <video:title>CRCV Panamá</video:title>
+          <video:description>Centro de Rehabilitación de la Columna Vertebral</video:description>
+          <video:content_loc>https://crcvpanama.org/public/videos/inicioV.mp4</video:content_loc>
+          <video:duration>600</video:duration>
+          <video:publication_date>2025-03-25</video:publication_date>
+        </video:video>
       </url>
-    </image:image>
-  </url>
 </urlset>
