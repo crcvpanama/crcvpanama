@@ -360,8 +360,8 @@ main {
 }
 
 .aside-social-web {
-/*    background: url('../img/webp/crcv.avif') center no-repeat;*/
-    background-size: contain;
+    background: url('../img/webp/crcv.avif') center no-repeat;
+    background-size: cover;
     overflow: scroll;
     scrollbar-width: none;
     -ms-overflow-style: none;
