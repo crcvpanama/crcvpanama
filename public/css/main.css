@@ -361,7 +361,7 @@ main {
 
 .aside-social-web {
     background: url('../img/webp/crcv.avif') center no-repeat;
-    background-size: cover;
+    background-size: 100% 100%;
     overflow: scroll;
     scrollbar-width: none;
     -ms-overflow-style: none;
@@ -432,10 +432,10 @@ main {
     display: block;
     position: absolute;
     width: var(--all-width); 
-    height: 70%;
+    height: 100%;
 /*    align-self: anchor-center;*/
     margin:auto;
-    object-fit: contain;
+    object-fit: fill;
 }
 
 .img-container-a {
@@ -727,6 +727,7 @@ main {
 
 .slide-img {
     line-height: 1.3rem;
+    margin: 2.5em 0;
 }
 
 .slide-img h3 {
