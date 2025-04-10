@@ -360,16 +360,18 @@ main {
 }
 
 .aside-social-web {
-/*    background: url('../img/webp/crcv.avif') center no-repeat;*/
+    background: url('../img/webp/crcv.avif') center no-repeat;
     background-size: 100% 100%;
-    overflow: scroll;
-    scrollbar-width: none;
+/*    overflow: scroll;*/
+    /*scrollbar-width: none;
     -ms-overflow-style: none;
     max-height: 400px;
 
     &::-webkit-scrollbar {
         display: none;
     }
+*/
+    
 }
 
 .home-somos {
