@@ -50,7 +50,7 @@ header {
 h1 {
     margin-bottom: 20px;
     padding: 10px;
-    font-size: clamp(3.5em, 2.5vw, 5em);
+    font-size: clamp(3.2em, 4vw, 5em);
     font-weight: 900;
     letter-spacing: .5cap;
     line-height: 1.1;
@@ -65,9 +65,9 @@ h1 {
 h2 {
     margin-bottom: 20px;
     padding: 5px;
-    font-size: clamp(2.75em, 2.5vw, 4em);
+    font-size: clamp(2.2em, 4vw, 4em);
     font-weight: 900;
-    letter-spacing: .2cap;
+    letter-spacing: .1cap;
     line-height: 1;
 /*    color: var(--dark);*/
     text-align: center;
@@ -80,7 +80,7 @@ h2 {
 
 h3 {
     font-size: 2em;
-    letter-spacing: .2cap;
+    letter-spacing: .1cap;
     line-height: 1;
 
     font-weight: 700;
@@ -391,7 +391,7 @@ main {
 .home-slider-content figcaption h1 {
     display: grid;
     font-weight: 900;
-    font-size: 2rem;
+/*    font-size: 2rem;*/
     margin:0;
     height: 100%;
     place-content: center;
