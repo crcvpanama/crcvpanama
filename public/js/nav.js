@@ -74,6 +74,41 @@ button.addEventListener('click', () => {
 });
 
 
+
+
+// console.log(document.readyState);   
+
+
+// document.onreadystatechange = (event) => {
+
+    // if (document.readyState === "interactive") {
+
+    // };
+
+// };
+
+
+// console.log(document.readyState);
+
+
+// setTimeout(() => {
+    
+// },7000);
+// document.onreadystatechange = async (event) => {
+    // if (document.readyState === "interactive") {
+
+    
+    // }
+
+// }
+// console.log(document.readyState);
+
+
+    // console.log(document.readyState);
+
+    // console.log(document.readyState);
+        
+
 const mainIMG = document.getElementById('drx');
 const mainContent = document.getElementById('home0');
 
@@ -99,53 +134,91 @@ function preload() {
 };
 
 
-loaderIMG.src = 'public/img/svg/circle.svg';
-loaderIMG.setAttribute('alt', 'load img');
-loaderIMG.style.objectFit = 'contain';
-mainContent.appendChild(loaderIMG);
-// console.log(document.readyState);   
-
-
-// document.onreadystatechange = (event) => {
-
-    // if (document.readyState === "interactive") {
-
-    // };
-
-// };
-
-
-// console.log(document.readyState);
-
-
-// setTimeout(() => {
-    
-// },7000);
-// document.onreadystatechange = async (event) => {
-    // if (document.readyState === "interactive") {
-
+if (document.readyState === "interactive") {
     preload(
         `public/img/webp/maquinaDRX9000.webp`,
         'public/img/svg/crcvlogo.svg',
         `public/img/svg/circle.svg`
     );
-    // }
 
-// }
+    loaderIMG.src = 'public/img/svg/circle.svg';
+    loaderIMG.setAttribute('alt', 'load img');
+    loaderIMG.style.objectFit = 'contain';
+    mainContent.appendChild(loaderIMG);
+};
+
+
+
+
+
 // console.log(document.readyState);
+        
+(() => {
+    document.addEventListener("readystatechange", (event) => {
+        // console.log(document.readyState);
 
-    // console.log(document.readyState);
-document.onreadystatechange = (event) => {
+    
+
+        // console.log(document.readyState);
+
+            
+// document.onreadystatechange = (event) => {
+
+         // console.log(event.target.readyState);
+    // window.addEventListener('load',(event) async => {
 
     // if (document.readyState === "loading") {
-                // };
-    if (document.readyState === "complete") {
+        // console.log(document.readyState);
+        // await function loadIMGs() {
+        //     logo.style.background = `url('public/img/svg/crcvlogo.svg') center no-repeat`;
+        //     logo.style.backgroundSize = 'contain';
+        //     mainIMG.src = images[0].src;
+        //     mainIMG.style.opacity = '1';
+        //     loaderIMG.style.opacity = '0';
+        // };
+
+        // await function preload() {
+        //     for (var i = 0; i < arguments.length; i++) {
+        //         images[i] = new Image();
+        //         images[i].src = preload.arguments[i];
+        //     };
+        // };
+
+
+        // loaderIMG.src = 'public/img/svg/circle.svg';
+        // loaderIMG.setAttribute('alt', 'load img');
+        // loaderIMG.style.objectFit = 'contain';
+        // mainContent.appendChild(loaderIMG);
+
+
+        // await preload(
+        // `public/img/webp/maquinaDRX9000.webp`,
+        // 'public/img/svg/crcvlogo.svg',
+        // `public/img/svg/circle.svg`
+        // );
+
+
+    // } else 
+
         
+
+    // if (event.target.readyState === "interactive") {
         
           // `DOMContentLoaded` has already fired
-        loadIMGs();
+       
         // console.log(document.readyState);
           // document.addEventListener("DOMContentLoaded",loadIMGs);
-        loaderIMG.remove();
-    }
-};
+        
+        // } else 
+
+        if(event.target.readyState === "complete") {  
+            loadIMGs();          
+            console.log(event.target.readyState);
+            loaderIMG.remove();
+        }
+
+
+
+    });
+
+})();
