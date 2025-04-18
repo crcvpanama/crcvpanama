@@ -1,5 +1,5 @@
 :root {
-	  --white: #fafafa;
+	  --white: #fefefe;
 	  --gray: #6c757d;
 	  --light-grey: #eaeaea;
 	  --light: #f8f9fa;
@@ -8,9 +8,10 @@
 	--show: block;
 	--hidden: none;
 	--all-width: 100%;
-    --box: inset -15.5em 0 0 0 #0052D4,inset 15.5em 0 0 0 #0052D4;
+    --box: inset -15.5em 0 0 0 #004481,inset 15.5em 0 0 0 #00448199;
 	--backgroundtransparent: #0052D468;
-	--background: linear-gradient(to left, #36D1DCc9, #36D1DC10);
+    --background: linear-gradient(to left, #36D1DC99 60%, #fefefe 100%);
+/*	--background: linear-gradient(to left, #36D1DCc9, #36D1DC10);*/
     --solid-bground: linear-gradient(to left, #36D1DC 0%, #80fffe 100%);
 }
 
@@ -26,13 +27,15 @@
 
 html {
     background: var(--background);
+/*    background: linear-gradient(to left, #fefefe 40%, #36D1DC99 100%);*/
 }
 
 body {
 /*	text-size-adjust: var(--all-width);*/
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 	width: auto;	
-	color:var(--dark);
+/*	color:var(--dark);*/
+    color: var(--gray-dark);
 	font-family: Roboto, sans-serif;
 	font-weight: 400;
 	font-size: 1rem;
@@ -44,35 +47,60 @@ header {
 	background: var(--background) no-repeat center;
 }
 
-h1, h2 {
+h1 {
     margin-bottom: 20px;
     padding: 10px;
-    font-size: clamp(1.75rem, 2.5vw, 2rem);
+    font-size: clamp(3.5em, 2.5vw, 5em);
     font-weight: 900;
-    letter-spacing: .2ch;
-    line-height: 2ch;
-    color: var(--dark);
+    letter-spacing: .5cap;
+    line-height: 1.1;
+/*    color: var(--dark);*/
     text-align: center;
+    margin-bottom: 40px;
+
+    color: var(--gray-dark);
+/*    filter: drop-shadow(1px 2px 3px #2b2b2b99);*/
 }
 
+h2 {
+    margin-bottom: 20px;
+    padding: 5px;
+    font-size: clamp(2.75em, 2.5vw, 4em);
+    font-weight: 900;
+    letter-spacing: .2cap;
+    line-height: 1;
+/*    color: var(--dark);*/
+    text-align: center;
+    margin-bottom: 40px;
+
+    color: var(--gray-dark);
+/*    filter: drop-shadow(1px 2px 3px #2b2b2b99);*/
+}
+
+
 h3 {
-    font-size: 1.65rem;
+    font-size: 2em;
+    letter-spacing: .2cap;
+    line-height: 1;
+
     font-weight: 700;
     text-align: center;
     margin-bottom: 20px;
+    color: var(--gray-dark);
+/*    filter: drop-shadow(1px 2px 3px #2b2b2b99);*/
 }
 
 h4 {
-	font-size: 1.30rem;
+	font-size: 1.30em;
 }
 
 h5 {
-	font-size: 1.25rem;
+	font-size: 1.25em;
 	margin-bottom: 20px;
 }
 
 h6 {
-    font-size: 1rem;
+    font-size: 1em;
     margin-bottom: 20px;
 }
 p {
@@ -92,34 +120,58 @@ a {
     text-decoration: var(--hidden);
 }
 
+/*header {
+    height: 90lvw;
+}
+*/
 .header {
     display: flex;    
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-evenly;
+    padding: 0 30px;
+    gap: 2em;
+    width: 100%;
+    height: auto;
+}
+
+.logo-container {
+    width: 50%;
+    height: 250px;
+/*    border: 1px solid black;*/
 }
 
 .logo {
-    width: 500px;
+    display: flex;
+/*    position: relative;*/
+    justify-content: center;
+    width: 90%;
     height: 250px;
-    padding: 0 30px;
-    background-repeat:no-repeat;
-    background-position:center;
-/*    border:1px solid black;*/
-/*    background: url('../img/svg/crcvlogo.svg') center no-repeat;*/
+    margin: 0 auto;
+    background: url('../img/svg/crcvlogo.svg') center no-repeat;
     background-size: contain;
-    margin: 1%;
+/*    border: 1px solid black;*/
 }
 
 .header-title {
-    padding-right: 20px;
-    text-align:right;
-    font-weight: 900;
-    width: var(--all-width);
-    letter-spacing: .1cap;
-    font-size: clamp(18px, 4vw, 22px);
-    color: var(--white);
-}
+/*    display: flex;*/
+/*    flex-direction: row-reverse;*/
 
+/*    justify-content: ;*/
+/*    padding-right: 20px;*/
+    text-align:center;
+    font-weight: 900;
+    width: 40%;
+    letter-spacing: .2cap;
+    font-size: clamp(1.2em, 4vw, 2.5em);
+    color: var(--white);
+/*    filter: drop-shadow(1px 2px 3px #2b2b2b99);*/
+/*    border: 1px solid green;*/
+}
+/*.header-title .title{
+    width: 100%;
+    margin: 0 auto;
+    border: 1px solid red;
+}*/
 .navbar {
     display: flex;
     position: relative;
@@ -357,6 +409,7 @@ main {
     font-weight: 600;
     font-size: 1.2rem;
     margin-top: 10px;
+    line-height: 1.5;
 }
 
 .aside-social-web {
@@ -399,7 +452,7 @@ main {
 
 .sobrenosotros {
     line-height: 1.5rem;
-    padding: 0 5%;
+    padding: 0 10px;
 }
 
 .sobrenosotros h3 {
@@ -418,7 +471,7 @@ main {
 .img__quienes {
     width: auto;
     height: 100%;
-    margin: auto;
+    margin: 40px auto;
 }
 
 .img__quienes figure {
@@ -530,7 +583,7 @@ main {
     height: 59px;
     width: auto;
     letter-spacing: .3ch;
-/*    line-height: 1.3;*/
+    line-height: 1.3;
 /*    margin: .2em .5em;*/
     margin: 5px;
     box-decoration-break: clone;
@@ -1235,11 +1288,19 @@ details[open] > summary::after {
 		display: var(--show);	
     }
 
-	.header .logo {
+	/*.header .logo {
 		display: var(--show);
-    	width: 80%;
+    	width: 100%;
         margin:0 auto;
-	}
+	}*/
+
+    .logo-container {
+        width: 100%;
+    }
+
+    .header-title {
+        width: 100%;
+    }
 
     .nav-link:hover {        
         box-shadow: none;
@@ -1476,7 +1537,8 @@ details[open] > summary::after {
 	.slide-img h3{
 		position: relative;
 		left: 0;
-		color: #303030;
+        text-align:left;
+/*		color: #303030;*/
 	}
 
 	.img--container img{
@@ -1499,6 +1561,6 @@ details[open] > summary::after {
 	
 	html {
 		position: relative;
-		margin: 0 25%;
+		margin: 0 20%;
 	}
 }

@@ -114,13 +114,13 @@ const mainContent = document.getElementById('home0');
 
 const loaderIMG = document.createElement('img');
 
-const logo = document.querySelector('.logo');
+// const logo = document.querySelector('.logo');
 
 const images = [];
 
 function loadIMGs() {
-    logo.style.background = `url('public/img/svg/crcvlogo.svg') center no-repeat`;
-    logo.style.backgroundSize = 'contain';
+    // logo.style.background = `url('public/img/svg/crcvlogo.svg') center no-repeat`;
+    // logo.style.backgroundSize = 'contain';
     mainIMG.src = images[0].src;
     mainIMG.style.opacity = '1';
     loaderIMG.style.opacity = '0';
@@ -137,7 +137,6 @@ function preload() {
 if (document.readyState === "interactive") {
     preload(
         `public/img/webp/maquinaDRX9000.webp`,
-        'public/img/svg/crcvlogo.svg',
         `public/img/svg/circle.svg`
     );
 
