@@ -380,7 +380,6 @@ const listFQs = [
                         </details>`,
     }
 ];
-// console.log(Object.values(lists[0]));
 
 function innerLists(a) {
     let ll = Object.values(a);
