@@ -576,6 +576,7 @@ main {
     color: #0052D4;
 /*    color: var(--principal-color);*/
     line-height: 1;
+    letter-spacing: .2cap;
 }
 
 .diag__parr {
