@@ -69,7 +69,7 @@ h2 {
     font-size: clamp(2.1em, 4vw, 3.2em);
     font-weight: 900;
     letter-spacing: .1cap;
-/*    line-height: 1.6;*/
+    line-height: 1.1;
     color: var(--gray-dark);
     text-align: center;
     margin-bottom: 40px;
@@ -436,6 +436,9 @@ main {
     text-align: justify;
     justify-content: center;
     margin-top: 20px;
+    text-wrap: pretty;
+    hyphenate-limit-chars: 7;
+    hyphens: auto;
 }
 
 .line {
@@ -569,6 +572,10 @@ main {
     z-index: 3000;
     padding: 1.5em .4em;
     justify-content: space-evenly;
+    text-align: justify;
+    text-wrap: pretty;
+    hyphenate-limit-chars: 7;
+    hyphens: auto;
 }
 
 .diag-li {

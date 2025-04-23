@@ -214,7 +214,6 @@ const pagesChild = pages.querySelector('.item:first-child');
 //     `<iframe src='./contacto.html' frameborder="0"></iframe>`,
 //     `<iframe src='./testimonios.html' frameborder="0"></iframe>`,
 //     `<iframe src='./fqs.html' frameborder="0"></iframe>`
-// ];
 
 const lists = [
     {
