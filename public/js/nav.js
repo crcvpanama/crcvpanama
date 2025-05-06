@@ -146,7 +146,7 @@ button.addEventListener('click', () => {
             // console.log(document.readyState);
             preload(
                 `public/img/webp/maquinaDRX9000.webp`,
-                'public/img/svg/crcvlogo.svg',
+                `public/img/svg/crcvlogo.svg`,
                 `public/img/svg/circle.svg`
             );
 
@@ -221,6 +221,7 @@ button.addEventListener('click', () => {
         if(event.target.readyState === "complete") {  
                  
             // console.log(event.target.readyState);
+            // await loaderIMG.fadeOut();
             await loaderIMG.remove();
 
 
