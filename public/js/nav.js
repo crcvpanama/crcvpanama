@@ -48,14 +48,6 @@ window.addEventListener('load',(event)=>{
     init();
 });
 
-// fetch('https://www.googletagmanager.com/gtag/js?id=AW-11013564293')
-    // Exito
-    // .then(response => response.json())  
-    // convertir a json
-    // .then(json => console.log(json))    
-    //imprimir los datos en la consola
-    // .catch(err => console.log('Solicitud fallida', err));
-
 function init(){
     bloqueRGPD = document.querySelector('.cookieBox');
     if (localStorage.acceptedCookies != 'true') {
@@ -139,7 +131,7 @@ button.addEventListener('click', () => {
         logo.style.backgroundSize = 'contain';
         mainIMG.src = images[0].src;
         mainIMG.style.opacity = '1';
-        loaderIMG.style.opacity = '0';
+        // loaderIMG.style.opacity = '0';
     };
 
     function preload() {
@@ -166,7 +158,7 @@ button.addEventListener('click', () => {
     };
     await IMGs();
 
-    document.addEventListener("readystatechange", (event) => {
+    document.addEventListener("readystatechange", async (event) => {
         // console.log(document.readyState);
 
     
@@ -229,7 +221,9 @@ button.addEventListener('click', () => {
         if(event.target.readyState === "complete") {  
                  
             // console.log(event.target.readyState);
-            loaderIMG.remove();
+            await loaderIMG.remove();
+
+
 
             loadIMGs();  
         }
