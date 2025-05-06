@@ -108,7 +108,7 @@ button.addEventListener('click', () => {
 
     // console.log(document.readyState);
         
-(() => {
+(async () => {
 
     const mainIMG = document.getElementById('drx');
 
@@ -135,20 +135,22 @@ button.addEventListener('click', () => {
         };
     };
 
-    if (document.readyState === "interactive") {
-        // console.log(document.readyState);
-        preload(
-            `public/img/webp/maquinaDRX9000.webp`,
-            'public/img/svg/crcvlogo.svg',
-            `public/img/svg/circle.svg`
-        );
+    function IMGs() {
+        if (document.readyState === "interactive") {
+            // console.log(document.readyState);
+            preload(
+                `public/img/webp/maquinaDRX9000.webp`,
+                'public/img/svg/crcvlogo.svg',
+                `public/img/svg/circle.svg`
+            );
 
-        loaderIMG.src = 'public/img/svg/circle.svg';
-        loaderIMG.setAttribute('alt', 'load img');
-        loaderIMG.style.objectFit = 'contain';
-        mainContent.appendChild(loaderIMG);
+            loaderIMG.src = 'public/img/svg/circle.svg';
+            loaderIMG.setAttribute('alt', 'load img');
+            loaderIMG.style.objectFit = 'contain';
+            mainContent.appendChild(loaderIMG);
+        };
     };
-
+    await IMGs();
     document.addEventListener("readystatechange", (event) => {
         // console.log(document.readyState);
 
