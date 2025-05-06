@@ -583,7 +583,7 @@ main {
     color: #0052D4;
 /*    color: var(--principal-color);*/
     line-height: 1;
-    letter-spacing: .2cap;
+    letter-spacing: .1cap;
 }
 
 .diag__parr {
@@ -1420,9 +1420,9 @@ details[open] > summary::after {
 /*        object-fit: contain;*/
     }
 
-    .sobrenosotros h2 {
+    /*.sobrenosotros h2 {
         font-size: 1.4em;
-    }
+    }*/
 
 
 	.aside-social-web {

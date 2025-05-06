@@ -43,20 +43,34 @@ function detectCookie(cname) {
     return false;
 };
 
-init();
+
+window.addEventListener('load',(event)=>{
+    init();
+});
+
+// fetch('https://www.googletagmanager.com/gtag/js?id=AW-11013564293')
+    // Exito
+    // .then(response => response.json())  
+    // convertir a json
+    // .then(json => console.log(json))    
+    //imprimir los datos en la consola
+    // .catch(err => console.log('Solicitud fallida', err));
 
 function init(){
     bloqueRGPD = document.querySelector('.cookieBox');
     if (localStorage.acceptedCookies != 'true') {
-    bloqueRGPD.style.display = 'inline-block';    
+        bloqueRGPD.style.display = 'inline-block';    
     }
 
     if(detectCookie("rgpdOK")){
-        if (getCookie("rgpdOK")==1){eliminarBloqueRGPD()};
+        if (getCookie("rgpdOK")==1){
+            eliminarBloqueRGPD();
+        };
     }else{
         document.querySelector(".botonRGPD").addEventListener("click", () => {
             eliminarBloqueRGPD();
             setCookie("rgpdOK",1,365);
+
         });
     }
 };
@@ -151,6 +165,7 @@ button.addEventListener('click', () => {
         };
     };
     await IMGs();
+
     document.addEventListener("readystatechange", (event) => {
         // console.log(document.readyState);
 
