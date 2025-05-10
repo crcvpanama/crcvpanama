@@ -107,7 +107,7 @@ p {
     max-width: 75ch;
     margin: auto;
     margin-block: 1lh;
-    
+
     text-align: justify;
     text-wrap: pretty;
     hyphenate-limit-chars: 7;
@@ -444,9 +444,9 @@ main {
     text-align: justify;
     justify-content: center;
     margin-top: 20px;
-    text-wrap: pretty;
+    /*text-wrap: pretty;
     hyphenate-limit-chars: 7;
-    hyphens: auto;
+    hyphens: auto;*/
 }
 
 .line {
@@ -470,7 +470,6 @@ main {
     margin: auto;
 }
 
-
 .sobrenosotros h2 {
     width: auto;
 /*    text-align: initial;*/
@@ -493,8 +492,6 @@ main {
 }
 */
 .sobrenosotros p {
-     margin-bottom: 1em; 
-     margin: auto;
      max-width: 95ch;
 }
 
