@@ -106,9 +106,9 @@ a {
     background-repeat:no-repeat;
     background-position:center;
 /*    border:1px solid black;*/
-/*    background: url('../img/svg/crcvlogo.svg') center no-repeat;*/
+    background: url('../img/svg/crcvlogo.svg') center no-repeat;
     background-size: contain;
-    margin: 1%;
+    padding: 1em 0;
 }
 
 .header-title {
