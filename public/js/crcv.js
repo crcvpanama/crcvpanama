@@ -586,7 +586,7 @@ const listPages = [`
                 <iframe
                     id="frameP"
                     title="Política de privacidad"
-                    src="./politicadeprivacidad.html"
+                    src="https://www.crcvpanama.org/pages/politicadeprivacidad.html"
                     loading="lazy">  
                 </iframe>    
             </div>
