@@ -739,3 +739,133 @@ a {
 }
 
 /* WHATSAPPWIGET */
+
+
+
+@media (width <= 800px) {
+
+    .header {
+        display: var(--show);   
+    }
+
+    /*.header .logo {
+        display: var(--show);
+        width: 100%;
+        margin:0 auto;
+    }*/
+
+    .logo-container {
+        width: 100%;
+    }
+
+    .header-title {
+        width: 100%;
+    }
+
+    .nav-link:hover {        
+        box-shadow: none;
+        border-bottom: none;
+    }
+
+    .navbar {
+        flex-direction: column;
+        height: auto;
+        border-bottom: #3758ba;
+    }
+
+    .collapse {        
+        padding: 20px 0; 
+        position: relative;
+        width: 100%;
+/*        height: 70vw;*/
+/*        transform: translateY(170px);*/
+        background: #fff9;
+/*        transform: translateY(0);*/
+        transition: all 1s ease-in;
+        height: auto;
+        z-index: 4000;
+        overflow: hidden;
+    }
+
+    .nav-bar {
+        display: var(--show);
+/*        position: absolute;*/
+    }
+
+    .nav-item {
+        display: flex;        
+        width: auto;    
+        justify-content: flex-end;
+    }
+
+    .nav-link {
+        display: flex;         
+        padding: 5px; 
+        border-right: var(--hidden);
+        justify-content:right;
+        border-bottom: 2px solid #77889922;        
+        width: 200px;
+    }
+
+    .nav-button {
+        display: block;
+        position: absolute;     
+        background: url('../img/svg/button.svg');
+        background-repeat: no-repeat;
+        background-position: center;
+        scale: 2;
+        border: var(--hidden);
+        cursor: pointer;        
+        width: 22px;
+        height: 22px;
+        right: 2%;
+        margin: 10px;
+        top: 10%;
+        z-index: 6000;
+    }
+
+    .nav-button:hover {
+        filter: drop-shadow(1px 1px 1px #243fa8c8);
+    }
+
+    .navbar-collapse {
+/*        position:relative;*/
+/*      display: var(--hidden);*/
+        padding: 0;
+        height: 0;
+    }
+
+    
+/*CONTACT*/
+    .cont--A,
+    .cont--B,
+    #revers {
+        display:var(--show);
+    }
+
+    .local-in {     
+        position: relative;
+        margin-bottom: .5em;
+    }
+
+    .foot-journal {
+        display: flex;
+        position: relative;
+        flex-direction: row;
+        justify-content: flex-end;
+        align-content: flex-end;
+        width: fit-content;
+        object-position: right;
+    }
+
+    .contact--iframe {
+        min-width: 330px;
+    }
+
+    .privacidad iframe {
+        width: var(--all-width);
+    }
+
+
+/*  CONTACT END*/
+}

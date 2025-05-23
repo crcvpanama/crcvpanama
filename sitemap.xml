@@ -18,16 +18,34 @@
             <loc>https://www.crcvpanama.org/pages/diagnosticos.html</loc>
             <lastmod>2025-05-21</lastmod>
             <changefreq>yearly</changefreq>
-            <priority>0.80</priority>
+            <priority>0.70</priority>
             <image:image>
               <image:loc>https://www.crcvpanama.org/public/img/discosherniadosN.png</image:loc>
               <url>
                 <loc>https://www.crcvpanama.org/pages/contacto.html</loc>
                 <lastmod>2025-05-21</lastmod>
                 <changefreq>yearly</changefreq>
-                <priority>0.80</priority>
+                <priority>0.60</priority>
                 <image:image>
                   <image:loc>https://www.crcvpanama.org/public/img/sucursalpanama.jpg</image:loc>
+                  <url>
+                    <loc>https://www.crcvpanama.org/pages/testimonios.html</loc>
+                    <lastmod>2025-05-21</lastmod>
+                    <changefreq>yearly</changefreq>
+                    <priority>0.50</priority>
+                    <image:image>
+                      <image:loc>https://www.crcvpanama.org/public/img/camilla.jpg</image:loc>
+                      <url>
+                        <loc>https://www.crcvpanama.org/pages/faqs.html</loc>
+                        <lastmod>2025-05-21</lastmod>
+                        <changefreq>yearly</changefreq>
+                        <priority>0.50</priority>
+                        <image:image>
+                          <image:loc>https://www.crcvpanama.org/public/img/banner.jpg</image:loc>
+                        </image:image>
+                      </url>
+                    </image:image>
+                  </url>
                 </image:image>
               </url>
             </image:image>
