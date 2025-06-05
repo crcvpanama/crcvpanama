@@ -1,47 +1,47 @@
 <?xml version="1.0" encoding="utf-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
   <url>
-    <loc>https://www.crcvpanama.org/</loc>
+    <loc>https://crcvpanama.org/</loc>
     <lastmod>2025-05-21</lastmod>
     <changefreq>yearly</changefreq>
     <priority>1.0</priority>
     <image:image>
-      <image:loc>https://www.crcvpanama.org/public/img/drx.jpg</image:loc>
+      <image:loc>https://crcvpanama.org/public/img/drx.jpg</image:loc>
       <url>
-        <loc>https://www.crcvpanama.org/pages/services.html</loc>
+        <loc>https://crcvpanama.org/pages/services.html</loc>
         <lastmod>2025-05-21</lastmod>
         <changefreq>yearly</changefreq>
         <priority>0.80</priority>
         <image:image>
-          <image:loc>https://www.crcvpanama.org/public/img/ozono.jpg</image:loc>
+          <image:loc>https://crcvpanama.org/public/img/ozono.jpg</image:loc>
           <url>
-            <loc>https://www.crcvpanama.org/pages/diagnosticos.html</loc>
+            <loc>https://crcvpanama.org/pages/diagnosticos.html</loc>
             <lastmod>2025-05-21</lastmod>
             <changefreq>yearly</changefreq>
             <priority>0.70</priority>
             <image:image>
-              <image:loc>https://www.crcvpanama.org/public/img/discosherniadosN.png</image:loc>
+              <image:loc>https://crcvpanama.org/public/img/discosherniadosN.png</image:loc>
               <url>
-                <loc>https://www.crcvpanama.org/pages/contacto.html</loc>
+                <loc>https://crcvpanama.org/pages/contacto.html</loc>
                 <lastmod>2025-05-21</lastmod>
                 <changefreq>yearly</changefreq>
                 <priority>0.60</priority>
                 <image:image>
-                  <image:loc>https://www.crcvpanama.org/public/img/sucursalpanama.jpg</image:loc>
+                  <image:loc>https://crcvpanama.org/public/img/sucursalpanama.jpg</image:loc>
                   <url>
-                    <loc>https://www.crcvpanama.org/pages/testimonios.html</loc>
+                    <loc>https://crcvpanama.org/pages/testimonios.html</loc>
                     <lastmod>2025-05-21</lastmod>
                     <changefreq>yearly</changefreq>
                     <priority>0.50</priority>
                     <image:image>
-                      <image:loc>https://www.crcvpanama.org/public/img/camilla.jpg</image:loc>
+                      <image:loc>https://crcvpanama.org/public/img/camilla.jpg</image:loc>
                       <url>
-                        <loc>https://www.crcvpanama.org/pages/faqs.html</loc>
+                        <loc>https://crcvpanama.org/pages/faqs.html</loc>
                         <lastmod>2025-05-21</lastmod>
                         <changefreq>yearly</changefreq>
                         <priority>0.50</priority>
                         <image:image>
-                          <image:loc>https://www.crcvpanama.org/public/img/banner.jpg</image:loc>
+                          <image:loc>https://crcvpanama.org/public/img/banner.jpg</image:loc>
                         </image:image>
                       </url>
                     </image:image>
