@@ -30,76 +30,6 @@ const h = document.getElementsByTagName('h1');
 let header = document.querySelector(".home-slider-content");
 let ff = header.querySelector('.item:first-child');
 let newIMG = document.createElement('img');
-// const i = document.getElementsByTagName('img');
-// newIMG.src = 'public/img/webp/2025.webp';
-
-
-// function notice() {
-//     h[0].innerHTML = `                              
-//                 <span>DRX9000</span>
-//                 <span class="hh">Descompresión espinal no quirúrgica</span>`;
-//     newIMG.style.animation = 'showW 4.1s linear forwards';
-//     h[0].style.placeContent = 'center';
-    // i[0].removeAttribute('src');
-    // newIMG.src = 'public/img/webp/machi.avif';
-    // i[0].setAttribute('src', backG);
-// };
-
-// function nw(a,b) {
-//     newIMG.style.animation = 'showW 2.1s reverse forwards';
-//     setTimeout(() => {
-//         newIMG.style.display = a;
-//         b.remove();
-//         h[0].innerHTML = `                              
-//                 <span>DRX9000</span>
-//                 <span class="hh">Descompresión espinal no quirúrgica</span>`;
-//     },2000);
-
-// };
-
-// (() => {
-//     let anchoV1 = window.innerWidth;
-    
-//     if(anchoV1 <= 800) {
-//         newIMG.src = 'public/img/webp/2025.webp';
-//         header.insertBefore(newIMG,ff);
-
-//         h[0].innerHTML = `                              
-//                 <span>Feliz nuevo año 2025</span>
-//                 <span class="hh">PANAMÁ</span>`;
-        
-//         setTimeout(nw, 8000, 'none',newIMG);
-
-//     } 
-// })();
-
-
-
-
-
-
-
-
-
-
-
-
-// const socialFooter = document.querySelector('.social');
-
-// const social = [ 
-//     `<div>
-//         <span class="facebook"><a href="https://www.facebook.com/crcvpanama" target="_blank" aria-label="FACEBOOK"><i class="bi bi-facebook"></i></a></span>
-//     </div>`,
-//     `<div>
-//         <span class="whatsapp"><a target="_blank" href="https://wa.me/50765991052?text=Hola%20estoy%20interesado%20y%20deseo%20más%20información."><i class="bi bi-whatsapp"></i></a></span>
-//     </div>`,
-//     `<div>
-//         <span class="youtube"><a target="_blank" href="https://www.youtube.com/channel/UCjhJ2PgAVZLeuqYWTsE5-Qg"><i class="bi bi-youtube"></i></a></span>
-//     </div>`,
-//     `<div>
-//         <span class="instagram"><a target="_blank" href="https://www.instagram.com/crcvpanama/?r=nametag"><i class="bi bi-instagram"></i></a></span>
-//     </div>`
-// ];
 
 const socialSVG = [ 
     `<div>
@@ -123,75 +53,11 @@ function socialWeb(a) {
     });
 };
 
-// showTest(imagesTest);
 setTimeout(() => {
     showTest(whatsAppWidget);
-    // socialWeb(socialFooter);
     socialWeb(socialNav[0]);
     socialWeb(socialNav[1]);
 }, 3000);
-
-
-// const summary = document.getElementsByClassName('summary');
-// console.log(summary);
-// function hideSummary(a) {
-//     for(let i=0;i<summary.length;i++){
-//         summary[a].addEventListener('click', () => {
-//             summary[a].style.display = 'none';
-//         });
-//     }
-// };
-
-// for(let i=0;i<summary.length;i++) {
-//     hideSummary(i);
-// };
-
-// window.onload = function() {
-//     var opar = document.getElementById('paragraph').innerHTML;
-
-//     function highlight() {
-//         var paragraph = document.getElementById('paragraph');
-//         var search = document.getElementById('typed-text').value;
-//         search = search.replace(/[.*+?^${}()|[\]\\]/g, '\\$&'); 
-//         var re = new RegExp(search, 'g');
-//         var m;
-
-//         if (search.length > 0)
-//              paragraph.innerHTML = opar.replace(re, `<mark>$&</mark>`);
-//         else paragraph.innerHTML = opar;
-//    }
-//    highlight()
-// }
-
-
-// const newIMG = [
-//     './public/img/webp/Maquina1N.webp',
-//     './public/img/1x1/maN.png',
-//     './public/img/1x1/bannerf.png',
-//     './public/img/1x1/inyec.png',
-//     './public/img/1x1/tfN.png',
-//     './public/img/1x1/discosherniadosN.png',
-//     './public/img/1x1/enfermedaddegenerativa.png',
-//     './public/img/1x1/ciatica.png',
-//     './public/img/1x1/cervicalgia.png',
-//     './public/img/1x1/c3N.png',
-//     './public/img/1x1/radi.png'
-// ];
-
-// const images = document.querySelectorAll('figure');
-
-// const desktopMediaQuery = window.matchMedia('(width >= 800px)');
-
-// function defineWidthIMG(a) {
-//     if(desktopMediaQuery.matches) {
-//         for(let i=0;i<a.length;i++) {
-//             const imgCount = images[0].firstElementChild;
-//             imgCount.src = newIMG[0];
-//         } 
-//     }
-// };
-// defineWidthIMG(images);
-// const show = document.querySelector('body');
 
 
 const year = new Date().getFullYear();
