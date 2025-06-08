@@ -138,12 +138,12 @@ a {
     padding: 0 30px;
     gap: 2em;
     width: 100%;
-    height: auto;
+    height: 271px;
 }
 
 .logo-container {
     width: 50%;
-    height: 210px;
+    height: 215px;
 /*    border: 1px solid black;*/
 }
 
@@ -509,7 +509,7 @@ main {
     /*place-items: center;*/
     position: relative;
 	width: 295px;
-	height: 719px;
+	height: 393px;
     overflow: hidden;
     /*place-content: center;*/
 }
