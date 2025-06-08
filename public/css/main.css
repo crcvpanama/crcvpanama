@@ -496,27 +496,31 @@ main {
 }
 
 .img__quienes {
+    display: flex;
+    justify-content: center;
     width: auto;
     height: 100%;
-    margin: 40px auto;
+    margin: auto;
+    align-items: center;
 }
 
 .img__quienes picture {
     display: grid;
-    place-items: center;
+    /*place-items: center;*/
     position: relative;
-	width: 300px;
-	height: 100%;
+	width: 295px;
+	height: 719px;
     overflow: hidden;
+    /*place-content: center;*/
 }
 
 .img__quienes img {
     display: block;
-    position: absolute;
+    /*position: absolute;*/
     width: var(--all-width); 
-    height: 100%;
+    height: var(--all-width);
 /*    align-self: anchor-center;*/
-    margin:auto;
+    /*margin:auto;*/
     object-fit: fill;
 }
 
