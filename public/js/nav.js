@@ -79,52 +79,17 @@ button.addEventListener('click', () => {
     menu.classList.toggle('navbar-collapse');
 });
 
+const mainIMG = document.getElementById('drx');
 
+const mainContent = document.getElementById('home0');
 
+const loaderIMG = document.createElement('img');
 
-// console.log(document.readyState);   
+const logo = document.querySelector('.logo');
 
-
-// document.onreadystatechange = (event) => {
-
-    // if (document.readyState === "interactive") {
-
-    // };
-
-// };
-
-
-// console.log(document.readyState);
-
-
-// setTimeout(() => {
-    
-// },7000);
-// document.onreadystatechange = async (event) => {
-    // if (document.readyState === "interactive") {
-
-    
-    // }
-
-// }
-// console.log(document.readyState);
-
-
-    // console.log(document.readyState);
-
-    // console.log(document.readyState);
+const images = [];
         
 (async () => {
-
-    const mainIMG = document.getElementById('drx');
-
-    const mainContent = document.getElementById('home0');
-
-    const loaderIMG = document.createElement('img');
-
-    const logo = document.querySelector('.logo');
-
-    const images = [];
 
     function loadIMGs() {
         logo.style.background = `url('public/img/svg/crcvlogo.svg') center no-repeat`;
@@ -145,7 +110,7 @@ button.addEventListener('click', () => {
         if (document.readyState === "interactive") {
             // console.log(document.readyState);
             preload(
-                `public/img/webp/maquinaDRX9000.webp`,
+                `public/img/DRX9000.avif`,
                 `public/img/svg/crcvlogo.svg`,
                 `public/img/svg/circle.svg`
             );
@@ -159,71 +124,10 @@ button.addEventListener('click', () => {
     await IMGs();
 
     document.addEventListener("readystatechange", async (event) => {
-        // console.log(document.readyState);
 
-    
-
-        // console.log(document.readyState);
-
-            
-// document.onreadystatechange = (event) => {
-
-         // console.log(event.target.readyState);
-    // window.addEventListener('load',(event) async => {
-
-    // if (document.readyState === "loading") {
-        // console.log(document.readyState);
-        // await function loadIMGs() {
-        //     logo.style.background = `url('public/img/svg/crcvlogo.svg') center no-repeat`;
-        //     logo.style.backgroundSize = 'contain';
-        //     mainIMG.src = images[0].src;
-        //     mainIMG.style.opacity = '1';
-        //     loaderIMG.style.opacity = '0';
-        // };
-
-        // await function preload() {
-        //     for (var i = 0; i < arguments.length; i++) {
-        //         images[i] = new Image();
-        //         images[i].src = preload.arguments[i];
-        //     };
-        // };
-
-
-        // loaderIMG.src = 'public/img/svg/circle.svg';
-        // loaderIMG.setAttribute('alt', 'load img');
-        // loaderIMG.style.objectFit = 'contain';
-        // mainContent.appendChild(loaderIMG);
-
-
-        // await preload(
-        // `public/img/webp/maquinaDRX9000.webp`,
-        // 'public/img/svg/crcvlogo.svg',
-        // `public/img/svg/circle.svg`
-        // );
-
-
-    // } else 
-
-        
-
-    // if (event.target.readyState === "interactive") {
-        
-          // `DOMContentLoaded` has already fired
-       
-        // console.log(document.readyState);
-          // document.addEventListener("DOMContentLoaded",loadIMGs);
-        
-        // } else 
-        // if (event.target.readyState === "interactive") {
-        //     console.log(event.target.readyState);
-        //        
-        // } else 
         if(event.target.readyState === "complete") {  
                  
-            // console.log(event.target.readyState);
-            // await loaderIMG.fadeOut();
             await loaderIMG.remove();
-
 
 
             loadIMGs();  
