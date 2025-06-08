@@ -363,7 +363,7 @@ main {
     overflow: hidden;
 }
 
-.home-slider-content img {
+.home-slider-content img{
     display: block;
     position: absolute;
     z-index: -1;
@@ -377,9 +377,9 @@ main {
 .home-slider-content #drx{
     display: block;
     position: absolute;
-    width: auto;
+    /*width: auto;*/
     height: 100%;
-    object-fit: contain;
+    object-fit: cover;
     z-index: -1; 
     opacity: 0;
     transition: opacity 2s ease-in-out;
