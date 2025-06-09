@@ -44,7 +44,7 @@ function detectCookie(cname) {
 };
 
 
-window.addEventListener('load',(event)=>{
+document.addEventListener('DOMContentLoaded',(event)=>{
     init();
 });
 
@@ -89,7 +89,7 @@ const logo = document.querySelector('.logo');
 
 const images = [];
         
-(async () => {
+( () => {
 
     function loadIMGs() {
         logo.style.background = `url('public/img/svg/crcvlogo.svg') center no-repeat`;
@@ -121,13 +121,14 @@ const images = [];
             mainContent.appendChild(loaderIMG);
         };
     };
-    await IMGs();
+    IMGs();
 
-    document.addEventListener("readystatechange", async (event) => {
-
+    window.addEventListener("load", (event) => {
+     // document.addEventListener("readystatechange", async (event) => {
+        console.log(event)
         if(event.target.readyState === "complete") {  
                  
-            await loaderIMG.remove();
+            loaderIMG.remove();
 
 
             loadIMGs();  
@@ -135,3 +136,8 @@ const images = [];
     });
 
 })();
+
+// Add an event listener for the 'DOMContentLoaded' event
+// document.addEventListener('DOMContentLoaded', function () {
+//   console.log('The DOM is fully loaded and parsed.');
+// });
