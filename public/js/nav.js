@@ -50,7 +50,7 @@ init();
 
 const url = `https://wvlhqwzk-5000.use2.devtunnels.ms/analytics`;
 const dominio = window.location.origin;
-let d = localStorage.getItem("acceptedCookies");
+let d = localStorage.getItem("true");
 function count(a) {
 
     if(a) {
@@ -76,21 +76,19 @@ function init(){
 
     console.log(detectCookie("rgpdOK"));
     if(detectCookie("rgpdOK")){
-    //     if (getCookie("rgpdOK")==1){
         eliminarBloqueRGPD();
-    //     };
     }
 
     document.querySelector(".botonRGPD").addEventListener("click", () => {
         navigator.sendBeacon(url, JSON.stringify({
-                                                    id: 3,
-                                                    count: 1,
-                                                    domain: dominio,
-                                                }));
+            id: 3,
+            count: 1,
+            domain: dominio,
+        }))
         eliminarBloqueRGPD();
         setCookie("rgpdOK",1,365);
     });
-    // }
+
 };
 
 function eliminarBloqueRGPD(){
