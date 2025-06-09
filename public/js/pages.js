@@ -44,9 +44,29 @@ function detectCookie(cname) {
 };
 
 
-window.addEventListener('load',(event)=>{
+// window.addEventListener('load',(event)=>{
     init();
-});
+// });
+
+const url = `https://wvlhqwzk-5000.use2.devtunnels.ms/analytics`;
+const dominio = window.location.origin;
+let d = detectCookie("rgpdOK");
+function count(a) {
+
+    if(a) {
+        let analyticsData = {
+            id: 3,
+            count: 1,
+            domain: dominio,
+        };
+
+        window.addEventListener("load", function() {
+          navigator.sendBeacon(url, JSON.stringify(analyticsData));
+        });
+
+    }
+}
+count(d);
 
 function init(){
     bloqueRGPD = document.querySelector('.cookieBox');

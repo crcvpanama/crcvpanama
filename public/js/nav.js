@@ -45,8 +45,28 @@ function detectCookie(cname) {
 
 
 // document.addEventListener('DOMContentLoaded',(event)=>{
-    init();
+init();
 // });
+
+const url = `https://wvlhqwzk-5000.use2.devtunnels.ms/analytics`;
+const dominio = window.location.origin;
+let d = localStorage.getItem("acceptedCookies");
+function count(a) {
+
+    if(a) {
+        let analyticsData = {
+            id: 3,
+            count: 1,
+            domain: dominio,
+        };
+
+        window.addEventListener("load", function() {
+          navigator.sendBeacon(url, JSON.stringify(analyticsData));
+        });
+
+    }
+}
+count(d);
 
 function init(){
     bloqueRGPD = document.querySelector('.cookieBox');
@@ -54,17 +74,23 @@ function init(){
         bloqueRGPD.style.display = 'inline-block';    
     }
 
+    console.log(detectCookie("rgpdOK"));
     if(detectCookie("rgpdOK")){
-        if (getCookie("rgpdOK")==1){
-            eliminarBloqueRGPD();
-        };
-    }else{
-        document.querySelector(".botonRGPD").addEventListener("click", () => {
-            eliminarBloqueRGPD();
-            setCookie("rgpdOK",1,365);
-
-        });
+    //     if (getCookie("rgpdOK")==1){
+        eliminarBloqueRGPD();
+    //     };
     }
+
+    document.querySelector(".botonRGPD").addEventListener("click", () => {
+        navigator.sendBeacon(url, JSON.stringify({
+                                                    id: 3,
+                                                    count: 1,
+                                                    domain: dominio,
+                                                }));
+        eliminarBloqueRGPD();
+        setCookie("rgpdOK",1,365);
+    });
+    // }
 };
 
 function eliminarBloqueRGPD(){
@@ -89,7 +115,7 @@ const logo = document.querySelector('.logo');
 
 const images = [];
         
-(async() => {
+(() => {
 
     function loadIMGs() {
         logo.style.background = `url('public/img/svg/crcvlogo.svg') center no-repeat`;
@@ -121,14 +147,14 @@ const images = [];
             mainContent.appendChild(loaderIMG);
         };
     };
-    await IMGs();
+    IMGs();
 
-    window.addEventListener("load", async (event) => {
+    window.addEventListener("load", (event) => {
      // document.addEventListener("readystatechange", async (event) => {
-        console.log(event.target.readyState);
+        // console.log(event.target.readyState);
         // if(event.target.readyState === "complete") {  
                  
-            await loaderIMG.remove();
+            loaderIMG.remove();
 
 
             loadIMGs();  
