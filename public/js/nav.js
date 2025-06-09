@@ -44,9 +44,9 @@ function detectCookie(cname) {
 };
 
 
-document.addEventListener('DOMContentLoaded',(event)=>{
+// document.addEventListener('DOMContentLoaded',(event)=>{
     init();
-});
+// });
 
 function init(){
     bloqueRGPD = document.querySelector('.cookieBox');
@@ -123,8 +123,8 @@ const images = [];
     };
     await IMGs();
 
-    // window.addEventListener("load", (event) => {
-     document.addEventListener("readystatechange", async (event) => {
+    window.addEventListener("load", async (event) => {
+     // document.addEventListener("readystatechange", async (event) => {
         console.log(event.target.readyState)
         if(event.target.readyState === "complete") {  
                  
