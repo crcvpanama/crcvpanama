@@ -50,7 +50,8 @@ init();
 
 const url = `https://wvlhqwzk-5000.use2.devtunnels.ms/analytics`;
 const dominio = window.location.origin;
-let d = localStorage.getItem("true");
+let d = localStorage.getItem("acceptedCookies");
+console.log(d);
 function count(a) {
 
     if(a) {
@@ -90,8 +91,6 @@ function init(){
             setCookie("rgpdOK",1,365);
         });
     }
-
-    
 };
 
 function eliminarBloqueRGPD(){

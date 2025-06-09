@@ -51,6 +51,7 @@ function detectCookie(cname) {
 const url = `https://wvlhqwzk-5000.use2.devtunnels.ms/analytics`;
 const dominio = window.location.origin;
 let d = detectCookie("rgpdOK");
+console.log(d);
 function count(a) {
 
     if(a) {
@@ -76,18 +77,20 @@ function init(){
 
     if(detectCookie("rgpdOK")){
         eliminarBloqueRGPD();
+    } else {
+        document.querySelector(".botonRGPD").addEventListener("click", () => {
+            eliminarBloqueRGPD();
+            navigator.sendBeacon(url, JSON.stringify({
+                id: 3,
+                count: 1,
+                domain: dominio,
+            }));
+            setCookie("rgpdOK",1,365);
+
+        });
     }
 
-    document.querySelector(".botonRGPD").addEventListener("click", () => {
-        eliminarBloqueRGPD();
-        navigator.sendBeacon(url, JSON.stringify({
-            id: 3,
-            count: 1,
-            domain: dominio,
-        }));
-        setCookie("rgpdOK",1,365);
-
-    });
+    
     
 };
 
