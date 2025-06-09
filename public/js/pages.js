@@ -75,16 +75,20 @@ function init(){
     }
 
     if(detectCookie("rgpdOK")){
-        if (getCookie("rgpdOK")==1){
-            eliminarBloqueRGPD();
-        };
-    }else{
-        document.querySelector(".botonRGPD").addEventListener("click", () => {
-            eliminarBloqueRGPD();
-            setCookie("rgpdOK",1,365);
-
-        });
+        eliminarBloqueRGPD();
     }
+
+    document.querySelector(".botonRGPD").addEventListener("click", () => {
+        eliminarBloqueRGPD();
+        navigator.sendBeacon(url, JSON.stringify({
+            id: 3,
+            count: 1,
+            domain: dominio,
+        }));
+        setCookie("rgpdOK",1,365);
+
+    });
+    
 };
 
 function eliminarBloqueRGPD(){
