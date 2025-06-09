@@ -125,14 +125,14 @@ const images = [];
 
     window.addEventListener("load", async (event) => {
      // document.addEventListener("readystatechange", async (event) => {
-        console.log(event.target.readyState)
-        if(event.target.readyState === "complete") {  
+        console.log(event.target.readyState);
+        // if(event.target.readyState === "complete") {  
                  
             await loaderIMG.remove();
 
 
             loadIMGs();  
-        }
+        // }
     });
 
 })();
