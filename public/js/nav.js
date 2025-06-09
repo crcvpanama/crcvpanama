@@ -89,7 +89,7 @@ const logo = document.querySelector('.logo');
 
 const images = [];
         
-( () => {
+(async() => {
 
     function loadIMGs() {
         logo.style.background = `url('public/img/svg/crcvlogo.svg') center no-repeat`;
@@ -121,14 +121,14 @@ const images = [];
             mainContent.appendChild(loaderIMG);
         };
     };
-    IMGs();
+    await IMGs();
 
-    window.addEventListener("load", (event) => {
-     // document.addEventListener("readystatechange", async (event) => {
-        console.log(event)
+    // window.addEventListener("load", (event) => {
+     document.addEventListener("readystatechange", async (event) => {
+        console.log(event.target.readyState)
         if(event.target.readyState === "complete") {  
                  
-            loaderIMG.remove();
+            await loaderIMG.remove();
 
 
             loadIMGs();  
