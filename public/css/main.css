@@ -32,7 +32,7 @@ html {
 }
 
 body {
-/*	text-size-adjust: var(--all-width);*/
+	text-size-adjust: var(--all-width);
   -webkit-tap-highlight-color: #1b1b1b90;
 	width: auto;	
 /*	color:var(--dark);*/

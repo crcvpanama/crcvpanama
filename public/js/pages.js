@@ -89,9 +89,6 @@ function init(){
 
         });
     }
-
-    
-    
 };
 
 function eliminarBloqueRGPD(){
