@@ -65,7 +65,8 @@ function count() {
     });
 
 }
-if(d) count();
+
+count();
 
 function init(){
     bloqueRGPD = document.querySelector('.cookieBox');
@@ -73,18 +74,18 @@ function init(){
         bloqueRGPD.style.display = 'inline-block';    
     }
 
-    console.log(detectCookie("rgpdOK"));
+    // console.log(detectCookie("rgpdOK"));
     if(detectCookie("rgpdOK")){
         eliminarBloqueRGPD();
     } else {
         document.querySelector(".botonRGPD").addEventListener("click", () => {
             eliminarBloqueRGPD();
 
-            navigator.sendBeacon(url, JSON.stringify({
-                id: 3,
-                count: 1,
-                domain: dominio,
-            }))
+            // navigator.sendBeacon(url, JSON.stringify({
+            //     id: 3,
+            //     count: 1,
+            //     domain: dominio,
+            // }))
 
             setCookie("rgpdOK",1,365);
         });
