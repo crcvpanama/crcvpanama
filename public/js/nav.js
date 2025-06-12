@@ -51,23 +51,21 @@ init();
 const url = `https://wvlhqwzk-5000.use2.devtunnels.ms/analytics`;
 const dominio = window.location.origin;
 let d = localStorage.getItem("acceptedCookies");
-// console.log(d);
-function count(a) {
-    // console.log('Hi')
-    if(a) {
-        let analyticsData = {
-            id: 3,
-            count: 1,
-            domain: dominio,
-        };
 
-        window.addEventListener("load", function() {
-          navigator.sendBeacon(url, JSON.stringify(analyticsData));
-        });
+function count() {
 
-    }
+    let analyticsData = {
+        id: 3,
+        count: 1,
+        domain: dominio,
+    };
+
+    window.addEventListener("load", function() {
+      navigator.sendBeacon(url, JSON.stringify(analyticsData));
+    });
+
 }
-count(d);
+if(d) count();
 
 function init(){
     bloqueRGPD = document.querySelector('.cookieBox');
