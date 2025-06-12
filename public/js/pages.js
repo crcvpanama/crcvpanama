@@ -51,23 +51,22 @@ function detectCookie(cname) {
 const url = `https://wvlhqwzk-5000.use2.devtunnels.ms/analytics`;
 const dominio = window.location.origin;
 let d = detectCookie("rgpdOK");
-console.log(d);
-function count(a) {
+// console.log(d);
+function count() {
 
-    if(a) {
         let analyticsData = {
             id: 3,
             count: 1,
             domain: dominio,
-        };
+        
 
         window.addEventListener("load", function() {
           navigator.sendBeacon(url, JSON.stringify(analyticsData));
         });
 
-    }
+
 }
-count(d);
+if(d) count();
 
 function init(){
     bloqueRGPD = document.querySelector('.cookieBox');
