@@ -48,7 +48,8 @@ function detectCookie(cname) {
     init();
 // });
 
-const url = `https://wvlhqwzk-5000.use2.devtunnels.ms/analytics`;
+// const url = `https://wvlhqwzk-5000.use2.devtunnels.ms/analytics`;
+const url = `https://visits-christian-guardias-projects.vercel.app/`;    
 const dominio = window.location.origin;
 let d = detectCookie("rgpdOK");
 // console.log(d);
