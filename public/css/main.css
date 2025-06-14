@@ -617,7 +617,7 @@ main {
 
 .diag__parrB {
     display: -webkit-box;
-    -webkit-line-clamp: 3;
+    -webkit-line-clamp: 4;
     -webkit-box-orient: vertical;
     height: 59px;
     font-size: .8em;
