@@ -620,6 +620,7 @@ main {
     -webkit-line-clamp: 3;
     -webkit-box-orient: vertical;
     height: 59px;
+    font-size: .8em;
     /*width: 90%;*/
 /*    letter-spacing: .3ch;*/
     /*line-height: 1.3;*/
