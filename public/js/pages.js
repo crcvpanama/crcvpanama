@@ -59,6 +59,7 @@ function count() {
             id: 3,
             count: 1,
             domain: dominio,
+        };
         
 
         window.addEventListener("load", function() {
