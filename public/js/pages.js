@@ -62,9 +62,9 @@ function count() {
         };
         
 
-        window.addEventListener("load", function() {
+        // window.addEventListener("load", function() {
           navigator.sendBeacon(url, JSON.stringify(analyticsData));
-        });
+        // });
 
 
 }
