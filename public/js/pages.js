@@ -45,8 +45,12 @@ function detectCookie(cname) {
 
 
 // window.addEventListener('load',(event)=>{
-    init();
-// });
+document.addEventListener('DOMContentLoaded', function () {
+  init();
+  // Your DOM manipulation or initialization code here
+});
+
+    // });
 
 // const url = `https://wvlhqwzk-5000.use2.devtunnels.ms/analytics`;
 const url = `https://visits-christian-guardias-projects.vercel.app/`;    
@@ -54,21 +58,18 @@ const dominio = window.location.origin;
 let d = detectCookie("rgpdOK");
 // console.log(d);
 function count() {
+    let analyticsData = {
+        id: 3,
+        count: 1,
+        domain: dominio,
+    };
 
-        let analyticsData = {
-            id: 3,
-            count: 1,
-            domain: dominio,
-        };
-        
+    navigator.sendBeacon(url, JSON.stringify(analyticsData));   
+};
 
-        // window.addEventListener("load", function() {
-          navigator.sendBeacon(url, JSON.stringify(analyticsData));
-        // });
-
-
-}
-count();
+window.addEventListener("load", function() {
+    count();
+ });
 
 function init(){
     bloqueRGPD = document.querySelector('.cookieBox');
