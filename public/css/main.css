@@ -32,7 +32,7 @@ html {
 }
 
 body {
-	text-size-adjust: var(--all-width);
+	/*text-size-adjust: var(--all-width);*/
   -webkit-tap-highlight-color: #1b1b1b90;
 	width: auto;	
 /*	color:var(--dark);*/
@@ -41,7 +41,8 @@ body {
 	font-weight: 400;
 	font-size: 1rem;
 	font-optical-sizing: auto;
-    letter-spacing: .05ch;
+    text-size-adjust: auto;
+    /*letter-spacing: .05ch;*/
 }
 
 header {
@@ -104,10 +105,10 @@ h6 {
 }
 
 p {
+    width: auto;
     max-width: 75ch;
     margin: auto;
     margin-block: 1lh;
-
     text-align: justify;
     text-wrap: pretty;
     hyphenate-limit-chars: 7;
