@@ -190,6 +190,8 @@ a {
     position: relative;
     flex-direction: row-reverse;
     height: 50px;
+    max-width: 1600px;
+    margin: auto;
     border-bottom: 4px solid var(--light);
 }
 
@@ -331,7 +333,7 @@ main {
 /*    background: var(--background);*/
     padding-bottom: 30px;
     user-select: var(--hidden);
-    max-width: 1200px;
+    max-width: 1600px;
     margin: 0 auto;
     /*content-visibility: auto;*/
 }
