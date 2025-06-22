@@ -49,7 +49,7 @@ document.addEventListener('DOMContentLoaded', function () {
   init();
 });
 
-const url = `https://visits-christian-guardias-projects.vercel.app/`;    
+const url = `https://visits-christian-guardias-projects.vercel.app/count`;    
 const dominio = window.location.origin;
 let d = detectCookie("rgpdOK");
 // console.log(d);
