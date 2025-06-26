@@ -53,23 +53,23 @@ document.addEventListener('DOMContentLoaded', function () {
     // });
 
 // const url = `https://wvlhqwzk-5000.use2.devtunnels.ms/analytics`;
-const url = `https://visits-christian-guardias-projects.vercel.app/count`;    
-const dominio = window.location.origin;
-let d = detectCookie("rgpdOK");
+// const url = `https://visits-christian-guardias-projects.vercel.app/count`;    
+// const dominio = window.location.origin;
+// let d = detectCookie("rgpdOK");
 // console.log(d);
-function count() {
-    let analyticsData = {
-        id: 3,
-        count: 1,
-        domain: dominio,
-    };
+// function count() {
+//     let analyticsData = {
+//         id: 3,
+//         count: 1,
+//         domain: dominio,
+//     };
 
-    navigator.sendBeacon(url, JSON.stringify(analyticsData));   
-};
+//     navigator.sendBeacon(url, JSON.stringify(analyticsData));   
+// };
 
-window.addEventListener("load", function() {
-    count();
- });
+// window.addEventListener("load", function() {
+//     count();
+//  });
 
 function init(){
     bloqueRGPD = document.querySelector('.cookieBox');
