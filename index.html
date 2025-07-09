@@ -4,9 +4,9 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 
-	<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' https: 'unsafe-eval' blob:;
-	img-src 'self' https://*.googleapis.com https://*.gstatic.com *.google.com *.googleusercontent.com data:;
-	connect-src 'self' https://*.googleapis.com *.google.com https://*.gstatic.com data: blob:;
+	<meta http-equiv="Content-Security-Policy" content="default-src 'self'; https: 'unsafe-eval' blob:;
+	img-src 'self' https://*.googleapis.com https://*.gstatic.com https://*.google.com https://*.googleusercontent.com data:;
+	connect-src 'self' https://*.googleapis.com https://*.google.com https://*.gstatic.com data: blob:;
 	frame-src https://*.google.com https://*.crcvpanama.org;
 	style-src 'self' https://fonts.googleapis.com; worker-src blob:;"> 
 
@@ -16,7 +16,9 @@
 	<link rel="preconnect" href="/public/css/fonts.css" as="font" type="font/woff2">
 		<!-- Google tag (gtag.js) --> 
 	<!-- <script async src="https://www.googletagmanager.com/gtag/js?id=AW-11013564293"></script>
-	<script> window.dataLayer = window.dataLayer || []; function gtag(){dataLayer.push(arguments);} gtag('js', new Date()); gtag('config', 'AW-11013564293'); </script> -->
+	<script> window.dataLayer = window.dataLayer || []; function gtag(){dataLayer.push(arguments);} gtag('js', new Date()); gtag('config', 'AW-11013564293'); </script>
+	
+		 script-src 'self' 'nonce-{script value}' 'strict-dynamic' -->
 	<!-- Event snippet for Clic saliente conversion page --> 
 	<!-- <script> gtag('event', 'conversion', {'send_to': 'AW-11013564293/b_FCCKCSu8cZEIXP1oMp'}); </script> -->
 
