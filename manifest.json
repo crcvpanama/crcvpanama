@@ -4,8 +4,8 @@
     "name": "Centro de Rehabilitación de la Columna Vertebral",
     "short_name": "CRCVPanama",
 	"icons": [
-		{ "src": "\/favicons/crcvimg-192.png", "type": "image/png", "sizes": "192x192" },
-		{ "src": "\/favicons/crcvimg.png", "type": "image/png", "sizes": "512x512" }
+		{ "src": "\/favicons/crcvimg-192.png", "type": "image\/png", "sizes": "192x192" },
+		{ "src": "\/favicons/crcvimg.png", "type": "image\/png", "sizes": "512x512" }
 	],
 	"start_url": "/",
   	"background_color": "#ffffff",
