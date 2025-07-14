@@ -443,7 +443,7 @@ main {
 .aside-social-web {
     background: url('../img/webp/crcv.avif') center no-repeat;
     background-size: 100% 100%;
-/*    overflow: scroll;*/
+    /*overflow: scroll;*/
     /*scrollbar-width: none;
     -ms-overflow-style: none;
     max-height: 400px;
@@ -670,7 +670,7 @@ main {
 @keyframes alert {
     from {filter: drop-shadow(2px 2px 4px white);}
     25% {filter: drop-shadow(2px 2px 4px green);}
-    65% {filter: drop-shadow(2px 2px 4px green);}
+    65% {filter: drop-shadow(2px 3px 5px green);}
     to {filter: drop-shadow(2px 3px 5px white);}
 }
 
