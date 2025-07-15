@@ -250,9 +250,9 @@ function innerLists(a) {
 };
 
 const listPages = [`
-            <section class="service servicehidden page">
+            <section class="services servicehidden page">
             <h2>Servicios</h2>
-            <div id="services">
+            <div id="servicios">
                 <div class="img-container">
                     <div class="images">
                         <div class="slide-img">
