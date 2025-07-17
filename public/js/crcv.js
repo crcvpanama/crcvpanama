@@ -259,7 +259,7 @@ const listPages = [`
                         <h3>Descompresión espinal</h3>
                             <figure class="img--container">
                                 
-                                <img src="./public/img/webp/drx9000N.webp" alt="drx9000">
+                                <img src="./public/img/drx9000.avif" alt="drx9000">
                                 <figcaption class="img--caption">
                                 
                                     <p>Esta metodología se basa en la separación de las vértebras de forma dinámica y escalonada para permitir la rehidratación de la estructura discal afectada, ya sea si está deshidratada (desgaste de disco) o deformada (hernias de disco-abombamiento, protrusión, extrusión).</p>
@@ -309,7 +309,7 @@ const listPages = [`
                         <div class="slide-img">
                             <h3>Terapias físicas</h3>
                             <figure class="img--container">            
-                                <img src="./public/img/webp/tfN.webp" alt="Terapias">
+                                <img src="./public/img/terapiasfisicas.jpg" alt="Terapias Físicas">
                                 <figcaption class="img--caption">
                                     <p>TENS, US, láser, frío/calor-. Estas técnicas tienen la capacidad en conjunto con la descompresión espinal no quirúrgica de disminuir/distraer las estructuras irritadas que usualmente involucran el nervio, el músculo y la articulación (disco/faceta).</p>
                                     <p>TENS, siglas en inglés de la técnica de estimulación eléctrica transcutánea. Su aplicación puede proporcionar una rápida mejoría especialmente para todas las afecciones de dolor relacionadas con la tensión, favorece la circulación sanguínea y, por tanto, el suministro de oxígeno y nutrientes a la zona de tratamiento. De este modo, puede producirse una rápida reducción del dolor.</p>

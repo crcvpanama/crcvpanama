@@ -127,7 +127,7 @@ const images = [];
         if (document.readyState === "interactive") {
             // console.log(document.readyState);
             preload(
-                `public/img/DRX9000.avif`,
+                `public/img/drxnuevemil.avif`,
                 `public/img/svg/crcvlogo.svg`,
                 `public/img/svg/circle.svg`
             );
