@@ -259,7 +259,7 @@ const listPages = [`
                         <h3>Descompresión espinal</h3>
                             <figure class="img--container">
                                 
-                                <img src="./public/img/drx9000.avif" alt="drx9000">
+                                <img src="./public/img/drx9000.avif" alt="drx9000 descompresión espinal">
                                 <figcaption class="img--caption">
                                 
                                     <p>Esta metodología se basa en la separación de las vértebras de forma dinámica y escalonada para permitir la rehidratación de la estructura discal afectada, ya sea si está deshidratada (desgaste de disco) o deformada (hernias de disco-abombamiento, protrusión, extrusión).</p>
