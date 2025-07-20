@@ -656,26 +656,17 @@ main {
     right: 2%;
     cursor: pointer;
     z-index: 3000;
-    animation: alert 6.5s linear infinite;
+    animation: alert 6.5s linear infinite both;
     opacity: .8;
     transition: all .4s ease-in;
 }
 
 @keyframes alert {
-    from {filter: drop-shadow(2px 2px 4px white);}
-    25% {filter: drop-shadow(2px 2px 4px green);}
-    65% {filter: drop-shadow(2px 3px 5px green);}
-    to {filter: drop-shadow(2px 3px 5px white);}
-}
+    0% {filter: drop-shadow(2px 3px 3px white);}    
+    50% {filter: drop-shadow(2px 4px 6px green);}
+    100% {filter: drop-shadow(2px 3px 3px white);}
 
-/*@keyframes alert {
-	from {filter: drop-shadow(2px 2px 4px white);}
-	25% {filter: drop-shadow(2px 2px 4px green);}
-	45% {filter: drop-shadow(2px 2px 4px green);}
-	65% {filter: drop-shadow(3px 4px 6px green);}
-	85% {filter: drop-shadow(3px 4px 6px white);}
-	to {filter: drop-shadow(2px 3px 5px white);}
-}*/
+}
 
 .show {
     display: var(--show);
