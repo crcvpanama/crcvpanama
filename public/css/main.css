@@ -243,10 +243,10 @@ a {
 .nav-link::after {
 	position: absolute;
 	content: "";
-	z-index: -1;
+.nav-bar li:has(.active) {
+    z-index: -1;
 }
 
-.nav-bar li:has(.active) {
 	background: var(--backgroundtransparent);
 }
 
@@ -674,7 +674,7 @@ main {
 
 .whatsapp--numbers {
     display: var(--show);
-    position: sticky;
+    position: fixed;
     bottom: 3%;
     right: 15%;
     width: 60%;
@@ -836,7 +836,7 @@ footer {
 .foot-rights {
     /*text-align: center;*/
     /*margin:0 ;*/
-    /*color: var(--light);*/
+    color: var(--light);
     font-size: 0.6rem;
     line-height: 1.5;
     background: var(--gray-dark);
