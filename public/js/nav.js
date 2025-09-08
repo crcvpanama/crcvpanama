@@ -113,6 +113,7 @@ const images = [];
         logo.style.backgroundSize = 'contain';
         mainIMG.src = images[0].src;
         mainIMG.style.opacity = '1';
+        mainIMG.style.display = 'block';
         // loaderIMG.style.opacity = '0';
     };
 
