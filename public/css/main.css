@@ -52,7 +52,7 @@ header {
 h1 {
     margin-bottom: 20px;
     padding: 10px;
-    font-size: clamp(2.2rem, 3vw, 4rem);
+    font-size: clamp(2.5em, 3vw, 3.5em);
     font-weight: 900;
     letter-spacing: .5cap;
     line-height: 1.1;
@@ -67,9 +67,9 @@ h1 {
 h2 {
     margin-bottom: 20px;
     padding: 5px;
-    font-size: clamp(1.1rem, 3vw, 2.1rem);
+    font-size: clamp(2em, 3vw, 2.5em);
     font-weight: 900;
-    letter-spacing: .1cap;
+    /*letter-spacing: .1cap;*/
     line-height: 1.1;
     color: var(--gray-dark);
     text-align: center;
@@ -81,7 +81,7 @@ h2 {
 
 h3 {
     font-size: 2em;
-    letter-spacing: .1cap;
+    /*letter-spacing: .1cap;*/
     line-height: 1;
     font-weight: 700;
     text-align: center;
@@ -487,25 +487,25 @@ main {
 }
 
 .sobrenosotros {    
-    line-height: 1.5rem;
+    line-height: 1.5;
     padding: 0 10px;
     max-width: 1400px;
     margin: auto;
 }
 
-.sobrenosotros h2 {
-    width: auto;
+/*.sobrenosotros h2 {*/
+    /*width: auto;*/
 /*    text-align: initial;*/
-    text-align: center;
-    font-weight: 900;
+    /*text-align: center;*/
+    /*font-weight: 900;*/
 /*    margin: 0 0 0 30px;*/
-    margin-bottom:40px;
-    line-height: 1.2;
+    /*margin-bottom:40px;*/
+    /*line-height: 1.2;*/
 /*    line-height: 1;*/
-    letter-spacing: .01ch;
+    /*letter-spacing: .01ch;*/
 /*    text-transform: uppercase;*/
 /*    border: 1px solid red;*/
-}
+/*}*/
 
 /*.sobrenosotros h3 {
     font-size: 1.4rem;
