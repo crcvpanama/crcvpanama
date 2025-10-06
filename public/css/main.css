@@ -209,10 +209,6 @@ a {
     width: 109px;
 }
 
-.active {
-    color: white;
-}
-
 .nav-link, .nav-link--footer {
     display: flex;
     position: relative;
@@ -226,9 +222,14 @@ a {
     cursor: pointer;
     opacity: 1;
     text-decoration: var(--hidden);
-     color: var(--dark); 
+    color: var(--dark); 
     transition: .4s ease-in;
     z-index: 1;
+}
+
+.active {
+    color: #fefefee9;
+    background-color: var(--backgroundtransparent);
 }
 
 .nav-link:hover {

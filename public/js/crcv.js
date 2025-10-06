@@ -539,7 +539,7 @@ const listPages = [``,`
 
 const newDiv = document.createElement('div');
 
-function nDIv(a,b) {
+function nDIv() {
     navLinks.forEach((nav,index) => {
         nav.addEventListener('click', () => {
            if (index===0) {
@@ -552,10 +552,16 @@ function nDIv(a,b) {
                 newDiv.innerHTML = listPages[index];
                 pages.insertBefore(newDiv, pagesChild);
                 home.classList.remove('home-start');
-                nav.classList.remove('active');
-            }   
+                // nav.classList.remove('active');               
+            }
+                
+            for(let i=0;i<navLinks.length;i++){
+                navLinks[i].classList.remove('active');
+            }
+            nav.classList.add('active');
             
         })
+            
 
     })
 
