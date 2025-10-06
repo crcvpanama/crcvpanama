@@ -210,7 +210,7 @@ a {
 }
 
 .active {
-    color: var(--white);
+    color: white;
 }
 
 .nav-link, .nav-link--footer {
@@ -1323,6 +1323,33 @@ footer {
 
 
 /*FQS SECTION*/
+
+#buscador {
+    text-transform: lowercase;
+    border: none;
+    background: #36D1DC29;
+    padding: .4em;
+    border-radius: 5px;
+
+    &:focus {
+        border: none;
+    }
+
+    &:active {
+                border: none;
+            }
+
+    &:focus-visible {
+        outline: -webkit-focus-ring-color auto 1px;
+        outline: none;
+    }
+    &::placeholder {
+        color: #fefefee9;
+        text-align: right;
+    }
+
+}
+
 
 .FQs {    
     position: relative;

@@ -743,6 +743,32 @@ a {
 
 /*FQS SECTION*/
 
+#buscador {
+    text-transform: lowercase;
+    border: none;
+    background: #36D1DC29;
+    padding: .4em;
+    border-radius: 5px;
+
+    &:focus {
+        border: none;
+    }
+
+    &:active {
+                border: none;
+            }
+
+    &:focus-visible {
+        outline: -webkit-focus-ring-color auto 1px;
+        outline: none;
+    }
+    &::placeholder {
+        color: #fefefee9;
+        text-align: right;
+    }
+
+}
+
 .FQs {    
     position: relative;
     width: var(--all-width);
@@ -762,15 +788,17 @@ a {
 .FQs details {
     border-radius: 0.2rem;
     padding: 0.5rem;
+    /*transition: all 6s ease-in-out;*/
 }
 
-.FQs details > summary {
+.FQs details summary {
     font-weight: 900;
     color: var(--dark);
     width: var(--all-width);
     background-color: var(--hidden);
     text-align: left;
     padding: .4em;
+    transition: all .4s ease-in-out;
 }
 
 .FQs details > p {
@@ -780,6 +808,7 @@ a {
     padding: .7em;
     border-radius: 10px;
     margin: .3em 0;
+    /*transition: all 6s ease-in-out;*/
 }
 
 .img--caption p, details p {
@@ -791,7 +820,7 @@ a {
     align-items: start;
 }
 
-details > summary {
+details summary {
     display: var(--show);
     width: 100%;
     position: relative;
@@ -815,31 +844,35 @@ details > summary {
   border-radius: 5px;
 }
 
-details > summary::after {
+details summary::after {
     position: absolute;
     content: "+";
     z-index: -1;
-    right: 10px;
+    right: 0;
 }
 
-details > summary:hover {
+details summary:hover {
     color: var(--white);
     opacity: .9;
     cursor: pointer;
     box-shadow: inset -85.5em 0 0 0 #0052D4,inset 85.5em 0 0 0 #0052D4;
     padding: .2em;
     z-index: 1;
-    transition: all 0.3s ease-in-out;
+    transition: all .3s ease-in-out;
     border-radius: 10px;
 }
 
-details[open] > summary::after {
+details[open] {
+    transition: all .4s ease-in-out;
+}
+
+details[open] summary::after {
     display: inline-block;
     content: '-';
     margin-left: 1ch;
     font-size: 1.5em;
     font-weight: bold;
-    transition: 0.6s;
+    
   }
 
 /*END FQS SECTION*/

@@ -136,3 +136,15 @@ setTimeout(() => {
     socialWeb(socialNav[0]);
     socialWeb(socialNav[1]);
 }, 3000);
+
+
+const year = new Date().getFullYear();
+const initYear = year - 2005;
+const yyyy = document.querySelector('.yyyy');
+
+yyyy.append(initYear); 
+
+
+let date = document.querySelector('.date');
+
+date.append(year);

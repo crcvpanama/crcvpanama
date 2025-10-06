@@ -37,6 +37,8 @@
 
 	<link rel="stylesheet" type="text/css" href="../public/css/faq.css">
 	<script defer src="../public/js/pages.js"></script>
+
+    <script defer src="../public/js/search.js"></script>
 </head>
 <body>
 
@@ -76,10 +78,14 @@
             <div class="social--line"></div>
         </div>
     </header>
-<div class="mB pageA"></div>
+    <div class="mB pageA"></div>
 	   <section class="FQs fhidden page">
             <h2> Preguntas Frecuentes </h2>
             <div id="frequences">
+                <input type="text" id="buscador" placeholder="Escribe algo aquí..." />
+                <p>Texto buscado: <span id="resultado"></span></p>
+
+
                 <ul id="paragraph">
                     <li>
                         <details name="faq">
@@ -140,7 +146,7 @@
                     <li>
                         <details name="faq">
                         <summary>¿Cuántos años tienen en el mercado?</summary>
-                        <p>Nuestra fecha de apertura fue en 2005 (${initYear} años) a su servicio.</p>
+                        <p>Nuestra fecha de apertura fue en 2005 (<span class="yyyy"></span> años) a su servicio.</p>
                         </details>
                     </li>
 

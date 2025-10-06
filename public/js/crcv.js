@@ -1,3 +1,7 @@
+const year = new Date().getFullYear();
+const initYear = year - 2005;
+const yyyy = document.querySelector('.yyyy');
+
 const buttonParr = document.querySelectorAll(".button__parr");
 const parr = document.querySelectorAll(".diag__parr");
 
@@ -50,20 +54,6 @@ function socialWeb(a) {
 function showTest(a) {
     a.classList.add('show');
 };
-
-setTimeout(() => {
-    showTest(whatsAppWidget);
-    socialWeb(socialNav[0]);
-    socialWeb(socialNav[1]);
-}, 3000);
-
-
-const year = new Date().getFullYear();
-const initYear = year - 2005;
-const yyyy = document.querySelector('.yyyy');
-
-yyyy.append(initYear); 
-
 
 const navLinks = document.querySelectorAll('.nav-link');
 const navLinksFooter = document.querySelectorAll('.nav-link--footer');
@@ -249,7 +239,7 @@ function innerLists(a) {
     return ll.map(li => `<li>${li}</li>`).join(" ");
 };
 
-const listPages = [`
+const listPages = [``,`
             <section class="services servicehidden page">
             <h2>Servicios</h2>
             <div id="servicios">
@@ -550,59 +540,142 @@ const listPages = [`
 const newDiv = document.createElement('div');
 
 function nDIv(a,b) {
-    for(let j=0;j<navLinks.length;j++) {
-        if(a===home) {
+    navLinks.forEach((nav,index) => {
+        nav.addEventListener('click', () => {
+           if (index===0) {
 
-            home.classList.add('home-start');
-            newDiv.innerHTML = "";
-            navLinks[j].classList.remove('active');
-            navLinks[b].classList.add('active');
-         } else {
-            newDiv.innerHTML = listPages[a];
-            // newDiv.innerHTML = frames[a];
+                home.classList.add('home-start');
+                newDiv.innerHTML = "";
+                nav.classList.add('active');
 
-            pages.insertBefore(newDiv, pagesChild);
-            home.classList.remove('home-start');
-            navLinks[j].classList.remove('active');
-            navLinks[b].classList.add('active');
-        }
-    }
-};
-
-function nav(a) {
-    for(let i=0;i<a.length;i++){
-        a[i].addEventListener('click', () => {
-            switch (i) {
-                case 0:
-                    nDIv(home,0);
-                break;
-                case 1:
-                    nDIv(0,1);
-                break;
-                case 2:
-                    nDIv(1,2);
-                  break;
-                case 3:
-                    nDIv(2,3);
-                  break;
-                case 4:
-                    nDIv(3,4);
-                  break;
-                case 5:
-                    nDIv(4,5);
-                  break;
-            }
+            } else {
+                newDiv.innerHTML = listPages[index];
+                pages.insertBefore(newDiv, pagesChild);
+                home.classList.remove('home-start');
+                nav.classList.remove('active');
+            }   
+            
         })
-    }
+
+    })
+
+
 };
 
-setTimeout(function() {
-    nav(navLinks);
-    nav(navLinksFooter);
+// function nav(a) {
+//     for(let i=0;i<a.length;i++){
+//         a[i].addEventListener('click', () => {
+//             switch (i) {
+//                 case 0:
+                    nDIv();
+                // break;
+                // case 1:
+                    // nDIv(0,1);
+                // break;
+                // case 2:
+                    // nDIv(1,2);
+                //   break;
+                // case 3:
+                    // nDIv(2,3);
+                //   break;
+                // case 4:
+                    // nDIv(3,4);
+                //   break;
+                // case 5:
+                    // nDIv(4,5);
+//                   break;
+//             }
+//         })
+//     }
+// };
+
+// setTimeout(function() {
+    // nav(navLinks);
+    // nav(navLinksFooter);
     // showScroll();
-}, 2000);
+// }, 2000);
 
 
 let date = document.querySelector('.date');
 
 date.append(year);
+
+
+
+let input = document.getElementById('buscador');
+let resultado = document.getElementById('resultado');
+
+
+// Escuchamos el evento 'input' para capturar cada cambio
+// console.log(contenido)
+// const rr=contenido.textContent.toUpperCase();
+var accent_map = {'á':'a', 'é':'e', 'è':'e', 'í':'i','ó':'o','ú':'u','Á':'a', 'É':'e', 'è':'e', 'Í':'i','Ó':'o','Ú':'u'};
+function accent_fold (s) {
+  if (!s) { return ''; }
+  var ret = '';
+  for (var i = 0; i < s.length; i++) {
+    ret += accent_map[s.charAt(i)] || s.charAt(i);
+  }
+  return ret;
+};
+
+
+
+function searchW() {
+    let contenido = innerLists(listFQs[0]);
+
+  // contenido.forEach((text,index) => {
+    // console.log(text);
+    // const t = text.outerText.toLowerCase();
+    
+
+    input.addEventListener('input', (e) => {
+
+      // let tt = e.target.value.toUpperCase();
+      // console.log(t);
+      let ii = accent_fold(e.target.value);
+      let tt = accent_fold(t);
+
+      // console.log(tt);
+
+      if (t.indexOf(ii.toLowerCase()) > -1) {
+        text.style.display = "";
+            resultado.innerHTML = `<section>
+                                      <h5>${text.outerText}</h5> 
+
+                                      <p>${text.children[1].innerHTML}</p>
+                                  </section>`;
+      } else {
+        text.style.display = "none";
+      }
+      
+        // if(tt.includes(ii)) {
+        //     resultado.innerHTML = `<section>
+        //                               <h5>${text.outerText}</h5> 
+
+        //                               <p>${text.children[1].innerHTML}</p>
+        //                           </section>`;
+        // }
+    // }
+    });
+  // });
+}
+
+// searchW();
+
+// if(document.readyState === "interactive") {
+document.addEventListener('readystatechange', (e) => {
+
+    if(document.readyState === "complete") {
+        setTimeout(() => {
+
+            showTest(whatsAppWidget);
+            socialWeb(socialNav[0]);
+            socialWeb(socialNav[1]);
+
+        }, 3000);
+    
+    yyyy.append(initYear); 
+    }
+});
+// }
