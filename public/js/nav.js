@@ -136,6 +136,35 @@ const images = [];
         
 (() => {
 
+    function preload() {
+        for (var i = 0; i < arguments.length; i++) {
+            images[i] = new Image();
+            images[i].src = preload.arguments[i];
+        };
+    };
+
+    function IMGs() {
+        // console.log(document.readyState);
+        document.addEventListener("DOMContentLoaded", (event) => {
+            // console.log(event.target.readyState);
+            if (event.target.readyState === "interactive") {
+                // console.log(document.readyState);
+                preload(
+                    `public/img/drxnuevemil.avif`,
+                    `public/img/svg/crcvlogo.svg`,
+                    `public/img/svg/circle.svg`
+                );
+
+                loaderIMG.src = 'public/img/svg/circle.svg';
+                loaderIMG.setAttribute('alt', 'load img');
+                loaderIMG.setAttribute('id', 'load-img');
+                loaderIMG.style.objectFit = 'contain';
+                mainContent.appendChild(loaderIMG);
+            };
+        });
+    };
+    IMGs();
+
     function loadIMGs() {
         logo.style.background = `url('public/img/svg/crcvlogo.svg') center no-repeat`;
         logo.style.backgroundSize = 'contain';
@@ -145,44 +174,22 @@ const images = [];
         // loaderIMG.style.opacity = '0';
     };
 
-    function preload() {
-        for (var i = 0; i < arguments.length; i++) {
-            images[i] = new Image();
-            images[i].src = preload.arguments[i];
-        };
-    };
-
-    function IMGs() {
-        if (document.readyState === "interactive") {
-            // console.log(document.readyState);
-            preload(
-                `public/img/drxnuevemil.avif`,
-                `public/img/svg/crcvlogo.svg`,
-                `public/img/svg/circle.svg`
-            );
-
-            loaderIMG.src = 'public/img/svg/circle.svg';
-            loaderIMG.setAttribute('alt', 'load img');
-            loaderIMG.style.objectFit = 'contain';
-            mainContent.appendChild(loaderIMG);
-        };
-    };
-    IMGs();
-
-    window.addEventListener("load", (event) => {
+   
+    document.addEventListener("readystatechange", (event) => {
      // document.addEventListener("readystatechange", async (event) => {
-        // console.log(event.target.readyState);
-        // if(event.target.readyState === "complete") {  
+        // console.log(event.target.readyState === "complete");
+        if(event.target.readyState === "complete") {  
+            // console.log(document.readyState);
                  
-            loaderIMG.remove();
-
-
-            loadIMGs();  
-        // }
+            
+            loadIMGs(); 
+            
+            loaderIMG.remove(); 
+        }
     });
 
 })();
-
+// console.log(document.readyState);
 // Add an event listener for the 'DOMContentLoaded' event
 // document.addEventListener('DOMContentLoaded', function () {
 //   console.log('The DOM is fully loaded and parsed.');
