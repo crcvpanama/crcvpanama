@@ -239,6 +239,30 @@ function innerLists(a) {
     return ll.map(li => `<li>${li}</li>`).join(" ");
 };
 
+// const s = document.getElementById('search');
+// const y = s.querySelector('.item:first-child');
+// console.log(s)
+// const newDivForInput = document.createElement('div');
+const searchDiv = document.getElementById('search');
+const newInput = document.createElement('input');
+const newSpan = document.createElement('span');
+
+
+// newDivForInput.setAttribute('id', 'content-input');
+newInput.setAttribute('type', 'text');
+newInput.setAttribute('id', 'buscador');
+newInput.setAttribute('placeholder', 'Escribe algo aquí...');
+newSpan.setAttribute('id', 'resultado');
+
+// newDivForInput.innerHTML = `<input type="text" id="buscador" placeholder="Escribe algo aquí..." />`;
+// newDivForInput.setAttribute('id', 'buscador');
+// newDivForInput.appendChild(newInput);
+// console.log(newDivForInput);
+// let resultado = document.getElementById('resultado');
+
+// s.insertBefore(newInput, y);
+// console.log(inertInput)
+
 const listPages = [``,`
             <section class="services servicehidden page">
             <h2>Servicios</h2>
@@ -532,6 +556,13 @@ const listPages = [``,`
             </div>
             </section>`
 ];
+
+searchDiv.appendChild(newInput);
+searchDiv.appendChild(newSpan);
+
+
+
+
  // style="width:100%; height: 100lvh; scrollbar-width: none;"
  // style="width:100%; height: 100lvh; scrollbar-width: none;"
  // style="width:100%; height: 100lvh; scrollbar-width: none;"
@@ -562,18 +593,18 @@ function nDIv() {
             
         })
             
-
     })
-
-
 };
+
+nDIv();
+
 
 // function nav(a) {
 //     for(let i=0;i<a.length;i++){
 //         a[i].addEventListener('click', () => {
 //             switch (i) {
 //                 case 0:
-                    nDIv();
+                    // nDIv();
                 // break;
                 // case 1:
                     // nDIv(0,1);
@@ -608,8 +639,10 @@ date.append(year);
 
 
 
+
 let input = document.getElementById('buscador');
 let resultado = document.getElementById('resultado');
+// console.log(resultado)
 
 
 // Escuchamos el evento 'input' para capturar cada cambio
@@ -628,32 +661,34 @@ function accent_fold (s) {
 
 
 function searchW() {
-    let contenido = innerLists(listFQs[0]);
 
-  // contenido.forEach((text,index) => {
-    // console.log(text);
+    let contenido = Object.values(listFQs[0]);
+    let f = document.getElementsByName("faq");
+    // console.log(Object.values(listFQs[0]));
+    contenido.forEach((text,index) => {
+    // console.log(text)
     // const t = text.outerText.toLowerCase();
     
 
     input.addEventListener('input', (e) => {
-
-      // let tt = e.target.value.toUpperCase();
+// console.log(e.target.value);
+      let tt = e.target.value;
       // console.log(t);
-      let ii = accent_fold(e.target.value);
-      let tt = accent_fold(t);
+      let ii = accent_fold(tt);
+      let t = accent_fold(text.toLowerCase());
 
-      // console.log(tt);
+      // console.log(t);
 
       if (t.indexOf(ii.toLowerCase()) > -1) {
-        text.style.display = "";
+        // text.setAttribute('id', 'frecuentes');
+        // f.style.display = "";
             resultado.innerHTML = `<section>
-                                      <h5>${text.outerText}</h5> 
-
-                                      <p>${text.children[1].innerHTML}</p>
+                                      <p>${text}</p>
                                   </section>`;
-      } else {
-        text.style.display = "none";
-      }
+      } 
+      // else {
+      //   f.style.display = "none";
+      // }
       
         // if(tt.includes(ii)) {
         //     resultado.innerHTML = `<section>
@@ -664,10 +699,10 @@ function searchW() {
         // }
     // }
     });
-  // });
+  });
 }
 
-// searchW();
+searchW();
 
 // if(document.readyState === "interactive") {
 document.addEventListener('readystatechange', (e) => {

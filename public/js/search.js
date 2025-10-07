@@ -36,7 +36,22 @@ function searchW() {
       let ii = accent_fold(e.target.value);
       let tt = accent_fold(t);
 
-      // console.log(tt);
+      // console.log(tt.charAt(0,-1));
+      // console.log(tt.length)
+
+      function words(a) {
+        
+       // while (tt.charAt(0,-1)) {
+                              //  }
+        let b = [];
+        for (let i = 0; i < tt.length; i++) {
+            c = tt.substring(i);
+            b.push(c);
+          }
+          return b;
+      }
+
+    
 
       if (t.indexOf(ii.toLowerCase()) > -1) {
         text.style.display = "";

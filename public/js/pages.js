@@ -45,10 +45,11 @@ function detectCookie(cname) {
 
 
 // window.addEventListener('load',(event)=>{
-document.addEventListener('DOMContentLoaded', function () {
-  init();
-  // Your DOM manipulation or initialization code here
-});
+
+
+init();
+
+// ccInit();
 
     // });
 
@@ -71,10 +72,10 @@ document.addEventListener('DOMContentLoaded', function () {
 //     count();
 //  });
 
-function init(){
+async function init(){
     bloqueRGPD = document.querySelector('.cookieBox');
     if (localStorage.acceptedCookies != 'true') {
-        bloqueRGPD.style.display = 'inline-block';    
+        bloqueRGPD.style.display = 'inline-block';
     }
 
     if(detectCookie("rgpdOK")){
@@ -88,7 +89,6 @@ function init(){
             //     domain: dominio,
             // }));
             setCookie("rgpdOK",1,365);
-
         });
     }
 };
@@ -139,10 +139,10 @@ setTimeout(() => {
 
 
 const year = new Date().getFullYear();
-const initYear = year - 2005;
-const yyyy = document.querySelector('.yyyy');
+// const initYear = year - 2005;
+// const yyyy = document.querySelector('.yyyy');
 
-yyyy.append(initYear); 
+// yyyy.append(initYear); 
 
 
 let date = document.querySelector('.date');

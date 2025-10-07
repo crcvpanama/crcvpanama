@@ -126,6 +126,11 @@ button:focus {
 
 a {
     text-decoration: var(--hidden);
+    color: #2b2b2b;
+
+    &:hover{
+        color: #2b2b2be5;
+    }
 }
 
 /*header {
@@ -724,6 +729,14 @@ main {
 
 .whatsapp--widget:hover {
 	opacity: 1;
+}
+
+#search {
+    display: flex;
+    flex-direction: column;
+    text-align: right;
+    justify-content: right;
+    padding: 0 1em;
 }
 
 footer {
@@ -1326,11 +1339,14 @@ footer {
 /*FQS SECTION*/
 
 #buscador {
-    text-transform: lowercase;
+    /*text-transform: lowercase;*/
     border: none;
     background: #36D1DC29;
     padding: .4em;
     border-radius: 5px;
+    max-width: 250px;
+    margin-left: auto;
+    padding: .2rem;
 
     &:focus {
         border: none;

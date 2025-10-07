@@ -24,7 +24,15 @@ function getCookie(cname) {
 };
 
 function removeCookie(cname){
+    // let decodedCookie = decodeURIComponent(document.cookie);
+
     setCookie(cname,"",-1);
+    // decodedCookie.split(";").forEach((cookie) => {
+    //     console.log(cookie);
+    // const nombre = cookie.split("=")[0].trim();
+    // console.log(nombre);
+    // setCookie(nombre," ", -1);
+    // });
 };
 
 function detectCookie(cname) {
@@ -67,6 +75,21 @@ document.addEventListener('DOMContentLoaded', function () {
 //     count();
 //  });
 
+
+document.querySelector(".cancelBotonRGPD").addEventListener("click", () => {
+    
+    bloqueRGPD.parentNode.removeChild(bloqueRGPD);
+    
+//     window.addEventListener('beforeunload', (event) => {
+//         event.preventDefault();
+//         event.returnValue = ''; 
+//         localStorage.acceptedCookies = 'false';
+//     })
+//     window.addEventListener('unload', function (event) {
+    
+//     });
+});
+
 function init(){
     bloqueRGPD = document.querySelector('.cookieBox');
     if (localStorage.acceptedCookies != 'true') {
@@ -81,7 +104,7 @@ function init(){
 
             setCookie("rgpdOK",1,365);
         });
-    }
+    };
 };
 
 function eliminarBloqueRGPD(){
