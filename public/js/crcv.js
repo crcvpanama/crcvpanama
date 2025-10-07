@@ -560,9 +560,6 @@ const listPages = [``,`
 searchDiv.appendChild(newInput);
 searchDiv.appendChild(newSpan);
 
-
-
-
  // style="width:100%; height: 100lvh; scrollbar-width: none;"
  // style="width:100%; height: 100lvh; scrollbar-width: none;"
  // style="width:100%; height: 100lvh; scrollbar-width: none;"

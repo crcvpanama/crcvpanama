@@ -57,20 +57,23 @@ document.addEventListener('DOMContentLoaded', function () {
   init();
 });
 
-// const url = `https://visits-christian-guardias-projects.vercel.app/count`;    
-// const dominio = window.location.origin;
-// let d = detectCookie("rgpdOK");
-// console.log(d);
-// function count() {
-//     let analyticsData = {
-//         id: 3,
-//         count: 1,
-//         domain: dominio,
-//     };
+const url = `https://visits-christian-guardias-projects.vercel.app/count`;    
+const dominio = window.location.origin;
+let d = detectCookie("rgpdOK");
 
-//     navigator.sendBeacon(url, JSON.stringify(analyticsData));   
-// };
+function count() {
 
+    let analyticsData = {
+        id: 3,
+        count: 1,
+        domain: dominio,
+    };
+
+    navigator.sendBeacon(url, JSON.stringify(analyticsData));   
+
+};
+
+if(d) count();
 // window.addEventListener("load", function() {
 //     count();
 //  });
@@ -83,7 +86,7 @@ document.querySelector(".cancelBotonRGPD").addEventListener("click", () => {
 //     window.addEventListener('beforeunload', (event) => {
 //         event.preventDefault();
 //         event.returnValue = ''; 
-//         localStorage.acceptedCookies = 'false';
+        localStorage.acceptedCookies = 'false';
 //     })
 //     window.addEventListener('unload', function (event) {
     
@@ -103,6 +106,8 @@ function init(){
             eliminarBloqueRGPD();
 
             setCookie("rgpdOK",1,365);
+
+            count();
         });
     };
 };
