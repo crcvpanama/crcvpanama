@@ -393,7 +393,7 @@ main {
     height: 400px;
      /*aspect-ratio: 42 / 62;*/
     overflow: hidden;
-    transition: all 3s ease-in-out;
+    transition: all 1s ease-in-out;
     mask-image: linear-gradient(to top, transparent, rgb(0 0 0 / 1) 40%);
     @starting-style {
         opacity: 0;
@@ -708,10 +708,6 @@ main {
     animation: showW .6s linear forwards;
 }
 
-.hide__parr {
-	display: var(--hidden);
-}
-
 @keyframes showW {
 	from {opacity: .1;}
 	/*45% {opacity: .6;}
@@ -739,12 +735,57 @@ main {
 	opacity: 1;
 }
 
-#search {
+#search-container {
+    position: fixed;
+    /*height: 100vh;*/
+    bottom: 3%;
+    left: 0;
+    z-index: 3000;
+    /*width: 100%;*/
+}
+
+#btn-search {
+    /*display: flex;*/
+    position: sticky;
+    writing-mode: vertical-rl;
+    text-orientation: upright;
+    border: none;
+    padding: 8px;
+    border-radius: 4px;
+    z-index: 3000;
+    opacity: .7;
+
+    &:active {
+        opacity: 1;
+    }
+}
+
+.search-modal {
     display: flex;
+    position: absolute;
+    bottom: 0;
+    left: 0;
     flex-direction: column;
     text-align: right;
     justify-content: right;
-    padding: 0 1em;
+    padding: 3em;
+    border-radius: 4px;
+    background: var(--principal-color);
+    transition: all .6s ease-in-out;
+    opacity: .9;
+    /*width: 100%;*/
+    @starting-style {
+        opacity: 0;
+    }
+    h6 a {
+        color: #fefefe;
+        border-bottom: 2px solid #fefefee9;
+    }
+}
+
+.hide__parr {
+    display: var(--hidden);
+
 }
 
 footer {
@@ -1357,16 +1398,17 @@ footer {
     overflow: hidden;
     white-space: nowrap;
     justify-content: right; 
+    color: #fefefe;
     /*text-align: left;*/
     /*scrollbar-width: none;*/
     /*border-right: 2px solid #000;*/
     /*animation: typing 4s steps(30, end) alternate forwards, blink 0.5s step-end infinite;*/
     height: fit-content;
     details, p {
+        color:#fafafa;
         overflow: scroll;
         scrollbar-width: none;
     }
-
     summary {
         border-radius: 0;
         overflow: scroll;
@@ -1375,7 +1417,6 @@ footer {
         max-width: fit-content;
     }
 }
-
 
 @keyframes typing {
   from { width: 0;border-right: 2px solid #000; }
@@ -1822,5 +1863,14 @@ details[open] > summary::after {
 		margin: 0 auto;
 		justify-content: center;
 	}
+
+    #search-container {
+        width: 100%;
+    }
+
+    .search-modal {
+        width: 100%;
+    }
+
 
 }

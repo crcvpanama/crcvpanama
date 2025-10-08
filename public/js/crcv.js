@@ -8,6 +8,9 @@ const parr = document.querySelectorAll(".diag__parr");
 let whatsAppWidget = document.querySelector(".whatsapp--widget");
 let whatsAppNumbers = document.querySelector(".whatsapp--numbers");
 
+let searchBTN = document.querySelector("#btn-search");
+let searchModal = document.querySelector("#search");
+
 function nums(a,b) {
     for(let i= 0;i<buttonParr.length;i++){
         a[i].addEventListener('click', () => {
@@ -18,9 +21,16 @@ function nums(a,b) {
 
 nums(buttonParr,parr);
 
-whatsAppWidget.addEventListener('click', () => {
-    whatsAppNumbers.classList.toggle('hide__parr');
-});
+function hideElement(a,b) {
+    a.addEventListener('click', () => {
+        b.classList.toggle('hide__parr');
+    });
+};
+
+
+hideElement(whatsAppWidget,whatsAppNumbers);
+hideElement(searchBTN,searchModal);
+
 
 const socialNav = document.querySelectorAll('.social--line');
 
