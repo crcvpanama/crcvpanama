@@ -1352,20 +1352,20 @@ footer {
     flex-direction: row;
     flex-wrap: nowrap;
     max-width: fit-content;
-    height: fit-content;
+    height: 5px;
     overflow: hidden;
     white-space: nowrap;
     justify-content: left; 
     text-align: right;
-    border-right: 2px solid #000;
-    animation: typing 4s steps(30, start) forwards, blink 0.5s step-end infinite;
+    /*border-right: 2px solid #000;*/
+    animation: typing 4s steps(30, end) alternate forwards, blink 0.5s step-end infinite;
     height: fit-content;
 }
 
 
 @keyframes typing {
-  from { width: 0; }
-  to { width: 100%; }
+  from { width: 0;border-right: 2px solid #000; }
+  to { width: 100%;border-right: none; }
 }
 
 @keyframes blink {
@@ -1502,6 +1502,7 @@ details[open] > summary::after {
   	font-size: 1.5em;
 	font-weight: bold;
   	transition: 0.6s;
+    border-right: none;
 }
 
 /*END FQS SECTION*/
