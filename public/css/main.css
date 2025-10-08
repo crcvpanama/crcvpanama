@@ -1352,11 +1352,13 @@ footer {
     flex-direction: row;
     flex-wrap: nowrap;
     max-width: fit-content;
+    padding: 0 10px;
     height: 5px;
-    overflow: hidden;
+    overflow: scroll;
     white-space: nowrap;
     justify-content: left; 
     text-align: right;
+    scrollbar-width: none;
     /*border-right: 2px solid #000;*/
     animation: typing 4s steps(30, end) alternate forwards, blink 0.5s step-end infinite;
     height: fit-content;
