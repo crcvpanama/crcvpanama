@@ -58,16 +58,8 @@ function showTest(a) {
 const navLinks = document.querySelectorAll('.nav-link');
 const navLinksFooter = document.querySelectorAll('.nav-link--footer');
 const home = document.querySelector('.home-start');
-// const listPages = document.getElementsByClassName('page');
-// console.log(listPages);
 const pages = document.querySelector('.pageA');
 const pagesChild = pages.querySelector('.item:first-child');
-// const frames = [
-//     `<iframe src='./services.html' frameborder="0"></iframe>`,
-//     `<iframe src='./diagnosticos.html' frameborder="0"></iframe>`,
-//     `<iframe src='./contacto.html' frameborder="0"></iframe>`,
-//     `<iframe src='./testimonios.html' frameborder="0"></iframe>`,
-//     `<iframe src='./fqs.html' frameborder="0"></iframe>`
 
 const lists = [
     {
@@ -560,11 +552,6 @@ const listPages = [``,`
 searchDiv.appendChild(newInput);
 searchDiv.appendChild(newSpan);
 
- // style="width:100%; height: 100lvh; scrollbar-width: none;"
- // style="width:100%; height: 100lvh; scrollbar-width: none;"
- // style="width:100%; height: 100lvh; scrollbar-width: none;"
-// console.log(frames);
-
 const newDiv = document.createElement('div');
 
 function nDIv() {
@@ -639,12 +626,7 @@ date.append(year);
 
 let input = document.getElementById('buscador');
 let resultado = document.getElementById('resultado');
-// console.log(resultado)
 
-
-// Escuchamos el evento 'input' para capturar cada cambio
-// console.log(contenido)
-// const rr=contenido.textContent.toUpperCase();
 var accent_map = {'á':'a', 'é':'e', 'è':'e', 'í':'i','ó':'o','ú':'u','Á':'a', 'É':'e', 'è':'e', 'Í':'i','Ó':'o','Ú':'u'};
 function accent_fold (s) {
   if (!s) { return ''; }
@@ -657,23 +639,7 @@ function accent_fold (s) {
 
 function detectWord(ca) {
     let g = [];
-    // let name = cname + "=";
-    // let decodedCookie = decodeURIComponent(document.cookie);
-    // let ca = decodedCookie.split(';');
-    // for(let i = 0; i < ca.length; i++) {
-    console.log(ca)
     ca.split('').map((t,index) => {
-        // let r = setTimeout(t, 3000);
-        // let c = t;
-        // console.log(t);
-        // while (c.charAt(0) == ' ') {
-            // c = c.substring(1);
-            // console.log(c);
-        // }
-        // let nW = `<p>${t}</p>`;
-        // let nW = t;
-
-
         g.push(t);
         // if (c.indexOf(ca) == 0 && (ca.length != c.length))  {
             // return t;
@@ -685,49 +651,22 @@ function detectWord(ca) {
     return resultado.innerHTML = `<section>
                                       <span>${g.join('')}</span>
                                   </section>`;
-    // return g;
 };
-
-
-// let contenido = Object.values(listFQs[0]);
-// detectCookie(document.cookie);
-
-// console.log(detectCookie(document.cookie));
 
 
 function searchW() {
 
     let contenido = Object.values(listFQs[0]);
-    // let contenido = listFQs[0];
     let f = document.getElementsByName("faq");
-    // console.log(Object.values(listFQs[0]));
     contenido.forEach((text,index) => {
 
-        
-    // console.log(text)
-
-    // const t = text.outerText.toLowerCase();
-    
-
     input.addEventListener('input', (e) => {
-// console.log(e.target.value);
       let tt = e.target.value;
-      // console.log(t);
       let ii = accent_fold(tt);
       let t = accent_fold(text.toLowerCase());
 
-      // console.log(t);
-      // detectCookie(text)
-
       if (t.indexOf(ii.toLowerCase()) > -1) {
-        // console.log(text);
-        // text.setAttribute('id', 'frecuentes');
-        // f.style.display = "";
         detectWord(text);
-        // console.log(text.textContent)
-            // resultado.innerHTML = `<section>
-            //                           <p>${l}</p>
-            //                       </section>`;
       } 
       // else {
       //   f.style.display = "none";
@@ -747,7 +686,6 @@ function searchW() {
 
 searchW();
 
-// if(document.readyState === "interactive") {
 document.addEventListener('readystatechange', (e) => {
 
     if(document.readyState === "complete") {
@@ -759,7 +697,6 @@ document.addEventListener('readystatechange', (e) => {
 
         }, 3000);
     
-    yyyy.append(initYear); 
+        yyyy.append(initYear); 
     }
 });
-// }
