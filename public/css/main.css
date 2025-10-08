@@ -1351,17 +1351,29 @@ footer {
     position: relative;
     flex-direction: row;
     flex-wrap: nowrap;
-    max-width: fit-content;
+    width: 100%;
     padding: 0 10px;
     height: 5px;
-    overflow: scroll;
+    overflow: hidden;
     white-space: nowrap;
     justify-content: left; 
-    text-align: right;
-    scrollbar-width: none;
+    /*text-align: left;*/
+    /*scrollbar-width: none;*/
     /*border-right: 2px solid #000;*/
-    animation: typing 4s steps(30, end) alternate forwards, blink 0.5s step-end infinite;
+    /*animation: typing 4s steps(30, end) alternate forwards, blink 0.5s step-end infinite;*/
     height: fit-content;
+    details, p {
+        summary {
+            border-radius: 0;
+            overflow: scroll;
+            scrollbar-width: none;
+            animation: typing 4s steps(30, start), blink 0.5s step-end infinite;
+            max-width: fit-content;
+        }
+        /*height: fit-content;*/
+        overflow: scroll;
+        scrollbar-width: none;
+    }
 }
 
 
