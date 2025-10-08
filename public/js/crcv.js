@@ -638,14 +638,14 @@ function accent_fold (s) {
 };
 
 function detectWord(ca) {
-    let g = [];
-    ca.split('').map((t,index) => {
-        g.push(t);
+    // let g = [];
+    let g = ca.split('').map((t,index) => {
+        // g.push(t);
         // if (c.indexOf(ca) == 0 && (ca.length != c.length))  {
             // return t;
         // }
     // }
-    // return false;
+        return t;
     })
 
     return resultado.innerHTML = `<section>
