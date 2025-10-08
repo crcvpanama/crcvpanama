@@ -1346,6 +1346,33 @@ footer {
 
 /*FQS SECTION*/
 
+#resultado span {
+    display: flex;
+    position: relative;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    max-width: fit-content;
+    height: fit-content;
+    overflow: hidden;
+    white-space: nowrap;
+    justify-content: left; 
+    text-align: right;
+    border-right: 2px solid #000;
+    animation: typing 4s steps(30, start) forwards, blink 0.5s step-end infinite;
+    height: fit-content;
+}
+
+
+@keyframes typing {
+  from { width: 0; }
+  to { width: 100%; }
+}
+
+@keyframes blink {
+  from, to { border-color: transparent; }
+  50% { border-color: black; }
+}
+
 #buscador {
     /*text-transform: lowercase;*/
     border: none;
@@ -1425,7 +1452,7 @@ footer {
 }
 
 details > summary {
-	display: var(--show);
+	display: flex;
 	width: 100%;
 	position: relative;
 	background-color: #0052D409;
@@ -1449,10 +1476,12 @@ details > summary {
 }
 
 details > summary::after {
-	position: absolute;
+	position: relative;
 	content: "+";
 	z-index: -1;
-	right: 10px;
+	right: 0;
+    margin-left: 1ch;
+
 }
 
 details > summary:hover {

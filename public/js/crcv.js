@@ -655,15 +655,57 @@ function accent_fold (s) {
   return ret;
 };
 
+function detectWord(ca) {
+    let g = [];
+    // let name = cname + "=";
+    // let decodedCookie = decodeURIComponent(document.cookie);
+    // let ca = decodedCookie.split(';');
+    // for(let i = 0; i < ca.length; i++) {
+    console.log(ca)
+    ca.split('').map((t,index) => {
+        // let r = setTimeout(t, 3000);
+        // let c = t;
+        // console.log(t);
+        // while (c.charAt(0) == ' ') {
+            // c = c.substring(1);
+            // console.log(c);
+        // }
+        // let nW = `<p>${t}</p>`;
+        // let nW = t;
+
+
+        g.push(t);
+        // if (c.indexOf(ca) == 0 && (ca.length != c.length))  {
+            // return t;
+        // }
+    // }
+    // return false;
+    })
+
+    return resultado.innerHTML = `<section>
+                                      <span>${g.join('')}</span>
+                                  </section>`;
+    // return g;
+};
+
+
+// let contenido = Object.values(listFQs[0]);
+// detectCookie(document.cookie);
+
+// console.log(detectCookie(document.cookie));
 
 
 function searchW() {
 
     let contenido = Object.values(listFQs[0]);
+    // let contenido = listFQs[0];
     let f = document.getElementsByName("faq");
     // console.log(Object.values(listFQs[0]));
     contenido.forEach((text,index) => {
+
+        
     // console.log(text)
+
     // const t = text.outerText.toLowerCase();
     
 
@@ -675,13 +717,17 @@ function searchW() {
       let t = accent_fold(text.toLowerCase());
 
       // console.log(t);
+      // detectCookie(text)
 
       if (t.indexOf(ii.toLowerCase()) > -1) {
+        // console.log(text);
         // text.setAttribute('id', 'frecuentes');
         // f.style.display = "";
-            resultado.innerHTML = `<section>
-                                      <p>${text}</p>
-                                  </section>`;
+        detectWord(text);
+        // console.log(text.textContent)
+            // resultado.innerHTML = `<section>
+            //                           <p>${l}</p>
+            //                       </section>`;
       } 
       // else {
       //   f.style.display = "none";

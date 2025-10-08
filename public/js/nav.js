@@ -136,6 +136,16 @@ const images = [];
         
 (() => {
 
+     function loadIMGs() {
+        logo.style.background = `url('public/img/svg/crcvlogo.svg') center no-repeat`;
+        logo.style.backgroundSize = 'contain';
+        mainIMG.src = images[0].src;
+        mainIMG.style.opacity = '1';
+        mainIMG.style.display = 'block';
+        // loaderIMG.style.opacity = '0';
+    };
+
+
     function preload() {
         for (var i = 0; i < arguments.length; i++) {
             images[i] = new Image();
@@ -165,15 +175,7 @@ const images = [];
     };
     IMGs();
 
-    function loadIMGs() {
-        logo.style.background = `url('public/img/svg/crcvlogo.svg') center no-repeat`;
-        logo.style.backgroundSize = 'contain';
-        mainIMG.src = images[0].src;
-        mainIMG.style.opacity = '1';
-        mainIMG.style.display = 'block';
-        // loaderIMG.style.opacity = '0';
-    };
-
+   
    
     document.addEventListener("readystatechange", (event) => {
      // document.addEventListener("readystatechange", async (event) => {
@@ -183,7 +185,7 @@ const images = [];
                  
             
             loadIMGs(); 
-            
+
             loaderIMG.remove(); 
         }
     });
