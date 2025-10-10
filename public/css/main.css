@@ -737,16 +737,17 @@ main {
 
 #search-container {
     position: fixed;
+    /*position: relative;*/
     /*height: 100vh;*/
-    bottom: 3%;
-    left: 0;
-    z-index: 3000;
-    /*width: 100%;*/
+    top: 75%;
+    width: auto;
+    height: auto;
+    /*border:1px solid;*/
 }
 
 #btn-search {
     /*display: flex;*/
-    position: sticky;
+    position: absolute;
     writing-mode: vertical-rl;
     text-orientation: upright;
     border: none;
@@ -754,17 +755,22 @@ main {
     border-radius: 4px;
     z-index: 3000;
     opacity: .7;
-
+    bottom: 0;
+    left: 0;
+    z-index: 3000;
     &:active {
         opacity: 1;
     }
 }
 
 .search-modal {
-    display: flex;
+    /*display: flex;*/
     position: absolute;
+    /*bottom: 0;*/
+    /*left: 0;*/
     bottom: 0;
-    left: 0;
+    width: 100%;
+    height: auto;
     flex-direction: column;
     text-align: right;
     justify-content: right;
