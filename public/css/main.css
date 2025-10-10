@@ -783,6 +783,7 @@ main {
     @starting-style {
         opacity: 0;
     }
+    
     h6 a {
         color: #fefefe;
         border-bottom: 2px solid #fefefee9;
