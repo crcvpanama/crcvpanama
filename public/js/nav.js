@@ -57,23 +57,23 @@ document.addEventListener('DOMContentLoaded', function () {
   init();
 });
 
-// const url = `https://visits-christian-guardias-projects.vercel.app/count`;    
-// const dominio = window.location.origin;
-// let d = detectCookie("rgpdOK");
+const url = `https://visits-christian-guardias-projects.vercel.app/count`;    
+const dominio = window.location.origin;
+let d = detectCookie("rgpdOK");
 
-// function count() {
+function count() {
 
-//     let analyticsData = {
-//         id: 3,
-//         count: 1,
-//         domain: dominio,
-//     };
+    let analyticsData = {
+        id: 3,
+        count: 1,
+        domain: dominio,
+    };
 
-//     navigator.sendBeacon(url, JSON.stringify(analyticsData));   
+    navigator.sendBeacon(url, JSON.stringify(analyticsData));   
 
-// };
+};
 
-// if(d) count();
+if(d) count();
 // window.addEventListener("load", function() {
 //     count();
 //  });
@@ -107,7 +107,7 @@ function init(){
 
             setCookie("rgpdOK",1,365);
 
-            // count();
+            count();
         });
     };
 };
@@ -133,23 +133,16 @@ const loaderIMG = document.createElement('img');
 const logo = document.querySelector('.logo');
 
 const images = [];
-        
+// console.log(images);
 (() => {
 
-     function loadIMGs() {
-        logo.style.background = `url('public/img/svg/crcvlogo.svg') center no-repeat`;
-        logo.style.backgroundSize = 'contain';
-        mainIMG.src = images[0].src;
-        mainIMG.style.opacity = '1';
-        mainIMG.style.display = 'block';
-        // loaderIMG.style.opacity = '0';
-    };
-
-
     function preload() {
-        for (var i = 0; i < arguments.length; i++) {
+        for (let i = 0; i < arguments.length; i++) {
+            // console.log(arguments)
             images[i] = new Image();
+            // console.log(images[i])
             images[i].src = preload.arguments[i];
+            // console.log(images[i])
         };
     };
 
@@ -160,22 +153,33 @@ const images = [];
             if (event.target.readyState === "interactive") {
                 // console.log(document.readyState);
                 preload(
-                    `public/img/drxnuevemil.avif`,
-                    `public/img/svg/crcvlogo.svg`,
-                    `public/img/svg/circle.svg`
+                    'public/img/drxnuevemil.avif',
+                    'public/img/svg/crcvlogo.svg',
+                    'public/img/svg/circle.svg'
                 );
 
-                loaderIMG.src = 'public/img/svg/circle.svg';
-                loaderIMG.setAttribute('alt', 'load img');
-                loaderIMG.setAttribute('id', 'load-img');
-                loaderIMG.style.objectFit = 'contain';
-                mainContent.appendChild(loaderIMG);
+                // loaderIMG.src = 'public/img/svg/circle.svg';
+                // loaderIMG.setAttribute('alt', 'load img');
+                // loaderIMG.setAttribute('id', 'load-img');
+                // loaderIMG.style.objectFit = 'contain';
+                // mainContent.appendChild(loaderIMG);
             };
         });
     };
     IMGs();
 
-   
+     function loadIMGs() {
+        // logo.style.background = `url('public/img/svg/crcvlogo.svg') center no-repeat`;
+        // logo.style.backgroundSize = 'contain';
+        // logo.style.background = `url(${images[1].attributes[0].nodeValue}) center center / contain no-repeat`;
+        mainIMG.src = images[0].src;
+        // mainIMG.style.opacity = '1';
+        mainIMG.style.display = 'block';
+        // loaderIMG.style.opacity = '0';
+    };
+
+
+    
    
     document.addEventListener("readystatechange", (event) => {
      // document.addEventListener("readystatechange", async (event) => {
@@ -186,7 +190,7 @@ const images = [];
             
             loadIMGs(); 
 
-            loaderIMG.remove(); 
+            // loaderIMG.remove(); 
         }
     });
 

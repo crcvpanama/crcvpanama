@@ -150,9 +150,12 @@ a {
 }
 
 .logo-container {
-    width: 50%;
+    /*display: flex;*/
+    flex: 0.8;
+    /*width: 50%;*/
     height: 200px;
-/*    border: 1px solid black;*/
+    
+/*border: 1px solid black;*/
 }
 
 .logo {
@@ -163,14 +166,15 @@ a {
     width: 80%;
     height: 90%;
     margin: 0 auto;
-/*    background: url('../img/svg/crcvlogo.svg') center no-repeat;*/
-/*    background-size: contain;*/
-/*    object-fit: fill;*/
-/*    background-position:center;*/
-/*    border: 1px solid black;*/
+    background: url('../img/svg/crcvlogo.svg') center center / contain no-repeat;
+    /*-webkit-background-size: contain;
+    -moz-background-size: contain;
+    -o-background-size: contain;
+    background-size: contain;*/
 }
 
 .header-title {
+    flex: 1;
 /*    display: flex;*/
 /*    flex-direction: row-reverse;*/
 
@@ -178,9 +182,9 @@ a {
 /*    padding-right: 20px;*/
     text-align:center;
     font-weight: 900;
-    width: 40%;
+    /*width: 40%;*/
     letter-spacing: .2cap;
-    font-size: clamp(1.2em, 4vw, 2em);
+    font-size: clamp(1.1em, 4vw, 1.9em);
     color: var(--white);
 /*    filter: drop-shadow(1px 2px 3px #2b2b2b99);*/
 /*    border: 1px solid green;*/
@@ -381,6 +385,7 @@ main {
     position: absolute;
     height: 100%;
     z-index: -1;
+    opacity: 1;
     /*object-fit: fill;*/
     /*background: linear-gradient(to bottom, #12121251 0%, #12121277 50%, #12121299 100%);*/
     /*backdrop-filter: drop-shadow(3px 3px 5px #12121251);*/
