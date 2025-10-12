@@ -168,15 +168,15 @@ const images = [];
     };
     // IMGs();
 
-     function loadIMGs() {
+     // function loadIMGs() {
         // logo.style.background = `url('public/img/svg/crcvlogo.svg') center no-repeat`;
         // logo.style.backgroundSize = 'contain';
         // logo.style.background = `url(${images[1].attributes[0].nodeValue}) center center / contain no-repeat`;
-        mainIMG.src = images[0].src;
+        // mainIMG.src = images[0].src;
         // mainIMG.style.opacity = '1';
-        mainIMG.style.display = 'block';
+        // mainIMG.style.display = 'block';
         // loaderIMG.style.opacity = '0';
-    };
+    // };
 
 
     

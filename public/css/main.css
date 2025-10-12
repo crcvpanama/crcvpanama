@@ -399,12 +399,15 @@ main {
     text-align: center;
     width: auto;
     height: 618px;
+        @starting-style {
+        opacity: 0;
+    }
      /*aspect-ratio: 42 / 62;*/
     align-items: center;
     overflow: hidden;
     transition: all 1s ease-in-out;
     /*border: 1px solid;*/
-    background:  linear-gradient(to bottom, #121212a1 0%, #121212a1 40%, #121212ae 100%);
+    /*background:  linear-gradient(to bottom, #121212a1 0%, #121212a1 40%, #121212ae 100%);*/
 }
 
 .home-slider-content::before {
@@ -417,8 +420,8 @@ main {
     height: 100%;
     /*background:  linear-gradient(to bottom, #12121251 0%, #121212a2 50%, #121212d8 100%), url('../img/drxnuevemil.avif') center center / contain no-repeat;*/
     z-index: -1;
-    mask-image: linear-gradient(to top, transparent, rgb(0 0 0 / 1) 70%);
-    background: url('../img/drxnuevemil.avif') center center / contain no-repeat;
+    mask-image: linear-gradient(to top, transparent, rgb(0 0 0 / 1) 100%);
+    background:linear-gradient(to bottom, #121212a1 0%, #121212a1 50%, #121212ae 100%), url('../img/drxnuevemil.avif') center center / cover no-repeat;
 }
 
 
