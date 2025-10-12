@@ -57,23 +57,23 @@ document.addEventListener('DOMContentLoaded', function () {
   init();
 });
 
-const url = `https://visits-christian-guardias-projects.vercel.app/count`;    
-const dominio = window.location.origin;
-let d = detectCookie("rgpdOK");
+// const url = `https://visits-christian-guardias-projects.vercel.app/count`;    
+// const dominio = window.location.origin;
+// let d = detectCookie("rgpdOK");
 
-function count() {
+// function count() {
 
-    let analyticsData = {
-        id: 3,
-        count: 1,
-        domain: dominio,
-    };
+//     let analyticsData = {
+//         id: 3,
+//         count: 1,
+//         domain: dominio,
+//     };
 
-    navigator.sendBeacon(url, JSON.stringify(analyticsData));   
+//     navigator.sendBeacon(url, JSON.stringify(analyticsData));   
 
-};
+// };
 
-if(d) count();
+// if(d) count();
 // window.addEventListener("load", function() {
 //     count();
 //  });
@@ -107,7 +107,7 @@ function init(){
 
             setCookie("rgpdOK",1,365);
 
-            count();
+            // count();
         });
     };
 };
