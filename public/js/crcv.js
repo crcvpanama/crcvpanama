@@ -564,8 +564,8 @@ searchDiv.appendChild(newSpan);
 
 const newDiv = document.createElement('div');
 
-function nDIv() {
-    navLinks.forEach((nav,index) => {
+function nDIv(a) {
+    a.forEach((nav,index) => {
         nav.addEventListener('click', () => {
            if (index===0) {
 
@@ -582,6 +582,7 @@ function nDIv() {
                 
             for(let i=0;i<navLinks.length;i++){
                 navLinks[i].classList.remove('active');
+                navLinksFooter[i].classList.remove('active');
             }
             nav.classList.add('active');
             
@@ -590,7 +591,8 @@ function nDIv() {
     })
 };
 
-nDIv();
+nDIv(navLinks);
+nDIv(navLinksFooter);
 
 
 // function nav(a) {
@@ -630,9 +632,6 @@ nDIv();
 let date = document.querySelector('.date');
 
 date.append(year);
-
-
-
 
 let input = document.getElementById('buscador');
 let resultado = document.getElementById('resultado');
