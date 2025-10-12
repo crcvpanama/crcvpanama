@@ -134,7 +134,7 @@ const logo = document.querySelector('.logo');
 
 const images = [];
 // console.log(images);
-(() => {
+// (() => {
 
     function preload() {
         for (let i = 0; i < arguments.length; i++) {
@@ -166,7 +166,7 @@ const images = [];
             };
         });
     };
-    IMGs();
+    // IMGs();
 
      function loadIMGs() {
         // logo.style.background = `url('public/img/svg/crcvlogo.svg') center no-repeat`;
@@ -181,20 +181,20 @@ const images = [];
 
     
    
-    document.addEventListener("readystatechange", (event) => {
+    // document.addEventListener("readystatechange", (event) => {
      // document.addEventListener("readystatechange", async (event) => {
         // console.log(event.target.readyState === "complete");
-        if(event.target.readyState === "complete") {  
+        // if(event.target.readyState === "complete") {  
             // console.log(document.readyState);
                  
             
-            loadIMGs(); 
+            // loadIMGs(); 
 
             // loaderIMG.remove(); 
-        }
-    });
+        // }
+    // });
 
-})();
+// })();
 // console.log(document.readyState);
 // Add an event listener for the 'DOMContentLoaded' event
 // document.addEventListener('DOMContentLoaded', function () {
