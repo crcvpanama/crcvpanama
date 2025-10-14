@@ -424,9 +424,9 @@ main {
      /*background-size: 100% 100%;*/
     z-index: -1;
     mask-image: linear-gradient(to top, transparent, #11111140 5%, #111111cc 100%);
-    background: linear-gradient(to bottom, transparent, #000000cc 75%, #000000 95%), url('../img/drxnuevemil.avif') center / contain no-repeat;
+    background: linear-gradient(to bottom, transparent, #000000cc 65%, #000000 95%), url('../img/drxnuevemil.avif') center / contain no-repeat;
     /*background: url('../img/drxnuevemil.avif') center / contain no-repeat;*/
-    filter: blur(4px);
+    filter: blur(5px);
         /*background:linear-gradient(rgba(18, 18, 18, 0.63) 0%, rgba(18, 18, 18, 0.63) 40%, rgba(18, 18, 18, 0.682) 100%), url('../img/drxnuevemil.avif') center center / contain no-repeat;*/
 }
 
