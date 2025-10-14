@@ -1,19 +1,21 @@
 :root {
-  --white: #fefefe;
-  --gray: #6c757d;
-  --light-grey: #eaeaea;
-  --light: #f8f9fa;
-  --gray-dark: #343a40;
-  --dark: #212529;
-  --principal-color:#004481;
+    --brand-color: #004481;
+    --brand-second-color: #0075be;
+    --white: #fefefe;
+    --gray: #6c757d;
+    --light-grey: #eaeaea;
+    --light: #f8f9fa;
+    --gray-dark: #343a40;
+    --dark: #212529;
+    --principal-color:#004481;
 	--show: block;
 	--hidden: none;
 	--all-width: 100%;
     --box: inset -15.5em 0 0 0 #004481,inset 15.5em 0 0 0 #00448199;
-	--backgroundtransparent: #0052D468;
+	--backgroundtransparent: #0075be68;
     --background: linear-gradient(to left, #36D1DC99 60%, #fefefe 100%);
 /*	--background: linear-gradient(to left, #36D1DCc9, #36D1DC10);*/
-    --solid-bground: linear-gradient(to left, #36D1DC 0%, #80fffe 100%);
+    --solid-bground: linear-gradient(to right, #0075be 0%, #004481 100%);
 }
 
 ::-webkit-scrollbar {
@@ -723,7 +725,12 @@ main {
 
 .whatsapp--numbers a {
     color: var(--white);
+    span:hover {
+        text-decoration: underline;
+    }
 }
+
+
 
 .whatsapp--widget:hover {
 	opacity: 1;
