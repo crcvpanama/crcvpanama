@@ -566,29 +566,29 @@ const newDiv = document.createElement('div');
 
 function nDIv(a) {
     a.forEach((nav,index) => {
-        nav.addEventListener('click', () => {
+        nav.addEventListener('click', (e) => {
+
            if (index===0) {
 
                 home.classList.add('home-start');
                 newDiv.innerHTML = "";
-                nav.classList.add('active');
-
             } else {
                 newDiv.innerHTML = listPages[index];
                 pages.insertBefore(newDiv, pagesChild);
-                home.classList.remove('home-start');
-                // nav.classList.remove('active');               
+                home.classList.remove('home-start');           
             }
-                
-            for(let i=0;i<navLinks.length;i++){
-                navLinks[i].classList.remove('active');
-                navLinksFooter[i].classList.remove('active');
+            for(i of a) {
+                i.classList.remove('active');
             }
+
             nav.classList.add('active');
             
         })
+
             
     })
+    
+    
 };
 
 nDIv(navLinks);
