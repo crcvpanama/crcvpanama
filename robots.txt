@@ -4,7 +4,7 @@ Allow: /
 User-agent: Bingbot
 Allow: /
 
-User-agent: * 
+User-agent: *
 Disallow: /cgi-bin/
 Disallow: /tmp/
 Disallow: /scripts/

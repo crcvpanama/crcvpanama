@@ -1460,12 +1460,17 @@ footer {
     /*border-right: 2px solid #000;*/
     /*animation: typing 4s steps(30, end) alternate forwards, blink 0.5s step-end infinite;*/
     height: fit-content;
-    details, p {
-        color:#fafafa;
+
+    details {
+        color: inherit;
         overflow: scroll;
         scrollbar-width: none;
-
+        p {
+            color: inherit;
+            text-wrap: wrap;
+        }
     }
+
     summary {
         border-radius: 0;
         overflow: scroll;

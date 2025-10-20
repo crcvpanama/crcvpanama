@@ -648,18 +648,22 @@ function accent_fold (s) {
 
 function detectWord(ca) {
     // let g = [];
-    let g = ca.split('').map((t,index) => {
+    let g = ca.split('').map(t => {
+        console.log(t);
         // g.push(t);
         // if (c.indexOf(ca) == 0 && (ca.length != c.length))  {
             // return t;
         // }
     // }
         return t;
-    })
 
+        
+    })
     return resultado.innerHTML = `<section>
                                       <span>${g.join('')}</span>
                                   </section>`;
+
+    
 };
 
 
