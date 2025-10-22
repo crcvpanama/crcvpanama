@@ -51,9 +51,9 @@ header {
 h1 {
     margin-bottom: 20px;
     padding: 10px;
-    font-size: clamp(3.2em, 4vw, 5em);
+    /*font-size: clamp(3.2em, 4vw, 5em);*/
     font-weight: 900;
-    letter-spacing: .5cap;
+    /*letter-spacing: .5cap;*/
     line-height: 1.1;
 /*    color: var(--dark);*/
     text-align: center;
@@ -66,9 +66,9 @@ h1 {
 h2 {
     margin-bottom: 20px;
     padding: 5px;
-    font-size: clamp(2.1em, 4vw, 3.2em);
+    /*font-size: clamp(2.1em, 4vw, 3.2em);*/
     font-weight: 900;
-    letter-spacing: .1cap;
+    /*letter-spacing: .1cap;*/
     line-height: 1.1;
     color: var(--gray-dark);
     text-align: center;
@@ -353,7 +353,7 @@ a {
     border-radius: 10px;
 }
 
-.letter--content h3 {
+.letter--content h2 {
     color: #fff;
     text-align: left;
 }

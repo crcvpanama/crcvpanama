@@ -47,9 +47,9 @@ header {
 h1, h2 {
     margin-bottom: 20px;
     padding: 10px;
-    font-size: clamp(1.75rem, 2.5vw, 2rem);
+    /*font-size: clamp(1.75rem, 2.5vw, 2rem);*/
     font-weight: 900;
-    letter-spacing: .2ch;
+    /*letter-spacing: .2ch;*/
     line-height: 2ch;
     color: var(--dark);
     text-align: center;
