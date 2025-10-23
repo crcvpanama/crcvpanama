@@ -10,3 +10,4 @@ Disallow: /tmp/
 Disallow: /scripts/
 
 Sitemap: https://www.crcvpanama.org/sitemap.xml
+Sitemap: https://www.crcvpanama.org/video_sitemap.xml
