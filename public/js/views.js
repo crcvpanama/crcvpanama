@@ -87,8 +87,7 @@ async function fetchContent() {
   	method: 'GET',
   	headers: {
       'Content-Type': 'application/json',
-      "Access-Control-Allow-Origin": "*",
-      'Authorization': `Bearer ${token}` // token in header
+      "Access-Control-Allow-Origin": "*"
     },
   })
   .then(response => response.json())
@@ -102,7 +101,7 @@ async function fetchContent() {
 
   if(!result.error) {
     result.forEach(res => {     
-      return content(res.visitas,res.dominio,res.fecha);
+      return content(res.count,res.domain,res.date);
     }) 
 
   }
