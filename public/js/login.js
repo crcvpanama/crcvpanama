@@ -65,11 +65,10 @@ async function login() {
     const formData = new FormData(form);
 
     let result = await fetch(url, {
-      method: "POST",
-      credentials: 'include',
+      method: "POST",      
       headers: {
         "Content-Type": "application/json; charset=utf-8",
-        "Access-Control-Allow-Origin": "https://www.crcvpanama.org/",
+        "Access-Control-Allow-Origin": "*",
         "Access-Control-Methods": "GET,HEAD,POST,OPTIONS",
       },
       body: JSON.stringify({

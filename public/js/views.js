@@ -85,10 +85,9 @@ async function fetchContent() {
 
   let result = await fetch(`https://cz5wbbl2-3000.use2.devtunnels.ms/crcv/`, {
   	method: 'GET',
-  	credentials: 'include',
   	headers: {
       'Content-Type': 'application/json',
-      "Access-Control-Allow-Origin": "https://www.crcvpanama.org/",
+      "Access-Control-Allow-Origin": "*",
       'Authorization': `Bearer ${token}` // token in header
     },
   })
