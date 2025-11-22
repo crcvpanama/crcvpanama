@@ -101,12 +101,15 @@ login();
 const blog = document.getElementById('blog');
 const cblog = blog.querySelector('.item:first-child');
 const newDiv = document.createElement('div');
+const card = document.querySelector('.body-card');
 
 function showViews() {
   // body...
   if(getCookie("token")) {
     
     fetchContent();
+
+    card.setAttribute('class', 'hidden');
   } else {
     console.log('login');
     message.innerText = "Inicia sesion";
