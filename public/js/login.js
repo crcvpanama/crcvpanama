@@ -146,9 +146,10 @@ async function fetchContent() {
       });
 
   if(!result.error) {
-    result.forEach(res => {     
-      return content(res.count,res.domain,res.date);
-    }) 
+    console.log(result);
+    // result.forEach(res => {     
+      return content(result.count,result.domain,result.date);
+    // }) 
 
   }
 }
