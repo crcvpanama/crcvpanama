@@ -4,7 +4,7 @@ function setCookie(cname, cvalue, exdays) {
     d.setTime(d.getTime() + (exdays*24*60*60*1000));
     let expires = "expires="+ d.toUTCString();
 
-    document.cookie = cname + "=" + cvalue + ";" + expires + ";path=/pages/";
+    document.cookie = cname + "=" + cvalue + ";" + expires + ";path=/";
 };
 
 function getCookie(cname) {
@@ -86,8 +86,8 @@ async function login() {
     if (!result.error) {
       setCookie("token", result, 365);
       // console.log(result);
-      // window.location.reload();
-     window.location.replace("https://www.crcvpanama.org/pages/admin.html")
+      window.location.reload();
+     // window.location.replace("https://www.crcvpanama.org/pages/admin.html")
     } else {
       message.style.color = "#990000";
       message.innerText = result.error;
@@ -97,3 +97,57 @@ async function login() {
 
 login();
 
+
+const blog = document.getElementById('blog');
+const cblog = blog.querySelector('.item:first-child');
+const newDiv = document.createElement('div');
+
+function showViews() {
+  // body...
+  if(getCookie("token")) {
+    
+    fetchContent();
+  } else {
+    console.log('login');
+    message.innerText = "Inicia sesion";
+  }
+}
+
+function content(visitas, dominio, fecha) {
+  newDiv.innerHTML += `
+    <article>
+      <h2>${dominio}</h2>
+      <p>Visitas: <span>${visitas}</span></p>
+      <p>Fecha de creación: <span>${fecha}</span></p>
+    </article>
+  `;
+
+  blog.insertBefore(newDiv, cblog);
+}
+
+async function fetchContent() {
+  let token = getCookie("token");
+
+  let result = await fetch(`https://cz5wbbl2-3000.use2.devtunnels.ms/crcv/login`, {
+    method: 'GET',
+    headers: {
+      'Content-Type': 'application/json',
+      "Access-Control-Allow-Origin": "*"
+    },
+  })
+  .then(response => response.json())
+  .catch((error) => {
+        console.error("Error:", error.message);
+        blog.style.color = "#990000";
+        blog.innerText = error.message;
+      });
+
+  if(!result.error) {
+    result.forEach(res => {     
+      return content(res.count,res.domain,res.date);
+    }) 
+
+  }
+}
+
+showViews();

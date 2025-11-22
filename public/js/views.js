@@ -4,7 +4,7 @@ function setCookie(cname, cvalue, exdays) {
     d.setTime(d.getTime() + (exdays*24*60*60*1000));
     let expires = "expires="+ d.toUTCString();
 
-    document.cookie = cname + "=" + cvalue + ";" + expires + ";path=/pages/";
+    document.cookie = cname + "=" + cvalue + ";" + expires + ";path=/";
 };
 
 function getCookie(cname) {
@@ -83,7 +83,7 @@ async function fetchContent() {
 	let token = getCookie("token");
 	console.log(token);
 
-  let result = await fetch(`https://cz5wbbl2-3000.use2.devtunnels.ms/crcv/`, {
+  let result = await fetch(`https://cz5wbbl2-3000.use2.devtunnels.ms/crcv`, {
   	method: 'GET',
   	headers: {
       'Content-Type': 'application/json',
