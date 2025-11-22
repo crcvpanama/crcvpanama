@@ -134,8 +134,9 @@ async function fetchContent() {
   let result = await fetch(`https://visits-woad.vercel.app/crcv/login`, {
     method: 'GET',
     headers: {
-      'Content-Type': 'application/json',
-      "Access-Control-Allow-Origin": "*"
+      "Content-Type": "application/json; charset=utf-8",
+      "Access-Control-Allow-Origin": "*",
+      "Access-Control-Methods": "GET,HEAD,POST,OPTIONS",
     },
   })
   .then(response => response.json())
