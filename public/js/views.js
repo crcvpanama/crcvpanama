@@ -4,7 +4,7 @@ function setCookie(cname, cvalue, exdays) {
     d.setTime(d.getTime() + (exdays*24*60*60*1000));
     let expires = "expires="+ d.toUTCString();
 
-    document.cookie = cname + "=" + cvalue + ";" + expires + ";path=/";
+    document.cookie = cname + "=" + cvalue + ";" + expires + ";path=/pages/";
 };
 
 function getCookie(cname) {
@@ -88,7 +88,7 @@ async function fetchContent() {
         blog.style.color = "#990000";
         blog.innerText = error.message;
       });
-
+  	console.log(result);
   // console.log(!result.error);
 
   if(!result.error) {
