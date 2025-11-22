@@ -109,7 +109,7 @@ function showViews() {
     
     fetchContent();
 
-    card.setAttribute('class', 'hidden');
+    card.setAttribute("class", "hidden");
   } else {
     console.log('login');
     message.innerText = "Inicia sesion";
