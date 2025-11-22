@@ -147,10 +147,10 @@ async function fetchContent() {
 
   if(!result.error) {
     console.log(result.rows[0]);
-    result.rows[0].forEach(res => { 
-    console.log(res);    
-      return content(res[0],res[1],res[2]);
-    }) 
+    // result.rows[0].forEach(res => { 
+        
+      return content(result.rows[0][0],result.rows[0][1],result.rows[0][2]);
+    // }) 
 
   }
 }
