@@ -69,7 +69,7 @@ async function login() {
       credentials: 'include',
       headers: {
         "Content-Type": "application/json; charset=utf-8",
-        "Access-Control-Allow-Origin": "*",
+        "Access-Control-Allow-Origin": "https://www.crcvpanama.org/pages/*",
         "Access-Control-Methods": "GET,HEAD,POST,OPTIONS",
       },
       body: JSON.stringify({
