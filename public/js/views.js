@@ -88,7 +88,7 @@ async function fetchContent() {
   	credentials: 'include',
   	headers: {
       'Content-Type': 'application/json',
-      "Access-Control-Allow-Origin": "https://www.crcvpanama.org/pages/admin.html",
+      "Access-Control-Allow-Origin": "https://www.crcvpanama.org/",
       'Authorization': `Bearer ${token}` // token in header
     },
   })
