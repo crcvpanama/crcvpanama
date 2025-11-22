@@ -87,7 +87,7 @@ async function login() {
       setCookie("token", result, 365);
       // console.log(result);
       // window.location.reload();
-      window.location.href("/pages/admin.html")
+     window.location.replace("https://www.crcvpanama.org/pages/admin.html")
     } else {
       message.style.color = "#990000";
       message.innerText = result.error;

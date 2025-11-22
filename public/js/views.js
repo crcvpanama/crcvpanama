@@ -81,7 +81,7 @@ function content(visitas, dominio, fecha) {
 
 async function fetchContent() {
 
-  let result = await fetch(`https://cz5wbbl2-3000.use2.devtunnels.ms/crcv/login`)
+  let result = await fetch(`https://cz5wbbl2-3000.use2.devtunnels.ms/crcv/`)
   .then(response => response.json())
   .catch((error) => {
         console.error("Error:", error.message);
