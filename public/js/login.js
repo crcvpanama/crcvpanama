@@ -146,10 +146,11 @@ async function fetchContent() {
       });
 
   if(!result.error) {
-    console.log(result);
-    // result.forEach(res => {     
-      return content(result.count,result.domain,result.date);
-    // }) 
+    console.log(result.rows[0]);
+    result.rows[0].forEach(res => { 
+    console.log(res);    
+      return content(res[0],res[1],res[2]);
+    }) 
 
   }
 }
