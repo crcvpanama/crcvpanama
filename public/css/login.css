@@ -56,7 +56,7 @@ header {
 h1 {
     margin-bottom: 20px;
     padding: 10px;
-    font-size: clamp(2.5em, 3vw, 3.5em);
+    /*font-size: clamp(2.5em, 3vw, 3.5em);*/
     font-weight: 900;
     letter-spacing: .5cap;
     line-height: 1.1;
@@ -71,7 +71,7 @@ h1 {
 h2 {
     margin-bottom: 20px;
     padding: 5px;
-    font-size: clamp(2em, 3vw, 2.5em);
+    /*font-size: clamp(2em, 3vw, 2.5em);*/
     font-weight: 900;
     /*letter-spacing: .1cap;*/
     line-height: 1.1;
@@ -135,6 +135,147 @@ a {
     &:hover{
         color: #2b2b2be5;
     }
+}
+
+.header {
+    display: flex;    
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 30px;
+    gap: 2em;
+    width: 100%;
+    max-width: 1800px;
+    margin: auto;
+    height: 241px;
+}
+
+.logo-container {
+    /*display: flex;*/
+    flex: 0.8;
+    /*width: 50%;*/
+    height: 200px;
+    
+/*border: 1px solid black;*/
+}
+
+.logo {
+    display:block;
+    /*display: flex;
+    position: relative;
+    justify-content: center;*/
+    width: 80%;
+    height: 90%;
+    margin: 0 auto;
+    background: url('../img/svg/crcvlogo.svg') center center / contain no-repeat;
+    /*-webkit-background-size: contain;
+    -moz-background-size: contain;
+    -o-background-size: contain;
+    background-size: contain;*/
+}
+
+.header-title {
+    flex: 1;
+/*    display: flex;*/
+/*    flex-direction: row-reverse;*/
+
+/*    justify-content: ;*/
+/*    padding-right: 20px;*/
+    text-align:center;
+    font-weight: 900;
+    text-wrap: balance;
+    /*width: 40%;*/
+    letter-spacing: .2cap;
+    font-size: clamp(1.1em, 4vw, 1.9em);
+    color: var(--white);
+/*    filter: drop-shadow(1px 2px 3px #2b2b2b99);*/
+/*    border: 1px solid green;*/
+}
+/*.header-title .title{
+    width: 100%;
+    margin: 0 auto;
+    border: 1px solid red;
+}*/
+.navbar {
+    display: flex;
+    position: relative;
+    flex-direction: row-reverse;
+    height: 50px;
+    max-width: 1600px;
+    margin: auto;
+    border-bottom: 4px solid var(--light);
+}
+
+.nav-bar {
+    display: flex;
+    position: relative;
+    list-style: var(--hidden);
+    margin: 0 20px;
+    letter-spacing: .1cap;
+    align-items: center;
+    justify-content: stretch;
+}
+
+.nav-item {
+    width: 109px;
+}
+
+.nav-link, .nav-link--footer {
+    display: flex;
+    position: relative;
+    font-size: 0.8rem;
+    margin: 0 2px;
+    border-right: 1px solid var(--light);
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    cursor: pointer;
+    opacity: 1;
+    text-decoration: var(--hidden);
+    color: var(--dark); 
+    transition: .4s ease-in;
+    z-index: 1;
+}
+
+.active {
+    color: #fefefee9;
+    background-color: var(--backgroundtransparent);
+}
+
+.nav-link:hover {
+    z-index: 1;
+    color: var(--white);
+    opacity: 0.8;
+    box-shadow: var(--box);
+    border-bottom: 3px solid var(--gray);
+}
+
+.nav-link::before,
+.nav-link::after {
+    position: absolute;
+    content: "";
+    &:has(.active) {
+        z-index: -1;
+    }
+
+    background: var(--backgroundtransparent);
+}
+
+.lineB {
+    /*display: flex;*/
+    position: relative;
+    height: 55px;
+    background: var(--background);
+    border-bottom: 2px solid #36c0dc;    
+    margin-bottom: .1em;
+    /*justify-content: center;*/
+    overflow: hidden;
+    /*align-items: center;*/
+    place-content: center;
+}
+
+.nav-button {
+    display: var(--hidden);
 }
 
 .hidden {
