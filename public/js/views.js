@@ -71,8 +71,8 @@ function content(visitas, dominio, fecha) {
   newDiv.innerHTML += `
     <article>
       <h2>${dominio}</h2>
-      <p>${visitas}</p>
-      <p>${fecha}</p>
+      <p>Visitas: <span>${visitas}</span></p>
+      <p>Fecha de creación: <span>${fecha}</span></p>
     </article>
   `;
 
@@ -100,5 +100,3 @@ async function fetchContent() {
 }
 
 showViews();
-
-console.log(getCookie("token"));

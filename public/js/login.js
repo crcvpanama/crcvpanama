@@ -86,7 +86,8 @@ async function login() {
     if (!result.error) {
       setCookie("token", result, 365);
       // console.log(result);
-      window.location.reload();
+      // window.location.reload();
+      window.location.href("/pages/admin.html")
     } else {
       message.style.color = "#990000";
       message.innerText = result.error;
