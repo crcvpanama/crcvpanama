@@ -54,7 +54,7 @@ function detectCookie(cname) {
 
 const message = document.getElementById("message");
 const form = document.getElementById("form");
-const url = "https://cz5wbbl2-3000.use2.devtunnels.ms/crcv/login";
+const url = "https://visits-woad.vercel.app/crcv/login";
 
 async function login() {
   form.addEventListener("submit", async function (event) {
@@ -131,7 +131,7 @@ function content(visitas, dominio, fecha) {
 async function fetchContent() {
   let token = getCookie("token");
 
-  let result = await fetch(`https://cz5wbbl2-3000.use2.devtunnels.ms/crcv/login`, {
+  let result = await fetch(`https://visits-woad.vercel.app/crcv/login`, {
     method: 'GET',
     headers: {
       'Content-Type': 'application/json',
