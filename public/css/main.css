@@ -285,9 +285,10 @@ a {
 .social--line {
     display: flex;
     position: relative;
-    align-self: center;
+    /*align-self: center;*/
     gap: 1.5em;
-    justify-self: center;
+    /*justify-self: center;*/
+    justify-content: center;
 }
 
 .social--line div{
