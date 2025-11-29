@@ -41,7 +41,7 @@ body {
 	width: auto;	
 /*	color:var(--dark);*/
     color: var(--gray-dark);
-	font-family: Roboto, sans-serif;
+	font-family: "Roboto", system-ui, sans-serif;
 	font-weight: 400;
 	font-size: 1rem;
 	font-optical-sizing: auto;
