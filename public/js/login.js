@@ -154,9 +154,10 @@ async function fetchContent() {
       });
 
   if(!result.error) {
+    console.log(result.rows[0]);
     // result.rows[0].forEach(res => { 
         
-      return await content(result.rows[0][0],result.rows[0][1],result.rows[0][2]);
+      return await content(result.rows[0][0],result.rows[0][1],result.rows[0][2],result.rows[0][3],result.rows[0][4],result.rows[0][5]);
     // }) 
 
   }
