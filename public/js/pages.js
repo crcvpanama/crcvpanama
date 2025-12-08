@@ -70,12 +70,12 @@ const dominio = window.location.pathname;
 
 let dom = dominio.split('/');
 // let d = detectCookie("rgpdOK");
-console.log(dom);
+// console.log(dom);
 function count() {
     let analyticsData = {
         id: 6,
         count: 1,
-        domain: dom[4],
+        domain: dom[2],
         date: dd,
     };
 
