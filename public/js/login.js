@@ -106,6 +106,7 @@ login();
 
 const blog = document.getElementById('blog');
 const cblog = blog.querySelector('.item:first-child');
+const cblogB = blog.querySelector('.item:nth-child(2)');
 const newDiv = document.createElement('div');
 const card = document.querySelector('.body-card');
 
@@ -134,6 +135,18 @@ function content(visitas, dominio, fecha) {
   blog.insertBefore(newDiv, cblog);
 }
 
+function contentB(visitas, dominio, fecha) {
+  newDiv.innerHTML += `
+    <article>
+      <h2>${dominio}</h2>
+      <p>Visitas: <span>${visitas}</span></p>
+      <p>Fecha de creación: <span>${fecha}</span></p>
+    </article>
+  `;
+
+  blog.insertBefore(newDiv, cblogB);
+}
+
 async function fetchContent() {
   let token = getCookie("token");
 
@@ -154,12 +167,13 @@ async function fetchContent() {
       });
 
   if(!result.error) {
-    console.log(result.rows[0]);
+    // console.log(result.rows[0]);
     // result.rows[0].forEach(res => { 
+    content(result.rows[0][0],result.rows[0][1],result.rows[0][2]);
+    contentB(result.rows[0][3],result.rows[0][4],result.rows[0][5]);
         
-      return await content(result.rows[0][0],result.rows[0][1],result.rows[0][2],result.rows[0][3],result.rows[0][4],result.rows[0][5]);
-    // }) 
-
+      // return await ;
+    // })
   }
 }
 
