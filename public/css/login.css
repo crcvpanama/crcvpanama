@@ -60,18 +60,15 @@ h1 {
     font-weight: 900;
     letter-spacing: .5cap;
     line-height: 1.1;
-/*    color: var(--dark);*/
     text-align: center;
     margin-bottom: 40px;
-
     color: var(--gray-dark);
-/*    filter: drop-shadow(1px 2px 3px #2b2b2b99);*/
 }
 
 h2 {
     margin-bottom: 20px;
     padding: 5px;
-    font-size: clamp(2em, 3vw, 2.5em);
+    font-size: clamp(1.1em, 4vw, 2em);
     font-weight: 900;
     /*letter-spacing: .1cap;*/
     line-height: 1.1;
