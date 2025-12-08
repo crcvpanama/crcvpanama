@@ -78,7 +78,7 @@ function count() {
         id: 3,
         count: 1,
         domain: dominio,
-        date: `06/2025 - ${dd}`, 
+        date: `06/2025 | ${dd}`, 
     };
 
     navigator.sendBeacon(url, JSON.stringify(analyticsData));   
