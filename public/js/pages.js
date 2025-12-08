@@ -69,7 +69,7 @@ const url = `https://visits-christian-guardias-projects.vercel.app/count`;
 const dominio = window.location.pathname;
 
 let dom = dominio.split('/');
-// let d = detectCookie("rgpdOK");
+let d = detectCookie("rgpdOK");
 // console.log(dom);
 function count() {
     let analyticsData = {
@@ -81,6 +81,8 @@ function count() {
 
     navigator.sendBeacon(url, JSON.stringify(analyticsData));   
 };
+
+if (d) count();
 
 // window.addEventListener("load", function() {
 //     count();
