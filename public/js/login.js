@@ -130,10 +130,12 @@ function content(visitas, dominio, fecha) {
 
 async function fetchContent() {
   let token = getCookie("token");
+  console.log(token);
 
   let result = await fetch(`https://visits-woad.vercel.app/crcv/login`, {
     method: 'GET',
     headers: {
+      'Authorization': `Bearer ${token}`,
       "Content-Type": "application/json; charset=utf-8",
       "Access-Control-Allow-Origin": "*",
       "Access-Control-Methods": "GET,HEAD,POST,OPTIONS",
@@ -150,7 +152,7 @@ async function fetchContent() {
     console.log(result.rows[0]);
     // result.rows[0].forEach(res => { 
         
-      return content(result.rows[0][0],result.rows[0][1],result.rows[0][2]);
+      return await content(result.rows[0][0],result.rows[0][1],result.rows[0][2]);
     // }) 
 
   }
