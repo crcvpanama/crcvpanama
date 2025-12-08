@@ -126,7 +126,7 @@ function showViews() {
 function content(visitas, dominio, fecha) {
   newDiv.innerHTML += `
     <article>
-      <h2>${dominio}</h2>
+      <h2>Dominio: ${dominio}</h2>
       <p>Total de Visitas: <span>${visitas}</span></p>
       <p>Fecha: <span>${fecha}</span></p>
     </article>
@@ -138,7 +138,7 @@ function content(visitas, dominio, fecha) {
 function contentB(visitas, dominio, fecha) {
   newDiv.innerHTML += `
     <article>
-      <h2>${dominio}</h2>
+      <h2>Pathname: ${dominio}</h2>
       <p>Visitas: <span>${visitas}</span></p>
       <p>Fecha: <span>${fecha}</span></p>
     </article>
