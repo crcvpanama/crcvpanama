@@ -100,7 +100,8 @@ a {
 }
 
 .logo {
-    width: 500px;
+    display: inline-block;
+    width: 150px;
     height: 250px;
     padding: 0 30px;
     background-repeat:no-repeat;

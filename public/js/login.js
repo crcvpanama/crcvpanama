@@ -51,6 +51,14 @@ function detectCookie(cname) {
     return false;
 };
 
+const button = document.querySelector('.nav-button');
+const menu = document.querySelector('.collapse');
+
+button.addEventListener('click', () => {
+    menu.classList.toggle('navbar-collapse');
+});
+
+
 
 const message = document.getElementById("message");
 const form = document.getElementById("form");
@@ -106,12 +114,12 @@ const card = document.querySelector('.body-card');
 function showViews() {
   // body...
   if(getCookie("token")) {
+
+    card.setAttribute("class", "hidden");
     
     fetchContent();
 
-    card.setAttribute("class", "hidden");
   } else {
-    console.log('login');
     message.innerText = "Inicia sesion";
   }
 }
@@ -130,7 +138,6 @@ function content(visitas, dominio, fecha) {
 
 async function fetchContent() {
   let token = getCookie("token");
-  console.log(token);
 
   let result = await fetch(`https://visits-woad.vercel.app/crcv/login`, {
     method: 'GET',
@@ -149,7 +156,6 @@ async function fetchContent() {
       });
 
   if(!result.error) {
-    console.log(result.rows[0]);
     // result.rows[0].forEach(res => { 
         
       return await content(result.rows[0][0],result.rows[0][1],result.rows[0][2]);
