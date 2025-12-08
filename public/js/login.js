@@ -1,3 +1,11 @@
+const button = document.querySelector('.nav-button');
+const menu = document.querySelector('.collapse');
+
+button.addEventListener('click', () => {
+    menu.classList.toggle('navbar-collapse');
+});
+
+
 function setCookie(cname, cvalue, exdays) {
     let d = new Date();
 
@@ -51,15 +59,6 @@ function detectCookie(cname) {
     return false;
 };
 
-const button = document.querySelector('.nav-button');
-const menu = document.querySelector('.collapse');
-
-button.addEventListener('click', () => {
-    menu.classList.toggle('navbar-collapse');
-});
-
-
-
 const message = document.getElementById("message");
 const form = document.getElementById("form");
 const url = "https://visits-woad.vercel.app/crcv/login";
@@ -104,7 +103,6 @@ async function login() {
 }
 
 login();
-
 
 const blog = document.getElementById('blog');
 const cblog = blog.querySelector('.item:first-child');

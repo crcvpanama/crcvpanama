@@ -49,24 +49,36 @@ function detectCookie(cname) {
 
 init();
 
+function getCurrentUTCDatetimeShort() {
+  return new Date()
+    .toISOString()          // "2024-05-20T14:30:45.123Z"
+    .slice(0, 19)           // "2024-05-20T14:30:45" (remove .123Z)
+    .replace('T', ' ')      // "2024-05-20 14:30:45" (replace T with space)
+    .replace('/-/g', '/');    // "2024/05/20 14:30:45" (replace - with /)
+}
+
+
+const dd = getCurrentUTCDatetimeShort();
+
 // ccInit();
 
     // });
 
 // const url = `https://wvlhqwzk-5000.use2.devtunnels.ms/analytics`;
-// const url = `https://visits-christian-guardias-projects.vercel.app/count`;    
-// const dominio = window.location.origin;
+const url = `https://visits-christian-guardias-projects.vercel.app/count`;    
+const dominio = window.location.pathname;
 // let d = detectCookie("rgpdOK");
 // console.log(d);
-// function count() {
-//     let analyticsData = {
-//         id: 3,
-//         count: 1,
-//         domain: dominio,
-//     };
+function count() {
+    let analyticsData = {
+        id: 6,
+        count: 1,
+        domain: dominio,
+        date: dd,
+    };
 
-//     navigator.sendBeacon(url, JSON.stringify(analyticsData));   
-// };
+    navigator.sendBeacon(url, JSON.stringify(analyticsData));   
+};
 
 // window.addEventListener("load", function() {
 //     count();

@@ -57,6 +57,17 @@ document.addEventListener('DOMContentLoaded', function () {
   init();
 });
 
+function getCurrentUTCDatetimeShort() {
+  return new Date()
+    .toISOString()          // "2024-05-20T14:30:45.123Z"
+    .slice(0, 19)           // "2024-05-20T14:30:45" (remove .123Z)
+    .replace('T', ' ')      // "2024-05-20 14:30:45" (replace T with space)
+    .replace('/-/g', '/');    // "2024/05/20 14:30:45" (replace - with /)
+}
+
+
+const dd = getCurrentUTCDatetimeShort();
+
 const url = `https://visits-christian-guardias-projects.vercel.app/count`;    
 const dominio = window.location.origin;
 let d = detectCookie("rgpdOK");
@@ -67,6 +78,7 @@ function count() {
         id: 3,
         count: 1,
         domain: dominio,
+        date: `06/2025 - ${dd}`, 
     };
 
     navigator.sendBeacon(url, JSON.stringify(analyticsData));   
