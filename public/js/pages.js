@@ -49,16 +49,25 @@ function detectCookie(cname) {
 
 init();
 
-function getCurrentUTCDatetimeShort() {
-  return new Date()
-    .toISOString()          // "2024-05-20T14:30:45.123Z"
-    .slice(0, 19)           // "2024-05-20T14:30:45" (remove .123Z)
-    .replace('T', ' ')      // "2024-05-20 14:30:45" (replace T with space)
-    .replace('/-/g', '/');    // "2024/05/20 14:30:45" (replace - with /)
-}
+// function getCurrentUTCDatetimeShort() {
+//   return new Date()
+//     .toISOString()         
+//     .slice(0, 19)           
+//     .replace('T', ' ')      
+//     .replace('/-/g', '/');
+// }
 
 
-const dd = getCurrentUTCDatetimeShort();
+// const dd = getCurrentUTCDatetimeShort();
+
+let dd = new Date().toLocaleDateString("es-PA", {
+  weekday: "long",
+  day: "numeric",
+  month: "short",
+  hour: "numeric",
+  minute: "numeric",
+  hour12: true
+});
 
 // ccInit();
 
