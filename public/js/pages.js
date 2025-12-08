@@ -67,13 +67,15 @@ const dd = getCurrentUTCDatetimeShort();
 // const url = `https://wvlhqwzk-5000.use2.devtunnels.ms/analytics`;
 const url = `https://visits-christian-guardias-projects.vercel.app/count`;    
 const dominio = window.location.pathname;
+
+let dom = dominio.split('/');
 // let d = detectCookie("rgpdOK");
-// console.log(d);
+console.log(dom);
 function count() {
     let analyticsData = {
         id: 6,
         count: 1,
-        domain: dominio,
+        domain: dom[4],
         date: dd,
     };
 
