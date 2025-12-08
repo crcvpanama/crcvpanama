@@ -127,8 +127,8 @@ function content(visitas, dominio, fecha) {
   newDiv.innerHTML += `
     <article>
       <h2>${dominio}</h2>
-      <p>Visitas: <span>${visitas}</span></p>
-      <p>Fecha de creación: <span>${fecha}</span></p>
+      <p>Total de Visitas: <span>${visitas}</span></p>
+      <p>Fecha: <span>${fecha}</span></p>
     </article>
   `;
 
@@ -140,7 +140,7 @@ function contentB(visitas, dominio, fecha) {
     <article>
       <h2>${dominio}</h2>
       <p>Visitas: <span>${visitas}</span></p>
-      <p>Fecha de creación: <span>${fecha}</span></p>
+      <p>Fecha: <span>${fecha}</span></p>
     </article>
   `;
 
@@ -168,7 +168,9 @@ async function fetchContent() {
 
   if(!result.error) {    
   // result.rows[0].forEach(res => { 
-    content(result.rows[0][0],result.rows[0][1],result.rows[0][2]);
+    let sumVisitas = result.rows[0][1] + result.rows[0][4];
+    console.log(sumVisitas);
+    content(result.rows[0][0],sumVisitas,result.rows[0][2]);
     contentB(result.rows[0][5],result.rows[0][4],result.rows[0][3]);
         
       // return await ;
