@@ -168,10 +168,10 @@ async function fetchContent() {
 
   if(!result.error) {    
   // result.rows[0].forEach(res => { 
-    let sumVisitas = parseInt(result.rows[0][1]) + parseInt(result.rows[0][4]);
+    let sumVisitas = parseInt(result.rows[0][1]) + parseInt(result.rows[0][3]);
     console.log(sumVisitas);
     content(result.rows[0][0],sumVisitas,result.rows[0][2]);
-    contentB(result.rows[0][5],result.rows[0][3],result.rows[0][4]);
+    contentB(result.rows[0][3],result.rows[0][5],result.rows[0][4]);
         
       // return await ;
     // })
