@@ -166,11 +166,10 @@ async function fetchContent() {
         blog.innerText = error.message;
       });
 
-  if(!result.error) {
-    // console.log(result.rows[0]);
-    // result.rows[0].forEach(res => { 
+  if(!result.error) {    
+  // result.rows[0].forEach(res => { 
     content(result.rows[0][0],result.rows[0][1],result.rows[0][2]);
-    contentB(result.rows[0][3],result.rows[0][4],result.rows[0][5]);
+    contentB(result.rows[0][5],result.rows[0][4],result.rows[0][3]);
         
       // return await ;
     // })
