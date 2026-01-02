@@ -273,7 +273,7 @@ a {
     border-bottom: 2px solid #36c0dc;    
     margin-bottom: .1em;
     /*justify-content: center;*/
-    overflow: hidden;
+    /*overflow: hidden;*/
     /*align-items: center;*/
     place-content: center;
 }
