@@ -1,14 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns:video="http://www.google.com/schemas/sitemap-video/1.1">
       <url>
-        <loc>https://www.crcvpanama.org/pages/testimonios.html</loc><video:video>
+        <loc>https://www.crcvpanama.org/</loc>
+        <video:video>
           <video:thumbnail_loc>https://www.crcvpanama.org/public/img/webp/drx.webp</video:thumbnail_loc>
           <video:title>CRCV Panamá</video:title>
           <video:description>Centro de Rehabilitación de la Columna Vertebral</video:description>
           <video:content_loc>https://www.crcvpanama.org/public/videos/inicioV.mp4</video:content_loc>
           <video:duration>600</video:duration>
           <video:publication_date>2025-03-25</video:publication_date>
-        </video:video> 
+        </video:video>
+      </url>
+      <url>
+        <loc>https://www.crcvpanama.org/pages/testimonios.html</loc>
         <video:video>
           <video:thumbnail_loc>https://www.crcvpanama.org/public/img/ozono.jpg</video:thumbnail_loc>
           <video:title>Testimonios | CRCV Panamá</video:title>
