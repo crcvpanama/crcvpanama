@@ -77,7 +77,7 @@ function count() {
         id: 3,
         count: 1,
         domain: dominio,
-        date: `06/2025 | ${dd}`, 
+        date: `desde: 06/2025 | última vista: ${dd}`, 
     };
 
     navigator.sendBeacon(url, JSON.stringify(analyticsData));   
@@ -137,7 +137,7 @@ button.addEventListener('click', () => {
 
 const mainIMG = document.getElementById('drx');
 
-const mainContent = document.getElementById('home0');
+const mainContent = document.getElementsByClassName('home-slider-content')[0];
 
 const loaderIMG = document.createElement('img');
 
@@ -146,64 +146,67 @@ const logo = document.querySelector('.logo');
 const images = [];
 // console.log(images);
 // (() => {
+let secondImage = document.createElement('img');
+
 
     function preload() {
         for (let i = 0; i < arguments.length; i++) {
-            // console.log(arguments)
-            images[i] = new Image();
-            // console.log(images[i])
-            images[i].src = preload.arguments[i];
-            // console.log(images[i])
+            images[i] = new Image();            
+            images[i].src = preload.arguments[i];        
         };
     };
 
     function IMGs() {
         // console.log(document.readyState);
-        document.addEventListener("DOMContentLoaded", (event) => {
+        // document.addEventListener("DOMContentLoaded", (event) => {
             // console.log(event.target.readyState);
-            if (event.target.readyState === "interactive") {
+            // if (event.target.readyState === "interactive") {
                 // console.log(document.readyState);
                 preload(
                     'public/img/drxnuevemil.avif',
                     'public/img/svg/crcvlogo.svg',
+                    'public/img/webp/crcv.avif',
                     'public/img/svg/circle.svg'
                 );
 
-                // loaderIMG.src = 'public/img/svg/circle.svg';
-                // loaderIMG.setAttribute('alt', 'load img');
-                // loaderIMG.setAttribute('id', 'load-img');
-                // loaderIMG.style.objectFit = 'contain';
-                // mainContent.appendChild(loaderIMG);
-            };
-        });
+                loaderIMG.src = `${images[3].src}`;
+                loaderIMG.setAttribute('alt', 'load img');
+                loaderIMG.setAttribute('id', 'load-img');
+                // loaderIMG.style.width = '100%';
+                mainContent.appendChild(loaderIMG);
+            // };
+        // });
     };
-    // IMGs();
+    IMGs();
 
-     // function loadIMGs() {
+     function loadIMGs() {
         // logo.style.background = `url('public/img/svg/crcvlogo.svg') center no-repeat`;
         // logo.style.backgroundSize = 'contain';
-        // logo.style.background = `url(${images[1].attributes[0].nodeValue}) center center / contain no-repeat`;
-        // mainIMG.src = images[0].src;
-        // mainIMG.style.opacity = '1';
-        // mainIMG.style.display = 'block';
+        logo.style.background = `url(${images[1].attributes[0].nodeValue}) center center / contain no-repeat`;
+        // logo.style.background = `url(public/img/svg/crcvlogo.svg)`;
+        secondImage.src = images[2].src;
+        secondImage.setAttribute('id', 'second-img');
+        // secondImage.style.width = '100%';
+        // secondImage.style.display = 'block';
+        // secondImage.style.objectFit = 'contain';
+        mainIMG.appendChild(secondImage);
         // loaderIMG.style.opacity = '0';
-    // };
+
+    };
 
 
     
    
     // document.addEventListener("readystatechange", (event) => {
-     // document.addEventListener("readystatechange", async (event) => {
+     document.addEventListener("readystatechange", async (event) => {
         // console.log(event.target.readyState === "complete");
-        // if(event.target.readyState === "complete") {  
+         loadIMGs(); 
+        if(event.target.readyState === "complete") {  
             // console.log(document.readyState);
-                 
-            
-            // loadIMGs(); 
 
-            // loaderIMG.remove(); 
-        // }
-    // });
+            loaderIMG.remove(); 
+        }
+    });
 
 // })();
 // console.log(document.readyState);
