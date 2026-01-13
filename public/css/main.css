@@ -847,8 +847,8 @@ footer {
 }
 
 .partFooter {
-  width: 40px;
-  height: 40px;
+  width: auto;
+  height: auto;
   text-align: center;
   /*background: #fff;*/
   padding: .2em;
@@ -856,8 +856,8 @@ footer {
   margin: 10px 0 0 10px;
   img {
     display: block;
-    width: 100%;
-    height: auto;
+    width: 40px;
+    height: 40px;
   }
 }
 
