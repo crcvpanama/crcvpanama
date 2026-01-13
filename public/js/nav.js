@@ -182,7 +182,7 @@ let secondImage = document.createElement('img');
      function loadIMGs() {
         // logo.style.background = `url('public/img/svg/crcvlogo.svg') center no-repeat`;
         // logo.style.backgroundSize = 'contain';
-        logo.style.background = `url(${images[1].attributes[0].nodeValue}) center center / contain no-repeat`;
+        // logo.style.background = `url(${images[1].attributes[0].nodeValue}) center center / contain no-repeat`;
         // logo.style.background = `url(public/img/svg/crcvlogo.svg)`;
         secondImage.src = images[2].src;
         secondImage.setAttribute('id', 'second-img');
@@ -198,7 +198,7 @@ let secondImage = document.createElement('img');
     
    
     // document.addEventListener("readystatechange", (event) => {
-     document.addEventListener("readystatechange", async (event) => {
+    document.addEventListener("readystatechange", async (event) => {
         // console.log(event.target.readyState === "complete");
          loadIMGs(); 
         if(event.target.readyState === "complete") {  

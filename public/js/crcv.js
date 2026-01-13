@@ -567,7 +567,7 @@ const newDiv = document.createElement('div');
 function nDIv(a) {
     a.forEach((nav,index) => {
         nav.addEventListener('click', (e) => {
-
+            menu.classList.toggle('navbar-collapse');
            if (index===0) {
 
                 home.classList.add('home-start');
@@ -575,7 +575,8 @@ function nDIv(a) {
             } else {
                 newDiv.innerHTML = listPages[index];
                 pages.insertBefore(newDiv, pagesChild);
-                home.classList.remove('home-start');           
+                home.classList.remove('home-start'); 
+                          
             }
             for(i of a) {
                 i.classList.remove('active');

@@ -178,11 +178,13 @@ details[open] {
 }*/
 
 .logo-container {
-    display: block;
+    /*display: block;*/
     /*position: relative;*/
-    justify-content: center;
-    width: 500px;
-    height: 250px;
+    /*justify-content: center;*/
+    width: auto;
+    height: auto;
+    place-content: center;
+    padding: 10px;
     /*border: 1px solid black;*/
     /*overflow: hidden;*/
     margin: auto;
@@ -200,9 +202,9 @@ details[open] {
 
 .logo {
     display:block;
-    width: 100%;
-    height: 100%;
-    /*margin: 0 auto;*/
+    width: 230px;
+    height: 90px;
+    margin:auto;
     /*background: url('../img/svg/crcvlogo.svg') center center / contain no-repeat;*/
 }
 
@@ -213,7 +215,8 @@ details[open] {
 
 #load-img {
     display: block;
-    width: 100%;
+    width: 70px;
+    height: 70px;
 }
 
 .header-title {
@@ -403,7 +406,7 @@ main {
     /*200px repeat(auto-fill, 100px) 300px*/
     /*grid-template-columns: repeat(auto-fit, minmax(150px, 200px));*/
     grid-template-columns: 600px repeat(auto-fill, minmax(150px, 300px));
-    height: 300px;
+    height: auto;
     margin: 15px auto;
     gap: 1em;
     overflow:hidden;
@@ -415,7 +418,7 @@ main {
     place-content: center;
     text-align: center;
     width: auto;
-    height: auto;
+    height: 300px;
     /*z-index: -1;*/
     /*place-content: end;*/
    /* @starting-style {
@@ -437,7 +440,7 @@ main {
     top: 0;
     left: 0;
     width: 100%;
-    height: 100%;
+    height: 300px;
     z-index: -1;
     background: linear-gradient(to bottom, transparent, #000000cc 65%, #000000 95%), url('../img/drxnuevemil.avif') center / contain no-repeat;
     mask-image: linear-gradient(to top, transparent, #11111140 5%, #111111cc 100%);
@@ -1673,13 +1676,12 @@ details[open] > summary::after {
 
     .collapse {        
         padding: 20px 0; 
-        position: relative;
+        position: fixed;
         width: 100%;
 /*        height: 70vw;*/
 /*        transform: translateY(170px);*/
         background: #ffffffea;
 /*        transform: translateY(0);*/
-        
         height: auto;
         z-index: 4000;
         overflow: hidden;
@@ -1710,7 +1712,7 @@ details[open] > summary::after {
 
     .nav-button {
         display: block;
-        position: absolute;     
+        position: fixed;     
         background: url('../img/svg/button.svg') center center / contain no-repeat;
         border: none;
         cursor: pointer;        
