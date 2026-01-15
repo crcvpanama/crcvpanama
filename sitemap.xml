@@ -64,12 +64,9 @@
     </image:image>
   </url>
   <url>
-    <loc>https://www.crcvpanama.org/</loc>
+    <loc>https://www.crcvpanama.org/favicon.ico</loc>
     <lastmod>2026-01-07</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.50</priority>
-    <image:image>
-      <image:loc>https://www.crcvpanama.org/favicon.ico</image:loc>
-    </image:image>
   </url>
 </urlset>
