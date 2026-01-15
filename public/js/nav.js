@@ -186,6 +186,7 @@ let secondImage = document.createElement('img');
         // logo.style.background = `url(public/img/svg/crcvlogo.svg)`;
         secondImage.src = images[2].src;
         secondImage.setAttribute('id', 'second-img');
+        secondImage.setAttribute('alt', 'DRX9000 - ven por tu tratamiento sin cirugía');
         // secondImage.style.width = '100%';
         // secondImage.style.display = 'block';
         // secondImage.style.objectFit = 'contain';
