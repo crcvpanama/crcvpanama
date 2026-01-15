@@ -182,7 +182,7 @@ details[open] {
     /*display: block;*/
     /*position: relative;*/
     /*justify-content: center;*/
-    width: auto;
+    width: 600px;
     height: auto;
     place-content: center;
     padding: 10px;
@@ -203,8 +203,8 @@ details[open] {
 
 .logo {
     display:block;
-    width: 230px;
-    height: 90px;
+    width: 100%;
+    height: auto;
     margin:auto;
     /*background: url('../img/svg/crcvlogo.svg') center center / contain no-repeat;*/
 }
@@ -1646,7 +1646,7 @@ details[open] > summary::after {
     }*/
 
     .logo-container {
-        width: 250px;
+        width: 350px;
         height: 200px;
         margin: 0 auto;
     }
