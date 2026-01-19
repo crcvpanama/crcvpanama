@@ -717,6 +717,7 @@ main {
     right: 0;
     bottom: 0;
     padding: 10px;
+    scale: 1;
     transition: all .3s ease-in-out;
 
     /*&:active {content: "-";}*/
@@ -726,9 +727,9 @@ main {
 .diag__parrB:hover {
 
     &::before {
-        scale: 1.08;
-        font-size: 2em;
-        font-weight: 900;
+        scale: 1.5;
+        /*font-size: 2em;*/
+        /*font-weight: 900;*/
         /*background-color: dimgray;*/
         /*border: 1px solid;*/
     }
