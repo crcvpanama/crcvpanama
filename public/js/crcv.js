@@ -15,6 +15,7 @@ function nums(a,b) {
     for(let i= 0;i<buttonParr.length;i++){
         a[i].addEventListener('click', () => {
             b[i].classList.toggle('diag__parrB');
+            // buttonParr[i].setAttribute("class", "minus");
         });
     }
 };
