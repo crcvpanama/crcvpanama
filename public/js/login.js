@@ -5,6 +5,11 @@ button.addEventListener('click', () => {
     menu.classList.toggle('navbar-collapse');
 });
 
+const blog = document.getElementById('blog');
+const cblog = blog.querySelector('.item:first-child');
+const cblogB = blog.querySelector('.item:nth-child(2)');
+const newDiv = document.createElement('div');
+const card = document.querySelector('.body-card');
 
 function setCookie(cname, cvalue, exdays) {
     let d = new Date();
@@ -91,8 +96,8 @@ async function login() {
       });
 
     if (!result.error) {
-      setCookie("token", result, 7);
-      // console.log(result);
+      setCookie("token", result, 30);
+      console.log(result);
       window.location.reload();
      // window.location.replace("https://www.crcvpanama.org/pages/admin.html")
     } else {
@@ -104,24 +109,6 @@ async function login() {
 
 login();
 
-const blog = document.getElementById('blog');
-const cblog = blog.querySelector('.item:first-child');
-const cblogB = blog.querySelector('.item:nth-child(2)');
-const newDiv = document.createElement('div');
-const card = document.querySelector('.body-card');
-
-function showViews() {
-  // body...
-  if(getCookie("token")) {
-
-    card.setAttribute("class", "hidden");
-    
-    fetchContent();
-
-  } else {
-    message.innerText = "Inicia sesion";
-  }
-}
 
 function content(visitas, dominio, fecha) {
   newDiv.innerHTML += `
@@ -176,6 +163,19 @@ async function fetchContent() {
         
       // return await ;
     // })
+  }
+}
+
+function showViews() {
+  // body...
+  if(getCookie("token")) {
+
+    card.setAttribute("class", "hidden");
+    
+    fetchContent();
+
+  } else {
+    message.innerText = "Inicia sesion";
   }
 }
 
