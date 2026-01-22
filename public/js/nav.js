@@ -104,7 +104,8 @@ function count() {
 
 };
 
-if(d) count();
+// if(d) 
+count();
 // window.addEventListener("load", function() {
 //     count();
 //  });
