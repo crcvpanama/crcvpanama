@@ -140,7 +140,7 @@ function init(){
 
             setCookie("rgpdOK",1,365);
 
-            count();
+            // count();
         });
     };
 };
