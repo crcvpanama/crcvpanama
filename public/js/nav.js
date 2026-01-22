@@ -66,14 +66,15 @@ let dd = new Date().toLocaleDateString("es-PA", {
   hour12: true
 });
 
-
+const main = document.querySelector("body");
+// console.log(main.target)
 const url = `https://visits-christian-guardias-projects.vercel.app/count`;    
 const dominio = window.location.origin;
 let d = detectCookie("rgpdOK");
 
 function cli() {
-    blog.addEventListener('click', function (event) {
-        if(event.target.tagName === "A" || event.target.tagName === "SPAN") {
+    main.addEventListener('click', function (event) {
+        if(event.target.tagName === "A" || event.target.tagName === "P") {
             // return cb(1);
 
             let analyticsData = {
