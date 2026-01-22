@@ -78,20 +78,41 @@ const url = `https://visits-christian-guardias-projects.vercel.app/count`;
 const dominio = window.location.pathname;
 
 let dom = dominio.split('/');
-let d = detectCookie("rgpdOK");
+// let d = detectCookie("rgpdOK");
 // console.log(dom);
+function cli() {
+    blog.addEventListener('click', function (event) {
+        if(event.target.tagName === "A" || event.target.tagName === "P") {
+            // return cb(1);
+
+            let analyticsData = {
+                id: 6,
+                count: 0,
+                domain: dominio,
+                date: `desde: 06/2025 | última vista: ${dd}`,
+                clicks: 1,
+            };
+            navigator.sendBeacon(url, JSON.stringify(analyticsData));
+        }
+    })
+}
+
+cli();
+
 function count() {
     let analyticsData = {
         id: 6,
         count: 1,
         domain: dom[2],
         date: dd,
+        clicks: 0,
     };
 
     navigator.sendBeacon(url, JSON.stringify(analyticsData));   
 };
 
-if (d) count();
+// if (d) 
+count();
 
 // window.addEventListener("load", function() {
 //     count();
