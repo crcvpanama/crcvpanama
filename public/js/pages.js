@@ -82,7 +82,7 @@ let dom = dominio.split('/');
 // console.log(dom);
 function cli() {
     blog.addEventListener('click', function (event) {
-        if(event.target.tagName === "A" || event.target.tagName === "P") {
+        if(event.target.tagName === "A" || event.target.tagName === "P" || event.target.tagName === "BUTTON") {
             // return cb(1);
 
             let analyticsData = {
