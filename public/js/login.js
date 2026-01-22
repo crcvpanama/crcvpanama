@@ -110,12 +110,13 @@ async function login() {
 login();
 
 
-function content(visitas, dominio, fecha) {
+function content(visitas, dominio, fecha,clicks) {
   newDiv.innerHTML += `
     <article>
       <h2>Dominio: ${dominio}</h2>
       <p>Total de Visitas: <span>${visitas}</span></p>
       <p>Fecha: <span>${fecha}</span></p>
+      <p>Clicks: <span>${clicks}</span></p>
     </article>
   `;
 
@@ -156,10 +157,10 @@ async function fetchContent() {
   if(!result.error) {    
     // console.log(result.rows[0]);
   // result.rows[0].forEach(res => { 
-    let sumVisitas = result.rows[0][0] + result.rows[0][3];
+    let sumVisitas = result.rows[0][0] + result.rows[0][4];
     // console.log(sumVisitas);
-    content(sumVisitas,result.rows[0][1],result.rows[0][2]);
-    contentB(result.rows[0][3],result.rows[0][5],result.rows[0][4]);
+    content(sumVisitas,result.rows[0][1],result.rows[0][2],result.rows[0][3]);
+    contentB(result.rows[0][4],result.rows[0][6],result.rows[0][5]);
         
       // return await ;
     // })
