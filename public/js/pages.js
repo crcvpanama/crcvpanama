@@ -42,7 +42,7 @@ function detectCookie(cname) {
     }
     return false;
 };
-
+const main = document.querySelector("body");
 
 // window.addEventListener('load',(event)=>{
 
@@ -81,7 +81,7 @@ let dom = dominio.split('/');
 // let d = detectCookie("rgpdOK");
 // console.log(dom);
 function cli() {
-    blog.addEventListener('click', function (event) {
+    main.addEventListener('click', function (event) {
         if(event.target.tagName === "A" || event.target.tagName === "P" || event.target.tagName === "BUTTON") {
             // return cb(1);
 
