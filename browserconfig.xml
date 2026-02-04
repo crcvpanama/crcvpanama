@@ -2,7 +2,7 @@
 <browserconfig>
     <msapplication>
         <tile>
-            <square70x70logo src="https://www.crcvpanama.org/favicons/favicon.png"/><square150x150logo src="https://www.crcvpanama.org/favicons/apple-touch-icon.png"/><square310x310logo src="https://www.crcvpanama.org/favicons/crcvlogo.png"/><TileColor>#fafafa</TileColor>
+            <square70x70logo src="https://www.crcvpanama.org/favicons/ms-icon-70x70.png"/><square150x150logo src="https://www.crcvpanama.org/favicons/ms-icon-150x150.png"/><square310x310logo src="https://www.crcvpanama.org/favicons/ms-icon-310x310.png"/><TileColor>#fafafa</TileColor>
         </tile>
     </msapplication>
 </browserconfig>
