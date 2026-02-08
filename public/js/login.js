@@ -154,7 +154,7 @@ async function fetchContent() {
         blog.innerText = error.message;
       });
 
-  console.log(result);
+  console.log(result.message);
 
   if(result.message === 'Invalid token') return card.removeAttribute("id");
 
