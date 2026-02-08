@@ -156,7 +156,8 @@ async function fetchContent() {
 
   if(result.error) return card.removeAttribute("id");
 
-  if(!result.error) {    
+  if(!result.error) {
+    card.setAttribute("id", "hidden");
     // console.log(result.rows[0]);
   // result.rows[0].forEach(res => { 
     let sumVisitas = result.rows[0][0] + result.rows[0][4];
@@ -172,8 +173,6 @@ async function fetchContent() {
 function showViews() {
   // body...
   if(getCookie("token")) {
-
-    card.setAttribute("id", "hidden");
     
     fetchContent();
 
