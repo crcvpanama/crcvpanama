@@ -154,6 +154,8 @@ async function fetchContent() {
         blog.innerText = error.message;
       });
 
+  console.log(result.error);
+
   if(result.error) return card.removeAttribute("id");
 
   if(!result.error) {
