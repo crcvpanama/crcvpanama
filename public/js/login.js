@@ -156,9 +156,7 @@ async function fetchContent() {
 
   console.log(result);
 
-  if(result === undefined) {
-    if (element.hasAttribute("id")) return card.removeAttribute("id");
-  }
+  if(result.message === 'Invalid token') return card.removeAttribute("id");
 
   if(!result.error) {
     // console.log(result.rows[0]);
