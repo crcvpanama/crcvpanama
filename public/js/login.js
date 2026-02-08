@@ -154,6 +154,8 @@ async function fetchContent() {
         blog.innerText = error.message;
       });
 
+  if(result.error) return card.removeAttribute("id");
+
   if(!result.error) {    
     // console.log(result.rows[0]);
   // result.rows[0].forEach(res => { 
@@ -171,7 +173,7 @@ function showViews() {
   // body...
   if(getCookie("token")) {
 
-    card.setAttribute("class", "hidden");
+    card.setAttribute("id", "hidden");
     
     fetchContent();
 

@@ -360,7 +360,7 @@ main {
     /*content-visibility: auto;*/
 }
 
-.hidden {
+#hidden {
     display: var(--hidden);
 }
 
