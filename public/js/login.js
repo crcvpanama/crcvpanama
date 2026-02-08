@@ -156,7 +156,11 @@ async function fetchContent() {
 
   // console.log(result.message);
 
-  if(result.message === 'Invalid token') return card.removeAttribute("id");
+  if(result.message === 'Invalid token') 
+    {
+      card.removeAttribute("id");
+      return message.innerText = result.message + " Inicia sesion"; 
+    }
 
   if(!result.error) {
     // console.log(result.rows[0]);
