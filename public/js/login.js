@@ -150,14 +150,15 @@ async function fetchContent() {
   .then(response => response.json())
   .catch((error) => {
         console.error("Error:", error.message);
-        card.removeAttribute("id");
         blog.style.color = "#990000";
         blog.innerText = error.message;
       });
 
-  // console.log(result.error);
+  console.log(result);
 
-  // if(result.error) return 
+  if(result === undefined) {
+    if (element.hasAttribute("id")) return card.removeAttribute("id");
+  }
 
   if(!result.error) {
     // console.log(result.rows[0]);
