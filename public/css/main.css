@@ -14,7 +14,9 @@
     --box: inset -15.5em 0 0 0 #004481,inset 15.5em 0 0 0 #00448199;
     --backgroundtransparent: #0075be68;
     --box-two: inset -.1em 0 0 0 #004481,inset .1em 0 0 0 #00448199;
-
+    --gray100: hsl(0,0%,100%);
+    --gray70: hsl(0,0%,70%);
+    --gray0: hsl(0,0%,0%);
     --background: linear-gradient(to left, #36D1DC99 0%, #fefefe59 100%);
 /*  --background: linear-gradient(to left, #36D1DCc9, #36D1DC10);*/
     --solid-bground: linear-gradient(to right, #0075be 0%, #004481 100%);
@@ -69,7 +71,7 @@ header {
 h2 {
     margin-bottom: 20px;
     padding: 5px;
-    font-size: clamp(2em, 3vw, 2.5em);
+    font-size: clamp(1.4em, 4vw, 2.1em);
     font-weight: 900;
     /*letter-spacing: .1cap;*/
     line-height: 1.1;
@@ -82,7 +84,7 @@ h2 {
 
 
 h3 {
-    font-size: 1.7em;
+    font-size: 1.4em;
     /*letter-spacing: .1cap;*/
     line-height: 1;
     font-weight: 700;
@@ -182,10 +184,10 @@ details[open] {
     /*display: block;*/
     /*position: relative;*/
     /*justify-content: center;*/
-    width: 600px;
+    width: 450px;
     height: auto;
     place-content: center;
-    padding: 10px;
+    padding: 15px;
     /*border: 1px solid black;*/
     /*overflow: hidden;*/
     margin: auto;
@@ -271,7 +273,8 @@ details[open] {
     cursor: pointer;
     opacity: 1;
     text-decoration: var(--hidden);
-    color: var(--dark); 
+    /*color: var(--dark); */
+    color: hsl(0, 0%, 30%);
     transition: .4s ease-in;
     z-index: 1;
 }
@@ -451,7 +454,7 @@ main {
 
 .home-slider-content h1 {
     /*margin: 0;*/
-    font-size: clamp(1.4em, 6vw, 2.3em);
+    font-size: clamp(1.4em, 7vw, 2.3em);
     letter-spacing: .09em;
     color: var(--white);
     /*margin-bottom: 10px;*/
@@ -462,9 +465,11 @@ main {
     span {
         display: block;
         font-weight: 600;
-        font-size: .8rem;
+        font-size: 1rem;
         margin-top: 10px;
         line-height: 1.5;
+        /*color: var(--gray70);*/
+        color: hsl(222, 76%, 90%);
     }
 }
 
@@ -667,7 +672,7 @@ main {
     display: flex;
     /*position: relative;*/
     font-weight: 400;
-    color: #202020;
+    /*color: #202020;*/
     border-radius: .4em;
     width: auto;  
     height: 340px;
@@ -679,6 +684,7 @@ main {
     transition: all .4s ease-in-out;
     line-height: 1.4;
     margin: 0 auto;
+   color: hsl(0, 0%, 10%);
 }
 
 .diag__parr::before {
@@ -700,6 +706,9 @@ main {
     padding: 0 .7em;
     interpolate-size: allow-keywords;
     transition: all .4s ease-in-out;
+    
+    color: hsl(0, 0%, 40%);
+
 }
 
 /*.search-icon {
@@ -926,6 +935,7 @@ footer {
     min-height: 80.34px;
     color: var(--white);
     text-align: center;
+    min-width: 259px;
 
     .social--line {
         display: flex;
@@ -939,13 +949,13 @@ footer {
 
 .services-footer {
     display: flex;
-    padding: 40px 0;
+    padding: 40px 20px;
     justify-content: space-evenly;
     align-items: start;
     color: var(--white);
     text-transform: capitalize;
 
-    h4 {
+    h5 {
         margin-bottom: 15px;
         /*text-transform: capitalize;*/
     }
@@ -958,6 +968,8 @@ footer {
         margin-bottom: 10px;
         cursor: default;
         list-style: none;
+        font-size: .9rem;
+        color: hsl(0, 0%, 80%);
         /*padding-left: 0;*/
     }
 }
@@ -966,8 +978,10 @@ footer {
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
-    justify-content: space-between;
-    width: 65%;
+    justify-content: space-evenly;
+    width: 100%;
+    margin: 0 auto;
+    /*padding: 0 40px;*/
 }
 
 .footer--nav {
@@ -1635,7 +1649,7 @@ details > summary {
     justify-content: space-between;
     background-color: #0052D409;
     color: var(--blue);
-    text-align: left;
+    text-align: right;
     transition: .4s ease-in;
     opacity: 1;
     align-items: center;  
