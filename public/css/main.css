@@ -469,7 +469,7 @@ main {
         margin-top: 10px;
         line-height: 1.5;
         /*color: var(--gray70);*/
-        color: hsl(222, 76%, 90%);
+        color: hsl(222, 0%, 90%);
     }
 }
 
