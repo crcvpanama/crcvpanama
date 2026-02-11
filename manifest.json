@@ -2,37 +2,43 @@
 	"lang": "es",
     "dir": "ltr",
     "name": "Centro de Rehabilitación de la Columna Vertebral",
-    "short_name": "CRCVPanama",
+    "short_name": "CRCV Panamá",
 	"icons": [
 		{
-	   "src": "/favicons/favicon16x16.png",
+	   "src": "\/favicons/favicon16x16.png",
 	   "sizes": "16x16",
-	   "type": "image/png",
+	   "type": "image\/png",
 	   "density": "0.75"
 	  },
 	  {
-	   "src": "/favicons/favicon-32x32.png",
+	   "src": "\\/favicons/favicon-32x32.png",
 	   "sizes": "32x32",
-	   "type": "image/png",
-	   "density": "0.75"
-	  },
-	  {
-	   "src": "/favicons/favicon-48px.png",
-	   "sizes": "48x48",
-	   "type": "image/png",
+	   "type": "image\/png",
 	   "density": "1.0"
 	  },
+	  {
+	   "src": "\/favicons/favicon48x48.png",
+	   "sizes": "48x48",
+	   "type": "image\/png",
+	   "density": "1.5"
+	  },
+	  {
+	   "src": "\/favicons/favicon.png",
+	   "sizes": "60x60",
+	   "type": "image\/png",
+	   "density": "2.0"
+	  },
 		{
-		"src":"/favicons/android-chrome-192x192.png",
+		"src":"\/favicons/android-chrome-192x192.png",
 		"sizes":"192x192",
-		"type":"image/png",
-		"density": "1.0"
+		"type":"image\/png",
+		"density": "3.0"
 		},
 		{
-		"src":"/favicons/android-chrome-512x512.png",
+		"src":"\/favicons/android-chrome-512x512.jpg",
 		"sizes":"512x512",
-		"type":"image/png",
-		"density": "1.0"
+		"type":"image\/jpg",
+		"density": "4.0"
 		}
 	],
 	"scope":"/",
