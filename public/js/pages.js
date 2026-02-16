@@ -92,7 +92,7 @@ function cli() {
             let analyticsData = {
                 id: 4,
                 count: 0,
-                domain: dom[2],
+                domain: dominio,
                 date: `desde: 06/2025 | última vista: ${formatoConZona}`,
                 clicks: 1,
             };
@@ -108,7 +108,7 @@ function count() {
         id: 6,
         count: 1,
         domain: dom[2],
-        date: dd,
+        date: formatoConZona,
         clicks: 0,
     };
 
