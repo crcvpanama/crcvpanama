@@ -59,16 +59,20 @@ init();
 
 
 // const dd = getCurrentUTCDatetimeShort();
-
-let dd = new Date().toLocaleDateString("es-PA", {
-  weekday: "long",
-  day: "numeric",
-  month: "short",
-  hour: "numeric",
-  minute: "numeric",
-  hour12: true
-});
-
+const ahora = new Date();
+// let dd = new Date().toLocaleDateString("es-PA", {
+//   weekday: "long",
+//   day: "numeric",
+//   month: "short",
+//   hour: "numeric",
+//   minute: "numeric",
+//   hour12: true
+// });
+const formatoConZona = new Intl.DateTimeFormat('es-PA', {
+  dateStyle: 'full',
+  timeStyle: 'long',
+  timeZone: zonaHoraria
+}).format(ahora);
 // ccInit();
 
     // });
@@ -86,10 +90,10 @@ function cli() {
             // return cb(1);
 
             let analyticsData = {
-                id: 6,
+                id: 4,
                 count: 0,
-                domain: dominio,
-                date: `desde: 06/2025 | última vista: ${dd}`,
+                domain: dom[2],
+                date: `desde: 06/2025 | última vista: ${formatoConZona}`,
                 clicks: 1,
             };
             navigator.sendBeacon(url, JSON.stringify(analyticsData));
@@ -112,7 +116,6 @@ function count() {
 };
 
 // if (d) 
-count();
 
 // window.addEventListener("load", function() {
 //     count();
@@ -185,7 +188,7 @@ setTimeout(() => {
 }, 3000);
 
 
-const year = new Date().getFullYear();
+const year = ahora.getFullYear();
 // const initYear = year - 2005;
 // const yyyy = document.querySelector('.yyyy');
 
@@ -195,3 +198,5 @@ const year = new Date().getFullYear();
 let date = document.querySelector('.date');
 
 date.append(year);
+
+count();

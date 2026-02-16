@@ -57,16 +57,32 @@ document.addEventListener('DOMContentLoaded', function () {
   init();
 });
 
-let dd = new Date().toLocaleDateString("es-PA", {
-  weekday: "long",
-  day: "numeric",
-  month: "short",
-  hour: "numeric",
-  minute: "numeric",
-  hour12: true
-});
+// let dd = new Date().toLocaleDateString("es-PA", {
+//   weekday: "long",
+//   day: "numeric",
+//   month: "short",
+//   hour: "numeric",
+//   minute: "numeric",
+//   hour12: true
+// });
 
 const main = document.querySelector("body");
+const ahora = new Date();
+
+// 1. Obtener el desplazamiento respecto a UTC en minutos
+// const offsetMinutos = ahora.getTimezoneOffset(); 
+// Ej: -300 para UTC-5
+// const offsetHoras = -offsetMinutos / 60; 
+// Convertir a horas
+// 2. Obtener el nombre de la zona horaria local (IANA)
+const zonaHoraria = Intl.DateTimeFormat().resolvedOptions().timeZone;
+
+// 3. Mostrar la fecha y hora formateada con zona horaria
+const formatoConZona = new Intl.DateTimeFormat('es-PA', {
+  dateStyle: 'full',
+  timeStyle: 'long',
+  timeZone: zonaHoraria
+}).format(ahora);
 // console.log(main.target)
 const url = `https://visits-christian-guardias-projects.vercel.app/count`;    
 const dominio = window.location.origin;
@@ -74,14 +90,14 @@ let d = detectCookie("rgpdOK");
 
 function cli() {
     main.addEventListener('click', function (event) {
-        if(event.target.tagName === "A" || event.target.tagName === "P" || event.target.tagName === "BUTTON") {
+        if(event.target.tagName === "A" || event.target.tagName === "P" || event.target.tagName === "BUTTON" || event.target.tagName === "SPAN") {
             // return cb(1);
 
             let analyticsData = {
                 id: 3,
                 count: 0,
                 domain: dominio,
-                date: `desde: 06/2025 | última vista: ${dd}`,
+                date: `desde: 06/2025 | última vista: ${formatoConZona}`,
                 clicks: 1,
             };
             navigator.sendBeacon(url, JSON.stringify(analyticsData));
@@ -97,16 +113,15 @@ function count() {
         id: 3,
         count: 1,
         domain: dominio,
-        date: `desde: 06/2025 | última vista: ${dd}`,
+        date: `desde: 06/2025 | última vista: ${formatoConZona}`,
         clicks: 0,
     };
 
-    navigator.sendBeacon(url, JSON.stringify(analyticsData));   
-
+    navigator.sendBeacon(url, JSON.stringify(analyticsData));  
 };
 
 // if(d) 
-count();
+// count();
 // window.addEventListener("load", function() {
 //     count();
 //  });
@@ -237,3 +252,4 @@ let secondImage = document.createElement('img');
 // document.addEventListener('DOMContentLoaded', function () {
 //   console.log('The DOM is fully loaded and parsed.');
 // });
+count();
