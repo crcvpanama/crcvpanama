@@ -158,6 +158,7 @@ async function fetchContent() {
 
   if(result.message === 'Invalid token') 
     {
+      removeCookie("token");
       card.removeAttribute("id");
       return message.innerText = result.message + " Inicia sesion"; 
     }
