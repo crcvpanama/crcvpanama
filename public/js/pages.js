@@ -68,6 +68,8 @@ const ahora = new Date();
 //   minute: "numeric",
 //   hour12: true
 // });
+const zonaHoraria = Intl.DateTimeFormat().resolvedOptions().timeZone;
+
 const formatoConZona = new Intl.DateTimeFormat('es-PA', {
   dateStyle: 'full',
   timeStyle: 'long',
