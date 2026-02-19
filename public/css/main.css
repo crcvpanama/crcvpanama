@@ -1749,7 +1749,7 @@ details[open] > summary::after {
         position: fixed;
         width: 100%;
         top: 10%;
-        height: 70vw;
+        height: fit-content;
         place-content: center;
 /*        transform: translateY(170px);*/
         background: #ffffffea;
