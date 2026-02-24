@@ -454,7 +454,7 @@ const listPages = [``,`
                                                 Enviar
                                             </button>
                                         </div>
-                                        <input type="hidden" name="_next" value="https://crcvpanama.org/index.html">
+                                        <input type="hidden" name="_next" value="https://www.crcvpanama.org/">
                                         <input type="hidden" name="_captcha" value="false">
                                     </form>
                                 </div>
@@ -707,3 +707,14 @@ document.addEventListener('readystatechange', (e) => {
         yyyy.append(initYear); 
     }
 });
+
+
+function submitUserForm() {
+    let message = "Gracias por su comentario...";
+    // var response = grecaptcha.getResponse();
+    if (response.length == 0) {
+        message = 'This field is required.';
+        return false;
+    };
+    return true;
+};
