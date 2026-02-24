@@ -134,12 +134,12 @@ async function init(){
     } else {
         document.querySelector(".botonRGPD").addEventListener("click", () => {
             eliminarBloqueRGPD();
-            navigator.sendBeacon(url, JSON.stringify({
-                id: 6,
-                count: 1,
-                domain: dom[2],
-                date: dd,
-            }));
+            // navigator.sendBeacon(url, JSON.stringify({
+            //     id: 6,
+            //     count: 1,
+            //     domain: dom[2],
+            //     date: formatoConZona,
+            // }));
             setCookie("rgpdOK",1,365);
         });
     }
