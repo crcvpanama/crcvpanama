@@ -428,7 +428,7 @@ const listPages = [``,`
                                     <h3>Contáctenos</h3>
                                 </div>
                                 <div class="card-body" id="formulario">
-                                    <form action="https://formsubmit.co/crcvpanama@outlook.es" method="post" id="form1">
+                                    <form action="https://formsubmit.co/crcvpanama@outlook.es" method="post" id="form1" onsubmit="${submitUserForm()}">
                                         <div class="form-group">
                                             <label for="name">Nombre</label>
                                             <input class="form-control" type="text" name="name"  placeholder="Nombre" autocomplete="on" id="name">
@@ -711,10 +711,15 @@ document.addEventListener('readystatechange', (e) => {
 
 function submitUserForm() {
     let message = "Gracias por su comentario...";
+
+    let msg=alert(message);
+
+    if(msg) window.location.reload();
+
     // var response = grecaptcha.getResponse();
-    if (response.length == 0) {
-        message = 'This field is required.';
-        return false;
-    };
+    // if (response.length == 0) {
+    //     message = 'This field is required.';
+    //     return false;
+    // };
     return true;
 };
