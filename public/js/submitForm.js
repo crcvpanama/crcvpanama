@@ -34,8 +34,10 @@ function submitUserForm() {
 
         let msg = alert(message);
 
+        console.log(msg);
 
-        if (msg) window.location.reload();
+
+        if (msg) window.location.href = "https://www.crcvpanama.org/";
     });
     // console.log(event);
     // event.preventDefault;
