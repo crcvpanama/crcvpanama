@@ -1,7 +1,7 @@
 const response = document.querySelectorAll("input");
 const userMessage = document.querySelector(".message");
 const form1 = document.getElementById('form');
-const url = `https://visits-christian-guardias-projects.vercel.app/crcv/submit`;
+const urlSubmitForm = `https://visits-christian-guardias-projects.vercel.app/crcv/submit`;
 // console.log(response);
 
 function submitUserForm() {
@@ -16,7 +16,7 @@ function submitUserForm() {
         //     return false;
         // } 
 
-          await fetch(url, {
+          await fetch(urlSubmitForm, {
             method: 'POST',
             body: JSON.stringify({
                 name: formData.get('name'),
@@ -33,11 +33,8 @@ function submitUserForm() {
         let message = "Gracias por su comentario...";
 
         let msg = alert(message);
-
-        console.log(msg);
-
-
-        if (msg) window.location.href = "https://www.crcvpanama.org/";
+        
+        window.location.href = "https://www.crcvpanama.org/";
     });
     // console.log(event);
     // event.preventDefault;
