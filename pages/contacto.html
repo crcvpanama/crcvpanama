@@ -20,38 +20,51 @@
 <body>
     <header>
         <div class="header">
-            <div class="logo-container">
-                <span class="logo"></span>
-            <!-- <figure>
-                <img src="./public/img/webp/crcvlogo.webp" alt="logo">
-            </figure> -->
-            </div>
-            <!-- <video autoplay muted playsinline oncontextmenu="return false;" preload="auto">
-            <source src="./public/videos/vinicio.mov" type="video/mp4">
-            </video> -->
-            <div class="header-title">
-                <strong class="title">¡Con salud la vida se disfruta mejor!</strong>
-            </div>
-        </div>
-        <nav class="navbar">
-            <div class="nav-b">
-                <div class="collapse navbar-collapse">
-                    <ul class="nav-bar">
-                        <li class="nav-item"><a class="nav-link" href="https://www.crcvpanama.org/"> Inicio </a></li>
-                        <!-- <li class="nav-item showQS"><a class="nav-link" href="#about"> ¿Quiénes Somos? </a></li> -->
-                        <li class="nav-item showService"><a class="nav-link" href="servicios.html"> Servicios </a></li>
-                        <li class="nav-item showDiag"><a class="nav-link" href="diagnosticos.html"> Diagnósticos Tratados </a></li>       
-                        <li class="nav-item showContact"><a class="nav-link active" href="contacto.html"> Contacto </a></li>
-                        <li class="nav-item showTest"><a class="nav-link" href="testimonios.html"> Testimonios </a></li>
-                        <li class="nav-item showFQs"><a class="nav-link" href="faqs.html"> Preguntas Frecuentes </a></li>
-                    </ul>
+            <button type="button" class="nav-button" title="Navegación"></button>
+
+            <nav class="navbar">
+                <div class="nav-b">
+                    <div class="collapse navbar-collapse">
+                        <ul class="nav-bar">
+                            <li class="nav-item"><a class="nav-link" href="../index.html"> Inicio </a></li>
+                            <!-- <li class="nav-item showQS"><a class="nav-link" href="#about"> ¿Quiénes Somos? </a></li> -->
+                            <li class="nav-item showService"><a class="nav-link" href="./servicios.html"> Servicios </a></li>
+                            <li class="nav-item showDiag"><a class="nav-link" href="./diagnosticos.html"> Diagnósticos Tratados </a></li>       
+                            <li class="nav-item showContact"><a class="nav-link active" href="#contact"> Contacto </a></li>
+                            <li class="nav-item showTest"><a class="nav-link" href="./testimonios.html"> Testimonios </a></li>
+                            <li class="nav-item showFQs"><a class="nav-link" href="./faqs.html"> Preguntas Frecuentes </a></li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+
+            <div class="logo-contains">
+                <div class="logo-container">
+                    <img src="../public/img/svg/crcvlogo.svg" class="logo" alt="logo del Centro de Rehabilitación de la Columna Vertebral">
+                    <!-- <video autoplay muted playsinline oncontextmenu="return false;" preload="auto">
+                        <source src="./public/videos/vinicio.mov" type="video/mp4">
+                    </video> -->
+                </div>
+            
+                <div class="header-title">
+                    <strong class="title">¡Con salud la vida se disfruta mejor!</strong>
                 </div>
             </div>
-        </nav>
+        
         <div class="lineB">
-            <button type="button" class="nav-button" title="Navegacion"></button>
-
             <div class="social--line"></div>
+        </div>
+    
+            <div class="home-start-side"> 
+                <div class="home-slider-content" id="home0">
+                    <h1>
+                        DRX9000
+              <span>Descompresión espinal no quirúrgica</span>
+                    </h1>   
+                </div>
+                <div class="aside-social-web" id="drx"></div>
+            </div>
+
         </div>
     </header>
 
@@ -125,7 +138,8 @@
                                     <h3>Contáctenos</h3>
                                 </div>
                                 <div class="card-body" id="formulario">
-                                    <form action="https://formsubmit.co/crcvpanama@outlook.es" method="post" id="form1" onsubmit="return submitUserForm()">
+                                    <!-- <form action="https://formsubmit.co/crcvpanama@outlook.es" method="post" id="form1" onsubmit="return submitUserForm()"> -->
+                                        <form id="form">
                                         <div class="form-group">
                                             <label for="name">Nombre</label>
                                             <input class="form-control" type="text" name="name"  placeholder="Nombre" autocomplete="on" id="name">

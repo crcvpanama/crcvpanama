@@ -265,6 +265,10 @@ newSpan.setAttribute('id', 'resultado');
 
 // s.insertBefore(newInput, y);
 // console.log(inertInput)
+const nuevoInput = document.createElement('input');
+    nuevoInput.type = 'text';
+    nuevoInput.placeholder = 'Escribe algo...';
+    nuevoInput.id = 'miInput';
 
 const listPages = [``,`
             <section class="services servicehidden page">
@@ -428,7 +432,7 @@ const listPages = [``,`
                                     <h3>Contáctenos</h3>
                                 </div>
                                 <div class="card-body" id="formulario">
-                                    <form action="https://formsubmit.co/crcvpanama@outlook.es" method="post" id="form1" onsubmit="${submitUserForm()}">
+                                    <form action="https://formsubmit.co/crcvpanama@outlook.es" method="post" id="form1">
                                         <div class="form-group">
                                             <label for="name">Nombre</label>
                                             <input class="form-control" type="text" name="name"  placeholder="Nombre" autocomplete="on" id="name">
@@ -559,6 +563,8 @@ const listPages = [``,`
             </div>
             </section>`
 ];
+
+console.log(document.getElementById("mail"))
 
 searchDiv.appendChild(newInput);
 searchDiv.appendChild(newSpan);
@@ -715,11 +721,5 @@ function submitUserForm() {
     let msg=alert(message);
 
     if(msg) window.location.reload();
-
-    // var response = grecaptcha.getResponse();
-    // if (response.length == 0) {
-    //     message = 'This field is required.';
-    //     return false;
-    // };
     return true;
 };
