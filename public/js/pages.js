@@ -95,7 +95,7 @@ function cli() {
                 id: 4,
                 count: 0,
                 domain: dominio,
-                date: `desde: 06/2025 | última vista: ${formatoConZona}`,
+                date: `06/2025 | última vista: ${formatoConZona}`,
                 clicks: 1,
             };
             navigator.sendBeacon(url, JSON.stringify(analyticsData));
@@ -165,7 +165,7 @@ const socialSVG = [
         <a href="https://www.facebook.com/crcvpanama" target="_blank" aria-label="FACEBOOK"><span class="facebook"></span></a>
     </div>`,
     `<div>
-        <a target="_blank" href="https://wa.me/50765991052?text=Hola%20estoy%20interesado%20y%20deseo%20más%20información."><span class="whatsapp"></span></a>
+        <a target="_blank" href="https://wa.me/50766164253?text=Hola%20estoy%20interesado%20y%20deseo%20más%20información."><span class="whatsapp"></span></a>
     </div>`,
     `<div>
         <a target="_blank" href="https://www.youtube.com/channel/UCjhJ2PgAVZLeuqYWTsE5-Qg"><span class="youtube"></span></a>

@@ -45,7 +45,7 @@ const socialSVG = [
         <a href="https://www.facebook.com/crcvpanama" target="_blank" aria-label="FACEBOOK"><span class="facebook"></span></a>
     </div>`,
     `<div>
-        <a target="_blank" href="https://wa.me/50765991052?text=Hola%20estoy%20interesado%20y%20deseo%20más%20información."><span class="whatsapp"></span></a>
+        <a target="_blank" href="https://wa.me/50766164253?text=Hola%20estoy%20interesado%20y%20deseo%20más%20información."><span class="whatsapp"></span></a>
     </div>`,
     `<div>
         <a target="_blank" href="https://www.youtube.com/channel/UCjhJ2PgAVZLeuqYWTsE5-Qg"><span class="youtube"></span></a>
@@ -374,7 +374,7 @@ const listPages = [``,`
                                 <article class="numbers">
                                     <h5>Contacto</h5>
                                 <a href="tel:+5073945248"><i class="bi bi-telephone"></i> Teléfono: (507) 394-5248 </a>
-                                <a target="_blank" href="https://wa.me/50765991052"><i class="bi bi-whatsapp"></i> Whatsapp: (507) 6599-1052 </a>
+                                <a target="_blank" href="https://wa.me/50766164253"><i class="bi bi-whatsapp"></i> Whatsapp: (507) 6616-4253 </a>
                                 </article>
                             </div>
                             <div class="foot-journal">
