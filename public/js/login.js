@@ -144,7 +144,7 @@ function contentC(nombre, email, phone, control, date) {
     <article>
       <h4>Nombre: ${nombre}</h4>
       <p>Correo: <a href="mailto:${email}" target="_blank"><span>${email}</span></a></p>
-      <p>Telefono: <a class="whatsapp--links" target="_blank" href="https://wa.me/${phone}><span>${phone}</span></a></p>
+      <p>Telefono: <a target="_blank" href="https://wa.me/${phone}"><span>${phone}</span></a></p>
       <p>Comentario: <span>${control}</span></p>
       <span>${date}</span>
     </article>
