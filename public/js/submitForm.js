@@ -2,7 +2,6 @@ const response = document.querySelectorAll("input");
 const userMessage = document.querySelector(".message");
 const form1 = document.getElementById('form');
 const urlSubmitForm = `https://visits-christian-guardias-projects.vercel.app/crcv/submit`;
-// console.log(response);
 
 function submitUserForm() {
 
@@ -33,7 +32,7 @@ function submitUserForm() {
         let message = "Gracias por su comentario...";
 
         let msg = alert(message);
-        
+
         window.location.href = "https://www.crcvpanama.org/";
     });
     // console.log(event);

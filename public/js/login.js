@@ -139,13 +139,14 @@ function contentB(visitas, dominio, fecha) {
   blog.insertBefore(newDiv, cblogB);
 }
 
-function contentC(nombre, email, phone, control) {
+function contentC(nombre, email, phone, control, date) {
   newArticle.innerHTML += `
     <article>
       <h4>Nombre: ${nombre}</h4>
       <p>Correo: <span>${email}</span></p>
       <p>Telefono: <span>${phone}</span></p>
       <p>Comentario: <span>${control}</span></p>
+      <span>${date}</span>
     </article>
     <br><hr>
   `;
@@ -227,7 +228,7 @@ async function showMSG() {
     let mensage = result;
 
     mensage.forEach(msg => {
-      contentC(msg.name, msg.email, msg.phone, msg.control);
+      contentC(msg.name, msg.email, msg.phone, msg.control, msg.date);
     })
       // result.rows[0].forEach(res => { 
             
