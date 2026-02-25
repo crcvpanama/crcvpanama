@@ -971,11 +971,36 @@ details[open] {
         filter: drop-shadow(1px 1px 1px #243fa8c8);
     }
 
+
     .navbar-collapse {
-/*        position:relative;*/
+/*        position:relative;
 /*      display: var(--hidden);*/
         padding: 0;
         height: 0;
+    }
+    
+    .home-start {
+        display: var(--show);
+    }
+
+    .home-start-side {
+        /*display: var(--show);*/
+        grid-template-columns: 1fr;
+        height: calc(100% - 305px);
+        /*height: 520px;*/
+        place-content: normal;
+    }
+
+    .home-slider-content {
+        height: 100%;
+    }
+
+    .home-slider-content::before {
+        background-size: 100% 100%;
+    }
+
+    .aside-social-web {
+        display: var(--hidden);
     }
 
     
