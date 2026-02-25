@@ -201,7 +201,7 @@ async function showMSG() {
       'Authorization': `Bearer ${token}`,
       "Content-Type": "application/json; charset=utf-8",
       "Access-Control-Allow-Origin": "*",
-      "Access-Control-Methods": "GET,HEAD,POST,OPTIONS",
+      "Access-Control-Methods": "GET,HEAD,POST,PATCH",
     },
   })
   .then(response => response.json())
