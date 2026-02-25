@@ -9,6 +9,7 @@ const blog = document.getElementById('blog');
 const showUserMsg = document.getElementById('users_msg');
 const cblog = blog.querySelector('.item:first-child');
 const cblogB = blog.querySelector('.item:nth-child(2)');
+const cmsg = blog.querySelector('.item:first-child');
 const newDiv = document.createElement('div');
 const card = document.querySelector('.body-card');
 
@@ -148,7 +149,7 @@ function contentC(nombre, email, phone, control) {
     <br><hr>
   `;
 
-  showUserMsg.insertBefore(newDiv, cblog);
+  showUserMsg.insertBefore(newDiv, cmsg);
 }
 
 const token = getCookie("token");
@@ -221,16 +222,11 @@ async function showMSG() {
       return message.innerText = result.message + " Inicia sesion"; 
     }
 
-  if(!result.error) {
-    console.log(result);
-    // console.log(result.rows);
-    // console.log(result.rows[0]);
+  if(!result.error) {    
     let mensage = result;
 
     mensage.forEach(msg => {
-      console.log(msg);
       contentC(msg.name, msg.email, msg.phone, msg.control);
-
     })
       // result.rows[0].forEach(res => { 
             
