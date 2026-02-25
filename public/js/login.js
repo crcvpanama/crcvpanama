@@ -145,6 +145,7 @@ function contentC(nombre, email, phone, control) {
       <p>Telefono: <span>${phone}</span></p>
       <p>Comentario: <span>${control}</span></p>
     </article>
+    <br><hr>
   `;
 
   showUserMsg.insertBefore(newDiv, cblog);
@@ -228,7 +229,7 @@ async function showMSG() {
 
     mensage.forEach(msg => {
       console.log(msg);
-      contentC(msg.name, msg.email, msg.phone, msg.conrol);
+      contentC(msg.name, msg.email, msg.phone, msg.control);
 
     })
       // result.rows[0].forEach(res => { 
