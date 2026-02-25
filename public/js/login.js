@@ -192,21 +192,6 @@ async function fetchContent() {
   }
 }
 
-function showViews() {
-  // body...
-  if(getCookie("token")) {
-
-    card.setAttribute("id", "hidden");
-    
-    fetchContent();
-
-    showMSG();
-
-  } else {
-    message.innerText = "Inicia sesion";
-  }
-}
-
 async function showMSG() {
   // let token = getCookie("token");
 
@@ -253,5 +238,20 @@ async function showMSG() {
   }
 }
 
+
+function showViews() {
+  // body...
+  if(getCookie("token")) {
+
+    card.setAttribute("id", "hidden");
+    
+    fetchContent();
+
+    showMSG();
+
+  } else {
+    message.innerText = "Inicia sesion";
+  }
+}
 
 showViews();
