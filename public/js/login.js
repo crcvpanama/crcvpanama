@@ -11,6 +11,7 @@ const cblog = blog.querySelector('.item:first-child');
 const cblogB = blog.querySelector('.item:nth-child(2)');
 const cmsg = blog.querySelector('.item:first-child');
 const newDiv = document.createElement('div');
+const newArticle = document.createElement('article');
 const card = document.querySelector('.body-card');
 
 function setCookie(cname, cvalue, exdays) {
@@ -140,16 +141,14 @@ function contentB(visitas, dominio, fecha) {
 
 function contentC(nombre, email, phone, control) {
   newDiv.innerHTML += `
-    <article>
       <h2>Nombre: ${nombre}</h2>
       <p>Correo: <span>${email}</span></p>
       <p>Telefono: <span>${phone}</span></p>
       <p>Comentario: <span>${control}</span></p>
-    </article>
     <br><hr>
   `;
 
-  showUserMsg.insertBefore(newDiv, cmsg);
+  showUserMsg.insertBefore(newArticle, cmsg);
 }
 
 const token = getCookie("token");
