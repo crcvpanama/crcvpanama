@@ -140,7 +140,7 @@ function contentB(visitas, dominio, fecha) {
 }
 
 function contentC(nombre, email, phone, control) {
-  newDiv.innerHTML += `
+  newArticle.innerHTML += `
       <h2>Nombre: ${nombre}</h2>
       <p>Correo: <span>${email}</span></p>
       <p>Telefono: <span>${phone}</span></p>
