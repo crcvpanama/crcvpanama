@@ -6,6 +6,7 @@ button.addEventListener('click', () => {
 });
 
 const blog = document.getElementById('blog');
+const showUserMsg = document.getElementById('users_msg');
 const cblog = blog.querySelector('.item:first-child');
 const cblogB = blog.querySelector('.item:nth-child(2)');
 const newDiv = document.createElement('div');
@@ -110,12 +111,13 @@ async function login() {
 login();
 
 
+
 function content(visitas, dominio, fecha,clicks) {
   newDiv.innerHTML += `
     <article>
       <h2>Dominio: ${dominio}</h2>
       <p>Total de Visitas: <span>${visitas}</span></p>
-      <div><h3>Fecha</h3> <span>${fecha}</span></div>
+      <p><h3>Fecha</h3> <span>${fecha}</span></p>
       <p>Clicks: <span>${clicks}</span></p>
     </article>
   `;
@@ -128,11 +130,24 @@ function contentB(visitas, dominio, fecha) {
     <article>
       <h2>Pathname: ${dominio}</h2>
       <p>Visitas: <span>${visitas}</span></p>
-      <div><h3>Fecha</h3> <span>${fecha}</span></div>
+      <div>Fecha: <span>${fecha}</span></div>
     </article>
   `;
 
   blog.insertBefore(newDiv, cblogB);
+}
+
+function contentC(nombre, email, phone, control) {
+  newDiv.innerHTML += `
+    <article>
+      <h2>Nombre: ${nombre}</h2>
+      <p>Correo: <span>${email}</span></p>
+      <p>Telefono: <span>${phone}</span></p>
+      <p>Comentario: <span>${control}</span></p>
+    </article>
+  `;
+
+  showUserMsg.insertBefore(newDiv, cblog);
 }
 
 const token = getCookie("token");
@@ -192,9 +207,6 @@ function showViews() {
   }
 }
 
-showViews();
-
-
 async function showMSG() {
   // let token = getCookie("token");
 
@@ -204,7 +216,7 @@ async function showMSG() {
       'Authorization': `Bearer ${token}`,
       "Content-Type": "application/json; charset=utf-8",
       "Access-Control-Allow-Origin": "*",
-      "Access-Control-Methods": "GET,HEAD,POST,PATCH",
+      "Access-Control-Methods": "GET,HEAD,POST,OPTIONS",
     },
   })
   .then(response => response.json())
@@ -227,9 +239,19 @@ async function showMSG() {
     console.log(result);
     console.log(result.rows);
     console.log(result.rows[0]);
-  // result.rows[0].forEach(res => { 
+    let mensage = result.row;
+
+    mensage.forEach(msg => {
+      console.log(msg);
+      contentC(msg.name, msg.email, msg.phone, msg.conrol);
+
+    })
+      // result.rows[0].forEach(res => { 
             
       // return await ;
     // })
   }
 }
+
+
+showViews();
