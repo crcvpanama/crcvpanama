@@ -68,14 +68,23 @@ const ahora = new Date();
 //   minute: "numeric",
 //   hour12: true
 // });
-const zonaHoraria = Intl.DateTimeFormat().resolvedOptions().timeZone;
+// const zonaHoraria = Intl.DateTimeFormat().resolvedOptions().timeZone;
 
-const formatoConZona = new Intl.DateTimeFormat('es-PA', {
-  dateStyle: 'full',
-  timeStyle: 'long',
-  timeZone: zonaHoraria
-}).format(ahora);
+// const formatoConZona = new Intl.DateTimeFormat('es-PA', {
+//   dateStyle: 'full',
+//   timeStyle: 'long',
+//   timeZone: zonaHoraria
+// }).format(ahora);
 // ccInit();
+
+  const opciones = {
+    timeZone: "America/Panama",
+    dateStyle: 'full',
+    timeStyle: 'long',
+    hour12: false, 
+  };
+
+  const formatoConZona = new Intl.DateTimeFormat("es-PA", opciones).format(ahora);
 
     // });
 

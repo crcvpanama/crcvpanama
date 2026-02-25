@@ -75,15 +75,24 @@ const ahora = new Date();
 // const offsetHoras = -offsetMinutos / 60; 
 // Convertir a horas
 // 2. Obtener el nombre de la zona horaria local (IANA)
-const zonaHoraria = Intl.DateTimeFormat().resolvedOptions().timeZone;
+// const zonaHoraria = Intl.DateTimeFormat().resolvedOptions().timeZone;
 
 // 3. Mostrar la fecha y hora formateada con zona horaria
-const formatoConZona = new Intl.DateTimeFormat('es-PA', {
-  dateStyle: 'full',
-  timeStyle: 'long',
-  timeZone: zonaHoraria
-}).format(ahora);
+// const formatoConZona = new Intl.DateTimeFormat('es-PA', {
+//   dateStyle: 'full',
+//   timeStyle: 'long',
+//   timeZone: zonaHoraria
+// }).format(ahora);
 // console.log(main.target)
+ const opciones = {
+    timeZone: "America/Panama",
+    dateStyle: 'full',
+    timeStyle: 'long',
+    hour12: false, 
+  };
+
+  const formatoConZona = new Intl.DateTimeFormat("es-PA", opciones).format(ahora);
+  
 const url = `https://visits-christian-guardias-projects.vercel.app/count`;    
 const dominio = window.location.origin;
 let d = detectCookie("rgpdOK");

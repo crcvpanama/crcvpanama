@@ -564,8 +564,6 @@ const listPages = [``,`
             </section>`
 ];
 
-console.log(document.getElementById("mail"))
-
 searchDiv.appendChild(newInput);
 searchDiv.appendChild(newSpan);
 
