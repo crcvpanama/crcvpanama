@@ -130,7 +130,7 @@ function content(visitas, dominio, fecha,clicks) {
 function contentB(visitas, dominio, fecha) {
   newDiv.innerHTML += `
     <article>
-      <h2>Pathname: ${dominio}</h2>
+      <h4>Pathname: ${dominio}</h4>
       <p>Visitas: <span>${visitas}</span></p>
       <p>Fecha: <span>${fecha}</span></p>
     </article>
@@ -142,7 +142,7 @@ function contentB(visitas, dominio, fecha) {
 function contentC(nombre, email, phone, control) {
   newArticle.innerHTML += `
     <article>
-      <h2>Nombre: ${nombre}</h2>
+      <h4>Nombre: ${nombre}</h4>
       <p>Correo: <span>${email}</span></p>
       <p>Telefono: <span>${phone}</span></p>
       <p>Comentario: <span>${control}</span></p>
