@@ -222,9 +222,9 @@ async function showMSG() {
 
   if(!result.error) {
     console.log(result);
-    console.log(result.rows);
-    console.log(result.rows[0]);
-    let mensage = result.row;
+    // console.log(result.rows);
+    // console.log(result.rows[0]);
+    let mensage = result;
 
     mensage.forEach(msg => {
       console.log(msg);
