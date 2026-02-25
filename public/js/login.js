@@ -143,8 +143,8 @@ function contentC(nombre, email, phone, control, date) {
   newArticle.innerHTML += `
     <article>
       <h4>Nombre: ${nombre}</h4>
-      <p>Correo: <span>${email}</span></p>
-      <p>Telefono: <span>${phone}</span></p>
+      <p>Correo: <a href="mailto:${email}" target="_blank"><span>${email}</span></a></p>
+      <p>Telefono: <a class="whatsapp--links" target="_blank" href="https://wa.me/${phone}><span>${phone}</span></a></p>
       <p>Comentario: <span>${control}</span></p>
       <span>${date}</span>
     </article>
