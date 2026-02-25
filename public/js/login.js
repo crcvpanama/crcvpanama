@@ -115,7 +115,7 @@ function content(visitas, dominio, fecha,clicks) {
     <article>
       <h2>Dominio: ${dominio}</h2>
       <p>Total de Visitas: <span>${visitas}</span></p>
-      <p>Fecha: <span>${fecha}</span></p>
+      <div><h3>Fecha</h3> <span>${fecha}</span></div>
       <p>Clicks: <span>${clicks}</span></p>
     </article>
   `;
@@ -128,16 +128,17 @@ function contentB(visitas, dominio, fecha) {
     <article>
       <h2>Pathname: ${dominio}</h2>
       <p>Visitas: <span>${visitas}</span></p>
-      <p>Fecha: <span>${fecha}</span></p>
+      <div><h3>Fecha</h3> <span>${fecha}</span></div>
     </article>
   `;
 
   blog.insertBefore(newDiv, cblogB);
 }
 
-async function fetchContent() {
-  let token = getCookie("token");
+const token = getCookie("token");
 
+async function fetchContent() {
+  
   let result = await fetch(`https://visits-woad.vercel.app/crcv/login`, {
     method: 'GET',
     headers: {
@@ -184,9 +185,51 @@ function showViews() {
     
     fetchContent();
 
+    showMSG();
+
   } else {
     message.innerText = "Inicia sesion";
   }
 }
 
 showViews();
+
+
+async function showMSG() {
+  // let token = getCookie("token");
+
+  let result = await fetch(`https://visits-woad.vercel.app/crcv/submit`, {
+    method: 'PATCH',
+    headers: {
+      'Authorization': `Bearer ${token}`,
+      "Content-Type": "application/json; charset=utf-8",
+      "Access-Control-Allow-Origin": "*",
+      "Access-Control-Methods": "GET,HEAD,POST,PATCH",
+    },
+  })
+  .then(response => response.json())
+  .catch((error) => {
+        console.error("Error:", error.message);
+        blog.style.color = "#990000";
+        blog.innerText = error.message;
+      });
+
+  // console.log(result.message);
+
+  if(result.message === 'Invalid token') 
+    {
+      removeCookie("token");
+      card.removeAttribute("id");
+      return message.innerText = result.message + " Inicia sesion"; 
+    }
+
+  if(!result.error) {
+    console.log(result);
+    console.log(result.rows);
+    console.log(result.rows[0]);
+  // result.rows[0].forEach(res => { 
+            
+      // return await ;
+    // })
+  }
+}
