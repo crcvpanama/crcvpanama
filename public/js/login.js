@@ -200,7 +200,7 @@ async function showMSG() {
   // let token = getCookie("token");
 
   let result = await fetch(`https://visits-woad.vercel.app/crcv/submit`, {
-    method: 'GET',
+    method: 'PATCH',
     headers: {
       'Authorization': `Bearer ${token}`,
       "Content-Type": "application/json; charset=utf-8",
@@ -211,8 +211,8 @@ async function showMSG() {
   .then(response => response.json())
   .catch((error) => {
         console.error("Error:", error.message);
-        blog.style.color = "#990000";
-        blog.innerText = error.message;
+        showUserMsg.style.color = "#990000";
+        showUserMsg.innerText = error.message;
       });
 
   // console.log(result.message);
