@@ -119,7 +119,7 @@ function content(visitas, dominio, fecha,clicks) {
     <article>
       <h4>Dominio: ${dominio}</h4>
       <p>Total de Visitas: <span>${visitas}</span></p>
-      <p>Fecha: <span>${fecha}</span></p>
+      <p>${fecha}</p>
       <p>Clicks: <span>${clicks}</span></p>
     </article>
   `;
@@ -147,7 +147,7 @@ function contentC(nombre, email, phone, control) {
       <p>Telefono: <span>${phone}</span></p>
       <p>Comentario: <span>${control}</span></p>
     </article>
-      <br><hr>
+    <br><hr>
   `;
 
   showUserMsg.insertBefore(newArticle, cmsg);
