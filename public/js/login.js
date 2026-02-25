@@ -7,11 +7,11 @@ button.addEventListener('click', () => {
 
 const blog = document.getElementById('blog');
 const showUserMsg = document.getElementById('users_msg');
-const cblog = blog.querySelector('.item:first-child');
-const cblogB = blog.querySelector('.item:nth-child(2)');
-const cmsg = blog.querySelector('.item:first-child');
+const cblog = blog.querySelector('.item:nth-child(2)');
+const cblogB = blog.querySelector('.item:nth-child(3)');
+const cmsg = showUserMsg.querySelector('.item:nth-child(2)');
 const newDiv = document.createElement('div');
-const newArticle = document.createElement('article');
+const newArticle = document.createElement('div');
 const card = document.querySelector('.body-card');
 
 function setCookie(cname, cvalue, exdays) {
@@ -117,9 +117,9 @@ login();
 function content(visitas, dominio, fecha,clicks) {
   newDiv.innerHTML += `
     <article>
-      <h2>Dominio: ${dominio}</h2>
+      <h4>Dominio: ${dominio}</h4>
       <p>Total de Visitas: <span>${visitas}</span></p>
-      <p><h3>Fecha</h3> <span>${fecha}</span></p>
+      <p>Fecha: <span>${fecha}</span></p>
       <p>Clicks: <span>${clicks}</span></p>
     </article>
   `;
@@ -132,7 +132,7 @@ function contentB(visitas, dominio, fecha) {
     <article>
       <h2>Pathname: ${dominio}</h2>
       <p>Visitas: <span>${visitas}</span></p>
-      <div>Fecha: <span>${fecha}</span></div>
+      <p>Fecha: <span>${fecha}</span></p>
     </article>
   `;
 
@@ -141,11 +141,13 @@ function contentB(visitas, dominio, fecha) {
 
 function contentC(nombre, email, phone, control) {
   newArticle.innerHTML += `
+    <article>
       <h2>Nombre: ${nombre}</h2>
       <p>Correo: <span>${email}</span></p>
       <p>Telefono: <span>${phone}</span></p>
       <p>Comentario: <span>${control}</span></p>
-    <br><hr>
+    </article>
+      <br><hr>
   `;
 
   showUserMsg.insertBefore(newArticle, cmsg);
