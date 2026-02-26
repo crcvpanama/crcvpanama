@@ -152,7 +152,7 @@ details[open] {
     /*justify-content: space-evenly;*/
     /*padding: 0 30px;*/
     /*gap: 2em;*/
-    width: 100%;
+    /*width: 100%;*/
     max-width: 1800px;
     margin: auto;
     height: auto;
@@ -214,6 +214,7 @@ details[open] {
 #second-img {
     width: 100%;
     display: block;
+    border-radius: 10px;
 }
 
 #load-img {
@@ -481,6 +482,8 @@ main {
     height: auto;
     object-fit: fill;
     border-radius: 10px;
+    background-position: center;
+    background-size: contain;
     /*column:2;*/
 }
 
@@ -1705,6 +1708,7 @@ details[open] > summary::after {
     }
 
     .logo-contains {
+        margin: 0 auto;
         display: block;
     }
 

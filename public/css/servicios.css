@@ -98,18 +98,14 @@ a {
     align-items: center;
     justify-content: space-around;
 }
-
 .logo {
-    width: 500px;
-    height: 250px;
-    padding: 0 30px;
-    background-repeat:no-repeat;
-    background-position:center;
-/*    border:1px solid black;*/
-    background: url('../img/svg/crcvlogo.svg') center no-repeat;
-    background-size: contain;
-    margin: 1%;
+    display:block;
+    width: 100%;
+    height: auto;
+    margin:auto;
+    /*background: url('../img/svg/crcvlogo.svg') center center / contain no-repeat;*/
 }
+
 
 .header-title {
     padding-right: 20px;
@@ -267,6 +263,93 @@ main {
 /*    background: var(--background);*/
     padding-bottom: 30px;
     user-select: var(--hidden);
+}
+
+.home-start-side {
+    /*gap: 0.3em;*/
+    display: grid;
+    position: relative;
+    /*bottom: 0;*/
+    /*left: 0;*/
+    place-content: center;
+    /*align-items: center;*/
+    /*border: 1px solid black;*/
+    /*200px repeat(auto-fill, 100px) 300px*/
+    /*grid-template-columns: repeat(auto-fit, minmax(150px, 200px));*/
+    grid-template-columns: 600px repeat(auto-fill, minmax(150px, 300px));
+    height: auto;
+    margin: 15px auto;
+    gap: 1em;
+    overflow:hidden;
+}
+
+.home-slider-content {
+    position: relative;
+    display: block;
+    place-content: center;
+    text-align: center;
+    width: auto;
+    height: 300px;
+    /*z-index: -1;*/
+    /*place-content: end;*/
+   /* @starting-style {
+        opacity: 0;
+    }*/
+    /*background: linear-gradient(to bottom, transparent, #000000cc 65%, #000000 95%), url('../img/drxnuevemil.avif') center / contain no-repeat;*/
+    /*overflow: hidden;*/
+    /*background: url('../img/drxnuevemil.avif') center / contain no-repeat;*/
+    /*background-size: contain;*/
+    /*filter: blur(5px);*/
+    border-radius: 10px;
+    /*backdrop-filter: blur(5px);*/
+    transition: all 1.5s ease-in-out;
+}
+
+.home-slider-content::before {    
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    background: linear-gradient(to bottom, transparent, #000000cc 65%, #000000 95%), url('../img/drxnuevemil.avif') center / contain no-repeat;
+    mask-image: linear-gradient(to top, transparent, #11111140 5%, #111111cc 100%);
+    filter: blur(5px);
+}
+
+
+.home-slider-content h1 {
+    /*margin: 0;*/
+    font-size: clamp(1.4em, 7vw, 2.3em);
+    letter-spacing: .09em;
+    color: var(--white);
+    /*margin-bottom: 10px;*/
+    /*background: white;*/
+    /*color: #1b2b1b;*/
+    filter: drop-shadow(1px 3px 5px #121212);
+    /*backdrop-filter: blur(5px);*/
+    span {
+        display: block;
+        font-weight: 600;
+        font-size: 1rem;
+        margin-top: 10px;
+        line-height: 1.5;
+        /*color: var(--gray70);*/
+        color: hsl(222, 0%, 90%);
+    }
+}
+
+
+.aside-social-web {
+    background: url('../img/webp/crcv.avif') center / contain no-repeat;
+    /*background-size: ;*/
+    /*background: url("https://qjsvnfogbaqnjbqi.public.blob.vercel-storage.com/crcv/discosherniados.jpg")center / contain no-repeat;*/
+    /*https://qjsvnfogbaqnjbqi.public.blob.vercel-storage.com/crcv/discosherniados.jpg*/
+    height: auto;
+    object-fit: fill;
+    border-radius: 10px;
+    /*column:2;*/
 }
 
 .hidden {
@@ -615,121 +698,152 @@ details[open] > summary::after {
 @media (width <= 800px) {
 
 	.header {
-		display: var(--show);	
+        /*display: grid;*/
+        display: var(--show);   
+        height: 90dvh;
+        place-content: center;
     }
 
-	.header .logo {
-		display: var(--show);
-    	width: 80%;
-        margin:0 auto;
-	}
+    .logo-contains {
+        margin: 0 auto;
+        display: block;
+    }
 
-    .nav-link:hover {        
+    /*.header .logo {
+        display: var(--show);
+        width: 100%;
+        margin:0 auto;
+    }*/
+
+    .logo-container {
+        width: 300px;
+        height: 150px;
+        margin: 0 auto;
+    }
+
+    .header-title {
+        width: 100%;
+        margin: 10px auto;
+    }
+
+    /*.nav-link:hover {        
         box-shadow: none;
         border-bottom: none;
-    }
+    }*/
 
-	.navbar {
-		flex-direction: column;
-		height: auto;
-		border-bottom: #3758ba;
-	}
+ /*   .pageA {
+        display: block;
+        margin: 30px;
+    }
+*/
+    .navbar {
+        flex-direction: column;
+        position: absolute;
+        height: auto;
+        border-bottom: #3758ba;
+        margin: 30px 0 0 0;
+        width: 100%;
+    }
 
     .collapse {        
         padding: 20px 0; 
-        position: relative;
+        position: fixed;
         width: 100%;
-/*        height: 70vw;*/
+        top: 10%;
+        height: fit-content;
+        place-content: center;
 /*        transform: translateY(170px);*/
-        background: #fff9;
+        background: #ffffffea;
 /*        transform: translateY(0);*/
-        transition: all 1s ease-in;
-        height: auto;
+        /*height: auto;*/
         z-index: 4000;
         overflow: hidden;
+        transition: all 1s ease-in;
+        interpolate-size: allow-keywords;
     }
 
     .nav-bar {
         display: var(--show);
-/*        position: absolute;*/
+        /*gap: 2em;*/
+        /*position: absolute;*/
     }
 
     .nav-item {
         display: flex;        
         width: auto;    
         justify-content: flex-end;
+        border-right: none;
+
     }
 
     .nav-link {
         display: flex;         
-        padding: 5px; 
-        border-right: var(--hidden);
+        padding: 25px 25px; 
+        /*border-right: none;*/
         justify-content:right;
         border-bottom: 2px solid #77889922;        
-        width: 200px;
+        width: fit-content;
+
     }
 
-	.nav-button {
-		display: block;
-		position: absolute;		
-        background: url('../img/svg/button.svg');
-		background-repeat: no-repeat;
-		background-position: center;
-		scale: 2;
-		border: var(--hidden);
-		cursor: pointer;		
-		width: 22px;
-		height: 22px;
-		right: 2%;
-		margin: 10px;
-		top: 10%;
-		z-index: 6000;
-	}
+    .nav-button {
+        display: block;
+        position: fixed;     
+        background: url('../img/svg/button.svg') center center / contain no-repeat;
+        border: none;
+        cursor: pointer;        
+        width: 32px;
+        height: 32px;
+        top: 0;
+        right: 0;
+        /*padding: 6px 3px;*/
+        margin: 15px;
+        z-index: 6000;        
+        transition: all .05s ease-in-out;
+        /*justify-self: flex-end;*/
+        /*align-self: anchor-center;*/
+        background-color: #fafaface;
+    }
 
-	.nav-button:hover {
-		filter: drop-shadow(1px 1px 1px #243fa8c8);
-	}
+    .nav-button:hover {
+        filter: drop-shadow(1px 1px 1px #243fa8c8);
+        transform: scale(1.05);
+    }
 
-	.navbar-collapse {
-/*        position:relative;*/
-/*		display: var(--hidden);*/
+    .nav-button:active {
+        background-color: var(--backgroundtransparent);
+        transform: scale(0.95);
+    }
+
+    .navbar-collapse {
+/*        position:relative;
+/*      display: var(--hidden);*/
         padding: 0;
         height: 0;
     }
-
-    .button__parr {     
-        scale: 1;
+    
+    .home-start {
+        display: var(--show);
     }
 
-    .whatsapp--numbers {
-        left: 5%;
-        width: 75%;
-/*      height: auto;*/
+    .home-start-side {
+        /*display: var(--show);*/
+        grid-template-columns: 1fr;
+        height: calc(100% - 305px);
+        /*height: 520px;*/
+        place-content: normal;
     }
 
-    .whatsapp--links {
-        display: flex;
-        flex-direction: column;
+    .home-slider-content {
+        height: 100%;
     }
 
-    .whatsapp--numbers div{
-        flex-direction: column;
+    .home-slider-content::before {
+        background-size: 100% 100%;
     }
 
-    .whatsapp--numbers h5 {
-        margin: .5em;
-    }
-
-    .whatsapp--numbers h6 {
-        margin: .2em 0;
-    }
-
-    .facebook {
-        display: grid;
-        position: relative;     
-        justify-content: center;        
-        width: var(--all-width);        
-        margin: 0 auto;
+    .aside-social-web {
+        display: var(--hidden);
     }
 
     /*  SERVICIOS*/
