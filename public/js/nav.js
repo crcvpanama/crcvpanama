@@ -114,7 +114,7 @@ function cli() {
     })
 }
 
-// cli();
+cli();
 
 function count() {
 
@@ -261,4 +261,4 @@ let secondImage = document.createElement('img');
 // document.addEventListener('DOMContentLoaded', function () {
 //   console.log('The DOM is fully loaded and parsed.');
 // });
-// count();
+count();
