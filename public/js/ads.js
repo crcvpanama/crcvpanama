@@ -1,5 +1,6 @@
 // const blob = `https://qjsvnfogbaqnjbqi.public.blob.vercel-storage.com/crcv`;
 const formAd = document.getElementById('form-ad');
+const btnAd = document.getElementById('btn-ad');
 // const cblog = blog.querySelector('.item:first-child');
 // const newDiv = document.createElement('div');
 // https://qjsvnfogbaqnjbqi.public.blob.vercel-storage.com
@@ -46,10 +47,10 @@ const formAd = document.getElementById('form-ad');
 
 const urlAd = `https://visits-christian-guardias-projects.vercel.app/crcv/submitad`;
 
-async function addArticle() {
+function addArticle() {
   // addForm.forEach((btn) => {
   // console.log(btn.value);
-  formAd.addEventListener("submit", async function (event) {
+  btnAd.addEventListener("click", async function (event) {
     event.preventDefault();
     // formData.append("filename", file)
     let formData = new FormData(formAd);
@@ -60,11 +61,11 @@ async function addArticle() {
 
     let result = await fetch(urlAd, {
       method: "POST",
-      // headers: {
-      //   "Content-Type": "application/json; charset=utf-8",
-      //   "Access-Control-Allow-Origin": "*",
-      //   "Access-Control-Methods": "GET,PUT,POST,OPTIONS",
-      // },
+      headers: {
+        "Content-Type": "application/json; charset=utf-8",
+        "Access-Control-Allow-Origin": "*",
+        "Access-Control-Methods": "GET,PUT,POST,OPTIONS",
+      },
       body: formData,
     })
       .then((response) => {
@@ -75,6 +76,9 @@ async function addArticle() {
         window.location.reload();
       })
       .catch((error) => console.error("Error:", error));
+
+      console.log(result);
+
     // });
   });
 }
