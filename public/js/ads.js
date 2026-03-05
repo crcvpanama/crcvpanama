@@ -52,7 +52,7 @@ async function addArticle() {
   // console.log(btn.value);
   formAd.addEventListener("submit", async function (event) {
     event.preventDefault();
-    const form = event.target;
+    // const form = event.target;
     const formData = new FormData(form);
     // formData.append("filename", file)
     // let formData = new FormData(formAd);
@@ -63,16 +63,16 @@ async function addArticle() {
 
     let result = await fetch(urlAd, {
       method: "POST",
-      headers: {
-        "Content-Type": "application/json",
-        "Accept": "application/json",
-        "Access-Control-Allow-Origin": "*",
-        "Access-Control-Methods": "GET,PUT,POST,OPTIONS",
-      },
+      // headers: {
+      //   "Content-Type": "application/json",
+      //   "Accept": "application/json",
+      //   "Access-Control-Allow-Origin": "*",
+      //   "Access-Control-Methods": "GET,PUT,POST,OPTIONS",
+      // },
       body: formData,
     })
       .then((response) => {
-      	response.json();
+      	// response.json();
         console.log(response);
         if (!response.ok) return alert("Failed to send the form submission.");
 
