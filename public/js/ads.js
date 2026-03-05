@@ -62,11 +62,11 @@ async function addArticle() {
 
     let result = await fetch(urlAd, {
       method: "POST",
-      // headers: {
-      //   "Content-Type": "application/json; charset=utf-8",
-      //   "Access-Control-Allow-Origin": "*",
-      //   "Access-Control-Methods": "GET,PUT,POST,OPTIONS",
-      // },
+      headers: {
+        "Content-Type": "application/json; charset=utf-8",
+        "Access-Control-Allow-Origin": "*",
+        "Access-Control-Methods": "GET,PUT,POST,OPTIONS",
+      },
       body: formData,
     })
       .then((response) => {
