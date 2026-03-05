@@ -17,33 +17,31 @@ const formAd = document.getElementById('form-ad');
 // 	mainAd.insertBefore(newDiv, cblog);
 // }
 
-function renameFile(originalFile, newName) {
-    if (!(originalFile instanceof File)) {
-        throw new Error("Provided object is not a File.");
-    }
+// function renameFile(originalFile, newName) {
+//     if (!(originalFile instanceof File)) {
+//         throw new Error("Provided object is not a File.");
+//     }
 
     // Create a new File with the same content and type, but a new name
-    return new File([originalFile], newName, {
-        type: originalFile.type,
-        lastModified: originalFile.lastModified
-    });
-}
+//     return new File([originalFile], newName, {
+//         type: originalFile.type,
+//         lastModified: originalFile.lastModified
+//     });
+// }
 
-document.getElementById("fileInput").addEventListener("change", function (event) {
-    const file = event.target.files[0];
-    if (!file) return;
+// document.getElementById("fileInput").addEventListener("change", function (event) {
+//     const file = event.target.files[0];
+//     if (!file) return;
 
     // console.log("Original name:", file.name);
 
-    try {
-        const renamedFile = renameFile(file, "photo_ad" + file.name.substring(file.name.lastIndexOf(".")));
-        // console.log("Renamed file:", renamedFile.name);
+//     try {
+//         const renamedFile = renameFile(file, "photo_ad" + file.name.substring(file.name.lastIndexOf(".")));
 
-        // You can now upload renamedFile instead of file
-    } catch (err) {
-        console.error(err.message);
-    }
-});
+//     } catch (err) {
+//         console.error(err.message);
+//     }
+// });
 
 
 const urlAd = `https://visits-christian-guardias-projects.vercel.app/crcv/submitad`;
@@ -55,7 +53,7 @@ async function addArticle() {
     event.preventDefault();
     // formData.append("filename", file)
     let formData = new FormData(formAd);
-    
+
     console.log(formData);
     // console.log(updateBTN);
     // console.log(formData.get("filename-b"));
