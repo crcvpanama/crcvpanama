@@ -1,6 +1,6 @@
 // const blob = `https://qjsvnfogbaqnjbqi.public.blob.vercel-storage.com/crcv`;
 const formAd = document.getElementById('form-ad');
-const btnAd = document.getElementById('btn-ad');
+// const btnAd = document.getElementById('btn-ad');
 // const cblog = blog.querySelector('.item:first-child');
 // const newDiv = document.createElement('div');
 // https://qjsvnfogbaqnjbqi.public.blob.vercel-storage.com
@@ -63,14 +63,16 @@ async function addArticle() {
 
     let result = await fetch(urlAd, {
       method: "POST",
-      // headers: {
-      //   "Content-Type": "application/json; charset=utf-8",
-      //   "Access-Control-Allow-Origin": "*",
-      //   "Access-Control-Methods": "GET,PUT,POST,OPTIONS",
-      // },
+      headers: {
+        "Content-Type": "application/json",
+        "Accept": "application/json",
+        "Access-Control-Allow-Origin": "*",
+        "Access-Control-Methods": "GET,PUT,POST,OPTIONS",
+      },
       body: formData,
     })
       .then((response) => {
+      	response.json();
         console.log(response);
         if (!response.ok) return alert("Failed to send the form submission.");
 
