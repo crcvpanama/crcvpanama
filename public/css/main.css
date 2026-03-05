@@ -447,9 +447,11 @@ main {
     width: 100%;
     height: 100%;
     z-index: -1;
-    background: linear-gradient(to bottom, transparent, #000000cc 75%, #000000 100%), url('../img/drxnuevemil.avif') center / contain no-repeat;
-    mask-image: linear-gradient(to top, transparent, #111111c0 0, #111111 20%, #111111 80%,#111111c0 100%);
-    filter: blur(1px);
+    /*background: linear-gradient(to bottom, transparent, #000000cc 75%, #000000 100%), url('../img/drxnuevemil.avif') center / contain no-repeat;*/
+    /*mask-image: linear-gradient(to top, transparent, #111111c0 0, #111111 20%, #111111 80%,#111111c0 100%);*/
+    background: url('../img/drxnuevemil.avif') center / contain no-repeat;
+    mask-image: linear-gradient(to top, transparent, #11111140 5%, #111111cc 100%);
+    filter: blur(2px);
 }
 
 .home-slider-content h1 {
