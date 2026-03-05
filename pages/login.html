@@ -8,6 +8,7 @@
 	<link rel="stylesheet" type="text/css" href="../public/css/login.css">
 
 	<!-- <script defer type="text/javascript" src="../public/js/nav.js"></script> -->
+    <script type="text/javascript" src="../public/js/ads.js" defer></script>
 
 	<script type="text/javascript" src="../public/js/login.js" defer></script>
 
@@ -43,30 +44,60 @@
     </header>
 
     <main>
-    	<div class="body-card">
-    		<form id="form">
-    			<div class="form-group">
-    				<label>User</label>
-    				<input type="text" name="username">
-    			</div>
+        <section>
+        	<div class="body-card">
+        		<form id="form">
+        			<div class="form-group">
+        				<label>User</label>
+        				<input type="text" name="username">
+        			</div>
 
-    			<div class="form-group">
-    				<label>Password</label>
-    				<input type="password" name="password">
-    			</div>
+        			<div class="form-group">
+        				<label>Password</label>
+        				<input type="password" name="password">
+        			</div>
 
-    			<div class="form-group">
-    				<button>LOGIN</button>
-    			</div>
-    		</form>
-    	</div>
-    	<span id="message"></span>
+        			<div class="form-group">
+        				<button>LOGIN</button>
+        			</div>
+        		</form>
+        	</div>
+        	<span id="message"></span>
+        </section>
     	
-    	<section id="blog"><h3>Visitas</h3></section>
+    	<section class="hidden" id="blog"><h3>Visitas</h3></section>
 
         <br><hr>
 
-        <section id="users_msg"><h3>Mensajes</h3></section>
+        <section class="hidden" id="users_msg"><h3>Mensajes</h3></section>
+
+
+        <section class="hidden" id="submit-ad">
+            <div class="card-body">
+                <form id="form-ad">
+                    <div>
+                        <label>Title</label>
+                        <input type="text" name="title">
+                    </div>
+                    <div>
+                        <label>File</label>
+                        <input type="file" name="filename" id="fileInput">
+                    </div>
+                    <div>
+                        <label>Description</label>
+                        <input type="text" name="description">
+                    </div>
+                    <div>
+                        <label>Link</label>
+                        <input type="text" name="link">
+                    </div>
+                    <div>
+                        <button type="submit">Send</button>
+                    </div>
+                </form>
+            </div>
+            
+        </section>
     </main>
 </body>
 </html>
