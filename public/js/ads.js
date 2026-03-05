@@ -52,7 +52,7 @@ async function addArticle() {
   // console.log(btn.value);
   formAd.addEventListener("submit", async function (event) {
     event.preventDefault();
-    // const form = event.target;
+    const form = event.target;
     const formData = new FormData(form);
     // formData.append("filename", file)
     // let formData = new FormData(formAd);
