@@ -60,21 +60,19 @@ async function addArticle() {
 
     let result = await fetch(urlAd, {
       method: "POST",
-      headers: {
-        "Content-Type": "application/json; charset=utf-8",
-        "Access-Control-Allow-Origin": "*",
-        "Access-Control-Methods": "GET,PUT,POST,OPTIONS",
-      },
+      // headers: {
+      //   "Content-Type": "application/json; charset=utf-8",
+      //   "Access-Control-Allow-Origin": "*",
+      //   "Access-Control-Methods": "GET,PUT,POST,OPTIONS",
+      // },
       body: formData,
     })
       .then((response) => {
         console.log(response);
-        if (response.ok) {
-          alert("Added article successfully!");
-          window.location.reload();
-        } else {
-          alert("Failed to send the form submission.");
-        }
+        if (!response.ok) return alert("Failed to send the form submission.");
+
+        alert("Added article successfully!");
+        window.location.reload();
       })
       .catch((error) => console.error("Error:", error));
     // });
