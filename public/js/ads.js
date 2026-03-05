@@ -47,13 +47,15 @@ const btnAd = document.getElementById('btn-ad');
 
 const urlAd = `https://visits-christian-guardias-projects.vercel.app/crcv/submitad`;
 
-function addArticle() {
+async function addArticle() {
   // addForm.forEach((btn) => {
   // console.log(btn.value);
-  btnAd.addEventListener("click", async function (event) {
+  formAd.addEventListener("submit", async function (event) {
     event.preventDefault();
+    const form = event.target;
+    const formData = new FormData(form);
     // formData.append("filename", file)
-    let formData = new FormData(formAd);
+    // let formData = new FormData(formAd);
 
     console.log(formData);
     // console.log(updateBTN);
@@ -61,24 +63,21 @@ function addArticle() {
 
     let result = await fetch(urlAd, {
       method: "POST",
-      headers: {
-        "Content-Type": "application/json; charset=utf-8",
-        "Access-Control-Allow-Origin": "*",
-        "Access-Control-Methods": "GET,PUT,POST,OPTIONS",
-      },
+      // headers: {
+      //   "Content-Type": "application/json; charset=utf-8",
+      //   "Access-Control-Allow-Origin": "*",
+      //   "Access-Control-Methods": "GET,PUT,POST,OPTIONS",
+      // },
       body: formData,
     })
       .then((response) => {
         console.log(response);
         if (!response.ok) return alert("Failed to send the form submission.");
 
-        alert("Added article successfully!");
+        alert("Send images successfully!");
         window.location.reload();
       })
       .catch((error) => console.error("Error:", error));
-
-      console.log(result);
-
     // });
   });
 }
