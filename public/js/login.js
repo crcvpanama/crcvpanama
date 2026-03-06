@@ -237,7 +237,7 @@ async function showMSG() {
   }
 }
 
-const sectionAdForm = document.getElementById('submit-ad');
+// const sectionAdForm = document.getElementById('submit-ad');
 function showViews() {
   // body...
   if(getCookie("token")) {
@@ -245,7 +245,7 @@ function showViews() {
     card.setAttribute("id", "hidden");
     showUserMsg.removeAttribute("class", "hidden");
     blog.removeAttribute("class", "hidden");
-    sectionAdForm.removeAttribute("class", "hidden");
+    // sectionAdForm.removeAttribute("class", "hidden");
 
     
     fetchContent();
