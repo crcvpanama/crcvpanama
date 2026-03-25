@@ -437,7 +437,7 @@ details[open] {
 }
 
 
-.home-slider-content h1 {
+.home-slider-content {
     /*margin: 0;*/
     font-size: clamp(1.4em, 7vw, 2.3em);
     letter-spacing: .09em;
