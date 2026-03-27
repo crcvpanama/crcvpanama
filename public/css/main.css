@@ -165,7 +165,7 @@ details[open] {
     justify-content: space-around;
     /*align-items: center;*/
     width: 100%;
-    height: auto;
+    height: 150px;
     overflow: hidden;
     margin: 20px auto;
     /*border: 1px solid black;*/
@@ -1711,6 +1711,7 @@ details[open] > summary::after {
     .logo-contains {
         margin: 0 auto;
         display: block;
+        height: auto;
     }
 
     /*.header .logo {
