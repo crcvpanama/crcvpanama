@@ -107,6 +107,7 @@ section {
     place-content: center;
     padding: 0 30px;
     overflow: hidden;
+    margin-bottom: 20px;
 
     &:nth-child(even) {
         background-color: var(--backgroundtransparent);
@@ -149,12 +150,11 @@ article {
 #users_msg article:nth-child(even) {
     background-color: var(--light-grey);
     border-radius: 10px;
-    color: #fafafa;
-    span {
-        color: #fafafa;
-        background-color: var(--gray);
-    }
-
+    /*color: #fafafa;*/
+    /*span {*/
+        /*color: #fafafa;*/
+        /*background-color: var(--gray);*/
+    /*}*/
 }
 
 p {
