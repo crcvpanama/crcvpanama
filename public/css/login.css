@@ -37,13 +37,13 @@ html {
 
 body {
     /*text-size-adjust: var(--all-width);*/
-  -webkit-tap-highlight-color: #1b1b1b90;
-    width: auto;    
+  /*-webkit-tap-highlight-color: #1b1b1b90;*/
+    /*width: auto;    */
 /*  color:var(--dark);*/
-    color: var(--gray-dark);
+    /*color: var(--gray-dark);*/
     font-family: "Roboto", system-ui, sans-serif;
-    font-weight: 400;
-    font-size: 1rem;
+    /*font-weight: 400;*/
+    /*font-size: 1rem;*/
     font-optical-sizing: auto;
     text-size-adjust: auto;
     /*letter-spacing: .05ch;*/
@@ -115,19 +115,30 @@ section {
     height: 100dvh;
     /*place-items: center;*/
     place-content: center;
+    padding: 0 30px;
 
     &:nth-child(even) {
         background-color: var(--backgroundtransparent);
+    }
+
+    &:nth-child(first-child) {
+        height: fit-content;
     }
 }
 
 article {
     margin: 30px auto;
+    max-width: 80vw;
     p {
         display: flex;
         text-decoration: underline;
         font-weight: bold;
-        justify-content: space-evenly;
+        justify-content: space-between;
+        span {
+            text-decoration: none;
+            font-weight: 400;
+            color: #444;
+        }
     }
 }
 
