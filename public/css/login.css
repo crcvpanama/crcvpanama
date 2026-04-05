@@ -63,7 +63,7 @@ header {
 h1 {
     margin-bottom: 20px;
     padding: 10px;
-    font-size: clamp(2.5em, 3vw, 2.9em);
+    /*font-size: clamp(2.5em, 3vw, 2.9em);*/
     font-weight: 900;
     letter-spacing: .5cap;
     line-height: 1.1;
@@ -75,7 +75,7 @@ h1 {
 h2 {
     margin-bottom: 20px;
     padding: 5px;
-    font-size: clamp(1.7em, 3vw, 2.4em);
+    /*font-size: clamp(1.7em, 3vw, 2.4em);*/
     font-weight: 900;
     /*letter-spacing: .1cap;*/
     line-height: 1.1;
@@ -87,7 +87,7 @@ h2 {
 }
 
 
-h3 {
+h4 {
     /*font-size: 1.7em;*/
     font-size: clamp(1em, 2vw, 1.7em);
     /*letter-spacing: .1cap;*/
@@ -98,20 +98,6 @@ h3 {
     color: var(--gray-dark);
     text-transform: uppercase;
 /*    filter: drop-shadow(1px 2px 3px #2b2b2b99);*/
-}
-
-h4 {
-    font-size: 0.8rem;
-}
-
-h5 {
-    font-size: 1.25em;
-    margin-bottom: 20px;
-}
-
-h6 {
-    font-size: 1em;
-    margin-bottom: 20px;
 }
 
 section {
@@ -149,11 +135,22 @@ article {
     }
 }
 
+.body-card {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    color: #2b2b2b;
+    background: url("../img/logo.png") center / contain no-repeat;
+    background-size: 30px 30px;
+    background-position: 10% 40%;
+}
+
 #users_msg article:nth-child(even) {
     background-color: var(--gray);
     color: #fafafa;
     span {
-        color: inherit;
+        color: #fafafa;
     }
 
 }
@@ -227,6 +224,25 @@ a {
     -moz-background-size: contain;
     -o-background-size: contain;
     background-size: contain;*/
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+
+    button {
+        padding: 4px 8px;
+        width: fit-content;
+        border: none;
+        cursor: pointer;
+        &:hover {
+            background-color: var(--gray);
+        }
+        &:active {
+            scale: .92;
+        }
+    }
 }
 
 .header-title {
@@ -480,7 +496,7 @@ a {
         border: none;
         cursor: pointer;        
         width: 32px;
-        height: 70%;
+        height: 32px;
         top: 0;
         right: 0;
         /*padding: 6px 3px;*/
