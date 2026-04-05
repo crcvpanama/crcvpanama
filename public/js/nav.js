@@ -106,7 +106,7 @@ function cli() {
                 id: 3,
                 count: 0,
                 domain: dominio,
-                date: `Última visita: ${formatoConZona}`,
+                date: formatoConZona,
                 clicks: 1,
             };
             navigator.sendBeacon(url, JSON.stringify(analyticsData));
@@ -122,7 +122,7 @@ function count() {
         id: 3,
         count: 1,
         domain: dominio,
-        date: `06/2025 | última vista: ${formatoConZona}`,
+        date: formatoConZona,
         clicks: 0,
     };
 

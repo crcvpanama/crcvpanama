@@ -118,7 +118,7 @@ function content(visitas, dominio, fecha,clicks) {
     <article>
       <h4>Dominio: ${dominio}</h4>
       <p>Total de visitas: <span>${visitas}</span></p>
-      <p>${fecha}</p>
+      <p>Última visita: <span>${fecha}</span></p>
       <p>Clicks: <span>${clicks}</span></p>
     </article>
   `;
@@ -129,7 +129,7 @@ function content(visitas, dominio, fecha,clicks) {
 function contentB(visitas, dominio, fecha) {
   newDiv.innerHTML += `
     <article>
-      <h4>Página: ${dominio}</h4>
+      <h4>Ruta de página: ${dominio}</h4>
       <p>Visitas: <span>${visitas}</span></p>
       <p>Fecha: <span>${fecha}</span></p>
     </article>
