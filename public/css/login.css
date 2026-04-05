@@ -89,13 +89,14 @@ h2 {
 
 h3 {
     /*font-size: 1.7em;*/
-    font-size: clamp(1rem, 2vw, 1.7rem);
+    font-size: clamp(1em, 2vw, 1.7em);
     /*letter-spacing: .1cap;*/
     line-height: 1;
     font-weight: 700;
     text-align: center;
     margin-bottom: 20px;
     color: var(--gray-dark);
+    text-transform: uppercase;
 /*    filter: drop-shadow(1px 2px 3px #2b2b2b99);*/
 }
 
@@ -130,14 +131,10 @@ section {
     }*/
 }
 
-#users_msg article:nth-child(even) {
-    background-color: var(--gray);
-    color: #fafafa;
-}
-
 article {
     margin: 30px auto;
     max-width: 80vw;
+    padding: 20px;
     p {
         display: flex;
         /*text-decoration: underline;*/
@@ -152,10 +149,20 @@ article {
     }
 }
 
+#users_msg article:nth-child(even) {
+    background-color: var(--gray);
+    color: #fafafa;
+    span {
+        color: inherit;
+    }
+
+}
+
 p {
     width: auto;
     max-width: 75ch;
     margin: 0 auto;
+    font-size: .7rem;
     margin-block: 1lh;
     /*text-align: justify;*/
     /*text-wrap: balance;*/
