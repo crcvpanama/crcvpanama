@@ -128,6 +128,7 @@ article {
         font-weight: bold;
         justify-content: space-between;
         gap: 1em;
+        font-size: .8rem;
         span {
             /*text-decoration: none;*/
             font-weight: 400;
@@ -150,9 +151,10 @@ article {
 #users_msg div {
     
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
-    /*gap: 1em;*/
-    width: 100%;
+    /* gap: 1em; */
+    width: 100vw;
 
 }
 
