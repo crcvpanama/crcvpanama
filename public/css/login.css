@@ -119,9 +119,9 @@ section {
 }
 
 article {
-    margin: 30px auto;
-    max-width: 80vw;
-    padding: 20px;
+    margin: 20px auto;
+    width: 80vw;
+    padding: 10px 20px;
     p {
         display: flex;
         /*text-decoration: underline;*/
@@ -147,6 +147,15 @@ article {
     background-position: 10% 20%;
 }
 
+#users_msg div {
+    
+    display: flex;
+    justify-content: center;
+    /*gap: 1em;*/
+    width: 100%;
+
+}
+
 #users_msg article:nth-child(even) {
     background-color: var(--light-grey);
     border-radius: 10px;
@@ -155,6 +164,7 @@ article {
         /*color: #fafafa;*/
         /*background-color: var(--gray);*/
     /*}*/
+
 }
 
 p {
