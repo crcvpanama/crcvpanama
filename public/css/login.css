@@ -49,6 +49,10 @@ body {
     /*letter-spacing: .05ch;*/
 }
 
+main {
+    background-color: #fafafa;
+}
+
 header {
     background: var(--background) no-repeat center;
 }
@@ -56,7 +60,7 @@ header {
 h1 {
     margin-bottom: 20px;
     padding: 10px;
-    font-size: clamp(1.5em, 5vw, 2.5em);
+    font-size: clamp(2.5em, 3vw, 2.9em);
     font-weight: 900;
     letter-spacing: .5cap;
     line-height: 1.1;
@@ -68,7 +72,7 @@ h1 {
 h2 {
     margin-bottom: 20px;
     padding: 5px;
-    font-size: clamp(1.5em, 3vw, 2.5em);
+    font-size: clamp(1.7em, 3vw, 2.4em);
     font-weight: 900;
     /*letter-spacing: .1cap;*/
     line-height: 1.1;
@@ -81,7 +85,8 @@ h2 {
 
 
 h3 {
-    font-size: 1.7em;
+    /*font-size: 1.7em;*/
+    font-size: clamp(1rem, 2vw, 1.7rem);
     /*letter-spacing: .1cap;*/
     line-height: 1;
     font-weight: 700;
@@ -92,7 +97,7 @@ h3 {
 }
 
 h4 {
-    font-size: 1.30em;
+    font-size: 0.8rem;
 }
 
 h5 {
@@ -105,8 +110,25 @@ h6 {
     margin-bottom: 20px;
 }
 
+section {
+    display: grid;
+    height: 100dvh;
+    /*place-items: center;*/
+    place-content: center;
+
+    &:nth-child(even) {
+        background-color: var(--backgroundtransparent);
+    }
+}
+
 article {
     margin: 30px auto;
+    p {
+        display: flex;
+        text-decoration: underline;
+        font-weight: bold;
+        justify-content: space-evenly;
+    }
 }
 
 p {

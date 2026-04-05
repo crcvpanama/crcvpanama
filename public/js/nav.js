@@ -106,7 +106,7 @@ function cli() {
                 id: 3,
                 count: 0,
                 domain: dominio,
-                date: `06/2025 | última vista: ${formatoConZona}`,
+                date: `Última visita: ${formatoConZona}`,
                 clicks: 1,
             };
             navigator.sendBeacon(url, JSON.stringify(analyticsData));
