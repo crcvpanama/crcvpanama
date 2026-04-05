@@ -125,9 +125,14 @@ section {
         background-color: var(--backgroundtransparent);
     }
 
-    &:first-child {
+    /*&:first-child {
         height: fit-content;
-    }
+    }*/
+}
+
+#users_msg article:nth-child(even) {
+    background-color: var(--gray);
+    color: #fafafa;
 }
 
 article {
@@ -135,11 +140,12 @@ article {
     max-width: 80vw;
     p {
         display: flex;
-        text-decoration: underline;
+        /*text-decoration: underline;*/
         font-weight: bold;
         justify-content: space-between;
+        gap: 1em;
         span {
-            text-decoration: none;
+            /*text-decoration: none;*/
             font-weight: 400;
             color: #444;
         }

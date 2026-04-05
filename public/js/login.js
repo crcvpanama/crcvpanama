@@ -100,7 +100,6 @@ async function login() {
 
     if (!result.error) {
       setCookie("token", result, 30);
-      console.log(result);
       window.location.reload();
      // window.location.replace("https://www.crcvpanama.org/pages/admin.html")
     } else {
@@ -130,7 +129,7 @@ function content(visitas, dominio, fecha,clicks) {
 function contentB(visitas, dominio, fecha) {
   newDiv.innerHTML += `
     <article>
-      <h4>Páginas: ${dominio}</h4>
+      <h4>Página: ${dominio}</h4>
       <p>Visitas: <span>${visitas}</span></p>
       <p>Fecha: <span>${fecha}</span></p>
     </article>
