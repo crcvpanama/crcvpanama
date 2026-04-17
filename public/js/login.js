@@ -71,7 +71,7 @@ const message = document.getElementById("message");
 const form = document.getElementById("form");
 const url = "https://visits-woad.vercel.app/crcv/login";
 
-async function login() {
+function login() {
   form.addEventListener("submit", async function (event) {
     event.preventDefault();
 
@@ -99,7 +99,7 @@ async function login() {
       });
 
     if (!result.error) {
-      setCookie("token", result, 30);
+      setCookie("token", result, 7);
       window.location.reload();
      // window.location.replace("https://www.crcvpanama.org/pages/admin.html")
     } else {
