@@ -100,10 +100,21 @@ function login() {
 
       console.log(result);
       setCookie("token", result, 7);
+
+
+    if(result.message === 'Invalid token') 
+      {
+        removeCookie("token");
+        card.removeAttribute("id");
+        return message.innerText = result.message + " Inicia sesion"; 
+      }
+
+
     if (!result.error) {
-      
-      window.location.reload();
+      // window.location.reload();
      // window.location.replace("https://www.crcvpanama.org/pages/admin.html")
+      // if(detectCookie(token))
+      console.log(detectCookie("token"));
     } else {
       message.style.color = "#990000";
       message.innerText = result.error;
@@ -223,19 +234,12 @@ async function showMSG() {
     // })
   }
 
-  if(result.message === 'Invalid token') 
-    {
-      removeCookie("token");
-      card.removeAttribute("id");
-      return message.innerText = result.message + " Inicia sesion"; 
-    }
-
 }
 
 // const sectionAdForm = document.getElementById('submit-ad');
 function showViews() {
   // body...
-  if(getCookie("token")) {
+  if(detectCookie("token")) {
 
     card.setAttribute("id", "hidden");
     showUserMsg.removeAttribute("class", "hidden");
