@@ -111,10 +111,7 @@ function login() {
 
 
     if (!result.error) {
-      // window.location.reload();
-     // window.location.replace("https://www.crcvpanama.org/pages/admin.html")
-      // if(detectCookie(token))
-      console.log(detectCookie("token"));
+      if(detectCookie("token")) window.location.reload();
     } else {
       message.style.color = "#990000";
       message.innerText = result.error;
