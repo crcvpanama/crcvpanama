@@ -111,8 +111,6 @@ async function login() {
 
 login();
 
-
-
 function content(visitas, dominio, fecha,clicks) {
   newDiv.innerHTML += `
     <article>
@@ -175,12 +173,6 @@ async function fetchContent() {
 
   // console.log(result.message);
 
-  if(result.message === 'Invalid token') 
-    {
-      removeCookie("token");
-      card.removeAttribute("id");
-      return message.innerText = result.message + " Inicia sesion"; 
-    }
 
   if(!result.error) {
     // console.log(result.rows[0]);
@@ -216,13 +208,7 @@ async function showMSG() {
 
   // console.log(result.message);
 
-  if(result.message === 'Invalid token') 
-    {
-      removeCookie("token");
-      card.removeAttribute("id");
-      return message.innerText = result.message + " Inicia sesion"; 
-    }
-
+  
   if(!result.error) {    
     let mensage = result;
 
@@ -234,6 +220,14 @@ async function showMSG() {
       // return await ;
     // })
   }
+
+  if(result.message === 'Invalid token') 
+    {
+      removeCookie("token");
+      card.removeAttribute("id");
+      return message.innerText = result.message + " Inicia sesion"; 
+    }
+
 }
 
 // const sectionAdForm = document.getElementById('submit-ad');
