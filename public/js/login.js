@@ -98,8 +98,10 @@ function login() {
         message.innerText = error;
       });
 
-    if (!result.error) {
+      console.log(result);
       setCookie("token", result, 7);
+    if (!result.error) {
+      
       window.location.reload();
      // window.location.replace("https://www.crcvpanama.org/pages/admin.html")
     } else {
