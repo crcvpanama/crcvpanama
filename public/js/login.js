@@ -177,6 +177,8 @@ async function fetchContent() {
       {
         removeCookie("token");
         card.removeAttribute("id");
+        blog.setAttribute("id", "hidden");
+
         return message.innerText = result.message + " Inicia sesion"; 
       }
 
@@ -238,7 +240,7 @@ function showViews() {
 
     card.setAttribute("id", "hidden");
     showUserMsg.removeAttribute("class", "hidden");
-    blog.removeAttribute("class", "hidden");
+    blog.removeAttribute("class");
     // sectionAdForm.removeAttribute("class", "hidden");
 
     
