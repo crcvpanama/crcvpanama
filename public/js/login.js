@@ -71,7 +71,7 @@ const message = document.getElementById("message");
 const form = document.getElementById("form");
 const url = "https://visits-woad.vercel.app/crcv/login";
 
-function login() {
+async function login() {
   form.addEventListener("submit", async function (event) {
     event.preventDefault();
 
@@ -98,20 +98,21 @@ function login() {
         message.innerText = error;
       });
 
-      setCookie("token", result, 7);
-
-      if (!result.error) {
-        if(detectCookie("token")) window.location.reload();
-      } else {
-        message.style.color = "#990000";
-        message.innerText = result.error;
-      }
+      console.log(result);
 
       if(result.message === 'Invalid token') 
       {
         removeCookie("token");
         card.removeAttribute("id");
         return message.innerText = result.message + " Inicia sesion"; 
+      }
+
+      if (!result.error) {
+        setCookie("token", result, 7);
+        // window.location.reload();
+      } else {
+        message.style.color = "#990000";
+        message.innerText = result.error;
       }
 
   });
