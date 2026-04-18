@@ -100,13 +100,6 @@ async function login() {
 
       console.log(result);
 
-      if(result.message === 'Invalid token') 
-      {
-        removeCookie("token");
-        card.removeAttribute("id");
-        return message.innerText = result.message + " Inicia sesion"; 
-      }
-
       if (!result.error) {
         setCookie("token", result, 7);
         // window.location.reload();
@@ -180,9 +173,12 @@ async function fetchContent() {
         blog.innerText = error.message;
       });
 
-  console.log(result);
-  console.log(result.error);
-   console.log(result.message);
+   if(result.message === 'Invalid token') 
+      {
+        removeCookie("token");
+        card.removeAttribute("id");
+        return message.innerText = result.message + " Inicia sesion"; 
+      }
 
 
 
