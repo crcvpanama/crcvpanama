@@ -180,7 +180,10 @@ async function fetchContent() {
         blog.innerText = error.message;
       });
 
-  // console.log(result.message);
+  console.log(result);
+  console.log(result.error);
+   console.log(result.message);
+
 
 
   if(!result.error) {
