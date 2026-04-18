@@ -98,7 +98,6 @@ function login() {
         message.innerText = error;
       });
 
-      console.log(result);
       setCookie("token", result, 7);
 
       if (!result.error) {
