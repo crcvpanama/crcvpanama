@@ -98,6 +98,10 @@ async function login() {
         message.innerText = error;
       });
 
+      console.log(result);
+
+      console.log(!result.error)
+
       if (!result.error) {
         setCookie("token", result, 7);
         window.location.reload();
@@ -109,7 +113,6 @@ async function login() {
   });
 }
 
-login();
 
 function content(visitas, dominio, fecha,clicks) {
   newDiv.innerHTML += `
@@ -237,7 +240,7 @@ function showViews() {
   if(detectCookie("token")) {
 
     card.setAttribute("id", "hidden");
-    showUserMsg.removeAttribute("class", "hidden");
+    showUserMsg.removeAttribute("class");
     blog.removeAttribute("class");
     // sectionAdForm.removeAttribute("class", "hidden");
 
@@ -252,3 +255,5 @@ function showViews() {
 }
 
 showViews();
+
+login();
