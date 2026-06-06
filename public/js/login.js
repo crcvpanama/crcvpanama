@@ -106,8 +106,6 @@ async function login() {
         message.style.color = "#990000";
         message.innerText = result.error;
       }
-
-      if (detectCookie("token")) 
   });
 }
 
