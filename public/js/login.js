@@ -250,9 +250,9 @@ async function showMSG() {
 
 
 
-showMSG();
-fetchContent();
 
+fetchContent();
+showMSG();
 
 showViews();
 
