@@ -67,6 +67,25 @@ function detectCookie(cname) {
     return false;
 };
 
+function showViews() {
+
+  if(detectCookie("token")) {
+
+    card.setAttribute("id", "hidden");
+    showUserMsg.removeAttribute("class");
+    blog.removeAttribute("class");
+    // sectionAdForm.removeAttribute("class", "hidden");
+    fetchContent();
+
+    showMSG();
+
+  } else {
+    message.innerText = "Inicia sesion";
+  }
+}
+
+showViews();
+
 const message = document.getElementById("message");
 const form = document.getElementById("form");
 const url = "https://visits-woad.vercel.app/crcv/login";
@@ -231,25 +250,5 @@ async function showMSG() {
 }
 
 // const sectionAdForm = document.getElementById('submit-ad');
-function showViews() {
-  // body...
-  if(detectCookie("token")) {
-
-    card.setAttribute("id", "hidden");
-    showUserMsg.removeAttribute("class");
-    blog.removeAttribute("class");
-    // sectionAdForm.removeAttribute("class", "hidden");
-
-    
-    fetchContent();
-
-    showMSG();
-
-  } else {
-    message.innerText = "Inicia sesion";
-  }
-}
-
 
 login();
-showViews();
