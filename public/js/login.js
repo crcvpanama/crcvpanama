@@ -98,15 +98,14 @@ async function login() {
         message.innerText = error;
       });
 
-      console.log(result);
-      console.log(result.length);
-      console.log(typeof result);
-      console.log(!result.error);
-
       if (!result.error) {
         setCookie("token", result, 7);
+        showViews();
         // window.location.reload();
+        console.log(getCookie("token"));
+        if (getCookie("token")) window.location.reload();
       } else {
+        removeCookie("token");
         message.style.color = "#990000";
         message.innerText = result.error;
       }
@@ -255,6 +254,6 @@ function showViews() {
   }
 }
 
-showViews();
+
 
 login();
