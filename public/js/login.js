@@ -67,6 +67,11 @@ function detectCookie(cname) {
     return false;
 };
 
+
+const message = document.getElementById("message");
+const form = document.getElementById("form");
+const url = "https://visits-woad.vercel.app/crcv/login";
+
 function showViews() {
 
   if(detectCookie("token")) {
@@ -86,9 +91,6 @@ function showViews() {
 
 showViews();
 
-const message = document.getElementById("message");
-const form = document.getElementById("form");
-const url = "https://visits-woad.vercel.app/crcv/login";
 
 async function login() {
   form.addEventListener("submit", async function (event) {
