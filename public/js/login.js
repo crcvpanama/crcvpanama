@@ -248,13 +248,16 @@ function showViews() {
   }
 }
 
-showViews();
-
 // const sectionAdForm = document.getElementById('submit-ad');
 
 
 
-login();
-fetchContent();
 
 showMSG();
+fetchContent();
+
+
+showViews();
+
+
+login();
