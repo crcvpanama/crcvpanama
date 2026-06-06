@@ -241,9 +241,7 @@ function showViews() {
     showUserMsg.removeAttribute("class");
     blog.removeAttribute("class");
     // sectionAdForm.removeAttribute("class", "hidden");
-    fetchContent();
-
-    showMSG();
+    
 
   } else {
     message.innerText = "Inicia sesion";
@@ -257,3 +255,6 @@ showViews();
 
 
 login();
+fetchContent();
+
+showMSG();
