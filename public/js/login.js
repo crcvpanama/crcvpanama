@@ -102,6 +102,7 @@ async function login() {
 
       if (!result.error) {
         setCookie("token", result, 7);
+        showViews();
         return window.location.reload();
       } else {
         removeCookie("token");
@@ -110,9 +111,6 @@ async function login() {
       }
   });
 }
-
-login();
-
 
 function content(visitas, dominio, fecha,clicks) {
   newDiv.innerHTML += `
@@ -252,8 +250,10 @@ function showViews() {
   }
 }
 
-showViews()
+showViews();
 
 // const sectionAdForm = document.getElementById('submit-ad');
 
 
+
+login();
