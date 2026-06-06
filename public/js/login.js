@@ -100,7 +100,7 @@ async function login() {
 
       if (!result.error) {
         setCookie("token", result, 7);
-        showViews();
+       
         // window.location.reload();
         console.log(getCookie("token"));
         if (getCookie("token")) window.location.reload();
@@ -112,7 +112,7 @@ async function login() {
 
   });
 }
-
+login();
 
 function content(visitas, dominio, fecha,clicks) {
   newDiv.innerHTML += `
@@ -253,7 +253,6 @@ function showViews() {
     message.innerText = "Inicia sesion";
   }
 }
+ showViews();
 
 
-
-login();
