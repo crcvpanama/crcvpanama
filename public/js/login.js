@@ -67,13 +67,12 @@ function detectCookie(cname) {
     return false;
 };
 
-const btnLogin = document.getElementById('btn-login');
 const message = document.getElementById("message");
 const form = document.getElementById("form");
 const url = "https://visits-woad.vercel.app/crcv/login";
 
-async function login(event) {
-  
+async function login() {
+  form.addEventListener("submit", async function (event) {
     event.preventDefault();
 
     message.style.color = "#009900";
@@ -101,16 +100,17 @@ async function login(event) {
 
       if (!result.error) {
         setCookie("token", result, 7);
+        return window.location.reload();
       } else {
         removeCookie("token");
         message.style.color = "#990000";
         message.innerText = result.error;
       }
 
-      if (detectCookie("token")) window.location.reload();
-  
+      if (detectCookie("token")) 
+  });
 }
-btnLogin.addEventListener("click", login);
+
 
 function content(visitas, dominio, fecha,clicks) {
   newDiv.innerHTML += `
@@ -251,6 +251,7 @@ function showViews() {
     message.innerText = "Inicia sesion";
   }
 }
- showViews();
 
 
+login();
+showViews();
