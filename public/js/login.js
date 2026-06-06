@@ -98,9 +98,14 @@ async function login() {
         message.innerText = error;
       });
 
+      console.log(result);
+      console.log(result.length);
+      console.log(typeof result);
+      console.log(!result.error);
+
       if (!result.error) {
         setCookie("token", result, 7);
-        window.location.reload();
+        // window.location.reload();
       } else {
         message.style.color = "#990000";
         message.innerText = result.error;
