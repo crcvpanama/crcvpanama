@@ -153,13 +153,26 @@
 	    "addressLocality": "Ciudad de Panamá",
 	    "addressCountry": "PA"
 	  },
-	  "telephone": "+507-3945248",
+	  "contactPoint": [
+    {
+      "@type": "ContactPoint",
+      "telephone": "+507-3945248",
+      "contactType": "office",
+      "availableLanguage": ["es"]
+    },
+    {
+      "@type": "ContactPoint",
+      "telephone": "+507-66164253",
+      "contactType": "mobile",
+      "availableLanguage": ["es"]
+    }
+  ],
 	  "openingHours": [
 	    "Mo-Fr 09:00-18:00",
 	    "Sa 09:00-13:00"
 	  ],
-	  "medicalSpecialty":
-	  "http://schema.org/CommunityHealth",
+	  "medicalSpecialty": 
+    "http://schema.org/CommunityHealth",
 	  "availableService": [
 	    {
 	      "@type": "MedicalProcedure",
@@ -181,36 +194,48 @@
 	  ],
 		  "@graph":
 	      [{"@type":"WebPage",
-	        "@id":"https://www.crcvpanama.org/index.html",
+	        "@id":"https://www.crcvpanama.org/#website",
 	        "url":"https://www.crcvpanama.org/",
 	        "name":"Centro de Rehabilitación de la Columna Vertebral",
 	        "isPartOf":{
-	        "@id":"https://www.crcvpanama.org/index.html"},
-	        "image":{"@id":"https://www.crcvpanama.org/"},
-	        "thumbnailUrl":"https://www.crcvpanama.org/public/img/thumbnailUrl/drx.jpg",
+	        "@id":"https://www.crcvpanama.org/#website"},
+	        "primaryImageOfPage":"https://www.crcvpanama.org/index.html#second-img",
+	        "thumbnailUrl": "https://www.crcvpanama.org/public/img/thumbnailUrl/drx.jpg",
 	        "datePublished":"2024-07-08T14:19:58+00:00",
 	        "dateModified":"2025-04-12T16:02:19+00:00",
 	        "description":"Tel: +507 3945248; móvil: +507 66164253; horarios: L a V: 9:00 am - 6:00 pm, sábados: 9:00 am - 1:00 pm; Edificio paseo real, local #3 piso #1; Camino Real de Betania, Panamá, en frente del área de carga del super 99."},
-	        {"@type":"ImageObject",
-	        "inLanguage":"es",
-	        "@id":"https://www.crcvpanama.org/index.html#drx",
-	        "url":"https://www.crcvpanama.org/",
-	        "contentUrl":"https://www.crcvpanama.org/public/img/svg/crcvlogo.svg",
-	        "width":300,"height":80},
-	        {"@type":"ImageObject",
-	        "inLanguage":"es",
-	        "@id":"https://www.crcvpanama.org/pages/servicios#servicios",
-	        "url":"https://www.crcvpanama.org/pages/servicios",
-	        "contentUrl":"https://www.crcvpanama.org/public/img/drx.jpg",
-	        "width":300,"height":300},
-	        {"@type":"ImageObject",
-	        "inLanguage":"es",
-	        "@id":"https://www.crcvpanama.org/pages/diagnosticos#diagnostic",
-	        "url":"https://www.crcvpanama.org/pages/diagnosticos",
-	        "contentUrl":"https://www.crcvpanama.org/public/img/ozonoterapia.jpg",
-	        "width":300,"height":300},
+	        {
+			      "@type": "ImageObject",
+			      "inLanguage": "es",
+			      "@id": "https://www.crcvpanama.org/index.html#drx",
+			      "url": "https://www.crcvpanama.org/",
+			      "contentUrl": "https://www.crcvpanama.org/public/img/svg/crcvlogo.svg",
+			      "width": 300,
+			      "height": 80,
+			      "caption": "Logo CRCV Panamá"
+			    },
+			    {
+			      "@type": "ImageObject",
+			      "inLanguage": "es",
+			      "@id": "https://www.crcvpanama.org/pages/servicios#servicios",
+			      "url": "https://www.crcvpanama.org/pages/servicios",
+			      "contentUrl": "https://www.crcvpanama.org/public/img/drx.jpg",
+			      "width": 300,
+			      "height": 300,
+			      "caption": "Equipo DRX9000 para descompresión espinal"
+			    },
+			    {
+			      "@type": "ImageObject",
+			      "inLanguage": "es",
+			      "@id": "https://www.crcvpanama.org/pages/diagnosticos#diagnostic",
+			      "url": "https://www.crcvpanama.org/pages/diagnosticos",
+			      "contentUrl": "https://www.crcvpanama.org/public/img/ozonoterapia.jpg",
+			      "width": 300,
+			      "height": 300,
+			      "caption": "Tratamiento de ozonoterapia"
+			    },
 	        {"@type":"ItemList",
-	          "@id":"https://www.crcvpanama.org/index.html",
+	          "@id":"https://www.crcvpanama.org/index.html#list",
 	          "itemListElement":[
 	        {"@type":"ListItem",
 	        "position":1,
@@ -396,7 +421,7 @@
 						<div class="diagnostic-ab">
 
 							<div class="diag-art">
-								<figure class="diag-img">
+								<figure class="diag-img" id="drx-9000">
 									<img src="./public/img/drxnuevemil-a.avif" loading="lazy" alt="Descompresión espinal">
 									<figcaption class="button__parr">
 										<h4 class="diag-li">Descompresión espinal</h4>
