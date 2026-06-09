@@ -116,7 +116,7 @@ async function login() {
 
 login();
 
-console.log(decodedCookie("token"));
+console.log(detectCookie("token"));
 
 function showViews() {
   if(detectCookie("token")) {
