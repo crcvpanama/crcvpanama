@@ -72,16 +72,7 @@ const message = document.getElementById("message");
 const form = document.getElementById("form");
 const url = "https://visits-woad.vercel.app/crcv/login";
 
-function showViews() {
-  if(detectCookie("token")) {
-    card.setAttribute("id", "hidden");
-    showUserMsg.removeAttribute("class");
-    blog.removeAttribute("class");
-    // sectionAdForm.removeAttribute("class", "hidden");
-  } else {
-    message.innerText = "Inicia sesion";
-  }
-}
+
 
 
 async function login() {
@@ -113,8 +104,8 @@ async function login() {
 
       if (!result.error) {
         setCookie("token", result, 7);
-        showViews();
-        return window.location.reload();
+        
+        window.location.reload();
       } else {
         removeCookie("token");
         message.style.color = "#990000";
@@ -122,6 +113,23 @@ async function login() {
       }
   });
 }
+
+login();
+
+console.log(decodedCookie("token"));
+
+function showViews() {
+  if(detectCookie("token")) {
+    card.setAttribute("id", "hidden");
+    showUserMsg.removeAttribute("class");
+    blog.removeAttribute("class");
+    // sectionAdForm.removeAttribute("class", "hidden");
+  } else {
+    message.innerText = "Inicia sesion";
+  }
+}
+
+showViews();
 
 function content(visitas, dominio, fecha,clicks) {
   newDiv.innerHTML += `
@@ -247,14 +255,5 @@ async function showMSG() {
 
 // const sectionAdForm = document.getElementById('submit-ad');
 
-
-
-
-
 fetchContent();
 showMSG();
-
-showViews();
-
-
-login();
