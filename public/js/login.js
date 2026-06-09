@@ -104,7 +104,10 @@ async function login() {
 
       if (!result.error) {
         setCookie("token", result, 7);
-        
+        card.setAttribute("id", "hidden");
+        showUserMsg.removeAttribute("class");
+        blog.removeAttribute("class");
+
         window.location.reload();
       } else {
         removeCookie("token");
@@ -115,8 +118,6 @@ async function login() {
 }
 
 login();
-
-console.log(detectCookie("token"));
 
 function showViews() {
   if(detectCookie("token")) {
