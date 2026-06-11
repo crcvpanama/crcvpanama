@@ -75,8 +75,8 @@ const url = "https://visits-woad.vercel.app/crcv/login";
 
 
 
-async function login() {
-  form.addEventListener("submit", async function (event) {
+function login() {
+  form.addEventListener("submit", async (event) => {
     event.preventDefault();
 
     message.style.color = "#009900";
@@ -104,9 +104,9 @@ async function login() {
 
       if (!result.error) {
         setCookie("token", result, 7);
-        card.setAttribute("id", "hidden");
-        showUserMsg.removeAttribute("class");
-        blog.removeAttribute("class");
+        // card.setAttribute("id", "hidden");
+        // showUserMsg.removeAttribute("class");
+        // blog.removeAttribute("class");
 
         window.location.reload();
       } else {
