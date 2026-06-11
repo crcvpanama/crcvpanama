@@ -103,6 +103,8 @@ function login() {
         message.innerText = error;
       });
 
+      console.log(result);
+
       if (!result.error) {
         setCookie("token", result, 7);
         // card.setAttribute("id", "hidden");
@@ -112,6 +114,12 @@ function login() {
         // window.location.reload();
       } else {
         removeCookie("token");
+        card.removetAttribute("id");
+        showUserMsg.setAttribute("class", "hidden");
+        blog.setAttribute("class", "hidden");
+
+        // window.location.reload();
+
         message.style.color = "#990000";
         message.innerText = result.error;
       }
