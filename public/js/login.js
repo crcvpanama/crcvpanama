@@ -109,7 +109,7 @@ function login() {
         // showUserMsg.removeAttribute("class");
         // blog.removeAttribute("class");
 
-        window.location.reload();
+        // window.location.reload();
       } else {
         removeCookie("token");
         message.style.color = "#990000";
@@ -120,18 +120,7 @@ function login() {
 
 login();
 
-function showViews() {
-  if(detectCookie("token")) {
-    card.setAttribute("id", "hidden");
-    showUserMsg.removeAttribute("class");
-    blog.removeAttribute("class");
-    // sectionAdForm.removeAttribute("class", "hidden");
-  } else {
-    message.innerText = "Inicia sesion";
-  }
-}
 
-showViews();
 
 function content(visitas, dominio, fecha,clicks) {
   newDiv.innerHTML += `
@@ -257,5 +246,18 @@ async function showMSG() {
 
 // const sectionAdForm = document.getElementById('submit-ad');
 
-fetchContent();
-showMSG();
+
+function showViews() {
+  if(detectCookie("token")) {
+    card.setAttribute("id", "hidden");
+    showUserMsg.removeAttribute("class");
+    blog.removeAttribute("class");
+    fetchContent();
+    showMSG();
+    // sectionAdForm.removeAttribute("class", "hidden");
+  } else {
+    message.innerText = "Inicia sesion";
+  }
+}
+
+showViews();
