@@ -114,7 +114,7 @@ function login() {
         // window.location.reload();
       } else {
         removeCookie("token");
-        card.removetAttribute("id");
+        card.removeAttribute("id");
         showUserMsg.setAttribute("class", "hidden");
         blog.setAttribute("class", "hidden");
 
@@ -264,7 +264,7 @@ function showViews() {
     showMSG();
     // sectionAdForm.removeAttribute("class", "hidden");
   } else {
-    card.removetAttribute("id");
+    card.removeAttribute("id");
     showUserMsg.setAttribute("class", "hidden");
     blog.setAttribute("class", "hidden");
     message.innerText = "Inicia sesion";
