@@ -65,7 +65,7 @@ function detectCookie(cname) {
             return true;
         }
     }
-    return false;
+    return "";
 };
 
 
@@ -264,6 +264,9 @@ function showViews() {
     showMSG();
     // sectionAdForm.removeAttribute("class", "hidden");
   } else {
+    card.removetAttribute("id");
+    showUserMsg.setAttribute("class", "hidden");
+    blog.setAttribute("class", "hidden");
     message.innerText = "Inicia sesion";
   }
 }
