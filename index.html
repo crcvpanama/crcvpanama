@@ -141,17 +141,26 @@
   <script type="application/ld+json">
   	{
 	  "@context": "https://schema.org",
+	  "@graph":
+	  [{
+
 	  "@type": "MedicalClinic",
+	  "@id": "https://www.crcvpanama.org/#organization",
 	  "name": "Centro de Rehabilitación de la Columna Vertebral",
 	  "url": "https://www.crcvpanama.org",
-	  "logo": "https://www.crcvpanama.org/public/img/svg/crcvlogo.svg",
-  "image": "https://www.crcvpanama.org/public/img/webp/crcv.avif",
+	  "logo": {
+        "@id": "https://www.crcvpanama.org/#logo"
+      },
+	  "telephone": "+507-66164253",
+	  "image": {
+        "@id": "https://www.crcvpanama.org/#primaryimage"
+      },
 	  "description": "Centro de Rehabilitación de la Columna Vertebral en Panamá. Especializados en descompresión espinal no quirúrgica con equipo DRX9000 para el tratamiento de hernias de disco, enfermedad degenerativa de disco, ciática, cervicalgia, escoliosis y radiculopatías. También ofrecemos ozonoterapia y terapias físicas. Sucursales en Ciudad de Panamá y Santiago de Veraguas.",
 	  "address": {
 	    "@type": "PostalAddress",
 	    "streetAddress": "Edificio Paseo Real, local #3 piso #1, Camino Real de Betania",
 	    "addressLocality": "Ciudad de Panamá",
-	    "PostalCode": "00000",
+	    "postalCode": "00000",
 	    "addressCountry": "PA"
 	  },
 	  "contactPoint": [
@@ -187,35 +196,37 @@
 	      "@type": "TherapeuticProcedure",
 	      "name": "Terapias físicas (TENS, US, láser, frío/calor)"
 	    }
-	  ],
+	  	],
 		  "sameAs": [
 	    "https://www.facebook.com/crcvpanama",
 	    "https://www.instagram.com/crcvpanama",
 	    "https://www.youtube.com/channel/UCjhJ2PgAVZLeuqYWTsE5-Qg"
-	  ],
-		  "@graph":
-	      [{"@type":"WebSite",
-	        "@id":"https://www.crcvpanama.org/#website",
-	        "url":"https://www.crcvpanama.org/",
-	        "name":"Centro de Rehabilitación de la Columna Vertebral",
-	        "description": "Centro especializado en descompresión espinal no quirúrgica con equipo DRX9000 para el tratamiento de hernias de disco, ciática, cervicalgia y escoliosis en Panamá.",
-	        "inLanguage": "es",
-	        "publisher": {
-      			"@id": "https://www.crcvpanama.org/#organization"
-    			}
-    			},
-    			{
-				    "@type": "WebPage",
-				    "@id": "https://www.crcvpanama.org/#webpage",
-				    "url": "https://www.crcvpanama.org/",
-				    "name": "Centro de Rehabilitación de la Columna Vertebral",
+	  	]
+	  	},
+		  {
+	  	"@type":"WebSite",
+        "@id":"https://www.crcvpanama.org/#website",
+        "url":"https://www.crcvpanama.org/",
+        "name":"Centro de Rehabilitación de la Columna Vertebral",
+        "description": "Centro especializado en descompresión espinal no quirúrgica con equipo DRX9000 para el tratamiento de hernias de disco, ciática, cervicalgia y escoliosis en Panamá.",
+        "inLanguage": "es",
+        "publisher": {
+    			"@id": "https://www.crcvpanama.org/#organization"
+  			}
+  			},
+  			{
+				  "@type": "WebPage",
+				  "@id": "https://www.crcvpanama.org/#webpage",
+				  "url": "https://www.crcvpanama.org/",
+				  "name": "Centro de Rehabilitación de la Columna Vertebral",
 	        "isPartOf":{
-	        "@id":"https://www.crcvpanama.org/#website"},
-	        "primaryImageOfPage":"https://www.crcvpanama.org/public/img/webp/crcv.avif",
-	        "thumbnailUrl": "https://www.crcvpanama.org/public/img/descompresionespinal.avif",
+	        	"@id":"https://www.crcvpanama.org/#website"
+	      	},
+	        "primaryImageOfPage":{ "@id": "https://www.crcvpanama.org/#primaryimage"},
+	        "thumbnailUrl": "https://www.crcvpanama.org/public/img/webp/crcv.avif",
 	        "datePublished":"2024-07-08T14:19:58+00:00",
 	        "dateModified":"2026-06-14T16:02:19+00:00",
-	        "description":"Tel: +5073945248; móvil: +50766164253; horarios: L a V: 9:00 am - 6:00 pm, sábados: 9:00 am - 1:00 pm; Edificio paseo real, local #3 piso #1; Camino Real de Betania, Panamá, en frente del área de carga del super 99."
+	        "inLanguage": "es"
 	      	},
 	        {
 				    "@type": "ImageObject",
@@ -250,21 +261,26 @@
 				    "caption": "Tratamiento de ozonoterapia para columna vertebral"
 				  },
 	        {"@type":"ItemList",
-	          "@id":"https://www.crcvpanama.org/index.html#list",
+	          "@id":"https://www.crcvpanama.org/#sitelist",
 	          "itemListElement":[
 	        {"@type":"ListItem",
 	        "position":1,
 	        "name":"Preguntas frecuentes",
 	        "url":"https://www.crcvpanama.org/pages/faqs.html"},
-	        {"@type":"ListItem",
+	        {
+	        "@type":"ListItem",
 	        "position":2,
 	        "name":"Testimonios",
-	    	"url":"https://www.crcvpanama.org/pages/testimonios.html"},
-		    {"@type":"ListItem",
+	    	"url":"https://www.crcvpanama.org/pages/testimonios.html"
+	    },
+		    {
+		    	"@type":"ListItem",
 		        "position":3,
 		        "name":"Contacto",
 		    	"url":"https://www.crcvpanama.org/pages/contacto.html"
-		    }]}]
+		    }]}
+	    
+	 	]
 	}
   </script>
 
@@ -445,7 +461,7 @@
 
 							<div class="diag-art">
 								<figure class="diag-img" id="drx-9000">
-									<img src="./public/img/drxnuevemil-a.avif" loading="lazy" alt="Descompresión espinal">
+									<img src="./public/img/drxnuevemil-a.avif" loading="lazy" alt="Descompresión espinal" id="drxcrvpanama">
 									<figcaption class="button__parr">
 										<h4 class="diag-li">Descompresión espinal</h4>
 									
