@@ -106,7 +106,7 @@ function login() {
       // showUserMsg.removeAttribute("class");
       // blog.removeAttribute("class");
 
-      // window.location.reload();
+      window.location.reload();
     } else {
       removeCookie("token");
       card.removeAttribute("id");
