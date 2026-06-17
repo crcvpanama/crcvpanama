@@ -101,12 +101,12 @@ function login() {
       });
 
     if (!result.error) {
-      await setCookie("token", result, 7);
+      setCookie("token", result, 7);
       // card.setAttribute("id", "hidden");
       // showUserMsg.removeAttribute("class");
       // blog.removeAttribute("class");
 
-      window.location.reload();
+      // window.location.reload();
     } else {
       removeCookie("token");
       card.removeAttribute("id");
@@ -166,7 +166,7 @@ function contentC(nombre, email, phone, control, date) {
 const token = getCookie("token");
 
 async function fetchContent() {
-  let result = await fetch(`https://visits-woad.vercel.app/crcv/login`, {
+  let result = await fetch(`https://visits-woad.vercel.app/crcv`, {
     method: "GET",
     headers: {
       Authorization: `Bearer ${token}`,
@@ -245,12 +245,12 @@ async function showMSG() {
 // const sectionAdForm = document.getElementById('submit-ad');
 
 function showViews() {
+  console.log(detectCookie("token"));
   if (detectCookie("token")) {
     card.setAttribute("id", "hidden");
     showUserMsg.removeAttribute("class");
     blog.removeAttribute("class");
-    fetchContent();
-    showMSG();
+    
     // sectionAdForm.removeAttribute("class", "hidden");
   } else {
     card.removeAttribute("id");
@@ -261,3 +261,5 @@ function showViews() {
 }
 
 showViews();
+fetchContent();
+showMSG();
