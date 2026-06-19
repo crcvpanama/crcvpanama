@@ -811,7 +811,7 @@ main {
     to {opacity: 1;}
 }
 
-.whatsapp--numbers h5 {
+.whatsapp--numbers h4 {
     color: var(--white);
     margin: .5em 0;
 }
@@ -886,7 +886,8 @@ main {
         opacity: 0;
     }
 
-    h6 a {
+    h4 a {
+        font-size: 1.1rem;
         color: #fefefe;
 
         &:hover {
@@ -959,7 +960,7 @@ footer {
     color: var(--white);
     text-transform: capitalize;
 
-    h5 {
+    h4 {
         margin-bottom: 15px;
         /*text-transform: capitalize;*/
     }
