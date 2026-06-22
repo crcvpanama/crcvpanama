@@ -1,549 +1,1223 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="es">
-<head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-	<title>Centro de Rehabilitación de la Columna Vertebral</title>
+    <title>Centro de Rehabilitación de la Columna Vertebral</title>
 
-	<!-- <meta http-equiv="Content-Security-Policy" content="script-src 'self' 'strict-dynamic' 'nonce-randomValue' 'unsafe-inline' http: https:; object-src 'none'; img-src 'self' https://*.googleapis.com https://*.gstatic.com https://*.google.com https://*.googleusercontent.com data:;
+    <!-- <meta http-equiv="Content-Security-Policy" content="script-src 'self' 'strict-dynamic' 'nonce-randomValue' 'unsafe-inline' http: https:; object-src 'none'; img-src 'self' https://*.googleapis.com https://*.gstatic.com https://*.google.com https://*.googleusercontent.com data:;
     connect-src 'self' cloudflareinsights.com https://visits-christian-guardias-projects.vercel.app https://*.googleapis.com https://*.google.com https://*.gstatic.com data: blob:;
     frame-src 'self' https://*.google.com;
     style-src 'self' https://fonts.googleapis.com; worker-src blob:; base-uri 'self'; require-trusted-types-for 'script';"> -->
-	<meta http-equiv="Content-Security-Policy" content="script-src 'self' ajax.cloudflare.com static.cloudflareinsights.com; object-src 'none'; img-src 'self' https://*.googleapis.com https://*.gstatic.com https://*.google.com https://*.googleusercontent.com data:;
+    <meta
+      http-equiv="Content-Security-Policy"
+      content="script-src 'self' ajax.cloudflare.com static.cloudflareinsights.com; object-src 'none'; img-src 'self' https://*.googleapis.com https://*.gstatic.com https://*.google.com https://*.googleusercontent.com data:;
 	connect-src 'self' cloudflareinsights.com https://*.googleapis.com https://*.google.com https://*.gstatic.com https://visits-christian-guardias-projects.vercel.app data: blob:;
 	frame-src 'self' https://*.google.com;
-	style-src 'self' https://fonts.googleapis.com; worker-src blob:;"> 
+	style-src 'self' https://fonts.googleapis.com; worker-src blob:;"
+    />
 
-	<link rel="preconnect" href="https://www.crcvpanama.org/public/css/main.css">
+    <link
+      rel="preconnect"
+      href="https://www.crcvpanama.org/public/css/main.css"
+    />
 
-	<!-- <link rel="preconnect" href="https://www.crcvpanama.org/public/css/fonts.css"> -->
+    <!-- <link rel="preconnect" href="https://www.crcvpanama.org/public/css/fonts.css"> -->
 
-  <script type="application/ld+json">
-  	{
-	  "@context": "https://schema.org",
-	  "@graph":
-	  [{
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@graph": [
+          {
+            "@type": "MedicalClinic",
+            "@id": "https://www.crcvpanama.org/#organization",
+            "name": "Centro de Rehabilitación de la Columna Vertebral",
+            "url": "https://www.crcvpanama.org",
+            "logo": {
+              "@id": "https://www.crcvpanama.org/#logo"
+            },
+            "telephone": "+507-66164253",
+            "image": {
+              "@id": "https://www.crcvpanama.org/#primaryimage"
+            },
+            "description": "Centro de Rehabilitación de la Columna Vertebral en Panamá. Especializados en descompresión espinal no quirúrgica con equipo DRX9000 para el tratamiento de hernias de disco, enfermedad degenerativa de disco, ciática, cervicalgia, escoliosis y radiculopatías. También ofrecemos ozonoterapia y terapias físicas. Sucursales en Ciudad de Panamá y Santiago de Veraguas.",
+            "address": {
+              "@type": "PostalAddress",
+              "streetAddress": "Edificio Paseo Real, local #3 piso #1, Camino Real de Betania",
+              "addressLocality": "Ciudad de Panamá",
+              "addressCountry": "PA"
+            },
+            "geo": {
+              "@type": "GeoCoordinates",
+              "latitude": "8.9936",
+              "longitude": "-79.5197"
+            },
+            "hasMap": "https://maps.google.com/?q=Centro+de+Rehabilitación+de+la+Columna+Vertebral+Panamá",
+            "contactPoint": [
+              {
+                "@type": "ContactPoint",
+                "telephone": "+507-3945248",
+                "contactType": "customer service",
+                "availableLanguage": ["es"]
+              },
+              {
+                "@type": "ContactPoint",
+                "telephone": "+507-66164253",
+                "contactType": "customer service",
+                "url": "https://wa.me/50766164253",
+                "availableLanguage": ["es"]
+              }
+            ],
+            "openingHours": ["Mo-Fr 09:00-18:00", "Sa 09:00-13:00"],
+            "medicalSpecialty": "http://schema.org/CommunityHealth",
+            "availableService": [
+              {
+                "@type": "MedicalProcedure",
+                "name": "Descompresión espinal no quirúrgica"
+              },
+              {
+                "@type": "MedicalProcedure",
+                "name": "Ozonoterapia"
+              },
+              {
+                "@type": "TherapeuticProcedure",
+                "name": "Terapias físicas (TENS, US, láser, frío/calor)"
+              }
+            ],
+            "sameAs": [
+              "https://www.facebook.com/crcvpanama",
+              "https://www.instagram.com/crcvpanama",
+              "https://www.youtube.com/channel/UCjhJ2PgAVZLeuqYWTsE5-Qg",
+              "https://wa.me/50766164253"
+            ],
+            "department": [
+              {
+                "@type": "MedicalClinic",
+                "@id": "https://www.crcvpanama.org/#sucursal-panama",
+                "name": "CRCV Panamá — Ciudad de Panamá",
+                "address": {
+                  "@type": "PostalAddress",
+                  "streetAddress": "Edificio Paseo Real, Local #3, Piso #1, Camino Real de Betania",
+                  "addressLocality": "Ciudad de Panamá",
+                  "addressRegion": "Panamá",
+                  "addressCountry": "PA"
+                },
+                "telephone": "+507-394-5248"
+              },
+              {
+                "@type": "MedicalClinic",
+                "@id": "https://www.crcvpanama.org/#sucursal-santiago",
+                "name": "CRCV Panamá — Santiago de Veraguas",
+                "address": {
+                  "@type": "PostalAddress",
+                  "addressLocality": "Santiago de Veraguas",
+                  "addressRegion": "Veraguas",
+                  "addressCountry": "PA"
+                }
+              }
+            ]
+          },
+          {
+            "@type": "WebSite",
+            "@id": "https://www.crcvpanama.org/#website",
+            "url": "https://www.crcvpanama.org/",
+            "name": "Centro de Rehabilitación de la Columna Vertebral",
+            "description": "Centro especializado en descompresión espinal no quirúrgica con equipo DRX9000 para el tratamiento de hernias de disco, ciática, cervicalgia y escoliosis en Panamá.",
+            "inLanguage": "es",
+            "publisher": {
+              "@id": "https://www.crcvpanama.org/#organization"
+            }
+          },
+          {
+            "@type": "WebPage",
+            "@id": "https://www.crcvpanama.org/#webpage",
+            "url": "https://www.crcvpanama.org/",
+            "name": "Centro de Rehabilitación de la Columna Vertebral",
+            "isPartOf": {
+              "@id": "https://www.crcvpanama.org/#website"
+            },
+            "primaryImageOfPage": {
+              "@id": "https://www.crcvpanama.org/#primaryimage"
+            },
+            "thumbnailUrl": "https://www.crcvpanama.org/public/img/webp/crcv.avif",
+            "datePublished": "2024-07-08T14:19:58-05:00",
+            "dateModified": "2026-06-14T16:02:19-05:00",
+            "inLanguage": "es",
+            "breadcrumb": {
+              "@type": "BreadcrumbList",
+              "itemListElement": [
+                {
+                  "@type": "ListItem",
+                  "position": 1,
+                  "name": "Diagnosticos tratados",
+                  "item": "https://www.crcvpanama.org/pages/diagnoticos.html"
+                },
+                {
+                  "@type": "ListItem",
+                  "position": 2,
+                  "name": "Diagnosticos tratados",
+                  "item": "https://www.crcvpanama.org/pages/contacto.html"
+                },
+                {
+                  "@type": "ListItem",
+                  "position": 3,
+                  "name": "Testimonios",
+                  "item": "https://www.crcvpanama.org/pages/testimonios.html"
+                }
+              ]
+            }
+          },
+          {
+            "@type": "ImageObject",
+            "@id": "https://www.crcvpanama.org/#primaryimage",
+            "inLanguage": "es",
+            "url": "https://www.crcvpanama.org/public/img/webp/crcv.avif",
+            "contentUrl": "https://www.crcvpanama.org/public/img/webp/crcv.avif",
+            "caption": "Centro de Rehabilitación de la Columna Vertebral Panamá"
+          },
+          {
+            "@type": "ImageObject",
+            "@id": "https://www.crcvpanama.org/#logo",
+            "inLanguage": "es",
+            "url": "https://www.crcvpanama.org/public/img/svg/crcvlogo.svg",
+            "contentUrl": "https://www.crcvpanama.org/public/img/svg/crcvlogo.svg",
+            "caption": "Logo CRCV Panamá"
+          },
+          {
+            "@type": "ImageObject",
+            "@id": "https://www.crcvpanama.org/pages/servicios#img-drx9000",
+            "inLanguage": "es",
+            "url": "https://www.crcvpanama.org/pages/servicios",
+            "contentUrl": "https://www.crcvpanama.org/public/img/drx9000-crcvpanama.avif",
+            "caption": "Equipo DRX9000 para descompresión espinal no quirúrgica"
+          },
+          {
+            "@type": "ImageObject",
+            "@id": "https://www.crcvpanama.org/pages/diagnosticos#img-ozonoterapia",
+            "inLanguage": "es",
+            "url": "https://www.crcvpanama.org/pages/diagnosticos",
+            "contentUrl": "https://www.crcvpanama.org/public/img/drxnuevemil.avif",
+            "caption": "Tratamiento de ozonoterapia para columna vertebral"
+          },
+          {
+            "@type": "ItemList",
+            "@id": "https://www.crcvpanama.org/#sitelist",
+            "itemListElement": [
+              {
+                "@type": "ListItem",
+                "position": 1,
+                "name": "Diagnósticos tratados",
+                "url": "https://www.crcvpanama.org/pages/diagnosticos.html"
+              },
+              {
+                "@type": "ListItem",
+                "position": 2,
+                "name": "Testimonios",
+                "url": "https://www.crcvpanama.org/pages/testimonios.html"
+              },
+              {
+                "@type": "ListItem",
+                "position": 3,
+                "name": "Contacto",
+                "url": "https://www.crcvpanama.org/pages/contacto.html"
+              },
+              {
+                "@type": "ListItem",
+                "position": 4,
+                "name": "Preguntas frecuentes",
+                "url": "https://www.crcvpanama.org/pages/faqs.html"
+              }
+            ]
+          },
+          {
+            "@type": "FAQPage",
+            "@id": "https://www.crcvpanama.org/pages/faqs.html#faqpage",
+            "url": "https://www.crcvpanama.org/pages/faqs.html",
+            "name": "Preguntas frecuentes — CRCV Panamá",
+            "isPartOf": {
+              "@id": "https://www.crcvpanama.org/#website"
+            },
+            "inLanguage": "es"
+          }
+        ]
+      }
+    </script>
 
-	  "@type": "MedicalClinic",
-	  "@id": "https://www.crcvpanama.org/#organization",
-	  "name": "Centro de Rehabilitación de la Columna Vertebral",
-	  "url": "https://www.crcvpanama.org",
-	  "logo": {
-        "@id": "https://www.crcvpanama.org/#logo"
-      },
-	  "telephone": "+507-66164253",
-	  "image": {
-        "@id": "https://www.crcvpanama.org/#primaryimage"
-      },
-	  "description": "Centro de Rehabilitación de la Columna Vertebral en Panamá. Especializados en descompresión espinal no quirúrgica con equipo DRX9000 para el tratamiento de hernias de disco, enfermedad degenerativa de disco, ciática, cervicalgia, escoliosis y radiculopatías. También ofrecemos ozonoterapia y terapias físicas. Sucursales en Ciudad de Panamá y Santiago de Veraguas.",
-	  "address": {
-	    "@type": "PostalAddress",
-	    "streetAddress": "Edificio Paseo Real, local #3 piso #1, Camino Real de Betania",
-	    "addressLocality": "Ciudad de Panamá",
-	    "postalCode": "00000",
-	    "addressCountry": "PA"
-	  },
-	  "contactPoint": [
-    {
-      "@type": "ContactPoint",
-      "telephone": "+507-3945248",
-      "contactType": "customer service",
-      "availableLanguage": ["es"]
-    },
-    {
-      "@type": "ContactPoint",
-      "telephone": "+507-66164253",
-      "contactType": "customer service",
-      "url": "https://wa.me/50766164253",
-      "availableLanguage": ["es"]
-    }
-  ],
-	  "openingHours": [
-	    "Mo-Fr 09:00-18:00",
-	    "Sa 09:00-13:00"
-	  ],
-	  "medicalSpecialty": 
-    "http://schema.org/CommunityHealth",
-	  "availableService": [
-	    {
-	      "@type": "MedicalProcedure",
-	      "name": "Descompresión espinal no quirúrgica"
-	    },
-	    {
-	      "@type": "MedicalProcedure",
-	      "name": "Ozonoterapia"
-	    },
-	    {
-	      "@type": "TherapeuticProcedure",
-	      "name": "Terapias físicas (TENS, US, láser, frío/calor)"
-	    }
-	  	],
-		  "sameAs": [
-	    "https://www.facebook.com/crcvpanama",
-	    "https://www.instagram.com/crcvpanama",
-	    "https://www.youtube.com/channel/UCjhJ2PgAVZLeuqYWTsE5-Qg",
-	    "https://wa.me/50766164253"
-	  	]
-	  	},
-		  {
-	  	"@type":"WebSite",
-        "@id":"https://www.crcvpanama.org/#website",
-        "url":"https://www.crcvpanama.org/",
-        "name":"Centro de Rehabilitación de la Columna Vertebral",
-        "description": "Centro especializado en descompresión espinal no quirúrgica con equipo DRX9000 para el tratamiento de hernias de disco, ciática, cervicalgia y escoliosis en Panamá.",
-        "inLanguage": "es",
-        "publisher": {
-    			"@id": "https://www.crcvpanama.org/#organization"
-  			}
-  			},
-  			{
-				  "@type": "WebPage",
-				  "@id": "https://www.crcvpanama.org/#webpage",
-				  "url": "https://www.crcvpanama.org/",
-				  "name": "Centro de Rehabilitación de la Columna Vertebral",
-	        "isPartOf":{
-	        	"@id":"https://www.crcvpanama.org/#website"
-	      	},
-	        "primaryImageOfPage":{ "@id": "https://www.crcvpanama.org/#primaryimage"},
-	        "thumbnailUrl": "https://www.crcvpanama.org/public/img/webp/crcv.avif",
-	        "datePublished":"2024-07-08T14:19:58-05:00",
-	        "dateModified":"2026-06-14T16:02:19-05:00",
-	        "inLanguage": "es"
-	      	},
-	        {
-				    "@type": "ImageObject",
-				    "@id": "https://www.crcvpanama.org/#primaryimage",
-				    "inLanguage": "es",
-				    "url": "https://www.crcvpanama.org/public/img/webp/crcv.avif",
-				    "contentUrl": "https://www.crcvpanama.org/public/img/webp/crcv.avif",
-				    "caption": "Centro de Rehabilitación de la Columna Vertebral Panamá"
-				  },
-				  {
-				    "@type": "ImageObject",
-				    "@id": "https://www.crcvpanama.org/#logo",
-				    "inLanguage": "es",
-				    "url": "https://www.crcvpanama.org/public/img/svg/crcvlogo.svg",
-				    "contentUrl": "https://www.crcvpanama.org/public/img/svg/crcvlogo.svg",
-				    "caption": "Logo CRCV Panamá"
-				  },
-				  {
-				    "@type": "ImageObject",
-				    "@id": "https://www.crcvpanama.org/pages/servicios#drx",
-				    "inLanguage": "es",
-				    "url": "https://www.crcvpanama.org/pages/servicios",
-				    "contentUrl": "https://www.crcvpanama.org/public/img/drx9000-crcvpanama.avif",
-				    "caption": "Equipo DRX9000 para descompresión espinal no quirúrgica"
-				  },
-				  {
-				    "@type": "ImageObject",
-				    "@id": "https://www.crcvpanama.org/pages/diagnosticos#ozono",
-				    "inLanguage": "es",
-				    "url": "https://www.crcvpanama.org/pages/diagnosticos",
-				    "contentUrl": "https://www.crcvpanama.org/public/img/drxnuevemil.avif",
-				    "caption": "Tratamiento de ozonoterapia para columna vertebral"
-				  },
-	        {"@type":"ItemList",
-	          "@id":"https://www.crcvpanama.org/#sitelist",
-	          "itemListElement":[
-	        {"@type":"ListItem",
-	        "position":1,
-	        "name":"Preguntas frecuentes",
-	        "url":"https://www.crcvpanama.org/pages/faqs.html"},
-	        {
-	        "@type":"ListItem",
-	        "position":2,
-	        "name":"Testimonios",
-	    	"url":"https://www.crcvpanama.org/pages/testimonios.html"
-	    },
-		    {
-		    	"@type":"ListItem",
-		        "position":3,
-		        "name":"Contacto",
-		    	"url":"https://www.crcvpanama.org/pages/contacto.html"
-		    }]}
-	    
-	 	]
-	}
-  </script>
+    <!-- <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@graph": [
+          {
+            "@type": ["MedicalClinic", "LocalBusiness"],
+            "@id": "https://www.crcvpanama.org/#organization",
+            "name": "Centro de Rehabilitación de la Columna Vertebral",
+            "alternateName": "CRCV Panamá",
+            "url": "https://www.crcvpanama.org",
+            "logo": {
+              "@id": "https://www.crcvpanama.org/#logo"
+            },
+            "image": {
+              "@id": "https://www.crcvpanama.org/#primaryimage"
+            },
+            "description": "Centro de Rehabilitación de la Columna Vertebral en Panamá. Especializados en descompresión espinal no quirúrgica con equipo DRX9000 para el tratamiento de hernias de disco, enfermedad degenerativa de disco, ciática, cervicalgia, escoliosis y radiculopatías. También ofrecemos ozonoterapia y terapias físicas. Sucursales en Ciudad de Panamá y Santiago de Veraguas.",
+            "medicalSpecialty": [
+              "http://schema.org/Physiatry",
+              "http://schema.org/PhysicalTherapy"
+            ],
+            "telephone": "+507-66164253",
+            "address": {
+              "@type": "PostalAddress",
+              "streetAddress": "Edificio Paseo Real, Local #3, Piso #1, Camino Real de Betania",
+              "addressLocality": "Ciudad de Panamá",
+              "addressRegion": "Panamá",
+              "addressCountry": "PA"
+            },
+            "geo": {
+              "@type": "GeoCoordinates",
+              "latitude": "8.9936",
+              "longitude": "-79.5197"
+            },
+            "hasMap": "https://maps.google.com/?q=Centro+de+Rehabilitación+de+la+Columna+Vertebral+Panamá",
+            "contactPoint": [
+              {
+                "@type": "ContactPoint",
+                "telephone": "+507-394-5248",
+                "contactType": "customer service",
+                "areaServed": "PA",
+                "availableLanguage": ["es"],
+                "hoursAvailable": {
+                  "@type": "OpeningHoursSpecification",
+                  "dayOfWeek": [
+                    "Monday",
+                    "Tuesday",
+                    "Wednesday",
+                    "Thursday",
+                    "Friday"
+                  ],
+                  "opens": "09:00",
+                  "closes": "18:00"
+                }
+              },
+              {
+                "@type": "ContactPoint",
+                "telephone": "+507-661-64253",
+                "contactType": "customer service",
+                "url": "https://wa.me/50766164253",
+                "areaServed": "PA",
+                "availableLanguage": ["es"],
+                "contactOption": "TollFree"
+              }
+            ],
+            "openingHoursSpecification": [
+              {
+                "@type": "OpeningHoursSpecification",
+                "dayOfWeek": [
+                  "Monday",
+                  "Tuesday",
+                  "Wednesday",
+                  "Thursday",
+                  "Friday"
+                ],
+                "opens": "09:00",
+                "closes": "18:00"
+              },
+              {
+                "@type": "OpeningHoursSpecification",
+                "dayOfWeek": "Saturday",
+                "opens": "09:00",
+                "closes": "13:00"
+              }
+            ],
+            "availableService": [
+              {
+                "@type": "MedicalProcedure",
+                "name": "Descompresión espinal no quirúrgica DRX9000",
+                "procedureType": "http://schema.org/TherapeuticProcedure",
+                "description": "Tratamiento con equipo DRX9000 para hernias de disco, enfermedad degenerativa, ciática, cervicalgia, escoliosis y radiculopatías.",
+                "bodyLocation": "Columna vertebral"
+              },
+              {
+                "@type": "MedicalProcedure",
+                "name": "Ozonoterapia",
+                "procedureType": "http://schema.org/TherapeuticProcedure",
+                "description": "Aplicación de ozono medicinal para el tratamiento del dolor vertebral y condiciones degenerativas.",
+                "bodyLocation": "Columna vertebral"
+              },
+              {
+                "@type": "MedicalProcedure",
+                "name": "Terapia física con TENS",
+                "procedureType": "http://schema.org/TherapeuticProcedure",
+                "description": "Estimulación nerviosa eléctrica transcutánea para el manejo del dolor musculoesquelético."
+              },
+              {
+                "@type": "MedicalProcedure",
+                "name": "Ultrasonido terapéutico",
+                "procedureType": "http://schema.org/TherapeuticProcedure",
+                "description": "Ultrasonido aplicado en tejidos blandos para reducir inflamación y mejorar la cicatrización."
+              },
+              {
+                "@type": "MedicalProcedure",
+                "name": "Laserterapia",
+                "procedureType": "http://schema.org/TherapeuticProcedure",
+                "description": "Terapia con láser de baja intensidad para el alivio del dolor y recuperación tisular."
+              },
+              {
+                "@type": "MedicalProcedure",
+                "name": "Termoterapia y crioterapia",
+                "procedureType": "http://schema.org/TherapeuticProcedure",
+                "description": "Aplicación terapéutica de calor y frío para el manejo del dolor y la inflamación."
+              }
+            ],
+            "knowsAbout": [
+              "Hernia de disco",
+              "Enfermedad degenerativa de disco",
+              "Ciática",
+              "Cervicalgia",
+              "Escoliosis",
+              "Radiculopatía",
+              "Descompresión espinal",
+              "Ozonoterapia vertebral"
+            ],
+            "sameAs": [
+              "https://www.facebook.com/crcvpanama",
+              "https://www.instagram.com/crcvpanama",
+              "https://www.youtube.com/channel/UCjhJ2PgAVZLeuqYWTsE5-Qg",
+              "https://wa.me/50766164253"
+            ],
+            "department": [
+              {
+                "@type": "MedicalClinic",
+                "@id": "https://www.crcvpanama.org/#sucursal-panama",
+                "name": "CRCV Panamá — Ciudad de Panamá",
+                "address": {
+                  "@type": "PostalAddress",
+                  "streetAddress": "Edificio Paseo Real, Local #3, Piso #1, Camino Real de Betania",
+                  "addressLocality": "Ciudad de Panamá",
+                  "addressRegion": "Panamá",
+                  "addressCountry": "PA"
+                },
+                "telephone": "+507-394-5248"
+              },
+              {
+                "@type": "MedicalClinic",
+                "@id": "https://www.crcvpanama.org/#sucursal-santiago",
+                "name": "CRCV Panamá — Santiago de Veraguas",
+                "address": {
+                  "@type": "PostalAddress",
+                  "addressLocality": "Santiago de Veraguas",
+                  "addressRegion": "Veraguas",
+                  "addressCountry": "PA"
+                }
+              }
+            ]
+          },
 
-	<link rel="stylesheet" type="text/css" href="public/css/main.css">
+          {
+            "@type": "WebSite",
+            "@id": "https://www.crcvpanama.org/#website",
+            "url": "https://www.crcvpanama.org/",
+            "name": "Centro de Rehabilitación de la Columna Vertebral",
+            "description": "Centro especializado en descompresión espinal no quirúrgica con equipo DRX9000 para el tratamiento de hernias de disco, ciática, cervicalgia y escoliosis en Panamá.",
+            "inLanguage": "es",
+            "publisher": {
+              "@id": "https://www.crcvpanama.org/#organization"
+            },
+            "potentialAction": {
+              "@type": "SearchAction",
+              "target": {
+                "@type": "EntryPoint",
+                "urlTemplate": "https://www.crcvpanama.org/?s={search_term_string}"
+              },
+              "query-input": "required name=search_term_string"
+            }
+          },
 
-	<link rel="stylesheet" type="text/css" href="/public/css/fonts.css">
+          {
+            "@type": "WebPage",
+            "@id": "https://www.crcvpanama.org/#webpage",
+            "url": "https://www.crcvpanama.org/",
+            "name": "Centro de Rehabilitación de la Columna Vertebral — Inicio",
+            "isPartOf": {
+              "@id": "https://www.crcvpanama.org/#website"
+            },
+            "about": {
+              "@id": "https://www.crcvpanama.org/#organization"
+            },
+            "primaryImageOfPage": {
+              "@id": "https://www.crcvpanama.org/#primaryimage"
+            },
+            "thumbnailUrl": "https://www.crcvpanama.org/public/img/webp/crcv.avif",
+            "datePublished": "2024-07-08T14:19:58-05:00",
+            "dateModified": "2026-06-14T16:02:19-05:00",
+            "inLanguage": "es",
+            "breadcrumb": {
+              "@type": "BreadcrumbList",
+              "itemListElement": [
+                {
+                  "@type": "ListItem",
+                  "position": 1,
+                  "name": "Inicio",
+                  "item": "https://www.crcvpanama.org/"
+                }
+              ]
+            }
+          },
 
-	<link rel="preload" href="/public/css/main.css" as="style">
+          {
+            "@type": "ImageObject",
+            "@id": "https://www.crcvpanama.org/#primaryimage",
+            "inLanguage": "es",
+            "url": "https://www.crcvpanama.org/public/img/webp/crcv.avif",
+            "contentUrl": "https://www.crcvpanama.org/public/img/webp/crcv.avif",
+            "caption": "Centro de Rehabilitación de la Columna Vertebral Panamá"
+          },
 
-	<link rel="preload" href="/public/css/fonts.css" as="font" crossorigin>
+          {
+            "@type": "ImageObject",
+            "@id": "https://www.crcvpanama.org/#logo",
+            "inLanguage": "es",
+            "url": "https://www.crcvpanama.org/public/img/svg/crcvlogo.svg",
+            "contentUrl": "https://www.crcvpanama.org/public/img/svg/crcvlogo.svg",
+            "caption": "Logo CRCV Panamá"
+          },
 
-	<link rel="preload" href="/public/img/svg/crcvlogo.svg" as="image" fetchpriority="high">
+          {
+            "@type": "ImageObject",
+            "@id": "https://www.crcvpanama.org/#img-drx9000",
+            "inLanguage": "es",
+            "url": "https://www.crcvpanama.org/public/img/drx9000-crcvpanama.avif",
+            "contentUrl": "https://www.crcvpanama.org/public/img/drx9000-crcvpanama.avif",
+            "caption": "Equipo DRX9000 para descompresión espinal no quirúrgica — CRCV Panamá"
+          },
 
-	<link rel="preload" href="/public/img/drxnuevemil.avif" as="image" fetchpriority="high">
+          {
+            "@type": "ImageObject",
+            "@id": "https://www.crcvpanama.org/#img-ozonoterapia",
+            "inLanguage": "es",
+            "url": "https://www.crcvpanama.org/public/img/drxnuevemil.avif",
+            "contentUrl": "https://www.crcvpanama.org/public/img/drxnuevemil.avif",
+            "caption": "Tratamiento de ozonoterapia para columna vertebral — CRCV Panamá"
+          },
 
-	<script type="text/javascript" src="public/js/crcv.js" defer></script>
+          {
+            "@type": "SiteNavigationElement",
+            "@id": "https://www.crcvpanama.org/#sitenavigation",
+            "name": "Navegación principal",
+            "hasPart": [
+              {
+                "@type": "WebPage",
+                "name": "Diagnósticos tratados",
+                "url": "https://www.crcvpanama.org/pages/diagnosticos.html"
+              },
+              {
+                "@type": "WebPage",
+                "name": "Testimonios",
+                "url": "https://www.crcvpanama.org/pages/testimonios.html"
+              },
+              {
+                "@type": "WebPage",
+                "name": "Contacto",
+                "url": "https://www.crcvpanama.org/pages/contacto.html"
+              },
+              {
+                "@type": "WebPage",
+                "name": "Preguntas frecuentes",
+                "url": "https://www.crcvpanama.org/pages/faqs.html"
+              }
+            ]
+          },
 
-	<script defer type="text/javascript" src="public/js/nav.js"></script>
+          {
+            "@type": "FAQPage",
+            "@id": "https://www.crcvpanama.org/pages/faqs.html#faqpage",
+            "url": "https://www.crcvpanama.org/pages/faqs.html",
+            "name": "Preguntas frecuentes — CRCV Panamá",
+            "isPartOf": {
+              "@id": "https://www.crcvpanama.org/#website"
+            },
+            "inLanguage": "es"
+          }
+        ]
+      }
+    </script> -->
 
-	<meta name="title" content="CRCVPanamá">
-	<meta name="description" content="☎ Teléfono: 3945248, WhatsApp: 66164253; Lunes a viernes 9:00am-6:00pm, sábados 9:00am-1:00pm; Edificio PASEO REAL, piso #1; Camino Real de Betania, Panamá.">
-	<meta name="keywords" content="Centro de Rehabilitación de la Columna Vertebral, Ciática, Descompresión espinal, fisioterapia, Ozonoterapia, Cervicalgia, Sucursal de Panamá, Sucursal de SANTIAGO, Descompresión espinal no quirúrgica, equipo de Descompresión DRX9000, Rehabilitación de la columna, CRCVPanama">
-	<meta property="og:type" content="business.business">
-	<meta name="author" content="CRCVPanamá">
-	<meta name="robots" content="index, follow">
-	<meta name="googlebot" content="index, follow">
-	<meta name="bingbot" content="index, follow">
-	<meta name="yandexbot" content="index, follow">
-	<meta property="og:title" content="Centro de Rehabilitación de la Columna Vertebral">
-	<meta property="og:url" content="https://www.crcvpanama.org/">
-	<meta property="og:site_name" content="CRCVPanamá">
-	<meta property="og:type" content="website">
-	<meta property="og:description"  content="Descompresión espinal no quirúrgica con DRX9000 en Panamá. Tratamos hernias, ciática, cervicalgia y escoliosis sin cirugía. Sucursales en Panamá y Santiago. ☎(507)66164253">
-	<meta property="og:image" content="https://www.crcvpanama.org/public/img/og_image_wm.jpg">
-	<meta property="og:image:secure_url" content="https://www.crcvpanama.org/public/img/og_image_wm.jpg">
-	<meta property="og:image" content="https://www.crcvpanama.org/public/img/og_image_wm.jpg">
-	<meta property="og:image:width"  content="1200">
-	<meta property="og:image:height" content="630">
-	<meta property="og:image:alt" content="Logo | Centro de Rehabilitación de la Columna Vertebral">
-	<meta property="og:locale" content="es_PA">
-	<meta property="og:video" content="https://www.crcvpanama.org/public/videos/inicioV.mp4">
-	<meta property="og:video:secure_url" content="https://www.crcvpanama.org/public/videos/inicioV.mp4">
-	<meta property="og:video:type" content="video/mp4">
-	<meta property="og:video:width" content="1280">
-	<meta property="og:video:height" content="720">	
+    <link rel="stylesheet" type="text/css" href="public/css/main.css" />
 
-	<!-- Twitter -->
-	<meta property="twitter:card" content="summary_large_image">
-	<meta property="twitter:url" content="https://www.crcvpanama.org/">
-	<meta property="twitter:site" content="@CRCVPanama">
-	<meta property="twitter:title" content="Centro de Rehabilitación de la Columna Vertebral">
-	<meta name="twitter:description" content="Descompresión espinal no quirúrgica con DRX9000. Tratamos hernias, ciática y cervicalgia. Sin cirugía. ☎ (507) 6616-4253">
-	<!-- <meta property="twitter:image" content="https://www.crcvpanama.org/public/img/drx9000.jpg"> -->
-	<meta name="twitter:image"       content="https://www.crcvpanama.org/public/img/og_image_wm.jpg">
-	<!-- <meta name="twitter:image:width" content="499">
+    <link rel="stylesheet" type="text/css" href="/public/css/fonts.css" />
+
+    <link rel="preload" href="/public/css/main.css" as="style" />
+
+    <link rel="preload" href="/public/css/fonts.css" as="font" crossorigin />
+
+    <link
+      rel="preload"
+      href="/public/img/svg/crcvlogo.svg"
+      as="image"
+      fetchpriority="high"
+    />
+
+    <link
+      rel="preload"
+      href="/public/img/drxnuevemil.avif"
+      as="image"
+      fetchpriority="high"
+    />
+
+    <script type="text/javascript" src="public/js/crcv.js" defer></script>
+
+    <script defer type="text/javascript" src="public/js/nav.js"></script>
+
+    <meta name="title" content="CRCVPanamá" />
+    <meta
+      name="description"
+      content="☎ Teléfono: 3945248, WhatsApp: 66164253; Lunes a viernes 9:00am-6:00pm, sábados 9:00am-1:00pm; Edificio PASEO REAL, piso #1; Camino Real de Betania, Panamá."
+    />
+    <meta
+      name="keywords"
+      content="Centro de Rehabilitación de la Columna Vertebral, Ciática, Descompresión espinal, fisioterapia, Ozonoterapia, Cervicalgia, Sucursal de Panamá, Sucursal de SANTIAGO, Descompresión espinal no quirúrgica, equipo de Descompresión DRX9000, Rehabilitación de la columna, CRCVPanama"
+    />
+    <meta property="og:type" content="business.business" />
+    <meta name="author" content="CRCVPanamá" />
+    <meta name="robots" content="index, follow" />
+    <meta name="googlebot" content="index, follow" />
+    <meta name="bingbot" content="index, follow" />
+    <meta name="yandexbot" content="index, follow" />
+    <meta
+      property="og:title"
+      content="Centro de Rehabilitación de la Columna Vertebral"
+    />
+    <meta property="og:url" content="https://www.crcvpanama.org/" />
+    <meta property="og:site_name" content="CRCVPanamá" />
+    <meta property="og:type" content="website" />
+    <meta
+      property="og:description"
+      content="Descompresión espinal no quirúrgica con DRX9000 en Panamá. Tratamos hernias, ciática, cervicalgia y escoliosis sin cirugía. Sucursales en Panamá y Santiago. ☎(507)66164253"
+    />
+    <meta
+      property="og:image"
+      content="https://www.crcvpanama.org/public/img/og_image_wm.jpg"
+    />
+    <meta
+      property="og:image:secure_url"
+      content="https://www.crcvpanama.org/public/img/og_image_wm.jpg"
+    />
+    <meta
+      property="og:image"
+      content="https://www.crcvpanama.org/public/img/og_image_wm.jpg"
+    />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta
+      property="og:image:alt"
+      content="Logo | Centro de Rehabilitación de la Columna Vertebral"
+    />
+    <meta property="og:locale" content="es_PA" />
+    <meta
+      property="og:video"
+      content="https://www.crcvpanama.org/public/videos/inicioV.mp4"
+    />
+    <meta
+      property="og:video:secure_url"
+      content="https://www.crcvpanama.org/public/videos/inicioV.mp4"
+    />
+    <meta property="og:video:type" content="video/mp4" />
+    <meta property="og:video:width" content="1280" />
+    <meta property="og:video:height" content="720" />
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta property="twitter:url" content="https://www.crcvpanama.org/" />
+    <meta property="twitter:site" content="@CRCVPanama" />
+    <meta
+      property="twitter:title"
+      content="Centro de Rehabilitación de la Columna Vertebral"
+    />
+    <meta
+      name="twitter:description"
+      content="Descompresión espinal no quirúrgica con DRX9000. Tratamos hernias, ciática y cervicalgia. Sin cirugía. ☎ (507) 6616-4253"
+    />
+    <!-- <meta property="twitter:image" content="https://www.crcvpanama.org/public/img/drx9000.jpg"> -->
+    <meta
+      name="twitter:image"
+      content="https://www.crcvpanama.org/public/img/og_image_wm.jpg"
+    />
+    <!-- <meta name="twitter:image:width" content="499">
 	<meta name="twitter:image:height" content="260"> -->
-	<link rel="canonical" href="https://www.crcvpanama.org/">
-	<!-- <link rel="apple-touch-icon" sizes="180x180" href="/favicons/apple-touch-icon-180x180.png"> -->
-	<!-- <link rel="icon" sizes="48x48" href="/favicons/favicon.ico" type="image/x-icon"> --> 
-	<link rel="icon" type="image/png" sizes="192x192" href="/favicons/web-app-manifest-192x192.png"> 
-	<link rel="icon" type="image/png" href="/favicons/favicon-96x96.png" sizes="96x96" />
-	<link rel="icon" href="/favicons/favicon.png" type="image/png" sizes="60x60">
-	<link rel="icon" type="image/png" sizes="32x32" href="/favicons/favicon-32x32.png">
-	<link rel="icon" type="image/png" sizes="16x16" href="/favicons/favicon16x16.png">
-	<link rel="icon" type="image/svg+xml" href="/favicons/favicon.svg" />
-	<link rel="shortcut icon" href="/favicon.ico">
+    <link rel="canonical" href="https://www.crcvpanama.org/" />
+    <!-- <link rel="apple-touch-icon" sizes="180x180" href="/favicons/apple-touch-icon-180x180.png"> -->
+    <!-- <link rel="icon" sizes="48x48" href="/favicons/favicon.ico" type="image/x-icon"> -->
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="192x192"
+      href="/favicons/web-app-manifest-192x192.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      href="/favicons/favicon-96x96.png"
+      sizes="96x96"
+    />
+    <link
+      rel="icon"
+      href="/favicons/favicon.png"
+      type="image/png"
+      sizes="60x60"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="/favicons/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="/favicons/favicon16x16.png"
+    />
+    <link rel="icon" type="image/svg+xml" href="/favicons/favicon.svg" />
+    <link rel="shortcut icon" href="/favicon.ico" />
 
-	<link rel="apple-touch-icon" sizes="180x180" href="/favicons/apple-touch-icon.png" />
-	<meta name="apple-mobile-web-app-title" content="CRCVPanamá">
-	<meta name="msapplication-TileColor" content="#fafafa">
-	<meta name="msapplication-TileImage" content="/favicons/android-chrome-192x192.png">
-	<meta name="msapplication-config" content="none">
-	<meta name="theme-color" content="#fafafa">
-	<link rel="manifest" href="/manifest.json">
-	<link rel="manifest" href="/site.webmanifest">
-
-</head>
-<body>
-
-	<!-- Google Tag Manager (noscript) -->
-	  <!-- <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=AW-11013564293"
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="/favicons/apple-touch-icon.png"
+    />
+    <meta name="apple-mobile-web-app-title" content="CRCVPanamá" />
+    <meta name="msapplication-TileColor" content="#fafafa" />
+    <meta
+      name="msapplication-TileImage"
+      content="/favicons/android-chrome-192x192.png"
+    />
+    <meta name="msapplication-config" content="none" />
+    <meta name="theme-color" content="#fafafa" />
+    <link rel="manifest" href="/manifest.json" />
+    <link rel="manifest" href="/site.webmanifest" />
+  </head>
+  <body>
+    <!-- Google Tag Manager (noscript) -->
+    <!-- <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=AW-11013564293"
 	  height="0" width="0" style="display:none;visibility:hidden;"></iframe></noscript> -->
- 	<!-- End Google Tag Manager (noscript) -->
+    <!-- End Google Tag Manager (noscript) -->
 
-	<header>
-		<div class="header">
-			<button type="button" class="nav-button" title="Navegación"></button>
+    <header>
+      <div class="header">
+        <button type="button" class="nav-button" title="Navegación"></button>
 
-			<nav class="navbar">
-				<div class="nav-b">
-					<div class="collapse navbar-collapse">
-						<ul class="nav-bar">
-							<li class="nav-item"><a class="nav-link active" href="#home0"> Inicio </a></li>
-							<!-- <li class="nav-item showQS"><a class="nav-link" href="#about"> ¿Quiénes Somos? </a></li> -->
-							<li class="nav-item showService"><a class="nav-link" href="#servicios"> Servicios </a></li>
-							<li class="nav-item showDiag"><a class="nav-link" href="#diagnostic"> Diagnósticos Tratados </a></li>		
-							<li class="nav-item showContact"><a class="nav-link" href="pages/contacto.html#contact"> Contacto </a></li>
-							<li class="nav-item showTest"><a class="nav-link" href="#testimonios"> Testimonios </a></li>
-							<li class="nav-item showFQs"><a class="nav-link" href="#frequences"> Preguntas Frecuentes </a></li>
-						</ul>
-					</div>
-				</div>
-			</nav>
+        <nav class="navbar">
+          <div class="nav-b">
+            <div class="collapse navbar-collapse">
+              <ul class="nav-bar">
+                <li class="nav-item">
+                  <a class="nav-link active" href="#home0"> Inicio </a>
+                </li>
+                <!-- <li class="nav-item showQS"><a class="nav-link" href="#about"> ¿Quiénes Somos? </a></li> -->
+                <li class="nav-item showService">
+                  <a class="nav-link" href="#servicios"> Servicios </a>
+                </li>
+                <li class="nav-item showDiag">
+                  <a class="nav-link" href="#diagnostic">
+                    Diagnósticos Tratados
+                  </a>
+                </li>
+                <li class="nav-item showContact">
+                  <a class="nav-link" href="pages/contacto.html#contact">
+                    Contacto
+                  </a>
+                </li>
+                <li class="nav-item showTest">
+                  <a class="nav-link" href="#testimonios"> Testimonios </a>
+                </li>
+                <li class="nav-item showFQs">
+                  <a class="nav-link" href="#frequences">
+                    Preguntas Frecuentes
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
 
-			<div class="logo-contains">
-				<div class="logo-container">
-					<img src="public/img/svg/crcvlogo.svg" class="logo" alt="logo del Centro de Rehabilitación de la Columna Vertebral" id="logo">
-					<!-- <video autoplay muted playsinline oncontextmenu="return false;" preload="auto">
+        <div class="logo-contains">
+          <div class="logo-container">
+            <img
+              src="public/img/svg/crcvlogo.svg"
+              class="logo"
+              alt="logo del Centro de Rehabilitación de la Columna Vertebral"
+              id="logo"
+            />
+            <!-- <video autoplay muted playsinline oncontextmenu="return false;" preload="auto">
 						<source src="./public/videos/vinicio.mov" type="video/mp4">
 					</video> -->
-				</div>
-			
-				<div class="header-title">
-					<strong class="title">¡Con salud la vida se disfruta mejor!</strong>
-				</div>
-			</div>
-		
-		<div class="lineB">
-			<div class="social--line"></div>
-		</div>
-	
-			<div class="home-start-side"> 
-				<div class="home-slider-content" id="home0">
-					<h1>
-						DRX9000
-	          <span>Descompresión espinal no quirúrgica</span>
-					</h1>	
-				</div>
-				<div class="aside-social-web" id="drx"></div>
-			</div>
+          </div>
 
-		</div>
-	</header>
-
-
-	<main>
-		<div class="mB pageA">
-			<span class="line"></span>
-			<div class="home-start hidden">
-				<div class="home-somos">
-					<div class="inicio__quienes">
-						<article class="sobrenosotros">
-							<!-- <h2>Centro de Rehabilitación<br> de la Columna Vertebral
-							</h2> -->
-								<!-- <br> -->
-								<!-- <br> -->
-							<h2>Sobre nosotros</h2>
-							<!-- <br> -->
-							<p class="first__letter"> En el <strong>Centro de Rehabilitación de la Columna Vertebral</strong> aplicamos los más modernos métodos y técnicas en beneficio de nuestros pacientes. Nuestra clínica fue fundada hace <span class="yyyy"></span> años con una idea que prometía grandes cambios en una sociedad con un pensamiento de salud bastante restringido a lo clásico y lo estamos cumpliendo.</p>
-			
-							<p>Utilizando el método de la descompresión espinal no quirúrgica con el equipo <strong>DRX9000</strong> como método cardinal combinamos las armas necesarias para cambiar el ciclo vicioso de los pacientes con dolencias de este tipo. Método que fue perfeccionando su fórmula agregando técnicas que siguen mejorando los resultados a largo plazo.</p>
-							
-							<p>Las manifestaciones de nuestros resultados son dispersadas de boca en boca y atraves de nuestras redes sociales (testimonios) para hacerle conocer a las personas que existía una excelente opción para las dolencias de sus espaldas.</p>
-
-							<details>
-								<summary>Leer más...</summary>
-								<p>La especialización de las técnicas y métodos utilizados exigen a nuestro personal un alto grado de calificación profesional, teniendo siempre en cuenta que nuestros pacientes deben ser atendidos de forma especial y personalizada.</p>
-				
-								<p>Contamos con un amplio horario de atención, incluyendo sábados, en nuestras innovadoras, céntricas y cómodas instalaciones.</p>
-				
-								<p>Entendiendo que una vida saludable no es basada en un proceso curativo, sino preventivo, nuestra ideología a largo plazo es brindarles las herramientas necesarias a los pacientes para dicho hecho. Por esta razón, hemos desarrollado planes para que, luego de terminar protocolos de tratamientos en dolencias agudas, el paciente pueda mantenerse en buen estado de salud general.</p>
-				
-								<p>Contemplando siempre una conciencia de una higiene de la columna, evitando comportamientos nocivos que disminuyan nuevamente la calidad de vida a través del tiempo a corto, mediano y largo plazo. Y recuerden que con salud la vida siempre se disfruta mejor.</p>
-							</details>		
-						</article>
-						<div class="img__quienes">
-							<picture>
-								<img src="./public/img/descompresionespinal.avif" loading="lazy" alt="DRX9000 descompresión espinal">
-							</picture>
-						</div>
-					</div>
-				</div>
-
-				<span class="line"></span>
-				<section class="img-container-a hide">
-					<h2>Servicios</h2>
-					<div class="images-a">
-						<div class="diagnostic-ab">
-
-							<div class="diag-art">
-								<figure class="diag-img" id="drx-9000">
-									<img src="./public/img/drxnuevemil-a.avif" loading="lazy" alt="Descompresión espinal" id="drxcrvpanama">
-									<figcaption class="button__parr">
-										<h3 class="diag-li">Descompresión espinal</h3>
-									
-										<p class="diag__parr diag__parrB">Esta metodología se basa en la separación de las vértebras de forma dinámica y escalonada para permitir la rehidratación de la estructura discal afectada, ya sea si está deshidratada (desgaste de disco) o deformada (hernias de disco-abombamiento, protrusión, extrusión).</p>
-									</figcaption>
-								</figure>
-
-							</div>
-
-							<div class="diag-art">
-								<figure class="diag-img">
-									<img src="./public/img/webp/ozonoterapia.avif" alt="Ozonoterapia" loading="lazy">
-									<figcaption class="button__parr">
-										<h3 class="diag-li">Ozonoterapia</h3>
-									
-										<p class="diag__parr diag__parrB">Es una técnica de apoyo que utiliza como base el gas O3 energizado desde O2(oxígeno) por medio de una reacción de un equipo convertidor. Este gas es aplicado en las regiones musculares/cadenas miofasciales afectadas que tiene facultades principalmente desinflamatorias (importante para las dolencias que atendemos) y desinfectantes.</p>
-									</figcaption>
-								</figure>
-							</div>
-
-							<div class="diag-art">
-								<figure class="diag-img">
-									<img src="./public/img/terapiasfisicas.avif" alt="Terapias físicas" loading="lazy">
-									<figcaption class="button__parr">
-										<h3 class="diag-li">Terapias físicas</h3>
-									
-										<p class="diag__parr diag__parrB">TENS, US, láser, frío/calor-. Estas técnicas tienen la capacidad en conjunto con la descompresión espinal no quirúrgica de disminuir/distraer las estructuras irritadas que usualmente involucran el nervio, el músculo y la articulación (disco/faceta).</p>
-									</figcaption>
-								</figure>
-							</div>
-						</div>
-					</div>
-				</section>
-
-				<!-- <span class="loading"></span> -->
-				<span class="line"></span>
-
-				<section class="diagnostic-a hide">
-					<h3> Diagnósticos tratados </h3>
-					<div class="diagnostic-ab">
-						<div class="diag-art">
-							<figure class="diag-img">
-								<img src="./public/img/discosherniados.avif" alt="Disco herniado" loading="lazy">
-								<figcaption class="button__parr">
-									<h3 class="diag-li">Discos Herniados</h3>
-								
-									<p class="diag__parr diag__parrB">Lesión localizada en medio de las vértebras que consta de una deformidad del disco provocada por debilidad de los anillos que mantienen la integridad del disco en su interior (núcleo pulposo). Los discos herniados se pueden encontrar en todas las regiones móviles de la columna, ejemplo: cervical (C1 hasta C7)más comunes, dorsal (T1 hasta T12 menos comunes) y lumbar (L1 hasta L5/S1) más comunes.</p>
-								</figcaption>
-							</figure>
-						</div>
-						<div class="diag-art">
-							<figure class="diag-img">
-								<img src="./public/img/enfermedaddegenerativa.avif" alt="Enfermedad Degenerativa de Disco" loading="lazy">
-								<figcaption class="button__parr">
-									<h3 class="diag-li">Enfermedad Degenerativa de Disco</h3>
-								
-									<p class="diag__parr diag__parrB">(Desgaste/deshidratación de disco) lesión que se caracteriza a través del tiempo por incapacidad del disco de amortiguar correctamente las vértebras, observado a nivel de rx como acercamiento de las vértebras y a nivel de la resonancia magnética con un aumento en la tonalidad del disco (más oscuro).</p>
-								</figcaption>
-							</figure>
-						</div>
-						<div class="diag-art">
-							<figure class="diag-img">
-								<img src="./public/img/diagnostico-de-la-ciatica.avif" id="ciatica" alt="Diagnóstico de la Ciática" loading="lazy">
-								<figcaption class="button__parr">
-									<h3 class="diag-li">Síndromes de Ciática</h3>
-								
-									<p class="diag__parr diag__parrB">Descripción de una serie de síntomas, principalmente asociados a una irritación/dolor de las raíces nerviosas provenientes de la columna lumbar y parte del sacro en un 90 a 95% de los casos. Existe un porcentaje residual asociado al síndrome piriforme que causa el mismo cuadro.</p>
-								</figcaption>
-							</figure>
-						</div>
-					</div>					
-
-					<div class="diagnostic-ab">
-						<div class="diag-art">
-							<figure class="diag-img">
-								<img src="./public/img/cervicalgia.avif" alt="Cervicalgia" loading="lazy">
-								<figcaption class="button__parr">
-									<h3 class="diag-li">Cervicalgia</h3>
-								
-									<p class="diag__parr diag__parrB">Dolor principalmente en el cuello y hacia hombros y brazos. Tiene como origen lesiones a nivel cervical asociado a discos herniados, desgastados, síndromes facetarios, síndromes miofaciales, y hasta escoliosis.</p>
-								</figcaption>
-							</figure>
-						</div>
-						<div class="diag-art">
-							<figure class="diag-img">
-								<img src="./public/img/escoliosis.avif" alt="Escoliosis" loading="lazy">
-								<figcaption class="button__parr">
-									<h3 class="diag-li">Escoliosis</h3>
-								
-									<p class="diag__parr diag__parrB">Escoliosis leve a moderada son desviaciones congénitas (desde que nacemos) de la columna que, dependiendo del grado de desviación, ubicación y características de la misma, pueden provocar dolor similar a una lesión asociada con el disco en general. En términos generales, es una lesión que le crea una desventaja al paciente con respecto a los demás por el hecho del balance de las cargas corporales del tronco.</p>
-								</figcaption>
-							</figure>
-						</div>
-						<div class="diag-art">
-							<figure class="diag-img">
-								<img src="./public/img/radiculopatias.avif" alt="Radiculopatias" loading="lazy">
-								<figcaption class="button__parr">
-									<h3 class="diag-li">Radiculopatias de miembros superiores e inferiores</h3>
-								
-									<p class="diag__parr diag__parrB">Adormecimiento/hormigueos de brazos y piernas, descritas de esta manera, son manifestaciones del nervio irritado usualmente desde su origen que se describen como: adormecimiento, hormigueos, quemazón, frío, calambres, pérdida de la fuerza, y dolor. En muchas ocasiones son provocadas por lesiones a nivel del disco/columna.</p>
-								</figcaption>
-							</figure>
-						</div>
-					</div>
-				</section>
-			</div>
-		</div>
-			<section id="search-container">
-				<button type="button" id="btn-search">FAQs</button>
-				<div class="search-modal hide__parr" id="search">
-					<h4><a href="pages/faqs.html">Preguntas frecuentes</a></h4>
-				</div>
-			</section>
-	</main>
-
-	<footer>
-		<section>
-			<div class="whatsapp--widget"></div>
-			<article class="whatsapp--numbers hide__parr">
-				<h4>Selecciona sucursal</h4>
-				<div>
-				<h6><a class="whatsapp--links" target="_blank" href="https://wa.me/50766164253?text=Hola%20estoy%20interesado%20y%20deseo%20más%20información.">PANAMÁ <span>(507) 6616-4253 <i class="bi bi-whatsapp"></i></span></a></h6>
-				<hr>
-				<h6><a class="whatsapp--links" target="_blank" href="https://wa.me/50768506124?text=Hola%20estoy%20interesado%20y%20deseo%20más%20información.">SANTIAGO <span>(507) 6850-6124 <i class="bi bi-whatsapp"></i></span></a></h6>
-				</div>
-			</article>
-		</section>
-
-		<div class="foot">
-			<div class="partFooter"><img src="./favicons/favicon.png" alt="icon_CRCV_Panamá" /></div>
-
-			<section class="services-footer">
-
-				<div class="footer-diagnostic">
-			
-				<div>
-					<h5>Servicios</h5>
-					<ul>
-						<li>Descompresión espinal</li>
-						<li>ozonoterapia</li>
-						<li>terapias físicas</li>
-					</ul>
-				</div>
-
-				<div>
-					<h5>Descompresión espinal</h5>
-					<ul>
-						<li>Discos herniados</li>
-						<li>enfermedad degenerativa de disco</li>
-						<li>síndrome de ciática</li>
-						<li>cervicalgia</li>
-						<li>escoliosis leve a moderadas</li>
-						<li>radiculopatías de miembros</li>
-					</ul>
-				</div>
-
-				<div>
-					<h5>Ozonoterapia</h5>
-					<ul>
-						<li>Artritis</li>
-						<li>artrosis</li>
-						<li>lesiones deportivas</li>
-						<li>artritis reumatoide</li>
-						<li>tendinitis</li>
-					</ul>
-				</div>
-
-				</div>
-
-				<div class="foot-social">
-					<h5>Redes Sociales</h5>
-					<div class="social--line"></div>
-				</div>
-			</section>
-
-		</div>
-			<hr>
-			<div class="footer--nav">
-				<ul class="nav justify-content-center border-bottom pb-3 mb-3">
-			      <li class="nav-item"><a href="#" class="nav-link--footer px-2 text-body-secondary">Inicio</a></li>
-			      <li class="nav-item"><a href="#" class="nav-link--footer px-2 text-body-secondary">Servicios</a></li>
-			      <li class="nav-item"><a href="#" class="nav-link--footer px-2 text-body-secondary">Diagnósticos</a></li>
-			      <li class="nav-item"><a href="#" class="nav-link--footer px-2 text-body-secondary">Contacto</a></li>
-			      <li class="nav-item"><a href="#" class="nav-link--footer px-2 text-body-secondary">Testimonios</a></li>
-			      <li class="nav-item"><a href="#" class="nav-link--footer px-2 text-body-secondary">FAQs</a></li> 
-			    </ul>
-			</div>
-
-			<div class="foot-rights">
-				<p>Copyright © <span class="date"></span> <a href="https://www.instagram.com/crcvpanama/" target="_blank"><strong> Centro de Rehabilitación de la Columna Vertebral</strong></a> </p>
-			</div>
-		
-        <div rel="nofollow" class="cookieBox">
-            <a href="https://www.crcvpanama.org/pages/cookies.html" target="_blank">Hacemos uso de cookies propias y de terceros para proporcionar una mejor experiencia de usuario. Al seguir navegando entendemos que acepta nuestra Política de Cookies.</a>
-            <button type="button" class="botonRGPD">Aceptar</button>
-            <button type="button" class="cancelBotonRGPD">Cancelar</button>
+          <div class="header-title">
+            <strong class="title">¡Con salud la vida se disfruta mejor!</strong>
+          </div>
         </div>
-    
-	</footer>
-	</body>
+
+        <div class="lineB">
+          <div class="social--line"></div>
+        </div>
+
+        <div class="home-start-side">
+          <div class="home-slider-content" id="home0">
+            <h1>
+              DRX9000
+              <span>Descompresión espinal no quirúrgica</span>
+            </h1>
+          </div>
+          <div class="aside-social-web" id="drx"></div>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <div class="mB pageA">
+        <span class="line"></span>
+        <div class="home-start hidden">
+          <div class="home-somos">
+            <div class="inicio__quienes">
+              <article class="sobrenosotros">
+                <!-- <h2>Centro de Rehabilitación<br> de la Columna Vertebral
+							</h2> -->
+                <!-- <br> -->
+                <!-- <br> -->
+                <h2>Sobre nosotros</h2>
+                <!-- <br> -->
+                <p class="first__letter">
+                  En el
+                  <strong
+                    >Centro de Rehabilitación de la Columna Vertebral</strong
+                  >
+                  aplicamos los más modernos métodos y técnicas en beneficio de
+                  nuestros pacientes. Nuestra clínica fue fundada hace
+                  <span class="yyyy"></span> años con una idea que prometía
+                  grandes cambios en una sociedad con un pensamiento de salud
+                  bastante restringido a lo clásico y lo estamos cumpliendo.
+                </p>
+
+                <p>
+                  Utilizando el método de la descompresión espinal no quirúrgica
+                  con el equipo <strong>DRX9000</strong> como método cardinal
+                  combinamos las armas necesarias para cambiar el ciclo vicioso
+                  de los pacientes con dolencias de este tipo. Método que fue
+                  perfeccionando su fórmula agregando técnicas que siguen
+                  mejorando los resultados a largo plazo.
+                </p>
+
+                <p>
+                  Las manifestaciones de nuestros resultados son dispersadas de
+                  boca en boca y atraves de nuestras redes sociales
+                  (testimonios) para hacerle conocer a las personas que existía
+                  una excelente opción para las dolencias de sus espaldas.
+                </p>
+
+                <details>
+                  <summary>Leer más...</summary>
+                  <p>
+                    La especialización de las técnicas y métodos utilizados
+                    exigen a nuestro personal un alto grado de calificación
+                    profesional, teniendo siempre en cuenta que nuestros
+                    pacientes deben ser atendidos de forma especial y
+                    personalizada.
+                  </p>
+
+                  <p>
+                    Contamos con un amplio horario de atención, incluyendo
+                    sábados, en nuestras innovadoras, céntricas y cómodas
+                    instalaciones.
+                  </p>
+
+                  <p>
+                    Entendiendo que una vida saludable no es basada en un
+                    proceso curativo, sino preventivo, nuestra ideología a largo
+                    plazo es brindarles las herramientas necesarias a los
+                    pacientes para dicho hecho. Por esta razón, hemos
+                    desarrollado planes para que, luego de terminar protocolos
+                    de tratamientos en dolencias agudas, el paciente pueda
+                    mantenerse en buen estado de salud general.
+                  </p>
+
+                  <p>
+                    Contemplando siempre una conciencia de una higiene de la
+                    columna, evitando comportamientos nocivos que disminuyan
+                    nuevamente la calidad de vida a través del tiempo a corto,
+                    mediano y largo plazo. Y recuerden que con salud la vida
+                    siempre se disfruta mejor.
+                  </p>
+                </details>
+              </article>
+              <div class="img__quienes">
+                <picture>
+                  <img
+                    src="./public/img/descompresionespinal.avif"
+                    loading="lazy"
+                    alt="DRX9000 descompresión espinal"
+                  />
+                </picture>
+              </div>
+            </div>
+          </div>
+
+          <span class="line"></span>
+          <section class="img-container-a hide">
+            <h2>Servicios</h2>
+            <div class="images-a">
+              <div class="diagnostic-ab">
+                <div class="diag-art">
+                  <figure class="diag-img" id="drx-9000">
+                    <img
+                      src="./public/img/drxnuevemil-a.avif"
+                      loading="lazy"
+                      alt="Descompresión espinal"
+                      id="drxcrvpanama"
+                    />
+                    <figcaption class="button__parr">
+                      <h3 class="diag-li">Descompresión espinal</h3>
+
+                      <p class="diag__parr diag__parrB">
+                        Esta metodología se basa en la separación de las
+                        vértebras de forma dinámica y escalonada para permitir
+                        la rehidratación de la estructura discal afectada, ya
+                        sea si está deshidratada (desgaste de disco) o deformada
+                        (hernias de disco-abombamiento, protrusión, extrusión).
+                      </p>
+                    </figcaption>
+                  </figure>
+                </div>
+
+                <div class="diag-art">
+                  <figure class="diag-img">
+                    <img
+                      src="./public/img/webp/ozonoterapia.avif"
+                      alt="Ozonoterapia"
+                      loading="lazy"
+                    />
+                    <figcaption class="button__parr">
+                      <h3 class="diag-li">Ozonoterapia</h3>
+
+                      <p class="diag__parr diag__parrB">
+                        Es una técnica de apoyo que utiliza como base el gas O3
+                        energizado desde O2(oxígeno) por medio de una reacción
+                        de un equipo convertidor. Este gas es aplicado en las
+                        regiones musculares/cadenas miofasciales afectadas que
+                        tiene facultades principalmente desinflamatorias
+                        (importante para las dolencias que atendemos) y
+                        desinfectantes.
+                      </p>
+                    </figcaption>
+                  </figure>
+                </div>
+
+                <div class="diag-art">
+                  <figure class="diag-img">
+                    <img
+                      src="./public/img/terapiasfisicas.avif"
+                      alt="Terapias físicas"
+                      loading="lazy"
+                    />
+                    <figcaption class="button__parr">
+                      <h3 class="diag-li">Terapias físicas</h3>
+
+                      <p class="diag__parr diag__parrB">
+                        TENS, US, láser, frío/calor-. Estas técnicas tienen la
+                        capacidad en conjunto con la descompresión espinal no
+                        quirúrgica de disminuir/distraer las estructuras
+                        irritadas que usualmente involucran el nervio, el
+                        músculo y la articulación (disco/faceta).
+                      </p>
+                    </figcaption>
+                  </figure>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <!-- <span class="loading"></span> -->
+          <span class="line"></span>
+
+          <section class="diagnostic-a hide">
+            <h3>Diagnósticos tratados</h3>
+            <div class="diagnostic-ab">
+              <div class="diag-art">
+                <figure class="diag-img">
+                  <img
+                    src="./public/img/discosherniados.avif"
+                    alt="Disco herniado"
+                    loading="lazy"
+                  />
+                  <figcaption class="button__parr">
+                    <h3 class="diag-li">Discos Herniados</h3>
+
+                    <p class="diag__parr diag__parrB">
+                      Lesión localizada en medio de las vértebras que consta de
+                      una deformidad del disco provocada por debilidad de los
+                      anillos que mantienen la integridad del disco en su
+                      interior (núcleo pulposo). Los discos herniados se pueden
+                      encontrar en todas las regiones móviles de la columna,
+                      ejemplo: cervical (C1 hasta C7)más comunes, dorsal (T1
+                      hasta T12 menos comunes) y lumbar (L1 hasta L5/S1) más
+                      comunes.
+                    </p>
+                  </figcaption>
+                </figure>
+              </div>
+              <div class="diag-art">
+                <figure class="diag-img">
+                  <img
+                    src="./public/img/enfermedaddegenerativa.avif"
+                    alt="Enfermedad Degenerativa de Disco"
+                    loading="lazy"
+                  />
+                  <figcaption class="button__parr">
+                    <h3 class="diag-li">Enfermedad Degenerativa de Disco</h3>
+
+                    <p class="diag__parr diag__parrB">
+                      (Desgaste/deshidratación de disco) lesión que se
+                      caracteriza a través del tiempo por incapacidad del disco
+                      de amortiguar correctamente las vértebras, observado a
+                      nivel de rx como acercamiento de las vértebras y a nivel
+                      de la resonancia magnética con un aumento en la tonalidad
+                      del disco (más oscuro).
+                    </p>
+                  </figcaption>
+                </figure>
+              </div>
+              <div class="diag-art">
+                <figure class="diag-img">
+                  <img
+                    src="./public/img/diagnostico-de-la-ciatica.avif"
+                    id="ciatica"
+                    alt="Diagnóstico de la Ciática"
+                    loading="lazy"
+                  />
+                  <figcaption class="button__parr">
+                    <h3 class="diag-li">Síndromes de Ciática</h3>
+
+                    <p class="diag__parr diag__parrB">
+                      Descripción de una serie de síntomas, principalmente
+                      asociados a una irritación/dolor de las raíces nerviosas
+                      provenientes de la columna lumbar y parte del sacro en un
+                      90 a 95% de los casos. Existe un porcentaje residual
+                      asociado al síndrome piriforme que causa el mismo cuadro.
+                    </p>
+                  </figcaption>
+                </figure>
+              </div>
+            </div>
+
+            <div class="diagnostic-ab">
+              <div class="diag-art">
+                <figure class="diag-img">
+                  <img
+                    src="./public/img/cervicalgia.avif"
+                    alt="Cervicalgia"
+                    loading="lazy"
+                  />
+                  <figcaption class="button__parr">
+                    <h3 class="diag-li">Cervicalgia</h3>
+
+                    <p class="diag__parr diag__parrB">
+                      Dolor principalmente en el cuello y hacia hombros y
+                      brazos. Tiene como origen lesiones a nivel cervical
+                      asociado a discos herniados, desgastados, síndromes
+                      facetarios, síndromes miofaciales, y hasta escoliosis.
+                    </p>
+                  </figcaption>
+                </figure>
+              </div>
+              <div class="diag-art">
+                <figure class="diag-img">
+                  <img
+                    src="./public/img/escoliosis.avif"
+                    alt="Escoliosis"
+                    loading="lazy"
+                  />
+                  <figcaption class="button__parr">
+                    <h3 class="diag-li">Escoliosis</h3>
+
+                    <p class="diag__parr diag__parrB">
+                      Escoliosis leve a moderada son desviaciones congénitas
+                      (desde que nacemos) de la columna que, dependiendo del
+                      grado de desviación, ubicación y características de la
+                      misma, pueden provocar dolor similar a una lesión asociada
+                      con el disco en general. En términos generales, es una
+                      lesión que le crea una desventaja al paciente con respecto
+                      a los demás por el hecho del balance de las cargas
+                      corporales del tronco.
+                    </p>
+                  </figcaption>
+                </figure>
+              </div>
+              <div class="diag-art">
+                <figure class="diag-img">
+                  <img
+                    src="./public/img/radiculopatias.avif"
+                    alt="Radiculopatias"
+                    loading="lazy"
+                  />
+                  <figcaption class="button__parr">
+                    <h3 class="diag-li">
+                      Radiculopatias de miembros superiores e inferiores
+                    </h3>
+
+                    <p class="diag__parr diag__parrB">
+                      Adormecimiento/hormigueos de brazos y piernas, descritas
+                      de esta manera, son manifestaciones del nervio irritado
+                      usualmente desde su origen que se describen como:
+                      adormecimiento, hormigueos, quemazón, frío, calambres,
+                      pérdida de la fuerza, y dolor. En muchas ocasiones son
+                      provocadas por lesiones a nivel del disco/columna.
+                    </p>
+                  </figcaption>
+                </figure>
+              </div>
+            </div>
+          </section>
+        </div>
+      </div>
+      <section id="search-container">
+        <button type="button" id="btn-search">FAQs</button>
+        <div class="search-modal hide__parr" id="search">
+          <h4><a href="pages/faqs.html">Preguntas frecuentes</a></h4>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <section>
+        <div class="whatsapp--widget"></div>
+        <article class="whatsapp--numbers hide__parr">
+          <h4>Selecciona sucursal</h4>
+          <div>
+            <h6>
+              <a
+                class="whatsapp--links"
+                target="_blank"
+                href="https://wa.me/50766164253?text=Hola%20estoy%20interesado%20y%20deseo%20más%20información."
+                >PANAMÁ
+                <span>(507) 6616-4253 <i class="bi bi-whatsapp"></i></span
+              ></a>
+            </h6>
+            <hr />
+            <h6>
+              <a
+                class="whatsapp--links"
+                target="_blank"
+                href="https://wa.me/50768506124?text=Hola%20estoy%20interesado%20y%20deseo%20más%20información."
+                >SANTIAGO
+                <span>(507) 6850-6124 <i class="bi bi-whatsapp"></i></span
+              ></a>
+            </h6>
+          </div>
+        </article>
+      </section>
+
+      <div class="foot">
+        <div class="partFooter">
+          <img src="./favicons/favicon.png" alt="icon_CRCV_Panamá" />
+        </div>
+
+        <section class="services-footer">
+          <div class="footer-diagnostic">
+            <div>
+              <h5>Servicios</h5>
+              <ul>
+                <li>Descompresión espinal</li>
+                <li>ozonoterapia</li>
+                <li>terapias físicas</li>
+              </ul>
+            </div>
+
+            <div>
+              <h5>Descompresión espinal</h5>
+              <ul>
+                <li>Discos herniados</li>
+                <li>enfermedad degenerativa de disco</li>
+                <li>síndrome de ciática</li>
+                <li>cervicalgia</li>
+                <li>escoliosis leve a moderadas</li>
+                <li>radiculopatías de miembros</li>
+              </ul>
+            </div>
+
+            <div>
+              <h5>Ozonoterapia</h5>
+              <ul>
+                <li>Artritis</li>
+                <li>artrosis</li>
+                <li>lesiones deportivas</li>
+                <li>artritis reumatoide</li>
+                <li>tendinitis</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="foot-social">
+            <h5>Redes Sociales</h5>
+            <div class="social--line"></div>
+          </div>
+        </section>
+      </div>
+      <hr />
+      <div class="footer--nav">
+        <ul class="nav justify-content-center border-bottom pb-3 mb-3">
+          <li class="nav-item">
+            <a href="#" class="nav-link--footer px-2 text-body-secondary"
+              >Inicio</a
+            >
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link--footer px-2 text-body-secondary"
+              >Servicios</a
+            >
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link--footer px-2 text-body-secondary"
+              >Diagnósticos</a
+            >
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link--footer px-2 text-body-secondary"
+              >Contacto</a
+            >
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link--footer px-2 text-body-secondary"
+              >Testimonios</a
+            >
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link--footer px-2 text-body-secondary"
+              >FAQs</a
+            >
+          </li>
+        </ul>
+      </div>
+
+      <div class="foot-rights">
+        <p>
+          Copyright © <span class="date"></span>
+          <a href="https://www.instagram.com/crcvpanama/" target="_blank"
+            ><strong>
+              Centro de Rehabilitación de la Columna Vertebral</strong
+            ></a
+          >
+        </p>
+      </div>
+
+      <div rel="nofollow" class="cookieBox">
+        <a href="https://www.crcvpanama.org/pages/cookies.html" target="_blank"
+          >Hacemos uso de cookies propias y de terceros para proporcionar una
+          mejor experiencia de usuario. Al seguir navegando entendemos que
+          acepta nuestra Política de Cookies.</a
+        >
+        <button type="button" class="botonRGPD">Aceptar</button>
+        <button type="button" class="cancelBotonRGPD">Cancelar</button>
+      </div>
+    </footer>
+  </body>
 </html>

@@ -10,24 +10,6 @@
     </image:image>
   </url>
   <url>
-    <loc>https://www.crcvpanama.org/index.html</loc>
-    <lastmod>2026-06-15</lastmod>
-    <changefreq>yearly</changefreq>
-    <priority>1.0</priority>
-    <image:image>
-      <image:loc>https://www.crcvpanama.org/favicons/crcvlogo.png</image:loc>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://www.crcvpanama.org/pages/servicios.html</loc>
-    <lastmod>2026-06-15</lastmod>
-    <changefreq>yearly</changefreq>
-    <priority>0.80</priority>
-    <image:image>
-      <image:loc>https://www.crcvpanama.org/public/img/ozonoterapia.jpg</image:loc> 
-    </image:image>
-  </url>
-  <url>
     <loc>https://www.crcvpanama.org/pages/diagnosticos.html</loc>
     <lastmod>2026-06-15</lastmod>
     <changefreq>yearly</changefreq>
