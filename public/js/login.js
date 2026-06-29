@@ -110,7 +110,8 @@ function login() {
       setCookie("token", result, 7);
       
 
-      window.location.reload();
+      //window.location.reload();
+      window.location.href = "https://www.crcvpanama.org/pages/login";
     } else {
       removeCookie("token");
       card.removeAttribute("id");
