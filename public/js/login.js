@@ -173,7 +173,7 @@ function contentC(nombre, email, phone, control, date) {
 async function fetchContent() {
 
   let token = getCookie("token");
-  let result = await fetch(`https://visits-woad.vercel.app/crcv`, {
+  let result = await fetch(`https://visits-woad.vercel.app/crcv/inicio`, {
     method: "GET",
     headers: {
       Authorization: `Bearer ${token}`,
