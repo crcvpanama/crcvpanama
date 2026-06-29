@@ -124,7 +124,6 @@ function login() {
   });
 }
 
-login();
 
 function content(visitas, dominio, fecha, clicks) {
   newDiv.innerHTML += `
@@ -266,3 +265,5 @@ function showViews() {
 showViews();
 fetchContent();
 showMSG();
+
+login();
