@@ -252,6 +252,8 @@ function showViews() {
     card.setAttribute("id", "hidden");
     showUserMsg.removeAttribute("class");
     blog.removeAttribute("class");
+    fetchContent();
+    showMSG();
     
     // sectionAdForm.removeAttribute("class", "hidden");
   } else {
@@ -263,7 +265,6 @@ function showViews() {
 }
 
 showViews();
-fetchContent();
-showMSG();
+
 
 login();
