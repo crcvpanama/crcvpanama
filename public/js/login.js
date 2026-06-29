@@ -73,56 +73,7 @@ const form = document.getElementById("form");
 const url = "https://visits-woad.vercel.app/crcv/login";
 // const url = "http://localhost:3000/crcv/test";
 
-function login() {
-  form.addEventListener("submit", async (event) => {
-    event.preventDefault();
 
-    message.style.color = "#009900";
-    message.innerText = "Iniciando sesion...";
-    const formData = new FormData(form);
-
-    let result = await fetch(url, {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json; charset=utf-8",
-        "Access-Control-Allow-Origin": "*",
-        "Access-Control-Methods": "GET,HEAD,POST,OPTIONS",
-      },
-      body: JSON.stringify({
-        username: formData.get("username"),
-        password: formData.get("password"),
-      }),
-    })
-      .then((response) => response.json())
-      .catch((error) => {
-        console.error("Error:", error);
-        message.style.color = "#990000";
-        message.innerText = error;
-      });
-
-    if (!result.error) {
-      setCookie("token", result, 7);
-      card.setAttribute("id", "hidden");
-      showUserMsg.removeAttribute("class");
-      blog.removeAttribute("class");
-
-      fetchContent();
-      showMSG();
-
-      // window.location.reload();
-    } else {
-      removeCookie("token");
-      card.removeAttribute("id");
-      showUserMsg.setAttribute("class", "hidden");
-      blog.setAttribute("class", "hidden");
-
-      // window.location.reload();
-
-      message.style.color = "#990000";
-      message.innerText = result.error;
-    }
-  });
-}
 
 
 function content(visitas, dominio, fecha, clicks) {
@@ -266,5 +217,55 @@ function showViews() {
 
 showViews();
 
+function login() {
+  form.addEventListener("submit", async (event) => {
+    event.preventDefault();
+
+    message.style.color = "#009900";
+    message.innerText = "Iniciando sesion...";
+    const formData = new FormData(form);
+
+    let result = await fetch(url, {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json; charset=utf-8",
+        "Access-Control-Allow-Origin": "*",
+        "Access-Control-Methods": "GET,HEAD,POST,OPTIONS",
+      },
+      body: JSON.stringify({
+        username: formData.get("username"),
+        password: formData.get("password"),
+      }),
+    })
+      .then((response) => response.json())
+      .catch((error) => {
+        console.error("Error:", error);
+        message.style.color = "#990000";
+        message.innerText = error;
+      });
+
+    if (!result.error) {
+      setCookie("token", result, 7);
+      card.setAttribute("id", "hidden");
+      showUserMsg.removeAttribute("class");
+      blog.removeAttribute("class");
+
+      fetchContent();
+      showMSG();
+
+      // window.location.reload();
+    } else {
+      removeCookie("token");
+      card.removeAttribute("id");
+      showUserMsg.setAttribute("class", "hidden");
+      blog.setAttribute("class", "hidden");
+
+      // window.location.reload();
+
+      message.style.color = "#990000";
+      message.innerText = result.error;
+    }
+  });
+}
 
 login();
