@@ -102,11 +102,11 @@ function login() {
 
     if (!result.error) {
       setCookie("token", result, 7);
-      // card.setAttribute("id", "hidden");
-      // showUserMsg.removeAttribute("class");
-      // blog.removeAttribute("class");
+      card.setAttribute("id", "hidden");
+      showUserMsg.removeAttribute("class");
+      blog.removeAttribute("class");
 
-      window.location.reload();
+      // window.location.reload();
     } else {
       removeCookie("token");
       card.removeAttribute("id");
