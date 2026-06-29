@@ -70,7 +70,7 @@ function detectCookie(cname) {
 
 const message = document.getElementById("message");
 const form = document.getElementById("form");
-const url = "https://visits-woad.vercel.app/crcv/login";
+const url = "https://visits-woad.vercel.app/crcv/login-crcv";
 // const url = "http://localhost:3000/crcv/test";
 
 
