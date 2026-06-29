@@ -243,6 +243,9 @@ function login() {
         message.innerText = error;
       });
 
+      console.log(result);
+      console.log(result.error);
+
       console.log(!result.error);
 
     if (!result.error) {
