@@ -244,16 +244,14 @@ function login() {
         message.innerText = error;
       });
 
+      console.log(!result.error);
+
     if (!result.error) {
       setCookie("token", result, 7);
-      card.setAttribute("id", "hidden");
-      showUserMsg.removeAttribute("class");
-      blog.removeAttribute("class");
+      
+      // showMSG();
 
-      fetchContent();
-      showMSG();
-
-      // window.location.reload();
+      window.location.reload();
     } else {
       removeCookie("token");
       card.removeAttribute("id");
