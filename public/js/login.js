@@ -106,6 +106,9 @@ function login() {
       showUserMsg.removeAttribute("class");
       blog.removeAttribute("class");
 
+      fetchContent();
+      showMSG();
+
       // window.location.reload();
     } else {
       removeCookie("token");
