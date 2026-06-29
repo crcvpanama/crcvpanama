@@ -74,6 +74,60 @@ const url = "https://visits-woad.vercel.app/crcv/login";
 // const url = "http://localhost:3000/crcv/test";
 
 
+function login() {
+  form.addEventListener("submit", async (event) => {
+    event.preventDefault();
+
+    message.style.color = "#009900";
+    message.innerText = "Iniciando sesion...";
+    const formData = new FormData(form);
+
+    let result = await fetch(url, {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json; charset=utf-8",
+        "Access-Control-Allow-Origin": "*",
+        "Access-Control-Methods": "GET,HEAD,POST,OPTIONS",
+      },
+      body: JSON.stringify({
+        username: formData.get("username"),
+        password: formData.get("password"),
+      }),
+    })
+      .then((response) => response.json())
+      .catch((error) => {
+        console.error("Error:", error);
+        message.style.color = "#990000";
+        message.innerText = error;
+      });
+
+      console.log(result);
+      console.log(result.error);
+
+      console.log(!result.error);
+
+    if (!result.error) {
+      setCookie("token", result, 7);
+      
+
+      window.location.reload();
+    } else {
+      removeCookie("token");
+      card.removeAttribute("id");
+      showUserMsg.setAttribute("class", "hidden");
+      blog.setAttribute("class", "hidden");
+
+      // window.location.reload();
+
+      message.style.color = "#990000";
+      message.innerText = result.error;
+    }
+  });
+}
+
+login();
+
+
 function content(visitas, dominio, fecha, clicks) {
   newDiv.innerHTML += `
     <article>
@@ -114,9 +168,10 @@ function contentC(nombre, email, phone, control, date) {
   showUserMsg.insertBefore(newArticle, cmsg);
 }
 
-const token = getCookie("token");
 
 async function fetchContent() {
+
+  let token = getCookie("token");
   let result = await fetch(`https://visits-woad.vercel.app/crcv`, {
     method: "GET",
     headers: {
@@ -160,7 +215,7 @@ async function fetchContent() {
 }
 
 async function showMSG() {
-  // let token = getCookie("token");
+  let token = getCookie("token");
 
   let result = await fetch(`https://visits-woad.vercel.app/crcv/submit`, {
     method: "PATCH",
@@ -214,57 +269,3 @@ function showViews() {
 }
 
 showViews();
-
-
-function login() {
-  form.addEventListener("submit", async (event) => {
-    event.preventDefault();
-
-    message.style.color = "#009900";
-    message.innerText = "Iniciando sesion...";
-    const formData = new FormData(form);
-
-    let result = await fetch(url, {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json; charset=utf-8",
-        "Access-Control-Allow-Origin": "*",
-        "Access-Control-Methods": "GET,HEAD,POST,OPTIONS",
-      },
-      body: JSON.stringify({
-        username: formData.get("username"),
-        password: formData.get("password"),
-      }),
-    })
-      .then((response) => response.json())
-      .catch((error) => {
-        console.error("Error:", error);
-        message.style.color = "#990000";
-        message.innerText = error;
-      });
-
-      console.log(result);
-      console.log(result.error);
-
-      console.log(!result.error);
-
-    if (!result.error) {
-      setCookie("token", result, 7);
-      
-
-      window.location.reload();
-    } else {
-      removeCookie("token");
-      card.removeAttribute("id");
-      showUserMsg.setAttribute("class", "hidden");
-      blog.setAttribute("class", "hidden");
-
-      // window.location.reload();
-
-      message.style.color = "#990000";
-      message.innerText = result.error;
-    }
-  });
-}
-
-login();
