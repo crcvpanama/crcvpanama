@@ -1,7 +1,7 @@
 const response = document.querySelectorAll("input");
 const userMessage = document.querySelector(".message");
 const form1 = document.getElementById('form');
-const urlSubmitForm = `https://visits-christian-guardias-projects.vercel.app/crcv/submit`;
+const urlSubmitForm = `https://visits-christian-guardias-projects.vercel.app/crcv/submit-msg`;
 
 function submitUserForm() {
 

@@ -217,7 +217,7 @@ async function fetchContent() {
 async function showMSG() {
   let token = getCookie("token");
 
-  let result = await fetch(`https://visits-woad.vercel.app/crcv/submit`, {
+  let result = await fetch(`https://visits-woad.vercel.app/crcv/msg`, {
     method: "PATCH",
     headers: {
       Authorization: `Bearer ${token}`,
