@@ -3,12 +3,12 @@
       <url>
         <loc>https://www.crcvpanama.org/pages/testimonios.html</loc>
         <video:video>
-          <video:thumbnail_loc>https://www.crcvpanama.org/public/img/crcvpanama.jpg</video:thumbnail_loc>
+          <video:thumbnail_loc>https://www.crcvpanama.org/public/img/crcvlogo.png</video:thumbnail_loc>
           <video:title>Testimonios | CRCV Panamá</video:title>
-          <video:description>Centro de Rehabilitación de la Columna Vertebral</video:description>
+          <video:description>Testimonio de paciente | Centro de Rehabilitación de la Columna Vertebral</video:description>
           <video:content_loc>https://www.crcvpanama.org/public/videos/testimoniob.mp4</video:content_loc>
-          <video:duration>0540</video:duration>
-          <video:publication_date>2026-06-15</video:publication_date>
+          <video:duration>54</video:duration>
+          <video:publication_date>2026-03-03</video:publication_date>
         </video:video>
       </url>
 </urlset>
