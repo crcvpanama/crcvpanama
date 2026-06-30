@@ -7,7 +7,7 @@
 
   <url>
     <loc>https://www.crcvpanama.org/</loc>
-    <lastmod>2026-06-24</lastmod>
+    <lastmod>2026-06-30</lastmod>
     <changefreq>monthly</changefreq>
     <priority>1.0</priority>
     <image:image>
@@ -25,23 +25,10 @@
   </url>
 
   <url>
-    <loc>https://www.crcvpanama.org/pages/diagnosticos.html</loc>
-    <lastmod>2026-06-24</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.70</priority>
-    <image:image>
-      <image:loc>https://www.crcvpanama.org/public/img/discosherniados.jpg</image:loc>
-      <image:title>Diagnóstico y tratamiento de discos herniados — CRCV Panamá</image:title>
-      <image:caption>Tratamiento no quirúrgico de hernias de disco, ciática, cervicalgia, escoliosis y radiculopatías en el CRCV Panamá.</image:caption>
-      <image:geo_location>Ciudad de Panamá, Panamá</image:geo_location>
-    </image:image>
-  </url>
-
-  <url>
     <loc>https://www.crcvpanama.org/pages/contacto.html</loc>
-    <lastmod>2026-06-24</lastmod>
+    <lastmod>2026-06-30</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.70</priority>
+    <priority>0.90</priority>
     <image:image>
       <image:loc>https://www.crcvpanama.org/public/img/sucursalpanama.jpg</image:loc>
       <image:title>Sucursal Ciudad de Panamá — CRCV Panamá</image:title>
@@ -52,9 +39,9 @@
 
   <url>
     <loc>https://www.crcvpanama.org/pages/testimonios.html</loc>
-    <lastmod>2026-06-24</lastmod>
+    <lastmod>2026-06-30</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.60</priority>
+    <priority>0.80</priority>
     <image:image>
       <image:loc>https://www.crcvpanama.org/public/img/camillacrcvpanama.jpg</image:loc>
       <image:title>Paciente en camilla de descompresión espinal — CRCV Panamá</image:title>
@@ -65,9 +52,9 @@
 
   <url>
     <loc>https://www.crcvpanama.org/pages/faqs.html</loc>
-    <lastmod>2026-06-24</lastmod>
+    <lastmod>2026-06-30</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.60</priority>
+    <priority>0.70</priority>
     <image:image>
       <image:loc>https://www.crcvpanama.org/public/img/crcvpanama.jpg</image:loc>
       <image:title>Preguntas frecuentes — Centro de Rehabilitación de la Columna Vertebral Panamá</image:title>
