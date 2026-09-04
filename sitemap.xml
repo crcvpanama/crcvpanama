@@ -11,8 +11,9 @@
     <lastmod>2026-06-30</lastmod>
     <changefreq>monthly</changefreq>
     <priority>1.0</priority>
+    <!-- drx9000.jpg -->
     <image:image>
-      <image:loc>https://www.crcvpanama.org/public/img/drx9000.jpg</image:loc>
+      <image:loc>https://www.crcvpanama.org/public/img/og_image_wm.jpg</image:loc>
       <image:title>Equipo DRX9000 para descompresión espinal — CRCV Panamá</image:title>
       <image:caption>Centro de Rehabilitación de la Columna Vertebral en Panamá, especializado en descompresión espinal no quirúrgica con equipo DRX9000.</image:caption>
       <image:geo_location>Ciudad de Panamá, Panamá</image:geo_location>
@@ -31,7 +32,7 @@
     <changefreq>monthly</changefreq>
     <priority>0.90</priority>
     <image:image>
-      <image:loc>https://www.crcvpanama.org/public/img/drx9000.jpg</image:loc>
+      <image:loc>https://www.crcvpanama.org/public/img/crcvlogo.png</image:loc>
       <image:title>Sucursal Ciudad de Panamá — CRCV Panamá</image:title>
       <image:caption>Sucursal del Centro de Rehabilitación de la Columna Vertebral ubicada en el Edificio Paseo Real, Camino Real de Betania, Ciudad de Panamá.</image:caption>
       <image:geo_location>Ciudad de Panamá, Panamá</image:geo_location>
@@ -44,7 +45,7 @@
     <changefreq>monthly</changefreq>
     <priority>0.80</priority>
     <image:image>
-      <image:loc>https://www.crcvpanama.org/public/img/IMG_20240126_142957.jpg</image:loc>
+      <image:loc>https://www.crcvpanama.org/public/img/drx9000.jpg</image:loc>
       <image:title>Paciente en tratamiento de descompresión espinal — CRCV Panamá</image:title>
       <image:caption>Paciente recibiendo tratamiento de descompresión espinal no quirúrgica con equipo DRX9000 en el CRCV Panamá.</image:caption>
       <image:geo_location>Ciudad de Panamá, Panamá</image:geo_location>
@@ -86,7 +87,7 @@
     <image:image>
       <image:loc>https://www.crcvpanama.org/public/img/crcvpanama.jpg</image:loc>
       <image:title>Preguntas frecuentes — Centro de Rehabilitación de la Columna Vertebral Panamá</image:title>
-      <image:caption>Respuestas a las preguntas más frecuentes sobre el tratamiento de descompresión espinal no quirúrgica en el CRCV Panamá.</image:caption>
+      <image:caption>¿Dolor de espalda, discos herniados, inflamación de nervio ciático?</image:caption>
       <image:geo_location>Ciudad de Panamá, Panamá</image:geo_location>
     </image:image>
   </url>
