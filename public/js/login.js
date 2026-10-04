@@ -7,6 +7,7 @@ button.addEventListener("click", () => {
 
 const blog = document.getElementById("blog");
 const showUserMsg = document.getElementById("users_msg");
+const res = document.getElementById("res");
 const cblog = blog.querySelector(".item:nth-child(2)");
 const cblogB = blog.querySelector(".item:nth-child(3)");
 const cmsg = showUserMsg.querySelector(".item:nth-child(2)");
@@ -246,7 +247,6 @@ async function showMSG() {
 // const sectionAdForm = document.getElementById('submit-ad');
 
 function showViews() {
-  console.log(detectCookie("token"));
   if (detectCookie("token")) {
     card.setAttribute("id", "hidden");
     showUserMsg.removeAttribute("class");
@@ -257,8 +257,9 @@ function showViews() {
     // sectionAdForm.removeAttribute("class", "hidden");
   } else {
     card.removeAttribute("id");
-    showUserMsg.setAttribute("class", "hidden");
-    blog.setAttribute("class", "hidden");
+    // showUserMsg.setAttribute("class", "hidden");
+    // blog.setAttribute("class", "hidden");
+    res.setAttribute("class", "hidden");
     message.innerText = "Inicia sesion";
   }
 }
