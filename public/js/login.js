@@ -101,15 +101,9 @@ function login() {
         message.innerText = error;
       });
 
-      console.log(result);
-      console.log(result.error);
-
-      console.log(!result.error);
-
     if (!result.error) {
       setCookie("token", result, 7);
       
-
       //window.location.reload();
       window.location.href = "https://www.crcvpanama.org/pages/login";
     } else {
