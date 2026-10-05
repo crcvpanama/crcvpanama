@@ -8,6 +8,7 @@ button.addEventListener("click", () => {
 const blog = document.getElementById("blog");
 const showUserMsg = document.getElementById("users_msg");
 const res = document.getElementById("res");
+const titleH2 = document.getElementById("titleH2");
 const cblog = blog.querySelector(".item:nth-child(2)");
 const cblogB = blog.querySelector(".item:nth-child(3)");
 const cmsg = showUserMsg.querySelector(".item:nth-child(2)");
@@ -244,24 +245,40 @@ async function showMSG() {
   }
 }
 
-// const sectionAdForm = document.getElementById('submit-ad');
 
 function showViews() {
-  if (detectCookie("token")) {
+  
     card.setAttribute("id", "hidden");
     showUserMsg.removeAttribute("class");
-    blog.removeAttribute("class");
-    fetchContent();
-    showMSG();
+    // blog.removeAttribute("class");
+    res.removeAttribute("class");
+    
     
     // sectionAdForm.removeAttribute("class", "hidden");
-  } else {
-    card.removeAttribute("id");
+  // } else {
+    // card.removeAttribute("id");
+    // showUserMsg.setAttribute("class", "hidden");
+    // blog.setAttribute("class", "hidden");
+    // res.setAttribute("class", "hidden");
+    // titleH2.setAttribute("class", "hidden");
+    // message.innerText = "Inicia sesion";
+  // }
+}
+
+// const sectionAdForm = document.getElementById('submit-ad');
+if (!detectCookie("token")) {
+  card.removeAttribute("id");
     // showUserMsg.setAttribute("class", "hidden");
     // blog.setAttribute("class", "hidden");
     res.setAttribute("class", "hidden");
+    titleH2.setAttribute("class", "hidden");
+    
+    window.location.href = "https://www.crcvpanama.org/pages/login";
     message.innerText = "Inicia sesion";
-  }
+} else {
+  showViews();
+  fetchContent();
+  showMSG();
 }
 
-showViews();
+
