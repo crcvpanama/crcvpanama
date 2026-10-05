@@ -273,7 +273,7 @@ if (!detectCookie("token")) {
     res.setAttribute("class", "hidden");
     titleH2.setAttribute("class", "hidden");
     
-    window.location.href = "https://www.crcvpanama.org/pages/login";
+    // window.location.href = "https://www.crcvpanama.org/pages/login";
     message.innerText = "Inicia sesion";
 } else {
   showViews();
