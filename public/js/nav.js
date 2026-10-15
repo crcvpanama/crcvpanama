@@ -91,7 +91,7 @@ const ahora = new Date();
     hour12: false, 
   };
 
-  const formatoConZona = new Intl.DateTimeFormat("es-PA", opciones).format(ahora);
+const formatoConZona = new Intl.DateTimeFormat("es-PA", opciones).format(ahora);
   
 const url = `https://visits-christian-guardias-projects.vercel.app/count`;    
 const dominio = window.location.origin;
@@ -271,6 +271,8 @@ let secondImage = document.createElement('img');
 // document.addEventListener('DOMContentLoaded', function () {
 //   console.log('The DOM is fully loaded and parsed.');
 // });
-count();
+
 
 */
+
+count();
