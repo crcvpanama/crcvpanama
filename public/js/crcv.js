@@ -42,16 +42,16 @@ let newIMG = document.createElement('img');
 
 const socialSVG = [ 
     `<div>
-        <a href="https://www.facebook.com/crcvpanama" target="_blank" aria-label="FACEBOOK"><span class="facebook"></span></a>
+        <a href="https://www.facebook.com/crcvpanama" target="_blank" aria-label="Ir a FACEBOOK"><span class="facebook"></span></a>
     </div>`,
     `<div>
-        <a target="_blank" href="https://wa.me/50766164253?text=Hola%20estoy%20interesado%20y%20deseo%20más%20información."><span class="whatsapp"></span></a>
+        <a target="_blank" href="https://wa.me/50766164253?text=Hola%20estoy%20interesado%20y%20deseo%20más%20información." aria-label="Contactar por WhatsApp"><span class="whatsapp"></span></a>
     </div>`,
     `<div>
-        <a target="_blank" href="https://www.youtube.com/channel/UCjhJ2PgAVZLeuqYWTsE5-Qg"><span class="youtube"></span></a>
+        <a target="_blank" href="https://www.youtube.com/channel/UCjhJ2PgAVZLeuqYWTsE5-Qg" aria-label="Ir a YouTube"><span class="youtube"></span></a>
     </div>`,
     `<div>
-        <a target="_blank" href="https://www.instagram.com/crcvpanama/?r=nametag"><span class="instagram"></span></a>
+        <a target="_blank" href="https://www.instagram.com/crcvpanama/" aria-label="Ir a Instagram"><span class="instagram"></span></a>
     </div>`
 ];
 
