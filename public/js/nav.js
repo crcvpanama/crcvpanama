@@ -182,7 +182,17 @@ button.addEventListener('click', () => {
 });
 
 const mainIMG = document.getElementById('drx');
+let secondImage = document.createElement('img');
 
+secondImage.src = 'public/img/webp/crcv.avif';
+secondImage.setAttribute('id', 'second-img');
+secondImage.setAttribute('alt', 'DRX9000 - ven por tu tratamiento sin cirugía');
+
+
+mainIMG.appendChild(secondImage);
+
+
+/*
 const mainContent = document.getElementsByClassName('home-slider-content')[0];
 
 const loaderIMG = document.createElement('img');
@@ -262,3 +272,5 @@ let secondImage = document.createElement('img');
 //   console.log('The DOM is fully loaded and parsed.');
 // });
 count();
+
+*/

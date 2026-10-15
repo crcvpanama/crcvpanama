@@ -227,7 +227,7 @@ details[open] {
     position: relative;
     text-align: center;
     align-self: center;
-    font-weight: 900;
+    /*font-weight: 900;*/
     letter-spacing: .2cap;
     font-size: clamp(1.1em, 3vw, 1.5em);
     color: var(--white);

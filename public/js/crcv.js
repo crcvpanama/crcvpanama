@@ -697,20 +697,23 @@ function searchW() {
 
 searchW();
 
-document.addEventListener('readystatechange', (e) => {
+showTest(whatsAppWidget);
+socialWeb(socialNav[0]);
 
-    if(document.readyState === "complete") {
-        setTimeout(() => {
+// document.addEventListener('readystatechange', (e) => {
 
-            showTest(whatsAppWidget);
-            socialWeb(socialNav[0]);
+//     if(document.readyState === "complete") {
+//         setTimeout(() => {
+
+            // showTest(whatsAppWidget);
+            // socialWeb(socialNav[0]);
             socialWeb(socialNav[1]);
 
-        }, 3000);
+        // }, 3000);
     
         yyyy.append(initYear); 
-    }
-});
+    // }
+// });
 
 
 function submitUserForm() {
