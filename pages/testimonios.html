@@ -11,52 +11,56 @@
       "@context": "https://schema.org",
       "@graph": [
         {
+          "@type": "MedicalClinic",
+          "@id": "https://www.crcvpanama.org/#organization",
+          "name": "Centro de Rehabilitación de la Columna Vertebral",
+          "url": "https://www.crcvpanama.org/",
+          "logo": "https://www.crcvpanama.org/public/img/crcvlogo.png"
+        },
+        {
+          "@type": "WebPage",
+          "@id": "https://www.crcvpanama.org/#testimonios",
+          "url": "https://www.crcvpanama.org/pages/testimonios.html",
+          "name": "Testimonios | Centro de Rehabilitación de la Columna Vertebral",
+          "about": { "@id": "https://www.crcvpanama.org/#organization" },
+          "video": [
+            { "@id": "https://www.crcvpanama.org/pages/testimonios.html#video-1" },
+            { "@id": "https://www.crcvpanama.org/pages/testimonios.html#video-2" },
+            { "@id": "https://www.crcvpanama.org/pages/testimonios.html#video-3" }
+          ]
+        },
+        {
           "@type": "VideoObject",
-          "name": "Testimonio de paciente — CRCV Panamá",
+          "@id": "https://www.crcvpanama.org/pages/testimonios.html#video-1",
+          "name": "Testimonio: hernias discales y dolor lumbar — CRCV Panamá",
           "description": "Testimonio de paciente tratado en el Centro de Rehabilitación de la Columna Vertebral por hernias discales y dolor lumbar.",
           "thumbnailUrl": "https://www.crcvpanama.org/public/img/testimonioa.jpg",
           "uploadDate": "2026-03-03T08:00:00-05:00",
+          "duration": "PT1M35S",
           "contentUrl": "https://www.crcvpanama.org/public/videos/testimonioc.mp4",
-          "publisher": {
-            "@type": "Organization",
-            "name": "Centro de Rehabilitación de la Columna Vertebral",
-            "logo": {
-              "@type": "ImageObject",
-              "url": "https://www.crcvpanama.org/public/img/crcvlogo.png"
-            }
-          }
+          "publisher": { "@id": "https://www.crcvpanama.org/#organization" }
         },
         {
           "@type": "VideoObject",
-          "name": "Testimonio de paciente — CRCV Panamá",
+          "@id": "https://www.crcvpanama.org/pages/testimonios.html#video-2",
+          "name": "Testimonio: ciática y dolor de espalda con DRX9000 — CRCV Panamá",
           "description": "Testimonio de paciente sobre los efectos positivos de la terapia con el equipo DRX9000 para el nervio ciático y dolor de espalda.",
           "thumbnailUrl": "https://www.crcvpanama.org/public/img/testimoniob.jpg",
           "uploadDate": "2026-03-03T08:00:00-05:00",
+          "duration": "PT1M23S",
           "contentUrl": "https://www.crcvpanama.org/public/videos/testimonio.mp4",
-          "publisher": {
-            "@type": "Organization",
-            "name": "Centro de Rehabilitación de la Columna Vertebral",
-            "logo": {
-              "@type": "ImageObject",
-              "url": "https://www.crcvpanama.org/public/img/crcvlogo.png"
-            }
-          }
+          "publisher": { "@id": "https://www.crcvpanama.org/#organization" }
         },
         {
           "@type": "VideoObject",
-          "name": "Testimonio de paciente — CRCV Panamá",
-          "description": "Testimonio de apciente sobre su recuperación de discos abombados y dolor lumbar mediante descompresión espinal DRX9000.",
+          "@id": "https://www.crcvpanama.org/pages/testimonios.html#video-3",
+          "name": "Testimonio: recuperación de discos abombados — CRCV Panamá",
+          "description": "Testimonio de paciente sobre su recuperación de discos abombados y dolor lumbar mediante descompresión espinal DRX9000.",
           "thumbnailUrl": "https://www.crcvpanama.org/public/img/testimonioc.jpg",
           "uploadDate": "2026-03-03T08:00:00-05:00",
+          "duration": "PT54S",
           "contentUrl": "https://www.crcvpanama.org/public/videos/testimoniob.mp4",
-          "publisher": {
-            "@type": "Organization",
-            "name": "Centro de Rehabilitación de la Columna Vertebral",
-            "logo": {
-              "@type": "ImageObject",
-              "url": "https://www.crcvpanama.org/public/img/crcvlogo.png"
-            }
-          }
+          "publisher": { "@id": "https://www.crcvpanama.org/#organization" }
         }
       ]
     }
